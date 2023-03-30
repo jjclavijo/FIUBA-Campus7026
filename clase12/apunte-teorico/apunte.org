@@ -1,0 +1,222 @@
+* Setting                                                          :noexport:
+ 
+#+LATEX_ENGINE: xelatex
+#+LATEX_CLASS: extarticle
+#+LATEX_CLASS_OPTIONS: a4paper,12pt
+
+#+LaTeX_HEADER: \usepackage[spanish]{babel}
+#+LaTex_HEADER: \usepackage{placeins}
+#+LaTex_HEADER: \usepackage{graphicx} % Required to insert images
+#+LaTex_HEADER: \usepackage{courier} % Required for the courier font
+#+LaTex_HEADER: \usepackage{fixltx2e}
+#+LaTex_HEADER: \usepackage{amsmath}
+#+LaTex_HEADER: \usepackage{dsfont}
+#+LaTex_HEADER: \usepackage{amssymb}
+#+LaTex_HEADER: \usepackage{hyperref}
+#+LaTex_HEADER: \usepackage{fancyhdr} % Required for custom headers
+#+LaTex_HEADER: \usepackage{lastpage} % Required to determine the last page for the footer
+#+LaTex_HEADER: \usepackage{extramarks} % Required for headers and footers
+#+LaTex_HEADER: % Margins
+#+LaTex_HEADER: \usepackage{geometry}
+#+LaTex_HEADER:  \geometry{
+#+LaTex_HEADER:  a4paper,
+#+LaTex_HEADER:  left=20mm,
+#+LaTex_HEADER:  right=20mm,
+#+LaTex_HEADER:  top=20mm,
+#+LaTex_HEADER:  bottom=20mm,
+#+LaTex_HEADER:  }
+#+LaTex_HEADER: 
+#+LaTex_HEADER: \linespread{1.1} % Line spacing
+#+LaTex_HEADER: 
+#+LaTex_HEADER: % Set up the header and footer
+#+LaTex_HEADER: \pagestyle{fancy}
+#+LaTex_HEADER: \lhead{} % Top left header
+#+LaTex_HEADER: \chead{\hmwkClass\ (\hmwkClassTime): \hmwkTitle} % Top center head
+#+LaTex_HEADER: \rhead{\hmwkInstitucional} % Top right header
+#+LaTex_HEADER: \lfoot{\hmwkClassInstructor} % Bottom left footer
+#+LaTex_HEADER: \cfoot{} % Bottom center footer
+#+LaTex_HEADER: \rfoot{Página\ \thepage\ de\ \protect\pageref{LastPage}} % Bottom right footer
+#+LaTex_HEADER: \renewcommand\headrulewidth{0.4pt} % Size of the header rule
+#+LaTex_HEADER: \renewcommand\footrulewidth{0.4pt} % Size of the footer rule
+#+LaTex_HEADER: 
+#+LaTex_HEADER: \setlength\parindent{0pt} % Removes all indentation from paragraphs
+#+LaTex_HEADER: 
+#+LaTex_HEADER: % Encabezados y pies.
+#+LaTex_HEADER: 
+#+LaTex_HEADER: \newcommand{\hmwkTitle}{Clase 10 - Teoría} % Assignment title
+#+LaTex_HEADER: \newcommand{\hmwkDueDate}{Julio 2020} % Due date
+#+LaTex_HEADER: \newcommand{\hmwkClass}{Hidráulica Agrícola y Saneamiento} % Course/class
+#+LaTex_HEADER: \newcommand{\hmwkClassTime}{1-2020} % Class/lecture time
+#+LaTex_HEADER: \newcommand{\hmwkClassInstructor}{Mónica Fiore - Javier Clavijo} % Teacher/lecturer
+#+LaTex_HEADER: \newcommand{\hmwkInstitucional}{FI-UBA} % Your name
+
+#+LaTex_HEADER:\usepackage{lineno}
+#+LaTex_HEADER:\linenumbers
+
+#+BEGIN_SRC emacs-lisp
+
+(setq org-image-actual-width nil)
+
+#+END_SRC
+
+#+RESULTS:
+
+* Presas
+
+#+BEGIN_EXPORT latex
+\null\hfill\begin{minipage}{0.7\linewidth}
+\textbf{Palabras Clave:} embalse, vaso, boquilla, vertedero, cimentación,
+auscultación
+\end{minipage}\hfill\null
+#+END_EXPORT
+
+El aprovechamiento múltiple del agua y el uso intensivo del suelo
+exigen, en muchos casos, obras de infraestructura entre las que se
+destacan por su importancia la construcción de presas.
+
+Para iniciar el proyecto de una presa en primer lugar se debe definir el
+tipo de demanda de agua a satisfacer, y sus características y cantidades
+estimadas en función del tiempo.
+
+El agua puede ser utilizada para satisfacer una gran variedad de
+necesidades, por ejemplo, la demanda de consumo humano o animal, el
+riego, la recreación, la producción de energía hidroeléctrica, etc.
+
+La selección del mejor tipo de presa para un lugar determinado es un
+problema que involucra tanto la factibilidad desde el punto de vista de
+la ingeniería, como el costo de la obra. La factibilidad está regida por
+la topografía, la geología y el clima. Por ejemplo, como el concreto se
+agrieta cuando se somete alternativamente a congelamiento y deshielo,
+determinados tipos de presas, por ser delgadas y no resistir, quedan
+descartadas para estas condiciones extremas.
+
+No es conveniente ubicarla en lugares donde existan instalaciones de
+importancia junto al cauce dentro del área afectada ante una eventual
+falla de la estructura. De no existir otra posibilidad, la selección de
+un sitio así obligará a extremar las precauciones y controles durante la
+construcción, la operación y el mantenimiento de la obra, lo que en
+definitiva redundará en un mayor costo.
+
+Deben evitarse sitios que generen grandes áreas de embalse de poca
+profundidad porque se produce una excesiva evaporación y beneficia el
+posible crecimiento de plantas acuáticas que son perjudiciales para la
+calidad de las aguas.
+
+Desde el punto de vista del volumen de obra, un sitio adecuado para una
+represa es en general una sección estrecha de un valle, de pendientes
+laterales fuertes, donde se puede disponer de un gran volumen embalsado
+con un dique de pequeño volumen, optimizando la eficiencia de la
+inversión.
+
+El costo relativo de los diferentes tipos de presas depende
+principalmente de la disponibilidad de materiales de construcción
+cercanos al sitio, de la accesibilidad y de las facilidades para su
+transporte. Se recomienda que los suelos en la zona a inundar por el
+embalse tengan un horizonte impermeable de espesor suficiente para
+prevenir una excesiva infiltración.
+
+Si se quiere una obra impermeable, conviene que se construya sobre
+terrenos impermeables además de resistentes. Pueden construirse presas
+sobre terrenos permeables, siempre y cuando el diseño tenga en cuenta
+este aspecto específicamente.
+
+Para la delimitación de las superficies a inundar con el embalse, se
+recomienda dibujar el trazado de la curva de nivel del embalse lleno a
+nivel del umbral del vertedero, y además la curva de nivel del embalse
+en su cota máxima de vertido. Estas curvas representan información
+necesaria, entre otras cosas, para el estudio de la vinculación jurídica
+de los predios inundados.
+
+Para evaluar el probable lugar de cierre del valle es necesario realizar
+un relevamiento topográfico y estimar la capacidad del embalse y las
+cotas de las obras de toma y de vertido.
+
+La atura de una presa está definida como la diferencia en elevación
+entre el camino o la cresta del vertedor y la parte más baja de la
+cimentación excavada.
+
+Sin embargo, las cifras registradas para alturas de presas con
+frecuencia están determinadas en otras formas. Frecuentemente la altura
+se toma como la altura neta arriba del antiguo lecho de la corriente o
+río.
+
+** Fuerzas que actuan sobre las presas
+
+Una presa debe ser relativamente impermeable al agua y ser capaz de
+resistir las fuerzas que actúan sobre ella. Las más importantes de estas
+fuerzas son la gravedad (peso de la presa), la presión hidrostática, la
+supresión, la presión del hielo y las fuerzas sísmicas o telúricas.
+
+Estas fuerzas se transmiten a la cimentación y a las laderas o atraques
+de las presas, las cuales reaccionan contra la presa con una fuerza
+igual y opuesta o contraria, llamada la reacción de la cimentación.
+
+El efecto de la presión hidrostático causado por los depósitos de azolve
+en el vaso y el efecto de fuerzas dinámicas causado por el agua
+escurriendo sobre la presa, puede exigir una consideración particular en
+casos especiales.
+
+El peso de una presa es el producto de su volumen y del peso específico
+del material. La línea de acción de esta fuerza pasa por el centro del
+área de la sección transversal
+
+** Los elementos que componen una presa son:
+
+- El embalse :: que es el volumen de agua que queda retenido por la presa.
+- El vaso :: que es la parte del valle que inundándose contiene el agua
+embalsada.
+- La boquilla :: que es el punto donde se construye la presa.
+- La presa :: es el muro que debe soportar el empuje del agua y no permitir
+la filtración del agua hacia abajo.
+- La coronación :: es la superficie que delimita la presa en la parte
+superior.
+
+Las presas se clasifican según la forma estructural y en base a los
+materiales empleados. Existen otras clasificaciones que se realizan en
+función del uso al que se va a destinar el agua, pero esto no es una
+característica propia de la presa sino de su uso. Para ver la
+clasificación de las presas sugiero consultar el siguiente link:
+[[https://www.wikipresas.org/tipos-de-presas-y-embalses/]]
+
+En general para la construcción de una presa es necesario efectuar un
+levantamiento topográfico de la cuenca, para lo cual es necesario ubicar
+primero la parte de aguas. Se hace un recorrido del mismo y se señaliza.
+Luego se traza la poligonal verificando su cierre. También se trazan
+poligonales auxiliares para determinar los cauces principales que
+determinan la forma de concentración y pendientes generales de la
+cuenca. Se debe efectuar el levantamiento de vasos para determinar la
+capacidad y el área de inundación a diferentes alturas, etc. En muchas
+de estas tareas el papel del ingeniero agrimensor es fundamental.
+
+El cuidado de obras de tal envergadura requiere de un control
+permanente. Los procedimientos de control deben realizarse
+periódicamente por equipos de especialistas. El objetivo es detectar
+anomalías, con tiempo suficiente para evaluar su gravedad y posibles
+consecuencias y tomar las medidas preventivas necesarias.
+
+La auscultación geodésica permite controlar el comportamiento
+dimensional de estas estructuras, sus deformaciones y sus movimientos,
+como así también los correspondientes al entorno natural que las rodea.
+La finalidad principal del sistema de auscultación de una presa es
+evitar que llegue a producirse un accidente con consecuencias graves
+para la seguridad y bienes de la población asentada aguas abajo de la
+presa.
+
+La auscultación en presas debe ser continua durante toda su vida útil.
+Los procedimientos son llevados a cabo periódicamente por equipos de
+especialistas, midiendo distintas redes de puntos de referencia externos
+e internos, y analizando las indicaciones de instrumental que se deja
+adosado a distintas partes de la obra en forma permanente.
+
+La auscultación de presas por métodos geodésicos se trata de determinar
+movimientos y deformaciones de las estructuras a través del cálculo,
+compensación y análisis de observaciones del tipo de las utilizadas por
+la geodesia, pero en este caso en extensiones relativamente reducidas
+(la presa y sus alrededores), generalmente con un muy alto grado de
+precisión.
+
+** Bibliografía
+
+- Ingeniería de los recursos hidráulicos. Ray Linsley, Joseph Franzini. Edit. CEESA
+- Manual de diseño y construcción de pequeñas presas volumen 1: diseño hidrológico / hidráulico versión 1.01
+- [[https://agua.org.mx/wp-content/uploads/2017/05/Manual-Pequenas-Presas-V1-v1_01-1.pdf]]

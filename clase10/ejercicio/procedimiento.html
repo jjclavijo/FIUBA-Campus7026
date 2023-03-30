@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>70.26 Hidráulica Agriola y Saneamiento</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+  </style>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" type="text/javascript"></script>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+    <style type="text/css">
+        #principal{ margin: 0 auto; font-size: 13pt; line-height: 1.5em; font-family: Georgia, serif; max-width: 1100px;}
+        code{white-space: pre-wrap;}
+        span.smallcaps{font-variant: small-caps;}
+        span.underline{text-decoration: underline;}
+        div.column{display: inline-block; vertical-align: top; width: 50%;}
+        .derecha{width: 300px; float: right; margin: 10px; padding: 10px;
+                 background: lightgray }
+        .ejemplo{max-width:600px; width: 80%; background: lightgray}
+        p{max-width: 800px; text-align:justify; margin: 10px}
+        figure{padding:30px; margin:10px}
+        h1, h2, h3 { font-weight: normal; border-bottom: 1px solid black; }
+        h4 { font-size: 14pt; font-style: bold; margin-top: 1em; }
+        h1 { font-size: 20pt; }
+        h2 { font-size: 18pt; }
+        h3 { font-size: 16pt; }
+        h1,h2,h3,h4,h5,h6,p,a{font-family: "Raleway",sans-serif;}
+        p{max-width: 650px}
+        #main-div{max-width: 850px; padding: 25px; background: #f5f5f5}
+        #title-block-header{visibility: hidden; height: 0px }
+      table a:link {
+      	color: #666;
+      	font-weight: bold;
+      	text-decoration:none;
+      }
+      table a:visited {
+      	color: #999999;
+      	font-weight:bold;
+      	text-decoration:none;
+      }
+      table a:active,
+      table a:hover {
+      	color: #bd5a35;
+      	text-decoration:underline;
+      }
+      table {
+      	font-family:Arial, Helvetica, sans-serif;
+      	color:#666;
+      	font-size:14px;
+      	text-shadow: 1px 1px 0px #fff;
+      	background:#eaebec;
+      	margin:20px;
+      	border:#ccc 1px solid;
+      
+      	-moz-border-radius:3px;
+      	-webkit-border-radius:3px;
+      	border-radius:3px;
+      
+      	-moz-box-shadow: 0 1px 2px #d1d1d1;
+      	-webkit-box-shadow: 0 1px 2px #d1d1d1;
+      	box-shadow: 0 1px 2px #d1d1d1;
+      }
+      table th {
+      	padding:21px 25px 22px 25px;
+      	border-top:1px solid #fafafa;
+      	border-bottom:1px solid #e0e0e0;
+      
+      	background: #ededed;
+      	background: -webkit-gradient(linear, left top, left bottom, from(#ededed), to(#ebebeb));
+      	background: -moz-linear-gradient(top,  #ededed,  #ebebeb);
+      }
+      table th:first-child {
+      	text-align: left;
+      	padding-left:20px;
+      }
+      table tr:first-child th:first-child {
+      	-moz-border-radius-topleft:3px;
+      	-webkit-border-top-left-radius:3px;
+      	border-top-left-radius:3px;
+      }
+      table td { margin: 5px; background-color: white; text-align: center }
+    </style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">70.26 Hidráulica Agriola y Saneamiento</h1>
+</header>
+<div id="main-div">
+
+<h2 id="objetivo">Objetivo</h2>
+<p>El objetivo de los dos ejercicios es calcular el volumen del suelo que deben mover.</p>
+<h2 id="procedimiento">Procedimiento</h2>
+<p>El procedimiento que queremos que apliquen es el siguiente:</p>
+<ol>
+<li>Ubicar el centro de gravedad o centroide (utilizar AutoCAD, funcion Region) y asignarle el promedio de las cotas naturales de cada predio.</li>
+<li>Utilizar el valor del centroide obtenido para calcular la cota que le correspondería a cada uno de los predios respetando las pendientes propuestas. Una alternativa para realizar esto puede ser (ejercicio 1):</li>
+</ol>
+<h3 id="a.-calcular">a. Calcular</h3>
+<p>la cota que le corresponde al centro de los predios que están alineados en sentido vertical con el centroide. Considerar que la pendiente que hay que conservar es 1 (uno por mil):</p>
+<p>Para el predio que se encuentra al norte del centroide, al desplazarse 12,5m, la cota aumenta <span class="math display">\[ 8.342m + 12,5m * \frac{1m}{1000m} = 8,35m \]</span></p>
+<p><span class="math display">\[(\text{cota centroide}) + (\text{distancia}) * (\text{pendiente}) = (\text{cota que asigno al predio})\]</span></p>
+<p>Para el predio que se encuentra al sur del centroide desplazarse 12,5m, la cota disminuye <span class="math display">\[8.342m - 12,5m * \frac{1m}{1000m} = 8,33m\]</span></p>
+<p><span class="math display">\[(\text{cota centroide}) - (\text{distancia}) * (\text{pendiente}) = (\text{cota que asigno al predio})\]</span></p>
+<h3 id="b.-en-base-a-las-cotas-calculadas">b. En base a las cotas calculadas,</h3>
+<p>desplazarse en sentido este-oeste al resto de los predios considerando que la pendiente que hay que conservar es 2:</p>
+<p>Para el predio que se encuentra al oeste del primer predio calculado (cota 8,35), desplazarse en sentido este-oeste 25 metros, la cota aumenta: <span class="math display">\[8.35m + 25m * \frac{2m}{1000m} = 8,40m\]</span></p>
+<p><span class="math display">\[(\text{cota centroide}) + (\text{distancia}) * (\text{pendiente}) = (\text{cota que asigno al predio})\]</span></p>
+<p>Para el resto de los predios realizan el mismo cálculo hasta obtener las cotas de cada uno.</p>
+<p>Una vez obtenidas, las cotas naturales se restan de las calculadas (cota roja) y se calculan dos sumatorias, una positiva (correspondiente a aquellos predios con cota superior a la calculada y de donde se realizaría el desmonte) y otra negativa (correspondiente a aquellos predios con cota inferior a la calculada, donde se realizaría el relleno).</p>
+<p>Como control, se verifica que el modulo de la diferencia de las dos sumatorias, sea más chico que el 10% del modulo del valor más grande de las dos sumatorias:</p>
+<ol>
+<li>Sumar, con su signo, las dos sumatorias anteriores, valor Z (cercano a 0).</li>
+<li>Calcular el 10% de cada sumatoria (negativa y positiva), en valor absoluto (T1 y T2).</li>
+<li>Seleccionar T1, si es mayor que T2, o T2 si es mayor que T1.</li>
+<li>Comparar la T elegida con el valor de Z, si T es mayor, se puede continuar con el cálculo, sino se debe modificar la cota del centroide para que la diferencia disminuya, y recalcular todas las cotas calculadas para cada predio.</li>
+</ol>
+<p>Una vez verificada la diferencia, se calcula la Cota Roja Media Ponderada:</p>
+<ol>
+<li>Calcular el valor absoluto de la cota roja de cada predio multiplicado por su peso (en el ejercicio 1 los pesos son 1, y en el 2 están indicados).</li>
+<li>Sumar los valores de cada predio calculados en 1) y dividir por la suma de los pesos.</li>
+</ol>
+<p>Finalmente el volumen de tierra a mover se calcula como:</p>
+<p><span class="math display">\[(\frac{1}{2}) * (\text{Superficie Total}) * (\text{Cota Roja Media Ponderada})\]</span></p>
+</div>
+</body>
+</html>

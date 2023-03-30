@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>70.26 Hidráulica Agriola y Saneamiento</title>
+  <style>
+    html {
+      line-height: 1.5;
+      font-family: Georgia, serif;
+      font-size: 20px;
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 1em;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace;
+      font-size: 85%;
+      margin: 0;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+  </style>
+    <style type="text/css">
+        #principal{ margin: 0 auto; font-size: 13pt; line-height: 1.5em; font-family: Georgia, serif; max-width: 1100px;}
+        code{white-space: pre-wrap;}
+        span.smallcaps{font-variant: small-caps;}
+        span.underline{text-decoration: underline;}
+        div.column{display: inline-block; vertical-align: top; width: 50%;}
+        .derecha{width: 300px; float: right; margin: 10px; padding: 10px;
+                 background: lightgray }
+        .ejemplo{max-width:600px; width: 80%; background: lightgray}
+        p{max-width: 800px; text-align:justify; margin: 10px}
+        figure{padding:30px; margin:10px}
+        h1, h2, h3 { font-weight: normal; border-bottom: 1px solid black; }
+        h4 { font-size: 14pt; font-style: bold; margin-top: 1em; }
+        h1 { font-size: 20pt; }
+        h2 { font-size: 18pt; }
+        h3 { font-size: 16pt; }
+        h1,h2,h3,h4,h5,h6,p,a{font-family: "Raleway",sans-serif;}
+        p{max-width: 650px}
+        #main-div{max-width: 850px; padding: 25px; background: #f5f5f5}
+        #title-block-header{visibility: hidden; height: 0px }
+      table a:link {
+      	color: #666;
+      	font-weight: bold;
+      	text-decoration:none;
+      }
+      table a:visited {
+      	color: #999999;
+      	font-weight:bold;
+      	text-decoration:none;
+      }
+      table a:active,
+      table a:hover {
+      	color: #bd5a35;
+      	text-decoration:underline;
+      }
+      table {
+      	font-family:Arial, Helvetica, sans-serif;
+      	color:#666;
+      	font-size:14px;
+      	text-shadow: 1px 1px 0px #fff;
+      	background:#eaebec;
+      	margin:20px;
+      	border:#ccc 1px solid;
+      
+      	-moz-border-radius:3px;
+      	-webkit-border-radius:3px;
+      	border-radius:3px;
+      
+      	-moz-box-shadow: 0 1px 2px #d1d1d1;
+      	-webkit-box-shadow: 0 1px 2px #d1d1d1;
+      	box-shadow: 0 1px 2px #d1d1d1;
+      }
+      table th {
+      	padding:21px 25px 22px 25px;
+      	border-top:1px solid #fafafa;
+      	border-bottom:1px solid #e0e0e0;
+      
+      	background: #ededed;
+      	background: -webkit-gradient(linear, left top, left bottom, from(#ededed), to(#ebebeb));
+      	background: -moz-linear-gradient(top,  #ededed,  #ebebeb);
+      }
+      table th:first-child {
+      	text-align: left;
+      	padding-left:20px;
+      }
+      table tr:first-child th:first-child {
+      	-moz-border-radius-topleft:3px;
+      	-webkit-border-top-left-radius:3px;
+      	border-top-left-radius:3px;
+      }
+      table td { margin: 5px; background-color: white; text-align: center }
+    </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">70.26 Hidráulica Agriola y Saneamiento</h1>
+</header>
+<div id="main-div">
+
+<h1 id="ejercicio-práctico-uso-consuntivo">Ejercicio Práctico: Uso
+Consuntivo</h1>
+<ol>
+<li><p>En base a los datos de temperatura media mensual presentados en
+la Tabla 1, calcular el caudal necesario para regar por gravedad un
+predio de 500 hectáreas ubicado en la localidad de Choele Choel,
+Provincia de Río Negro utilizando el procedimiento de Blaney y
+Criddle.</p></li>
+<li><p>Responda y detalle: ¿es comparable el resultado obtenido a la
+información que otorga el metodo de Thornthwaite?</p></li>
+</ol>
+<h2 id="datos">Datos:</h2>
+<ul>
+<li>Considerar en un caso el predio sembrado con alfalfa y en otro caso
+con tomate. (Latitud φ= 48°S).</li>
+<li>Considerar una eficiencia de 0.6</li>
+</ul>
+<table>
+<tbody>
+<tr class="odd">
+<td>MES</td>
+<td>Temperatura Media</td>
+<td>Precipitación Media</td>
+</tr>
+<tr class="even">
+<td></td>
+<td>Mensual (°C)</td>
+<td>Mensual (mm)</td>
+</tr>
+<tr class="odd">
+<td>Enero</td>
+<td>24.10</td>
+<td>18.90</td>
+</tr>
+<tr class="even">
+<td>Febrero</td>
+<td>22.90</td>
+<td>21.00</td>
+</tr>
+<tr class="odd">
+<td>Marzo</td>
+<td>20.30</td>
+<td>32.00</td>
+</tr>
+<tr class="even">
+<td>Abril</td>
+<td>14.90</td>
+<td>25.40</td>
+</tr>
+<tr class="odd">
+<td>Mayo</td>
+<td>10.90</td>
+<td>21.40</td>
+</tr>
+<tr class="even">
+<td>Junio</td>
+<td>7.60</td>
+<td>18.70</td>
+</tr>
+<tr class="odd">
+<td>Julio</td>
+<td>7.50</td>
+<td>17.80</td>
+</tr>
+<tr class="even">
+<td>Agosto</td>
+<td>9.50</td>
+<td>10.80</td>
+</tr>
+<tr class="odd">
+<td>Septiembre</td>
+<td>11.90</td>
+<td>21.40</td>
+</tr>
+<tr class="even">
+<td>Octubre</td>
+<td>16.20</td>
+<td>21.80</td>
+</tr>
+<tr class="odd">
+<td>Noviembre</td>
+<td>20.20</td>
+<td>23.30</td>
+</tr>
+<tr class="even">
+<td>Diciembre</td>
+<td>22.90</td>
+<td>28.20</td>
+</tr>
+</tbody>
+</table>
+<h2 id="recursos">Recursos</h2>
+<ul>
+<li><a href="./Blaney.pdf">Procedimiento de Blaney y Criddle</a></li>
+</ul>
+</div>
+</body>
+</html>

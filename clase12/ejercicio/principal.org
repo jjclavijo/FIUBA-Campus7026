@@ -1,0 +1,17 @@
+* Ejercicio: Presas.
+
+Como ejercicio para esta clase, aprovechando que las presas
+constituyen un área donde hay muchas aplicaciones tánto para la
+agrimensura como para la geodésia y la geofísica, les proponemos la
+siguiente consigna:
+
+1. Busque en internet algun informe o publicación sobre trabajos
+   relacionados a su carrera, que se hayan ejecutado en el marco de la
+   construcción o el monitoreo de una presa. Vean por ejemplo el
+   siguiente trabajo de monitoreo de la presa de Rio Hondo:
+   https://web.archive.org/web/20060712190856/http://fcf.unse.edu.ar/lpr/batimetria.htm
+2. Partiendo del material hallado, escriba un comentario breve (de no
+   más de 3 carillas) donde explica el trabajo encontrado, las
+   herramientas utilizadas, y el papel del profesional de la
+   agrimensura / geodesia-geofísica en el. Incluya tambien ejemplos de
+   otras potenciales aplicaciones de su carrera al trabajo en presas.

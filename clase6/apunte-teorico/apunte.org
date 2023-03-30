@@ -1,0 +1,212 @@
+* Setting                                                          :noexport:
+ 
+#+LATEX_ENGINE: xelatex
+#+LATEX_CLASS: extarticle
+#+LATEX_CLASS_OPTIONS: a4paper,12pt
+
+#+LaTeX_HEADER: \usepackage[spanish]{babel}
+#+LaTex_HEADER: \usepackage{placeins}
+#+LaTex_HEADER: \usepackage{graphicx} % Required to insert images
+#+LaTex_HEADER: \usepackage{courier} % Required for the courier font
+#+LaTex_HEADER: \usepackage{fixltx2e}
+#+LaTex_HEADER: \usepackage{amsmath}
+#+LaTex_HEADER: \usepackage{dsfont}
+#+LaTex_HEADER: \usepackage{amssymb}
+#+LaTex_HEADER: \usepackage{hyperref}
+#+LaTex_HEADER: \usepackage{fancyhdr} % Required for custom headers
+#+LaTex_HEADER: \usepackage{lastpage} % Required to determine the last page for the footer
+#+LaTex_HEADER: \usepackage{extramarks} % Required for headers and footers
+#+LaTex_HEADER: % Margins
+#+LaTex_HEADER: \usepackage{geometry}
+#+LaTex_HEADER:  \geometry{
+#+LaTex_HEADER:  a4paper,
+#+LaTex_HEADER:  left=20mm,
+#+LaTex_HEADER:  right=20mm,
+#+LaTex_HEADER:  top=20mm,
+#+LaTex_HEADER:  bottom=20mm,
+#+LaTex_HEADER:  }
+#+LaTex_HEADER: 
+#+LaTex_HEADER: \linespread{1.1} % Line spacing
+#+LaTex_HEADER: 
+#+LaTex_HEADER: % Set up the header and footer
+#+LaTex_HEADER: \pagestyle{fancy}
+#+LaTex_HEADER: \lhead{} % Top left header
+#+LaTex_HEADER: \chead{\hmwkClass\ (\hmwkClassTime): \hmwkTitle} % Top center head
+#+LaTex_HEADER: \rhead{\hmwkInstitucional} % Top right header
+#+LaTex_HEADER: \lfoot{\hmwkClassInstructor} % Bottom left footer
+#+LaTex_HEADER: \cfoot{} % Bottom center footer
+#+LaTex_HEADER: \rfoot{Página\ \thepage\ de\ \protect\pageref{LastPage}} % Bottom right footer
+#+LaTex_HEADER: \renewcommand\headrulewidth{0.4pt} % Size of the header rule
+#+LaTex_HEADER: \renewcommand\footrulewidth{0.4pt} % Size of the footer rule
+#+LaTex_HEADER: 
+#+LaTex_HEADER: \setlength\parindent{0pt} % Removes all indentation from paragraphs
+#+LaTex_HEADER: 
+#+LaTex_HEADER: % Encabezados y pies.
+#+LaTex_HEADER: 
+#+LaTex_HEADER: \newcommand{\hmwkTitle}{Clase 6 - Aforos: Teoría} % Assignment title
+#+LaTex_HEADER: \newcommand{\hmwkDueDate}{Mayo 2020} % Due date
+#+LaTex_HEADER: \newcommand{\hmwkClass}{Hidráulica Agrícola y Saneamiento} % Course/class
+#+LaTex_HEADER: \newcommand{\hmwkClassTime}{1-2020} % Class/lecture time
+#+LaTex_HEADER: \newcommand{\hmwkClassInstructor}{Mónica Fiore - Javier Clavijo} % Teacher/lecturer
+#+LaTex_HEADER: \newcommand{\hmwkInstitucional}{FI-UBA} % Your name
+
+#+LaTex_HEADER:\usepackage{lineno}
+#+LaTex_HEADER:\linenumbers
+
+#+BEGIN_SRC emacs-lisp
+
+(setq org-image-actual-width nil)
+
+#+END_SRC
+
+#+RESULTS:
+
+* Aforos
+
+#+BEGIN_EXPORT latex
+\null\hfill\begin{minipage}{0.7\linewidth}
+\textbf{Palabras Claves:} Aforo, hidrometría, caudal, aforo volumétrico,
+molinete, ADCP, HQ, remanso, estiaje, avenida
+\end{minipage}\hfill\null
+#+END_EXPORT
+
+En la distribución del agua de riego, la Hidrometría tiene como objetivo
+principal, medir y registrar los caudales de agua que son captados,
+derivados y distribuidos a los usuarios, a través de los sistemas de
+riego. Luego, cuando se planifica una zona de riego es fundamental
+conocer el río del cual se va a extraer agua y sus características
+hidrológicas. Aforar es medir, en nuestro caso medir el caudal de un
+río.
+
+El caudal es una medida del volumen de líquido que está pasando en un
+período de tiempo, y suele medirse en [l/s, m3 /s, m3 /día]. El caudal
+(Q) se define como:
+
+\[Q = V/t = U \times A\]
+
+Siendo
+
+V: volumen, t: tiempo, U: velocidad, A: área
+
+Si quiero medir el caudal primero debo establecer una sección. La
+sección debe estar precedida por un tramo recto que sea que sea 10 veces
+el ancho de la sección. Esto es para asegurar que el flujo sea paralelo
+al eje del cauce. La zona no debe sufrir erosiones o sedimentaciones, ni
+estar afectada por remanso. En la sección, la velocidad del agua no es
+la misma en todos los puntos ya que existe rozamiento cerca del fondo y
+en las paredes del río siendo en estas zonas menor. La Figura 1 muestra
+esquemáticamente las variaciones de la velocidad en un río.
+
+#+CAPTION: Esquema de la variación de la velocidad (Fuente: http://www.fao.org/3/t0848s/t0848s06.htm)
+#+ATTR_HTML: :width 500
+[[file:media/image4.jpeg]]
+
+Por otra parte, el caudal varía en forma casi permanentemente por
+distintas causas, como, por ejemplo, meteorológicas (precipitación aguas
+arriba), o por afluentes que se producen aguas arriba del sitio de
+medición. Los métodos de medición del caudal deben contemplar estas
+variaciones momento a momento y que las velocidades del río no son las
+mismas en toda la sección, sino que tienen distinto valor a lo ancho del
+río y a distintas profundidades
+
+Existen distintas técnicas, desde las más simples, hasta tecnologías que
+incluyen software de precisión con integración de múltiples puntos
+medidos en una sección. Entre las primeras se encuentran métodos de
+aforo volumétrico donde se mide el tiempo en que se llena un volumen
+conocido. Se aplica a caudales pequeños. En ríos correntosos o donde se
+hace difícil la medición del área y la velocidad se pueden usar métodos
+con trazador químico.
+
+Los métodos que utilizan el área y la velocidad, dividen a la sección
+elegida en segmentos (Figura 2). Se determinan áreas parciales y
+velocidades medias en las áreas parciales con las cuales se determinan
+caudales parciales, cuya sumatoria da el caudal total.
+
+#+CAPTION: Areas y Velocidades parciales para un aforo.
+#+ATTR_HTML: :width 500
+[[file:media/image5.jpeg]]
+
+Esto lo podemos expresar mediante la fórmula:
+
+\[Q= \sum_{\forall 1} A_i V_i \]
+
+Una forma de medir la velocidad del cauce del río, es utilizando el
+molinete; este instrumento consta de un aparato provisto de una hélice
+conectado a un contador que registra las vueltas en un periodo de tiempo
+prefijado. Esto permite medir la velocidad del agua, ya que es
+proporcional al número de vueltas de la hélice. Como este proceso es
+difícil de mantener en el tiempo, y durante las avenidas es casi
+imposible hacer aforos completos debido a las grandes variaciones de
+nivel que pueden producirse durante su ejecución, se instala una regla
+cuyas lecturas están relacionadas con el caudal.
+
+Cuando la sección donde se ubica la estación es de un ancho muy
+considerable, no es accesible desde las márgenes o la profundidad del
+curso impide el trabajo directo, se utilizan equipos ADCP (Acoustic
+Doppler Current Profiler) o perfiladores de corriente por efecto
+Doppler.
+
+El ADCP permite medir profundidad del lecho, velocidad y dirección del
+agua a distintas profundidades al mismo tiempo y se instala sobre un
+equipo flotante, al que se guía para realizar la trayectoria de orilla a
+orilla. El principio de funcionamiento se basa, nuevamente, en dividir
+el perfil de velocidades en segmentos uniformes llamados "celdas de
+profundidad". Su función de "seguimiento de fondo" permite conocer la
+velocidad relativa del agua con respecto a un objeto fijo, en este caso
+el fondo o lecho del curso de agua.
+
+Si se efectúan mediciones de diferentes caudales y se los relaciona con
+los correspondientes niveles de agua registrados en la regla podemos
+construir una curva Altura /Caulal (HQ). A esta relación también se la
+conoce como curva de gasto. Cada curva es única dado que no hay dos
+secciones iguales en un mismo río, ni hay dos cauces iguales. La curva
+HQ (Figura 3) asociada a cada estación de aforos requiere de calibración
+y la única forma de realizar esta verificación y, por tanto, de obtener
+resultados confiables
+
+es con la realización de aforos directos de forma periódica. Estos se
+suelen realizar varias veces al año, incluyendo épocas de estiaje (es el
+nivel de caudal mínimo que alcanza un río en algunas épocas del año,
+debido principalmente a la sequía) y épocas de avenida (es la elevación
+del nivel de un [[https://es.wikipedia.org/wiki/Curso_de_agua][curso de agua]] significativamente mayor que el flujo medio de este).
+
+#+CAPTION: Curva H-Q
+#+ATTR_HTML: :width 400
+[[file:media/image6.png]]
+
+Cuanto mayor sea el número de aforos, mejores serán los resultados que
+puedan estimarse a futuro de la curva. La importancia de contar con la
+curva HQ es que, una vez construida, con el dato de altura se obtiene el
+caudal en forma directa.
+
+Las curvas de calibración pueden cambiar por efectos erosivos, o de
+sedimentación, o de remanso o debido a flujo no permanente. Los
+encargados de las estaciones de aforo deben estar corrigiendo
+permanentemente estas curvas para detectar posibles errores.
+
+En el caso que la sección elegida para construir la curva HQ, tenga
+cambios debido a erosión o sedimentación, variará la superficie de la
+sección de escurrimiento y la altura medida no reflejará el caudal de la
+curva, sino otro mayor o menor según la sección sea mayor por erosión o
+menor por sedimentación.
+
+Cuando el flujo no es permanente, por ejemplo, cuando se produce una
+creciente, los niveles del agua son diferentes en la etapa de aumento
+del caudal y cuando empieza a bajar. Cuando sube el nivel del río el
+flujo esta acelerado y las velocidades son mayores y ocurre lo contrario
+cundo empieza a descender, siendo las velocidades menores. Esto se debe
+a que la celeridad de la onda de crecida está en función de la pendiente
+del curso de agua en ese momento.
+
+Al generarse un remanso por obstrucción del río, por la existencia de un
+tributario a un río de mayor caudal (ejemplo, el río Paraguay en su
+descarga al Paraná), o la construcción de una presa, cambia la pendiente
+de normal a la modificada por el remanso, en consecuencia, para la misma
+altura pueden darse varios caudales, anulando la relación HQ.
+
+Los métodos de extrapolación de la curva HQ, e información más detallada
+sobre todo lo expuesto pueden encontrarlo en los siguientes links:
+
+http://ing.unne.edu.ar/pub/hidr.pdf
+
+[[http://sisbib.unmsm.edu.pe/bibvirtualdata/Tesis/Ingenie/Vera_H_L/Cap5.pdf]]

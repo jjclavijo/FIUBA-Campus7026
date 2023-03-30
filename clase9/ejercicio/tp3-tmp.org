@@ -1,0 +1,42 @@
+#+BEGIN_EXPORT html
+<div id="main-div">
+#+END_EXPORT
+* Ejercicio Práctico: Uso Consuntivo
+
+1. En base a los datos de temperatura media mensual presentados en la
+   Tabla 1, calcular el caudal necesario para regar por gravedad un
+   predio de 500 hectáreas ubicado en la localidad de Choele Choel,
+   Provincia de Río Negro utilizando el procedimiento de Blaney y
+   Criddle.
+
+2. Responda y detalle: ¿es comparable el resultado obtenido a la información
+   que otorga el metodo de Thornthwaite?
+
+** Datos: 
+
+- Considerar en un caso el predio sembrado con alfalfa y en otro caso
+  con tomate. (Latitud φ= 48°S).
+- Considerar una eficiencia de 0.6
+
+| MES        | Temperatura Media | Precipitación Media |
+|            |      Mensual (°C) |        Mensual (mm) |
+|------------+-------------------+---------------------|
+| Enero      |             24.10 |               18.90 |
+| Febrero    |             22.90 |               21.00 |
+| Marzo      |             20.30 |               32.00 |
+| Abril      |             14.90 |               25.40 |
+| Mayo       |             10.90 |               21.40 |
+| Junio      |              7.60 |               18.70 |
+| Julio      |              7.50 |               17.80 |
+| Agosto     |              9.50 |               10.80 |
+| Septiembre |             11.90 |               21.40 |
+| Octubre    |             16.20 |               21.80 |
+| Noviembre  |             20.20 |               23.30 |
+| Diciembre  |             22.90 |               28.20 |
+
+** Recursos
+
+- [[./Blaney.pdf][Procedimiento de Blaney y Criddle]]
+#+BEGIN_EXPORT html
+</div>
+#+END_EXPORT

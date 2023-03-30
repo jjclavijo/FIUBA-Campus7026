@@ -1,0 +1,15 @@
+*.aux
+*.old
+*.log
+*.out
+
+/**/make_org*/*
+!/make_org/*
+!**/make_org*/*.ppt
+!**/make_org*/*.pptx
+
+**/zip
+**/tmp-slides
+**/build/*
+!**/build/Makefile
+!**/build/pre.awk

@@ -1,0 +1,314 @@
+* Setting                                                          :noexport:
+ 
+#+LATEX_ENGINE: xelatex
+#+LATEX_CLASS: extarticle
+#+LATEX_CLASS_OPTIONS: a4paper,12pt
+
+#+LaTeX_HEADER: \usepackage[spanish]{babel}
+#+LaTex_HEADER: \usepackage{placeins}
+#+LaTex_HEADER: \usepackage{graphicx} % Required to insert images
+#+LaTex_HEADER: \usepackage{courier} % Required for the courier font
+#+LaTex_HEADER: \usepackage{fixltx2e}
+#+LaTex_HEADER: \usepackage{amsmath}
+#+LaTex_HEADER: \usepackage{dsfont}
+#+LaTex_HEADER: \usepackage{amssymb}
+#+LaTex_HEADER: \usepackage{hyperref}
+#+LaTex_HEADER: \usepackage{fancyhdr} % Required for custom headers
+#+LaTex_HEADER: \usepackage{lastpage} % Required to determine the last page for the footer
+#+LaTex_HEADER: \usepackage{extramarks} % Required for headers and footers
+#+LaTex_HEADER: % Margins
+#+LaTex_HEADER: \usepackage{geometry}
+#+LaTex_HEADER:  \geometry{
+#+LaTex_HEADER:  a4paper,
+#+LaTex_HEADER:  left=20mm,
+#+LaTex_HEADER:  right=20mm,
+#+LaTex_HEADER:  top=20mm,
+#+LaTex_HEADER:  bottom=20mm,
+#+LaTex_HEADER:  }
+#+LaTex_HEADER: 
+#+LaTex_HEADER: \linespread{1.1} % Line spacing
+#+LaTex_HEADER: 
+#+LaTex_HEADER: % Set up the header and footer
+#+LaTex_HEADER: \pagestyle{fancy}
+#+LaTex_HEADER: \lhead{} % Top left header
+#+LaTex_HEADER: \chead{\hmwkClass\ (\hmwkClassTime): \hmwkTitle} % Top center head
+#+LaTex_HEADER: \rhead{\hmwkInstitucional} % Top right header
+#+LaTex_HEADER: \lfoot{\hmwkClassInstructor} % Bottom left footer
+#+LaTex_HEADER: \cfoot{} % Bottom center footer
+#+LaTex_HEADER: \rfoot{Página\ \thepage\ de\ \protect\pageref{LastPage}} % Bottom right footer
+#+LaTex_HEADER: \renewcommand\headrulewidth{0.4pt} % Size of the header rule
+#+LaTex_HEADER: \renewcommand\footrulewidth{0.4pt} % Size of the footer rule
+#+LaTex_HEADER: 
+#+LaTex_HEADER: \setlength\parindent{0pt} % Removes all indentation from paragraphs
+#+LaTex_HEADER: 
+#+LaTex_HEADER: % Encabezados y pies.
+#+LaTex_HEADER: 
+#+LaTex_HEADER: \newcommand{\hmwkTitle}{Clase 2 - Anexo de notas} % Assignment title
+#+LaTex_HEADER: \newcommand{\hmwkDueDate}{Abril 2020} % Due date
+#+LaTex_HEADER: \newcommand{\hmwkClass}{Hidráulica Agrícola y Saneamiento} % Course/class
+#+LaTex_HEADER: \newcommand{\hmwkClassTime}{1-2020} % Class/lecture time
+#+LaTex_HEADER: \newcommand{\hmwkClassInstructor}{Mónica Fiore - Javier Clavijo} % Teacher/lecturer
+#+LaTex_HEADER: \newcommand{\hmwkInstitucional}{FI-UBA} % Your name
+
+#+LaTex_HEADER:\usepackage{lineno}
+#+LaTex_HEADER:\linenumbers
+
+#+BEGIN_SRC emacs-lisp
+
+(setq org-image-actual-width nil)
+
+#+END_SRC
+
+#+RESULTS:
+
+* Precipitación
+
+Formas de precipitación
+
+- Llovizna
+ - Gotas con diámetros de 0.1 a 0.5 mm
+ - Velocidad de caída baja: 1 m/seg a < 3 m/seg
+- Lluvia
+ - Gotas con diámetros > 0.5 mm
+ - Velocidad de caída media: 3 m/seg a < 7 m/seg
+- Chubasco
+ - Gotas grandes y dispersas con diámetros > 3 mm
+ - Velocidad de caída > 7 m/seg
+- Escarcha
+ - Capa de hielo con bolsas de aire
+- Nieve
+ - Cristales complejos de hielo
+- Granizo
+ - Precipitación con formas irregulares de hielo
+ - Diámetro entre 5 y 125 mm
+
+#+CAPTION: Piedras de Granizo
+[[./img/image27.jpeg]]
+
+La mayor parte de la precipitación cae como lluvia. La tasa de
+precipitación varia geográficamente y temporalmente.
+
+** Precipitación promedio anual
+
+#+CAPTION: Distribución mundial de precipitaciones medias
+[[./img/image28.png]]
+
+La lluvia caída es función principalmente de la latitud. En líneas
+generales, a nivel mundial se pueden establecer las siguientes zonas:
+
+- *Zona polar*: 100-200 mm/año, todas ellas en forma de nieve durante el
+  inicio del invierno.
+- *Zona templada*: 800-900 mm/año, producidas en su mayor parte por los
+  ciclones extratropicales al inicio del invierno y de la primavera;
+  puntualmente precipitaciones tormentosas de verano.*
+- *Zona desértica*: 50-100 mm/año y muy irregulares (tanto en el espacio
+  como en el tiempo).
+- *Zona tropical*: 3000 mm/año, con lluvias diarias que pueden alcanzar los
+  5.000 e incluso 10.000 mm/año.
+
+** Instrumentos para medir precipitación
+
+La cantidad de lluvia que cae se mide con pluviómetros.
+
+Se expresa en mm de agua y equivale al agua que se acumularía en una
+superficie horizontal e impermeable de 1 m2 durante el tiempo que dure
+la precipitación.
+
+#+CAPTION: 1mm de lluvia
+#+ATTR_HTML: :width 400px
+#+ATTR_LATEX: :width 7cm
+[[./img/1mm.png]]
+
+** Pluviómetros
+
+Los más sencillos constan de un embudo colector, habitualmente de 8
+pulgadas, que recoge la lluvia y la vierte en un tubo medidor de sección
+menor (1/10 del diámetro del colector), donde por lectura directa (dos
+veces al día) se conoce la cantidad de lluvia recogida.
+
+#+CAPTION: Pluviómetro Simple.
+#+ATTR_HTML: :width 300px
+#+ATTR_LATEX: :width 6cm
+[[./img/image29.jpeg]]
+
+** Pluviógrafos
+
+Poseen un brocal en la parte superior por donde ingresa el agua hacia
+un depósito en cuyo interior existe un flotador, el cual al recibir una
+cierta cantidad de precipitación (10 mm) envía el agua a un colector que
+esta en la parte inferior del instrumento.
+
+Este ciclo se va repitiendo hasta que el periodo de precipitación
+termina. El flotador tiene incorporado un pequeño brazo con un plumón de
+tinta, el cual, grafica las variaciones de la precipitación en un
+diagrama que está adherido a un sistema de relojería.
+
+#+CAPTION: Pluviógrafo, con detalle de su mecanismo interno.
+#+ATTR_HTML: :width 400px
+#+ATTR_LATEX: :width 8cm
+[[./img/image30.jpeg]]
+
+** Medición espacial de las precipitaciones
+
+En general, las precipitaciones que caen en un sitio dado difieren de
+las que caen en los alrededores, aunque sean sitios cercanos.
+
+Los aparatos antes descriptos registran la lluvia puntual, es decir, la
+que se produce en el punto en que está instalado el aparato.
+
+Para el diseño de obras es necesario conocer la lluvia media en una
+zona dada, como puede ser una cuenca.
+
+Existe una diversidad de metodologías utilizadas en hidrología para la
+estimación de las precipitaciones medias para una zona geográfica.
+
+*** Método de la Media Aritmética
+
+Consiste en realizar la suma del valor registrado en cada una de las
+estaciones pluviométricas y/o pluviográficas ubicadas dentro del área de
+estudio y dividirla por el número total de estaciones.
+
+Se trata de un método de resolución rápida y que tiene un grado de
+precisión muy relativo, el cual depende: del número de estaciones, de la
+ubicación de las mismas y de la distribución de la lluvia estudiada. El
+valor buscado se calcula haciendo el promedio.
+
+$$P_m=\frac{\sum_{\forall i} P_i}{n}$$
+
+$P_m:$, Precipitación media del área en estudio\\
+$P_i:$, Precipitación de la estación i en el tiempo j (mm).\\
+$n:$, Número de estaciones.
+
+*** Método de los Polígonos de Thiessen
+
+Este método asigna a cada estación una superficie, la cual es obtenida
+representando las estaciones en un plano, las que luego se unen a través
+de líneas rectas.
+
+Tiene en cuenta la no uniformidad en la distribución de los
+pluviómetros mediante un factor de ponderación para cada uno de ellos.
+
+A estas rectas posteriormente se les trazan sus mediatrices hasta que
+se interceptan entre sí.
+
+Con los límites del área en estudio y los límites que definen las
+mediatrices, se obtiene la superficie de influencia asignada para cada
+estación.
+
+$$P_{mj} = \sum_{\forall\,i}\frac{P_{ij}\,S_i}{\sum_{\forall\,i}S_i}$$
+
+$P_{mj}:$ Precipitación media areal, en el tiempo j.\\
+$P_{ij}:$ Precipitación de la estación i, en el tiempo j.\\
+$S_i:$ Superficie de la influencia de la estación i.
+
+#+CAPTION: Polígonos de Thiessen.
+#+ATTR_HTML: :width 400px
+#+ATTR_LATEX: :width 8cm
+[[./img/31.png]]
+
+#+CAPTION: Superficies de influencia de Thiessen.
+#+ATTR_HTML: :width 400px
+#+ATTR_LATEX: :width 8cm
+[[./img/image32.png]]
+
+*** Método de las Curvas Isoyetas
+
+Las isoyetas son curvas que unen puntos de igual precipitación
+
+#+CAPTION:Isoyetas correspondientes a la precipitación media anual de la Provincia de Misiones
+#+ATTR_HTML: :width 400px
+#+ATTR_LATEX: :width 8cm
+[[./img/image34.png]]
+
+Una vez que las isoyetas se han trazado sobre el plano de la cuenca se
+procede a determinar la superficie encerrada entre curvas.
+
+El área comprendida entre dos isoyetas se calcula mediante el empleo de
+papel milimétrico, planímetro o de sistemas de información geográfica.
+
+$$P_{mj} = \sum_{\forall\,i}\frac{P_{ij}\,S_i}{\sum_{\forall\,i}S_i}$$
+
+#+CAPTION:Isoyetas para el calculo de precipitación media
+#+ATTR_HTML: :width 200px
+#+ATTR_LATEX: :width 8cm
+[[./img/image35.jpeg]]
+
+** Red Pluviométrica
+
+La densidad de la red pluviométrica queda determinada según los usos
+para los cuales se va a utilizar la información.
+
+La Organización Meteorológica Mundial recomienda para propósitos
+hidrometeorológicos las siguientes densidades:
+
+| Regiones de llanura en zonas         | 1 estación cada 600 a 900 km2    |
+| tropicales mediterráneas o templadas |                                  |
+| Regiones montañosas en zonas         | 1 estación cada 100 o 250 km2    |
+| tropicales mediterráneas o templadas |                                  |
+| Regiones montañosas pequeñas         | 1 estación cada 25 km2           |
+| con precipitación irregular          |                                  |
+| Zonas áridas y polares               | 1 estación cada 1500 a 10000 km2 |
+
+** Variaciones Geográficas
+
+En general la precipitación es mayor en las zonas ecuatoriales y va
+disminuyendo al aumentar la latitud.
+
+Sin embargo la orientación de las isoyetas indican que su distribución
+geográfica depende de factores más relevantes que la simple distancia al
+Ecuador.
+
+La fuente principal de humedad para la precipitación es la evaporación
+de las grandes masas de agua, esto hace que la precipitación sea mayor
+cerca de las costas.
+
+** Estudio de una tormenta
+
+Una tormenta se define como el conjunto de lluvias que obedece a una
+misma perturbación meteorológica.
+
+Puede durar desde unos pocos minutos hasta varias horas y aún días;
+pueden abarcar extensiones de terrenos muy variables, desde pequeñas
+zonas hasta vastas regiones.
+
+Es necesario determinar las variaciones de las tormenta en el tiempo. De
+estas variaciones dependerá el diseño de las obras hidráulicas.
+
+Estas variaciones se estudian mediante el hietograma y la curva masa.
+
+El hietograma representa la intensidad de la lluvia en función del
+tiempo. La curva masa representa la lluvia acumulada en función del
+tiempo.
+
+- *Intensidad:* Es la cantidad de agua caída por unidad de tiempo. Lo que
+   interesa particularmente de cada tormenta es la intensidad máxima. La
+   intensidad se expresa : $Im=P/T$
+   donde :
+   $$Im = \text{Intensidad máxima} (mm/h)$$
+   $$T = \text{Tiempo en horas}$$
+   $$P = \text{Precipitación} (mm)$$
+- *Duración:* Es el tiempo que transcurre entre el comienzo y el fin de la
+  tormenta, tomado en minutos u horas, dentro del total que dura la
+  tormenta. Tiene mucha importancia en la determinación de las
+  intensidades máximas.
+- *Frecuencia:* Es el número de veces que se repite una tormenta de
+  características de intensidad y duración definidas en un período de
+  tiempo más o menos largo, tomado generalmente en años.
+
+El análisis de las tormentas está relacionado con los cálculos o
+estudios previos al diseño de obras de ingeniería hidráulica como
+
+- Drenajes
+- Q máximos para el diseño de aliviaderos de represas
+- Diseño del galibo de un puente
+- Conservación de suelos
+- Diámetro de alcantarillas
+
+Lo ideal será diseñar una obra para tormentas extremas,
+
+es decir de máxima intensidad y duración. Esto implica obras de grandes
+dimensiones y costos elevados.
+
+En la práctica no se busca una protección absoluta, sino un diseño para
+una tormenta de características bien definidas o de una determinada
+probabilidad de ocurrencia.

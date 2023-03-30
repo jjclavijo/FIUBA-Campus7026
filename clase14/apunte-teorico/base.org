@@ -1,0 +1,179 @@
+*Hidráulica Agrícola y Saneamiento*
+
+*Aguas Residuales*
+
+*Palabras claves:* aguas residuales, aguas negras, contaminantes, planta
+de tratamiento, *DBO,*
+
+*Las aguas residuales son aquéllas que proceden del uso doméstico o
+industrial que no pueden ser vertidas a ríos o lagos debido a los
+problemas de salud, económicos o estéticos que podrían producir. Las
+aguas residuales comúnmente contienen sustancias orgánicas o inorgánicas
+potencialmente peligrosas, así como microorganismos patógenos. El
+tratamiento completo de las aguas residuales requiere tratamientos
+químicos y microbiológicos para eliminar o neutralizar los
+contaminantes.*
+
+*Las plantas de tratamiento de aguas residuales generalmente tratan
+tanto aguas de origen doméstico como las derivadas de la industria. Las
+aguas residuales domésticas son aquéllas resultantes de la limpieza y el
+aseo. Las aguas residuales de origen industrial incluyen las producidas
+por diferentes industrias como la petroquímica, alimenticias, plásticas,
+farmacéuticas, metalúrgicas, etc. No todas contaminan de la misma forma
+ni con los mismos contaminantes.*
+
+*Las aguas residuales industriales pueden contener sustancias tóxicas
+que deben ser consideradas antes de ser tratadas como aguas residuales.
+El pretratamiento generalmente consiste en un proceso mecánico con el
+que se eliminan los residuos que pueden dañar el equipamiento de las
+plantas de tratamiento. Sin embargo, algunas aguas deben ser previamente
+tratadas biológicamente para eliminar sustancias tóxicas como el cianuro
+y los metales pesados. Estas sustancias se pueden convertir en otras
+menos tóxicas a través de la acción de microorganismos específicos
+capaces de neutralizar, oxidar, precipitar o volatilizar los residuos
+tóxicos o infecciosos.*
+
+*El objetivo del tratamiento de las aguas residuales es reducir la
+cantidad de materiales tanto orgánicos como inorgánicos a un nivel que
+no permita el crecimiento microbiano, así como la eliminación de los
+compuestos tóxicos que pudieran estar presentes.*
+
+*La eficiencia del tratamiento se expresa en términos de reducción de la
+Demanda Biológica de Oxígeno o demanda bioquímica de oxígeno (DBO), es
+un parámetro que mide la cantidad relativa de oxígeno disuelto consumida
+por los microorganismos en la completa oxidación de toda la materia
+orgánica e inorgánica en una muestra de agua. Niveles altos de
+materiales orgánicos o inorgánicos oxidables resultan en una alta DBO.*
+
+*Los valores normales en aguas residuales domésticas están en torno a
+200 unidades de DBO. En el caso de aguas de origen industrial, por
+ejemplo las provenientes de la industria lechera, los valores pueden
+llegar hasta 1500 unidades de DBO. Un tratamiento eficaz reduce los
+niveles a menos de 5 unidades de DBO en el agua resultante del
+tratamiento.*
+
+*Una planta típica de aguas residuales trata tanto las aguas domésticas
+como las industriales. El tratamiento es un proceso que se compone de
+múltiples etapas de carácter físico y biológico independientes.
+Tratamientos primarios, secundarios y, a veces, terciarios, se emplean
+para reducir la contaminación fecal y química del agua. Cada nivel de
+tratamiento emplea tecnologías más complejas y caras.*
+
+*Se le llama /tratamiento primario/ de aguas negras al proceso que se
+usa para eliminar los sólidos de las aguas contaminadas; /secundario/,
+al que se usa para reducir la cantidad de materia orgánica por la acción
+de bacterias (disminuir la demanda bioquímica de oxígeno) y /terciario/,
+al proceso que se usa para eliminar los productos químicos como
+fosfatos, nitratos, plaguicidas, sales, materia orgánica persistente,
+entre otros.*
+
+*El tratamiento primario de las aguas residuales consiste en la
+separación física. El agua que entra en la planta de tratamiento se pasa
+a través de una serie de cribas y filtros que eliminan los objetos de
+gran tamaño. El líquido resultante se deja que se asiente durante unas
+horas para permitir la sedimentación de sólidos*
+
+*Los municipios que solamente proporcionan tratamientos primarios
+generan un agua extremadamente contaminada cuando el efluente es vertido
+en los ríos debido a la gran cantidad de materia orgánica y otros
+nutrientes que permanecen en el agua después del tratamiento primario.
+Por ello la mayoría de las plantas dan un tratamiento secundario
+destinado a reducir la carga orgánica del agua que se devuelve a la
+naturaleza. Los tratamientos secundarios están íntimamente ligados a
+procesos microbiológicos.*
+
+*Los tratamientos secundarios son procesos biológicos, en los que la
+depuración de la materia orgánica biodegradable del agua residual se
+efectúa por la actuación de microorganismos (fundamentalmente
+bacterias), que se mantienen en suspensión en el agua o bien se adhieren
+a un soporte sólido formando una capa de crecimiento*
+
+*Los procesos biológicos pueden ser de dos tipos: aerobios y anaerobios;
+en general, para aguas con alta carga orgánica (industrias
+agroalimentarias, residuos ganaderos, etc.) se emplean sistemas
+anaerobios y para aguas no muy cargadas, sistemas aerobios. En la
+práctica pueden ser empleadas ambas técnicas de forma complementaria.
+Los tratamientos biológicos engloban tanto el proceso de reacciones
+biológicas comentado, como la posterior separación de los fangos por
+decantación. Entre las variables a controlar en estos procesos se
+encuentran la temperatura (en anaerobios esencialmente), oxígeno
+disuelto, el pH, nutrientes, sales y la presencia de inhibidores de las
+reacciones.*
+
+*El tratamiento secundario anaeróbico de las aguas residuales recoge una
+serie de reacciones digestivas y fermentativas llevadas a cabo por
+bacterias y es empleado generalmente para tratar aguas con gran
+contenido en materias orgánicas, tales como aguas provenientes de
+fábricas de fibras, celulosa, alimentos o leche.*
+
+*La descomposición de la materia orgánica por las bacterias se realiza
+en ausencia de aire, utilizándose reactores cerrados; en un proceso
+anaerobio, la mayoría de las sustancias orgánicas se convierte en
+dióxido de carbono y metano. Los productos finales de la digestión
+anaerobia son el biogás (mezcla gaseosa de metano, dióxido de carbono,
+hidrógeno, nitrógeno y sulfuro de hidrógeno), que se puede aprovechar
+para la producción energética, y los lodos de digestión (compuestos no
+biodegradables y biomasa).*
+
+*El tratamiento secundario aeróbico de las aguas residuales elimina las
+partículas coloidales y similares. Puede incluir procesos biológicos y
+químicos. El proceso secundario más habitual es un proceso biológico en
+el que se facilita que bacterias aerobias digieran la materia orgánica
+que llevan las aguas. Este proceso se suele hacer llevando el efluente
+que sale del tratamiento primario a tanques en los que se mezcla con
+agua cargada de lodos activos (microorganismos). Estos tanques tienen
+sistemas de burbujeo o agitación que garantizan condiciones aerobias
+para el crecimiento de los microorganismos. Posteriormente se conduce
+este líquido a tanques cilíndricos, con sección en forma de tronco de
+cono, en los que se realiza la decantación de los lodos. Separados los
+lodos, el agua que sale contiene muchas menos impurezas.*
+
+*El Tratamiento terciario de aguas residuales consisten en procesos
+físicos y químicos especiales con los que se consigue limpiar las aguas
+de los contaminantes: fósforo, nitrógeno, minerales, metales pesados,
+virus, compuestos orgánicos, etc. Es un tipo de tratamiento más caro que
+los anteriores y se usa en casos más especiales: para purificar desechos
+de algunas industrias, especialmente en los países más desarrollados, o
+en las zonas con escasez de agua que necesitan purificarla para volverla
+a usar como potable, en las zonas declaradas sensibles (con peligro de
+eutrofización) en las que los vertidos deben ser bajos en nitrógeno y
+fósforo, etc.*
+
+*Las principales técnicas son:*
+
+*/Arrastre con vapor de agua o aire/: denominados como procesos de
+“stripping”, para la eliminación de Compuestos Orgánicos Volátiles
+(COV), como disolventes clorados (tricloroetileno, clorobenceno,
+dicloroetileno, etc.) o contaminantes gaseosos (amoníaco, etc.).*
+
+*/Procesos de membrana:/ en estos procesos el agua residual pasa a
+través de una membrana porosa, mediante la adición de una fuerza
+impulsora, consiguiendo una separación en función del tamaño de las
+moléculas presentes en el efluyente y del tamaño de poro de la
+membrana.*
+
+*/Intercambio iónico:/ sirve para eliminar sales minerales, las cuales
+son eliminadas del agua residual que atraviesa una resina, por
+intercambio con otros iones (H+ en las resinas de intercambio catiónico
+y OH- en las de intercambio aniónico) contenidos en la misma.*
+
+*A/dsorción con carbón activo:/ para eliminar compuestos orgánicos. Se
+puede utilizar en forma granular (columnas de carbón activado granular:
+GAC) y en polvo (PAC*
+
+*/Procesos de oxidación:/ sirven para eliminar o transformar materia
+orgánica y materia inorgánica oxidable. Los principales procesos de
+oxidación se pueden clasificar en: -procesos convencionales de
+oxidación: se usan como oxidantes ozono, peróxido de hidrógeno,
+permanganato de potasio, hipoclorito de sodio, cloro y oxígeno. -
+Procesos de oxidación avanzada:*
+
+*P/rocesos de reducción:/ para reducir elementos metálicos en alto
+estado de oxidación (reducción de Cr6+ a Cr3+ mediante sulfito de sodio,
+tiosulfato de sodio, sulfato ferroso, etc.).*
+
+*/Precipitación química:/ se basa en la utilización de reacciones
+químicas para la obtención de productos de muy baja solubilidad. La
+especie contaminante a eliminar pasa a formar parte de esa sustancia
+insoluble, que precipita y puede ser separada por sedimentación y
+filtración.*

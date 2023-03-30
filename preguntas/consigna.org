@@ -1,0 +1,85 @@
+* Entre Pares: Preguntas y Respuestas
+
+** Motivación  
+
+En una modalidad de cursada a distancia es fundamental que cada alumno
+sea el guía de su propio aprendizaje. Para esto es indispensable que
+se acostumbren a formular preguntas que expresen aquellos puntos que
+les generan mayores dudas y aquellos en los que ven una posibilidad de
+desarrollar el aprendizaje en mayor profundidad.
+
+#+BEGIN_COMMENT
+En este sentido propusimos la participación en un foro, pero hasta
+ahora la dinámica de participación particular de este curso --tal vez
+motivado por ser pocos alumnos o por la disponibilidad de tiempos de
+cada uno-- fue en desmedro de el buen desarrollo de esta actividad.
+#+END_COMMENT
+
+Para moderar la participación, y permitir que el intercambio se vuelva
+más fluido y fructífero entre todos, generamos esta actividad, donde
+cada uno enviará un documento con sus propias preguntas.
+
+A partir de los envíos de ustedes, los docentes abriremos hilos de
+participación en el foro, dando algunas orientaciones para explorar
+las respuestas, y luego cada alumno deberá participar en forma
+obligatoria en una cantidad determinada de hilos, dando aportes a la
+discusión, independientemente de si se trata del tema de la semana en
+curso o de una clase anterior.
+
+Esperamos que aquellas pocas preguntas que sí han sido formuladas en
+los foros sean repetidas en esta actividad, aunque les sugerimos que
+no las copien "tal cual", sino que traten de revisar el enfoque
+preguntándose: ¿Es esta la mejor pregunta que puedo hacer para generar
+una discusión fluida sobre el tema en cuestión?.
+
+** Consigna
+
+Para cada tema trabajado, elaborar una pregunta que cubra algun
+aspecto del tema, preferentemente sobre aquellos aspectos que el
+alumno identifique como los que le presentan mayor dificultad o le
+generan dudas.
+
+Sugerimos seguir los siguientes pasos:
+
+1- Releer el material escrito e identificar secciones
+   temáticas. (grupos de párrafos que usted ve muy interconectados entre
+   sí).
+
+2- Anote al margen borrador de pregunta para cada sección, utilizar para
+   esto palabras que agrupen conceptos, y enfocarse en las relaciones
+   entre ellos. Por ejemplo, en una sección puede haber anotado
+   "¿salinidad vs sodicidad?". No son preguntas completas sino
+   orientaciones.
+
+3- Elija de entre las anotaciones que se hizo aquella pregunta que, o
+   bien constituya el punto menos claro para usted, o sea el que
+   piensa que puede disparar una discusión más fructífera.
+
+4- Escriba la pregunta definitiva, incluyendo antes de la pregunta
+   unas lineas de contexto explicando por qué se le genera la duda que
+   presenta.
+
+** Orientaciones
+
+Para profundizar en la importancia de las preguntas en el aprendizaje,
+pueden hacer una búsqueda en la web sobre los términos "buenas
+preguntas", "preguntas para aprendizaje", "preguntas abiertas",
+"autoevaluación", etc.
+
+Van a encontrar muchos recursos pensados para educación secundaria o
+planteados desde el punto de vista del docente, pero creemos que es
+bueno hojear el material, porque les va a ayudar a tomar otra
+perspectiva sobre su propio aprendizaje.
+
+Algunos recursos de ejemplo:
+
+- https://ined21.com/las-buenas-preguntas-para-aprender/
+  
+- https://es.wikihow.com/hacer-preguntas-abiertas
+ 
+- http://www.jblasgarcia.com/p/veo-con-cierta-preocupacion-que-veces.html
+   
+Destacamos la importancia de que apliquen estas técnicas a evaluar
+ustedes su propio aprendizaje. Es muy importante desarrollar este
+aspecto especialmente para desarrollar un curso en modalidad a
+distancia como el que nos vemos forzados a desarrollar.

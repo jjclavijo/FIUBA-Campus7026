@@ -1,0 +1,245 @@
+* Setting                                                          :noexport:
+ 
+#+LATEX_ENGINE: xelatex
+#+LATEX_CLASS: extarticle
+#+LATEX_CLASS_OPTIONS: a4paper,12pt
+
+#+LaTeX_HEADER: \usepackage[spanish]{babel}
+#+LaTex_HEADER: \usepackage{placeins}
+#+LaTex_HEADER: \usepackage{graphicx} % Required to insert images
+#+LaTex_HEADER: \usepackage{courier} % Required for the courier font
+#+LaTex_HEADER: \usepackage{fixltx2e}
+#+LaTex_HEADER: \usepackage{amsmath}
+#+LaTex_HEADER: \usepackage{dsfont}
+#+LaTex_HEADER: \usepackage{amssymb}
+#+LaTex_HEADER: \usepackage{hyperref}
+#+LaTex_HEADER: \usepackage{fancyhdr} % Required for custom headers
+#+LaTex_HEADER: \usepackage{lastpage} % Required to determine the last page for the footer
+#+LaTex_HEADER: \usepackage{extramarks} % Required for headers and footers
+#+LaTex_HEADER: % Margins
+#+LaTex_HEADER: \usepackage{geometry}
+#+LaTex_HEADER:  \geometry{
+#+LaTex_HEADER:  a4paper,
+#+LaTex_HEADER:  left=20mm,
+#+LaTex_HEADER:  right=20mm,
+#+LaTex_HEADER:  top=20mm,
+#+LaTex_HEADER:  bottom=20mm,
+#+LaTex_HEADER:  }
+#+LaTex_HEADER: 
+#+LaTex_HEADER: \linespread{1.1} % Line spacing
+#+LaTex_HEADER: 
+#+LaTex_HEADER: % Set up the header and footer
+#+LaTex_HEADER: \pagestyle{fancy}
+#+LaTex_HEADER: \lhead{} % Top left header
+#+LaTex_HEADER: \chead{\hmwkClass\ (\hmwkClassTime): \hmwkTitle} % Top center head
+#+LaTex_HEADER: \rhead{\hmwkInstitucional} % Top right header
+#+LaTex_HEADER: \lfoot{\hmwkClassInstructor} % Bottom left footer
+#+LaTex_HEADER: \cfoot{} % Bottom center footer
+#+LaTex_HEADER: \rfoot{Página\ \thepage\ de\ \protect\pageref{LastPage}} % Bottom right footer
+#+LaTex_HEADER: \renewcommand\headrulewidth{0.4pt} % Size of the header rule
+#+LaTex_HEADER: \renewcommand\footrulewidth{0.4pt} % Size of the footer rule
+#+LaTex_HEADER: 
+#+LaTex_HEADER: \setlength\parindent{0pt} % Removes all indentation from paragraphs
+#+LaTex_HEADER: 
+#+LaTex_HEADER: % Encabezados y pies.
+#+LaTex_HEADER: 
+#+LaTex_HEADER: \newcommand{\hmwkTitle}{Clase 1 - Teoría} % Assignment title
+#+LaTex_HEADER: \newcommand{\hmwkDueDate}{Abril 2020} % Due date
+#+LaTex_HEADER: \newcommand{\hmwkClass}{Hidráulica Agrícola y Saneamiento} % Course/class
+#+LaTex_HEADER: \newcommand{\hmwkClassTime}{1-2020} % Class/lecture time
+#+LaTex_HEADER: \newcommand{\hmwkClassInstructor}{Mónica Fiore - Javier Clavijo} % Teacher/lecturer
+#+LaTex_HEADER: \newcommand{\hmwkInstitucional}{FI-UBA} % Your name
+
+#+LaTex_HEADER:\usepackage{lineno}
+#+LaTex_HEADER:\linenumbers
+
+#+BEGIN_SRC emacs-lisp
+
+(setq org-image-actual-width nil)
+
+#+END_SRC
+
+#+RESULTS:
+
+* Hidrología y las propiedades del agua.
+
+La *Hidrología* puede definirse como la ciencia que estudia el agua, o
+como la encargada de estudiar el *ciclo hidrológico*, es decir, la
+circulación ininterrumpida del agua entre la Tierra y la atmósfera.
+
+El agua cubre más del 70% de la superficie del planeta y a las
+temperaturas y presiones típicas de la Tierra, la podemos encontrarla en
+los 3 estados (sólido, líquido o gaseoso). La cultura del agua ha estado
+presente a lo largo del tiempo en todas y cada una de las antiguas
+civilizaciones, dependiendo sus desarrollos en gran parte de la
+disponibilidad y calidad del agua.
+
+Hasta el siglo XVIII se creía que el agua era un elemento más. Fue el
+químico Inglés Cavendish (1731 -- 1810) quien sintetizó agua a partir de
+una combinación de aire e hidrógeno.
+
+*La molécula de agua está* compuesta *por* dos átomos de hidrógeno y uno
+de oxígeno unidos *por* un enlace covalente. Es decir, los dos átomos de
+hidrógeno y el de oxígeno se unen compartiendo electrones. La molécula
+de agua es angular; el ángulo H-O-H es de 104,5° y la distancia H-O es
+de 0.957 Å.
+
+El agua es un compuesto que presenta gran polaridad eléctrica que le
+confiere propiedades anormales con respecto a lo que sería una molécula
+similar a la del agua. Por ejemplo, hace que tenga una constante
+dieléctrica (habilidad para resistir un campo eléctrico) elevada y una
+gran capacidad solvente.
+
+Debido a su carácter polar, las moléculas de agua tienden a atraerse
+unas a otras y tienden a ordenarse en grupos o cadenas de hasta 8
+moléculas. Para unir estas moléculas se invierte cierta cantidad de
+energía y esto explica la habilidad del océano de absorber grandes
+cantidades de calor.
+
+Cuando el agua es calentada, aumenta la actividad molecular y se produce
+expansión térmica. Al mismo tiempo, la energía agregada está disponible
+para la formación de cadenas de moléculas cuyo agrupamiento produce
+contracción. La combinación de estos dos procesos resulta en que la
+densidad máxima del agua se produce a los 4°C y no en el punto de fusión
+como es habitual en todas las sustancias. Para temperaturas entre cero y
+4°C el efecto molecular de ordenamiento predomina sobre la expansión
+térmica, mientras que a temperaturas mayores predomina esta última sobre
+la anterior. En el océano el punto de máxima densidad es una temperatura
+menor que el punto de fusión debido a las sales disueltas.
+
+El agua posee propiedades únicas que la hacen esencial para la vida. Es
+un solvente muy poderoso, es un reactivo ideal en muchos procesos
+metabólicos; tiene una alta capacidad calorífica que se pone en juego en
+el ciclo hidrológico y en su uso industrial.
+
+El agua es un líquido inodoro e insípido. A la presión atmosférica (760
+mm de Hg), el punto de fusión de agua pura es 0ºC y el punto de
+ebullición es 100ºC. Cristaliza en sistema hexagonal (nieve o hielo
+según se presente de forma esponjosa o compacta). Se expande al
+congelarse, es decir aumenta de volumen, de ahí que la densidad del
+hielo sea menor que la del agua y por ello el hielo flota en el agua
+líquida.
+
+Como se mencionó anteriormente, podemos encontrarla en los 3 estados, el
+agua líquida constituye una alta fracción del inventario total del agua
+del planeta y esta característica está íntimamente relacionada con el
+desarrollo de la vida en la Tierra.
+
+El agua puesta en la atmósfera mantiene el ciclo (ciclo hidrológico) en
+constante movimiento. Este ciclo es un proceso complejo que incluye la
+precipitación, el escurrimiento, la evapo-transpiración y la
+infiltración. Cuando las masas de humedad entran en contacto con masas
+de aire más frio, se producen la lluvia, el granizo y la nieve. Si la
+precipitación cae sobre un suelo relativamente impermeable, el agua
+correrá por el suelo formando pequeños arroyos o riachuelos. Pero si la
+superficie del suelo es bastante porosa se producirá una mayor
+infiltración. Una vez que el agua comienza a infiltrarse por la
+superficie del suelo, se mueve mucho más lentamente. Si el suelo es muy
+compacto o contiene mucha arcilla, el agua apenas circulará. En este
+caso, puede tardar cientos de años en alcanzar el nivel freático, esa
+zona subterránea de la tierra que está saturada de agua. La humedad que
+llega hasta las aguas subterráneas no queda separada para siempre del
+agua que circula en el ciclo hidrológico terrestre. Aunque con lentitud,
+las aguas subterráneas se mueven hacia el océano. El ciclo continúa, la
+Tierra sigue funcionando con el agua en movimiento perenne, pero su
+cantidad en lo esencial se mantiene constante.
+
+El ciclo hidrológico involucra un proceso de transporte recirculatorio e
+indefinido o permanente, este movimiento permanente del ciclo se debe
+fundamentalmente a dos causas: la primera, el sol que proporciona la
+energía para elevar el agua (evaporación); la segunda, la gravedad
+terrestre, que hace que el agua condensada descienda (precipitación y
+escurrimiento).
+
+Los valores que aparecen en la figura que muestra el ciclo hidrológico
+son promedios de las capacidades de los reservorios y los flujos anuales
+y por lo tanto tienen errores groseros. Por ejemplo, la precipitación y
+la evaporación son difíciles de medir sobre los océanos, entonces estas
+mediciones son estimadas a través de modelos y datos satelitales, pero
+necesitan ser verificados con datos y en el océano esto es muy
+dificultoso. Lo mismo ocurre con las tasas de evaporación en áreas
+extensas de la Tierra.
+
+* ¿Afecta el cambio climático al ciclo hidrológico?
+
+El clima constituye las condiciones del tiempo promedio en un lugar
+específico (desde regional a gran escala). El clima es lo que se espera
+en términos de condiciones atmosféricas como precipitación, temperatura,
+velocidad y dirección del viento etc. El tiempo se refiere a las
+variaciones diarias en estas condiciones.
+
+Se piensa que el cambio climático global que sufre la Tierra puede
+ocasionar un calentamiento que a su vez ocasionaría mayor derretimiento
+de los casquetes polares, un mundo más húmedo (mayor tasa de
+evaporación) y un ciclo hidrológico más rápido (mayores movimientos de
+agua a través de la evaporación, precipitación y corrientes).
+
+El incremento en la temperatura en las superficies continentales puede
+dar lugar a una mayor tasa de evaporación produciendo una menor humedad
+en el suelo y por lo tanto generando condiciones más áridas en ciertas
+áreas continentales. La mayoría de las precipitaciones ocurren en los
+océanos, las áreas terrestres podrían experimentar sequias severas
+durante el periodo de calentamiento global. Los cambios en la
+precipitación y la evaporación darán paso a ajustes a gran escala en
+cuanto a la vegetación y la producción neta primaria global.
+
+* Tiempo de Residencia
+
+El tiempo de residencia de un reservorio dentro del ciclo hidrológico es
+el tiempo medio que una molécula de agua pasará en esa reserva. Es una
+medida de la edad media del agua en ese reservorio, aunque parte del
+agua pase mucho menos tiempo que el promedio y otra parte mucho más
+tiempo. [fn:1]
+
+* Importancia del agua de riego
+
+Los cultivos para poder crecer y desarrollarse necesitan absorber el
+agua del suelo. Para poder aportar agua al suelo reponiendo el nivel de
+humedad hasta que quede disponible para las plantas se debe regar. Regar
+implica que el agua infiltre en la profundidad necesaria en el perfil
+del suelo y esto debe ocurrir en la forma más homogénea posible en toda
+la superficie que se riega.
+
+La disponibilidad y calidad del agua para el riego es fundamental al
+momento de establecer la planificación del riego y el cultivo, así como
+la elección del sistema de riego a ser utilizado y la determinación de
+los componentes de la instalación.
+
+El agua de riego se define como aquella que se aplica mediante
+diferentes sistemas de regadío para lograr el correcto desarrollo del
+cultivo. Su origen puede ser muy diverso ya que puede proceder de ríos,
+lagos, pozos, etc. Un agua de riego tendrá una buena calidad para el
+cultivo cuando garantice un rendimiento óptimo y no produzca efectos
+perjudiciales al suelo. Un análisis químico del agua es fundamental para
+el agricultor, debido a que le permite conocer las características
+químicas para efectuar la correcta preparación de los fertilizantes y
+tratamientos de los cultivos. Es importante tener información
+relacionada con el carácter salino indicando si existen riesgos de
+salinización de suelos o la necesidad de limpieza de estos para evitar
+que la concentración de sales en la zona de raíces sea excesiva, *la
+disponibilidad que tendrán los nutrientes en el suelo* y de los
+nutrientes que el agua de riego aporta.
+
+Existen dos métodos de riego: por superficie (o gravedad) y
+presurizados. En el primero, que se distinguen por surco y por melga, el
+agua avanza sobre la superficie del suelo desde la cabecera hacia el pie
+del surco o melga. En el riego presurizado, el agua es conducida con
+presión por tuberías hasta llegar a la planta y se diferencian en riego
+por goteo, microaspersión y aspersión. No existe un método de riego
+mejor que otro sino un método que se adecua mejor a cada situación
+particular. Todos los métodos de riego en su desempeño tienen en mayor o
+menor medida pérdidas de agua. Si bien los riegos por gravedad poseen
+más pérdidas que los presurizados no dejan de ser importantes. En todo
+sistema de riego se debe tratar que las pérdidas sean las menores
+posibles logrando que la mayor cantidad de agua quede disponible para
+las plantas, es decir logrando la mayor eficiencia posible en cada
+método de riego. [fn:2] [fn:3]
+
+* Footnotes                                                        :noexport:
+
+[fn:3] [[https://inta.gob.ar/sites/default/files/inta_aportes_para_el_mejoramiento_del_manejo_de_los_sistemas_de_riego.pdf]]
+
+[fn:2] [[https://inta.gob.ar/sites/default/files/presentacion_prosap_minagro_manfredi-castellini.pdf]]
+
+[fn:1]  [[https://www.ciclohidrologico.com/reservorios_de_agua_y_tiempos_de_residencia]]
+

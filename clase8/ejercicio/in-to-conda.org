@@ -1,0 +1,210 @@
+* Tutorial: Miniconda + Jupyter-Lab + R.
+
+En este tutorial vamos a instalar los programas necesarios para correr
+un notebook de R en jupyter-lab en un entorno anaconda, en sistema
+operativo Windows.
+
+** Que es Anaconda
+
+Al abrir la pagina web de anaconda nos encontramos con que se define como: 
+
+#+BEGIN_EXAMPLE
+With over 20 million users worldwide, the open-source Individual
+Edition (Distribution) is the easiest way to perform Python/R data
+science and machine learning on a single machine. Developed for solo
+practitioners, it is the toolkit that equips you to work with
+thousands of open-source packages and libraries.
+#+END_EXAMPLE
+
+Es decir, se define como un "conjunto de herramientas". En otros
+lugares podemos encontrarlo definido como un "entorno virtual", o como 
+un "gestor de paquetes".
+
+Por detras, lo que hace anaconda es crear un directorio en nuestro
+sistema, y gestionar la instalación y ejecución de programas desde ese
+directorio, de forma que conserven:
+
+- Compatibilidad entre si
+- Aislación con respecto al resto del sistema
+- Disponibilidad de los recursos igual que si se instalaran en forma nativa.
+
+Una de las ventajas de Anaconda es que podemos generar la cantidad de
+"carpetas", llamados "entornos", que querramos. Esto lo podemos hacer
+en dos maneras:
+
+- por nombre :: dejando a Anaconda que decida la forma en que los
+                ubica en el sistema.
+
+- por ruta :: especificando en que carpeta se ubicaran los archivos en
+              el sistema. (Ver: [[https://www.wikihow.com/Find-a-File%27s-Path-on-Windows][Este Link]] para ubicar la ruta a una
+              carpeta ya creada en windows).
+
+En ambas formas es muy simple eliminar todo lo instalado con un solo
+comando en caso de querer reconstruir la instalación.
+
+** Instalación de Anaconda (en su version liviana: Miniconda)
+
+El primer paso es instalar anaconda.
+Aqui dejamos el [[https://docs.conda.io/en/latest/miniconda.html][Link A la descarga]].
+
+La instalación es trivial, deben descargar el archivo correspondiente
+a miniconda 3 para windows (en version de 64bit), ejecutarlo y seguir
+los pasos indicados por el programa.
+
+Para los pasos que siguen, al final les dejamos una serie de capturas
+de pantalla ilustrativas.
+
+Una vez realizada la instalación tendremos disponible la consola de
+anaconda en el menu de inicio. En realidad aparecen dos consola:
+
+- Anaconda Powershell Prompt.
+- Anaconda Prompt.
+
+Si bien para el uso cotidiano es indistinto cual usemos, recomendamos
+la primra. Porque en caso de que sigan utilizandolo para otras cosas,
+podrán utilizar las ventajas de PowerShell. Si no estan acostumbrados
+a realizar tareas a traves de la consola, que en windows pueden
+conocer como cmd.exe o simbolo del sistema, les recomiendo que hagan
+una pequeña busqeda en internet para saber que es y para qué puede
+serles util conocerlo. Por ejemplo:
+
+- [[http://dgg.gg?q=que+para+que+powershell&kl=ar-es]]
+- [[http://dgg.gg?q=que+para+que+simbolo+del+sistema&kl=ar-es]]
+
+Todos los comandos para operar con anaconda, instalar programas o
+crear y modificar entornos, tendran la forma siguiente:
+
+#+BEGIN_EXAMPLE
+conda <subcomando> [opciones] objetivo
+#+END_EXAMPLE
+
+Donde las opciones se especifican con el signo "-" o "--", por ejemplo la
+opción "-y" significa "si a todo", y la opcion "--name" significa
+"nombre (de un entorno virtual por ejemplo)"
+
+** Crear y activar un entorno virtual.
+
+Para crear un entorno virtual, podemos hacerlo con el comando (desde
+la consola de anaconda) conda create. Las opciones que utilizaremos
+serán:
+
+1. *-y* para responder si a todo lo que anaconda nos pregunte
+2. *-n nombre_deseado* si queremos crear un entorno por nombre
+3. *-p "C:\mi_carpeta\otra_carpeta"* si queremos crear un entorno por
+   ruta de la carpeta donde se ubicaran los programas.
+
+Por ejemplo, si cree una carpeta Hidraulica en "mis documentos", y
+dentro de esta una carpeta "entornoconda" donde quiero ubicar mi
+entorno, utilizaré:
+
+#+BEGIN_EXAMPLE
+conda create -y -p "C:\Users\Javier\Documnts\Hidraulica\entornoconda"
+#+END_EXAMPLE
+
+Aclaramos que las comillas se utilizan solamente para encerrar las rutas, porque pueden contener espacios y la terminal lo interpretaría como argumentos separados
+
+Una vez creado el entorno, para trabajar en el debemos activarlo con:
+
+#+BEGIN_EXAMPLE
+conda activate ruta_o_nombre
+#+END_EXAMPLE
+
+En nuestro ejemplo:
+
+#+BEGIN_EXAMPLE
+conda activate "C:\Users\Javier\Documnts\Hidraulica\entornoconda"
+#+END_EXAMPLE
+
+** Insalación de programas.
+
+Para instalar un programa en un entorno virtual de anaconda debemos:
+
+1. Abrir la terminal de anaconda.
+2. Activar el entorno deseado.
+3. Ejecutar "conda install programa_a_instalar".
+   
+En algunas ocaciones los programas deseados no se encuentran en los
+repositorios oficiales, y se deben usar otros alternativos, el mas
+seguro y completo es conda-forge ([[http://ddg.gg?q=\conda-forge]]).
+En este caso se agrega la opción "-c conda-forge".
+
+Nosotros instalaremos los programas que siguen, agregamos un link a la
+web de cada uno como referencia. Para instalarlos utilizaremos el comando
+conda install y no es necesario descargar nada previamente:
+
+- r :: base del lenguaje r ([[http://ddg.gg?q=\r-lang]])
+- jupyterlab :: entorno de desarrollo en notebooks de jupyter
+                ([[http://ddg.gg?q=\jupyter-lab]]) 
+- r-irkernel :: kernel para utilizar r en jupyter-lab
+                ([[https://irkernel.github.io/]]) 
+- r-ismev :: Paquete de R para modelar
+             GEV. ([[http://ddg.gg?q=\ismev+site=rdocumentation.org]])
+
+Para realizar la instalación utilizar el siguiente comando en la
+consola (Recuerden tener activo el entorno que crearon antes.)
+
+#+BEGIN_EXAMPLE
+conda install -c conda-forge r jupyterlab r-irkernel r-ismev
+#+END_EXAMPLE
+
+** Correr jupyterlab.
+
+Para trabajar con jupyterlab debemos ejecutarlo desde una terminal de
+anaconda, con el entorno activado y desde la carpeta donde queremos
+trabajar.
+
+Para acceder a la carpeta utilizamos el comando "cd", con la ruta que
+obtenemos como vimos mas arriba.
+
+#+BEGIN_EXAMPLE
+conda activate "C:\Users\Javier\Documnts\Hidraulica\entornoconda"
+cd "C:\Users\Javier\Documnts\Hidraulica\notebooks"
+jupyter-lab
+#+END_EXAMPLE
+
+Una vez hecho esto, se nos abrirá una ventana de navegador donde
+podremos abrir los notebooks que tengamos en la carpeta o crear uno
+nuevo. Además de muchas otras opciones que puden explorar a gusto.
+Noten que para crear un nuevo notebook, además de R tenemos la opcion
+de crear un notebook de Python. Esto es simplemente porque jupyter
+está escrito en python y funciona por defecto con ese lenguaje.
+
+Aqui pueden ver los comandos básicos dentro de un notebook:
+[[http://ddg.gg?q=jupyter+cheatsheet&ia=cheatsheet&iax=1]]
+Cada celda puede ejecutarse independientemente, y la salida queda
+grabada. Les recomendamos igualmente comenzar por revisar el notebook
+que les dejamos de ejemplo del ejercicio. 
+
+** Capturas de pantalla
+
+
+#+CAPTION: Creación del entorno virtual
+#+ATTR_HTML: :width 600
+[[./media/01-create.png]]
+
+#+CAPTION: Instalación de programas en el entorno
+#+ATTR_HTML: :width 600
+[[./media/02-install.png]]
+
+#+CAPTION: Finalizada la instalacion
+#+ATTR_HTML: :width 600
+[[./media/03-install.png]]
+
+#+CAPTION: Correr Jupyter Lab
+#+ATTR_HTML: :width 600
+[[./media/04-jupyter.png]]
+
+#+CAPTION: Jupyter Lab en ejecución
+#+ATTR_HTML: :width 600
+[[./media/05-jupyter.png]]
+
+** Extras
+
+Extra 1: Algunos comandos básicos en r: 
+[[http://ddg.gg?q=r+cheatsheet&ia=cheatsheet&iax=1]]
+
+Extra 2: ¿Por que los links en este tutorial comienzan en su mayoria con ddg.gg?
+[[https://ddg.gg/?q=duckduckgo+funciones+utiles&kl=ar-es&ia=web]]
+[[https://ddg.gg/?q=\filtro+burbuja+site:wikipedia.org&kl=ar-es&ia=web]]
+
+

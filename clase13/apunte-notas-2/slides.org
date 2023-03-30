@@ -1,0 +1,485 @@
+* Setting                                                          :noexport:
+ 
+#+LATEX_ENGINE: xelatex
+#+LATEX_CLASS: extarticle
+#+LATEX_CLASS_OPTIONS: a4paper,12pt
+
+#+LaTeX_HEADER: \usepackage[spanish]{babel}
+#+LaTex_HEADER: \usepackage{placeins}
+#+LaTex_HEADER: \usepackage{graphicx} % Required to insert images
+#+LaTex_HEADER: \usepackage{courier} % Required for the courier font
+#+LaTex_HEADER: \usepackage{fixltx2e}
+#+LaTex_HEADER: \usepackage{amsmath}
+#+LaTex_HEADER: \usepackage{dsfont}
+#+LaTex_HEADER: \usepackage{amssymb}
+#+LaTex_HEADER: \usepackage{hyperref}
+#+LaTex_HEADER: \usepackage{fancyhdr} % Required for custom headers
+#+LaTex_HEADER: \usepackage{lastpage} % Required to determine the last page for the footer
+#+LaTex_HEADER: \usepackage{extramarks} % Required for headers and footers
+#+LaTex_HEADER: % Margins
+#+LaTex_HEADER: \usepackage{geometry}
+#+LaTex_HEADER:  \geometry{
+#+LaTex_HEADER:  a4paper,
+#+LaTex_HEADER:  left=20mm,
+#+LaTex_HEADER:  right=20mm,
+#+LaTex_HEADER:  top=20mm,
+#+LaTex_HEADER:  bottom=20mm,
+#+LaTex_HEADER:  }
+#+LaTex_HEADER: 
+#+LaTex_HEADER: \linespread{1.1} % Line spacing
+#+LaTex_HEADER: 
+#+LaTex_HEADER: % Set up the header and footer
+#+LaTex_HEADER: \pagestyle{fancy}
+#+LaTex_HEADER: \lhead{} % Top left header
+#+LaTex_HEADER: \chead{\hmwkClass\ (\hmwkClassTime): \hmwkTitle} % Top center head
+#+LaTex_HEADER: \rhead{\hmwkInstitucional} % Top right header
+#+LaTex_HEADER: \lfoot{\hmwkClassInstructor} % Bottom left footer
+#+LaTex_HEADER: \cfoot{} % Bottom center footer
+#+LaTex_HEADER: \rfoot{Página\ \thepage\ de\ \protect\pageref{LastPage}} % Bottom right footer
+#+LaTex_HEADER: \renewcommand\headrulewidth{0.4pt} % Size of the header rule
+#+LaTex_HEADER: \renewcommand\footrulewidth{0.4pt} % Size of the footer rule
+#+LaTex_HEADER: 
+#+LaTex_HEADER: \setlength\parindent{0pt} % Removes all indentation from paragraphs
+#+LaTex_HEADER: 
+#+LaTex_HEADER: % Encabezados y pies.
+#+LaTex_HEADER: 
+#+LaTex_HEADER: \newcommand{\hmwkTitle}{Clase: Provisión de agua potable} % Assignment title
+#+LaTex_HEADER: \newcommand{\hmwkDueDate}{Julio 2020} % Due date
+#+LaTex_HEADER: \newcommand{\hmwkClass}{Hidráulica Agrícola y Saneamiento} % Course/class
+#+LaTex_HEADER: \newcommand{\hmwkClassTime}{1-2020} % Class/lecture time
+#+LaTex_HEADER: \newcommand{\hmwkClassInstructor}{Mónica Fiore - Javier Clavijo} % Teacher/lecturer
+#+LaTex_HEADER: \newcommand{\hmwkInstitucional}{FI-UBA} % Your name
+
+#+LaTex_HEADER:\usepackage{lineno}
+#+LaTex_HEADER:\linenumbers
+
+#+BEGIN_SRC emacs-lisp
+
+(setq org-image-actual-width nil)
+
+#+END_SRC
+
+#+RESULTS:
+
+* Provisión de Agua Potable
+
+** Sistemas de abastecimiento de agua potable.
+
+De acuerdo a la forma en que se encuentra en la naturaleza, las distintas fuentes de provisión de agua son:
+                                                
+- Aguas Meteóricas
+- Aguas Superficiales
+- Aguas Sub-Alveas 
+- Aguas Subterráneas
+
+El agua proveniente de estas fuentes puede ser naturalmente potable ,
+y otras necesitan un tratamiento previo a su entrega al consumo.
+
+Para poder realizar un correcto abastecimiento de agua potable debemos
+contar con las fuentes que deben cumplir con:
+                     
+- capacidad de suministro 
+- calidad de agua
+
+La selección de la fuente de provisión debe balancear 2 aspectos
+fundamentales:
+                            
+- el sanitario
+- el económico
+
+Se debe elegir una fuente que asegure provisión de agua en cantidad y
+en calidad pero que al mismo tiempo permita la máxima economía de
+construcción y posterior operación y mantenimiento del servicio.
+
+** Aguas Meteóricas
+
+::: minipages 0.32 0.32
+#+CAPTION:
+[[./media/image2.jpeg]]
+#+CAPTION:
+[[./media/image3.jpeg]]
+#+CAPTION:
+[[./media/image1.jpeg]]
+--\caption{Agua de precipitación es una fuente de agua potable}
+::::::
+
+- Aguas Meteóricas :: Tienen sólidos disueltos en baja cantidad, muy baja turbidez. Por su composición química se consideran de baja alcalinidad y dureza y alto contenido en CO2
+
+Aguas meteóricas sufren un fraccionamiento triple:
+
+- evaporación
+- escurrimiento
+- infiltración
+
+La proporción de este fraccionamiento varia en forma considerable según la temperatura, la humedad del aire y el viento.
+
+Ej.: una lluvia corta en verano que cae sobre un terreno compacto
+puede sufrir mas de un 90% de evaporación. Sobre un suelo rocoso y si
+vegetación y fuerte pendiente el ecurrimiento puede alcanzar el
+95%. Si el suelo está constituido por arena fina, la infiltración es
+importante.
+
+::: minipages 0.45 0.45
+#+CAPTION: 
+[[./media/image4.png]]
+#+CAPTION: 
+[[./media/image5.png]]
+#+CAPTION: 
+[[./media/image6.png]]
+--\caption{Captación de agua de lluvia}
+::::::
+
+Estructuras diseñadas para la recolección directa del agua de lluvia
+compuesta básicamente de dos secciones: 
+
+- El techo, que funciona como área de contribución y debajo de éste se
+  encuentra el tanque o cisterna de almacenamiento.
+- Cuando el área de captación de los techos es insuficiente se
+  selecciona una superﬁcie o ladera que requiera las mínimas
+  actividades de movimiento de tierras (relleno, nivelación y
+  compactación), posteriormente se recubre toda la superﬁcie con algún
+  material impermeable como: plástico de invernadero, concreto, etc.
+
+** Aguas Superficiales
+
+Aguas provenientes de los ríos, arroyos, lagos, etc. En nuestro país
+las aguas superficiales proveen a más del 70% de la población.
+
+En general son aguas turbias y con color. Por otra parte, por ser
+superficiales están expuestas a contaminarse. Luego, es necesario
+realizarles tratamientos de potabilizaciòn, incluido desinfección
+previa a su entrega al consumo
+
+::: minipages 0.45 0.45
+#+CAPTION:
+[[./media/image7.jpeg]]
+#+CAPTION:
+[[./media/image8.jpeg]]
+--\caption{Aguas superficiales}
+::::::
+
+** Aguas Sub-Alveas
+
+Son las aguas que corren por el subálveo del río. Se captan en general
+mediante pozos filtrantes o galerías filtrantes. Son en general aguas
+de muy buena calidad ya que han sufrido un proceso natural de
+filtración. El costo de las obras para utilización de esta agua es
+algo elevado.
+
+#+CAPTION: Esquema, Aguas Sub-Alveas, que pueden aprovecharse para consumo.
+[[./media/image9.jpeg]]
+
+Fuentes para consultar:
+- http://www.ub.edu/geocrit/sn/sn-374.htm :: Sobre explotación del agua sub-Alvea
+- https://www.bgs.ac.uk/research/groundwater/catchment/hyporheic_zone/home.html :: para interesarse por otros procesos que ocurren debajo del lecho del Río.
+
+** Aguas Subterráneas
+
+Son aguas que se encuentran en el subsuelo. Podemos distinguir 3 tipos de fuentes subterráneas distintas según la posición del agua en el suelo:
+                                   
+- Aguas subterráneas profundas
+- Aguas freáticas o de primera napa 
+- Manantiales
+ 
+::: minipages 0.45 0.45
+#+CAPTION: El agua en el subsuelo se acumula en una primera capa llamada freática
+[[./media/image10.png]]
+#+CAPTION: Los manantiales se catalogan como una fuente de agua subterranea.
+[[./media/image11.jpeg]]
+#+CAPTION: El agua subterranea puede estar confinada a distintos niveles de profundidad.
+[[./media/image12.png]]
+::::::
+
+Fuentes para consulta:
+- Groundwater as a Geologic Agent (Toth, 1999) :: Se adjunta PDF en el campus. Describe la importancia de la dinámica del agua subterranea como proceso.
+- http://www.unsam.edu.ar/tss/un-mapa-del-agua-subterranea/ :: Describe el estudio del agua del subsuelo con georradar.
+- https://www.unrc.edu.ar/unrc/comunicacion/editorial/repositorio/978-987-688-091-6.pdf :: Es un trabajo extenso, pero se puede hojear como ejemplo. Describe el agua subterranea en la provincia de córdoba.
+
+*** Aguas Subterráneas profundas
+ 
+Se captan mediante pozos y dan por lo general agua potable. Han sido
+utilizadas exitosamente en muchas zonas del país.
+
+Carecen habitualmente de turbidez y color, pero en algunos casos de
+aguas ferruginosas subterráneas se colorean a poco de extraerlas por
+la oxidación de compuestos ferrosos contenidos en la mismas y
+requieren un tratamiento corrector previo al consumo.
+
+También requieren tratamiento aquéllas aguas con dureza muy
+elevada. En otros casos pueden tener exceso de sólidos disueltos,
+cloruros, sulfatos, etc, o bien algunos elementos tóxicos como el
+arsénico, el vanadio o el flúor en alta concentración resultando por
+esta causa inadecuada para su consumo.
+
+*** Aguas freáticas o de primera napa
+
+Es la primer capa de agua subterránea que se encuentra al realizar una
+perforación y la más susceptible a la contaminación antrópica.
+ 
+Pueden utilizarse cuando constituyen la única fuente económicamente
+utilizable. Su nivel oscila bastante y está directamente influenciado
+por el régimen de lluvias.
+
+Su calidad es variable y aunque física y químicamente sea aceptable
+existe siempre el peligro de contaminación microbiológica. De
+utilizarse deberá extraerse mediante pozos excavados o perforados a
+los que se deberá proteger adecuadamente contra la contaminación
+superficial, manteniendo estricto control bacteriológico del agua de
+consumo.
+
+#+CAPTION: La napa freática no está aislada de la contaminación desde la superficie.
+[[./media/image15.jpeg]]
+
+*** Manantiales: 
+ 
+Pueden constituir una solución para el caso de pequeñas localidades
+rurales, siempre que tengan caudal suficiente y calidad adecuada. La
+captación debe estar adecuadamente protegida.
+
+Un manantial es un flujo natural de agua que surge del interior de la
+tierra desde un solo punto o por un área pequeña.
+
+El caudal de los manantiales depende de la estación del año y del
+volumen de las precipitaciones. Los manantiales de filtración se secan
+a menudo en periodos secos o de escasas precipitaciones; sin embargo,
+otros tienen un caudal copioso y constante que proporciona un
+importante suministro de agua local.
+
+** Clasificación de los sistemas de abastecimiento.
+    
+Desde el punto de vista del origen del agua que consumimos, así como
+la población que la utiliza, los sistemas de abastecimiento de agua
+para el consumo humano pueden ser clasificados en:
+
+- Sistemas Individuales
+  - aguas subterráneas (pozos y manantiales)
+  - aguas superficiales (ríos, arroyos, lagos)
+  - aguas de lluvia (cisternas o aljibes)
+
+- Sistemas Públicos        
+  - acueductos 
+
+::: minipages 0.32 0.32
+#+CAPTION:
+[[./media/image18.jpeg]]
+#+CAPTION: 
+[[./media/image17.jpeg]]
+#+CAPTION: 
+[[./media/image19.jpeg]]
+::::::
+
+** Clasificación de pozos de agua
+
+Según sea el origen del agua que captan y el procedimiento seguido para su construcción, pueden clasificarse en:
+
+- Rasos, freáticos o someros (excavados)
+- Profundos (perforados)
+
+
+** Pozos Perforados
+    
+La perforacion puede realizarse por dos métodos:
+                                          
+- Percusión $\rightarrow$ Grava, canto rodado
+- Rotativo $\rightarrow$ Rocas compactas
+    
+La elección del método dependerá de:
+
+- Diámetro del pozo 
+- Profundidad
+- Características Geológicas del suelo
+
+Para el diseño de la captación de  Pozos Perforados se Debe cumplir:
+
+- Protección de fuentes de contaminación
+- Revestimiento o cañería de entubación
+- Selección del diámetro del pozo
+
+| Caudal de Bombeo | Diámetro entubamiento |
+| (l/seg)          | (mm)                  |
+|------------------+-----------------------|
+| Hasta 10         | 150                   |
+| Hasta 15         | 200                   |
+| Hasta 25         | 250                   |
+| Hasta 40         | 300                   |
+
+** Sistemas Públicos  -  Acueductos 
+
+::: minipagesnf 0.32 0.32
+#+CAPTION:
+[[./media/image21.jpeg]]
+#+CAPTION:
+[[./media/image20.jpeg]]
+#+CAPTION: 
+[[./media/image22.jpeg]]
+::::::
+
+Es un sistema o conjunto de sistemas de irrigación que permite
+transportar agua en forma de flujo continuo desde un lugar en que es
+accesible en la naturaleza, hasta un punto de consumo distante.
+
+El primer acueducto de Roma fue el Aqua Appia, construido hacia 312
+a.C., medía unos 16 km de largo y la mayor parte de su recorrido era
+subterráneo.
+
+El agua era llevada a Roma por una red de 420 km de canales y tuberías
+desde manantiales, lagos y ríos situados en las montañas de los
+alrededores; el suministro era continuo, pues no había manera de
+regularlo. Si el acueducto no podía rodear un valle, por lo general se
+construía a través de éste mediante una serie de arcos altos.
+
+
+- Fuente de abastecimiento :: Cuerpo de agua de que se sirve un acueducto o sistema individual para el suministro a una comunidad u otros usos, mediante órganos de captación.
+::: minipagesnf 0.45 0.45
+#+CAPTION:
+[[./media/image23.jpeg]]
+::::::
+- Conductora :: Tubería cuya función es hacer posible la circulación del agua de un acueducto. En algunos países se le denomina tubería maestra.
+::: minipagesnf 0.45 0.45
+#+CAPTION: 
+[[./media/image24.jpeg]]
+::::::
+- Planta de tratamiento :: Se instala con el propósito de mejorar la calidad del agua desde el punto de vista sanitario, estético y económico, de manera que sea apta para el uso previsto.
+::: minipagesnf 0.45 0.45
+#+CAPTION:
+[[./media/image25.jpeg]]
+::::::
+
+*** Referencias sobre Acueductos, su historia y su importancia:
+
+- http://www.politicaspublicas.uncu.edu.ar/novedades/index/mas-alla-del-vino-mendoza-y-una-apuesta-de-645-m-en-otro-acueducto-ganadero10
+- http://sedici.unlp.edu.ar/handle/10915/47642
+- http://sedici.unlp.edu.ar/handle/10915/17760
+
+** Componentes de un Sistema de Abastecimiento
+
+Los componentes de un sistema de abastecimiento de agua guardan
+relación con los procesos de potabilización necesarios a realizar al
+agua antes de la entrega al consumo.
+
+Las aguas provenientes de fuentes subterráneas profundas y de galerías
+filtrantes no necesitan ningún procedimiento de purificación, siempre
+que el agua sea química y microbiológicamente apropiados. En estos
+casos se recomienda el tratamiento con cloro para eliminar cualquier
+contaminación producida en la red de distribución.
+
+Las aguas provenientes de fuentes superficiales no presentan
+condiciones físicas ni microbiológicas adecuadas. Luego, es necesario
+tratarlas antes de su consumo.
+
+*** Enumeración de los componentes de un sistema de abastecimiento en base a la utilización de un agua superficial.
+- Obras de Captación o de Toma 
+- Componentes de un Sistema de Abastecimiento
+- Obras de Conducción 
+- Planta de Tratamiento 
+- Obras de distribución 
+
+*** Obras de Captación o de Toma 
+Son las obras necesarias para captar el agua de la fuente a utilizar y pueden hacerse por gravedad, aprovechando la diferencia de nivel del terreno o por bombeo. 
+Las dimensiones y características de las obras de toma deben permitir la captación de los caudales necesarios para un suministro seguro a la población.
+
+::: minipages 0.32 0.32
+#+CAPTION:
+[[./media/image27.jpeg]]
+#+CAPTION:
+[[./media/image26.jpeg]]
+#+CAPTION:
+[[./media/image28.jpeg]]
+--\caption{Obras de Captación}
+::::::
+
+*** Obras de Conducción 
+
+::: minipages 0.45 0.45
+#+CAPTION: Obra de conducción
+[[./media/image29.jpeg]]
+#+CAPTION: Rotura de un caño maestro en la ciudad de Bs .As.
+[[./media/image30.jpeg]]
+::::::
+
+Su finalidad es transportar el agua captada en las tomas hasta la
+planta de tratamiento, o desde la planta hasta la ciudad para su
+distribución. La obra de conducción puede ser un canal abierto o un
+conducto cerrado.
+
+Si se transporta agua sin tratar la conducción puede ser a canal
+abierto. En cambio si se conduce agua tratada siempre debe hacerse por
+conducto cerrado, para preservarla de la contaminación.
+
+*** Planta de Tratamiento 
+
+Cuando el agua proviene de fuentes superficiales como ríos, lagos,
+arroyos, requiere un tratamiento para eliminar la turbidez , es decir,
+los materiales en suspensión que no precipitan fácilmente, acompañados
+de materias orgánicas coloidales o disueltas que le dan color al agua
+natural. Luego, debe agregarse un coagulante químico para el
+aglutinamiento de las pequeñas partículas que se realizan en estanques
+llamados floculadores. Posteriormente sigue el proceso de decantación
+de las partículas aglutinadas que se realizan precisamente en piletas
+llamadas decantadores o sedimentadores. Continúa el tratamiento con la
+etapa de filtración a través de un manto de arena y por último se
+procede a la desinfección con gas cloro.
+
+::: minipages 0.45 0.45
+#+CAPTION: Planta de Tratamiento
+[[./media/image31.jpeg]]
+::::::
+
+La cloración es el método más empleado para la desinfección. En dosis
+suficientes el cloro mata los microorganismos en 30 minutos aunque
+existen ciertos protozoos patógenos como Cryptosporidium que no son
+fácilmente eliminados por la cloración y pueden llegar a ser
+importantes patógenos distribuidos por el agua.
+
+El cloro se añade al agua tanto a partir de una solución concentrada
+de hipoclorito de sodio o calcio como en forma de gas desde tanques
+presurizados. Este método es el más utilizado en las grandes plantas
+de potabilización. El cloro se consume cuando reacciona con compuestos
+orgánicos. Por lo tanto debe haber cantidad suficiente como para
+eliminar microorganismos y materia orgánica.
+
+Debe realizarse un análisis de la cantidad de cloro residual en el
+agua. Una cantidad de cloro residual de 0.2-0.6 µg/ml es aceptable
+para la distribución.
+
+Después de la cloración el agua potable es bombeada a tanques de
+almacenamiento y al sistema de distribución para su consumo.
+
+La presencia residual de cloro asegura que el agua llegue al
+consumidor sin haber sufrido procesos de contaminación (asumiéndose
+que no ha existido ninguna falla en el sistema de distribución, tal
+como la rotura de una cañería).
+
+El cloro es extremadamente volátil y se puede disipar en cuestión de
+horas del agua tratada. Para asegurarse que los niveles de cloro
+residual se mantienen a lo largo de todo el sistema de distribución,
+la mayoría de las plantas potabilizadoras introducen $\text{NH}_3$ junto con el
+cloro para producir un compuesto estable no volátil llamado
+cloramina. $\text{HOCl} + \text{NH}_3 \rightarrow \text{NH}_2\text{Cl}+\text{H}_2\text{O}$
+
+*** Obras de distribución 
+Son el conjunto de cañerías que posibilitan que el agua ya
+potabilizada sea entregada a los usuarios en la puerta de sus
+viviendas.
+
+Constan en general de un tanque de distribución (puede no haberlo) que
+alimenta una red de cañerías de mayor diámetro o encastres, a las
+cuales se empalman cañerías de menos diámetro o distribuidoras, desde
+las cuales salen las conexiones domiciliarias.
+
+::: minipages 0.45 0.45
+#+CAPTION: Obras en el sistema de distribución
+[[./media/image32.jpeg]]
+::::::
+
+El consumo de agua es función de una serie de factores inherentes a la
+localidad que se abastece y varía de una ciudad a otra, así como podrá
+variar de un sector de distribución a otro, en una misma ciudad.
+
+La demanda o dotación por persona es la cantidad de agua que necesita
+diariamente.
+
+::: minipages 0.7 0.7
+#+CAPTION: Uso del agua segun el tipo de consumo, Datos de AySA.
+[[./media/proporciones.png]]
+::::::

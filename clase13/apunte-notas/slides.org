@@ -1,0 +1,331 @@
+* Setting                                                          :noexport:
+ 
+#+LATEX_ENGINE: xelatex
+#+LATEX_CLASS: extarticle
+#+LATEX_CLASS_OPTIONS: a4paper,12pt
+
+#+LaTeX_HEADER: \usepackage[spanish]{babel}
+#+LaTex_HEADER: \usepackage{placeins}
+#+LaTex_HEADER: \usepackage{graphicx} % Required to insert images
+#+LaTex_HEADER: \usepackage{courier} % Required for the courier font
+#+LaTex_HEADER: \usepackage{fixltx2e}
+#+LaTex_HEADER: \usepackage{amsmath}
+#+LaTex_HEADER: \usepackage{dsfont}
+#+LaTex_HEADER: \usepackage{amssymb}
+#+LaTex_HEADER: \usepackage{hyperref}
+#+LaTex_HEADER: \usepackage{fancyhdr} % Required for custom headers
+#+LaTex_HEADER: \usepackage{lastpage} % Required to determine the last page for the footer
+#+LaTex_HEADER: \usepackage{extramarks} % Required for headers and footers
+#+LaTex_HEADER: % Margins
+#+LaTex_HEADER: \usepackage{geometry}
+#+LaTex_HEADER:  \geometry{
+#+LaTex_HEADER:  a4paper,
+#+LaTex_HEADER:  left=20mm,
+#+LaTex_HEADER:  right=20mm,
+#+LaTex_HEADER:  top=20mm,
+#+LaTex_HEADER:  bottom=20mm,
+#+LaTex_HEADER:  }
+#+LaTex_HEADER: 
+#+LaTex_HEADER: \linespread{1.1} % Line spacing
+#+LaTex_HEADER: 
+#+LaTex_HEADER: % Set up the header and footer
+#+LaTex_HEADER: \pagestyle{fancy}
+#+LaTex_HEADER: \lhead{} % Top left header
+#+LaTex_HEADER: \chead{\hmwkClass\ (\hmwkClassTime): \hmwkTitle} % Top center head
+#+LaTex_HEADER: \rhead{\hmwkInstitucional} % Top right header
+#+LaTex_HEADER: \lfoot{\hmwkClassInstructor} % Bottom left footer
+#+LaTex_HEADER: \cfoot{} % Bottom center footer
+#+LaTex_HEADER: \rfoot{Página\ \thepage\ de\ \protect\pageref{LastPage}} % Bottom right footer
+#+LaTex_HEADER: \renewcommand\headrulewidth{0.4pt} % Size of the header rule
+#+LaTex_HEADER: \renewcommand\footrulewidth{0.4pt} % Size of the footer rule
+#+LaTex_HEADER: 
+#+LaTex_HEADER: \setlength\parindent{0pt} % Removes all indentation from paragraphs
+#+LaTex_HEADER: 
+#+LaTex_HEADER: % Encabezados y pies.
+#+LaTex_HEADER: 
+#+LaTex_HEADER: \newcommand{\hmwkTitle}{Clase: Potabilización} % Assignment title
+#+LaTex_HEADER: \newcommand{\hmwkDueDate}{Julio 2020} % Due date
+#+LaTex_HEADER: \newcommand{\hmwkClass}{Hidráulica Agrícola y Saneamiento} % Course/class
+#+LaTex_HEADER: \newcommand{\hmwkClassTime}{1-2020} % Class/lecture time
+#+LaTex_HEADER: \newcommand{\hmwkClassInstructor}{Mónica Fiore - Javier Clavijo} % Teacher/lecturer
+#+LaTex_HEADER: \newcommand{\hmwkInstitucional}{FI-UBA} % Your name
+
+#+LaTex_HEADER:\usepackage{lineno}
+#+LaTex_HEADER:\linenumbers
+
+#+BEGIN_SRC emacs-lisp
+
+(setq org-image-actual-width nil)
+
+#+END_SRC
+
+#+RESULTS:
+
+* Potabilización del Agua 
+
+Esta clase fue preparada con material suministrado durante la visita a la empresa AySA (Agua y Saneamientos Argentinos S.A.)
+
+Todas las imagenes provienen de esa fuente salvo indicación contraria.
+
+Como referencia, pueden ver el siguiente video: http://youtu.be/crZ489mg8zY
+
+---
+
+La empresa encargada es AySA (Agua y Saneamientos Argentinos S.A.)
+en la Ciudad de Bs. As. y 17 partidos del conurbano Bonaerense
+
+#+CAPTION: Mapa de Regiones con servicio de AySA
+[[./media/image1.jpeg]]
+
+::: minipagesnf 0.45 0.45
+--minipage
+- Región Norte
+  - San Fernando 
+  - San Martín
+  - San Isidro
+  - Tigre
+  - Vicente López
+- Región Sudeste
+  - Lanús
+  - Quilmes
+  - Avellaneda 
+--minipage
+- Región Oeste
+  - Hurlingham
+  - Ituzaingo
+  - La Matanza
+  - Morón
+  - Tres de Febrero
+- Región Sudoeste
+  - Almirante Brown
+  - Esteban Echeverría 
+  - Ezeiza
+  - Lomas de Zamora 
+::::::
+
+#+CAPTION: Sector de la Red de Distribución de AySA
+[[./media/image2.png]]
+
+| Población abastecida: | 7.835.355 hab. |
+| Longitud de la red de distribución de agua potable | 16.942,63 km |
+
+
+* Plantas potabilizadoras
+
+- Gral. San Martín, en Palermo
+- Gral. Belgrano, en el partido de Quilmes 
+- Dique Luján, en el partido de Tigre 
+  
+#+CAPTION: Mapa con la ubicación de las plantas y estaciones elevadoras. Ver: https://www.aysa.com.ar/Que-Hacemos/Agua-potable
+[[./media/mapa_plantas.png]]
+  
+** Planta General San Martín
+
+::: minipages 0.45 0.45
+#+CAPTION:
+[[./media/image5.jpeg]]
+#+CAPTION: 
+[[./media/image4.jpeg]]
+--Fuente: \url{https://www.aysa.com.ar/Que-Hacemos/Agua-potable/Plantas-de-potabilizacion/planta_general_san_martin}
+--\caption{Planta Potabilizadora General San Martin, fue inaugurada en el año 1913. Está ubicada en el barrio de Palermo. Fuente. AySA}
+::::::
+
+
+#+CAPTION: Planta General San Martin, con sus torres de Toma de agua.
+#+ATTR_HTML: :width 600
+[[./media/tomas_san_martin.png]]
+
+** Planta General Belgrano.
+
+La Planta potabilizadora Gral. Belgrano fue inaugurada en el
+año 1978. Está ubicada en Bernal. Capacidad de producción de 1.900.000
+m3 por día y su función es distribuir agua potable al conurbano
+bonaerense. Actualmente ocupa 36 hectáreas.
+
+#+CAPTION: Planta Potabilizadora Gral. Belgrano
+[[./media/image7.jpeg]]
+
+** Planta Potabilizadora Dique Lujan
+
+Es una dependencia de la Planta San Martín y se encuentra ubicada en
+la localidad de Dique Luján, partido de Tigre. Este establecimiento
+tiene una capacidad de producción de 2.000 m3/día. Ocupa un predio de
+800 m2.
+
+#+CAPTION: Toma de agua de la planta Dique Lujan.
+[[./media/image8.jpeg]]
+
+** Agua Potable.
+                        
+- Objetivos del tratamiento
+ - Eliminar componentes indeseables
+  - Turbiedad $\rightarrow$ principalmente partículas de arcilla
+  - Mat. orgánica $\rightarrow$ Macrom. orgánicas de alto peso molec.
+  - Color $\rightarrow$ 
+   - productos de degradación vegetal 
+   - sustancias disueltas
+   - variaciones: del amarillo al marrón
+
+** Potabilización
+
+#+CAPTION: Los residuos antropogénicos son parte significativa de la contaminación de fuentes de agua potable.  
+[[./media/image9.jpeg]]
+
+** El Prceso de potabilización
+#+CAPTION: El Proceso de Potabilización en la Planta Gral. San Martín, Ver: https://is.gd/3786Vc
+[[./media/image10.png]]
+
+#+CAPTION: Proceso de Potabilización en la Planta Gral. Belgrano, Ver: https://is.gd/m8967J
+[[./media/image35.png]]
+
+#+CAPTION: El Proceso de Potabilización en la Planta Gral. San Martín, Esquema de Planta
+[[./media/San_martin_plano_planta.png]]
+
+** 1. Captación
+ 
+Las instalaciones para la captación de agua cruda varían según la
+fuente sea superficial o subterránea
+
+Las superficiales son tomas tipo torre en el Río de la Plata, desde
+dónde se capta el agua cruda que es transportada a los
+establecimientos potabilizadores plantas Gral. San Martín y
+Gral. Belgrano.
+ 
+Sólo el 4 % del agua producida en el área de prestación de AYSA
+proviene de fuentes subterráneas que se capta a través de
+perforaciones.
+ 
+::: minipages 0.31 0.31
+#+CAPTION:
+[[./media/image11.jpeg]]
+#+CAPTION:
+[[./media/image13.jpeg]]
+#+CAPTION: 
+[[./media/image12.png]]
+#+CAPTION: 
+[[./media/image14.png]]
+#+CAPTION:
+[[./media/image15.jpeg]]
+--\caption{Torres de captación}
+::::::
+
+** 2. Elevación
+    
+Se utilizan 13 bombas elevadoras, 8 verticales y 5 horizontales que
+funcionan según la demanda elevando hasta 3100 millones de litro/día.
+
+::: minipages 0.45 0.45
+#+CAPTION:
+[[./media/image16.jpeg]]
+#+CAPTION: 
+[[./media/image18.png]]
+#+CAPTION:
+[[./media/image17.jpeg]]
+--\caption{El proceso de elevación}
+::::::
+ 
+::: minipages 0.45 0.45
+#+CAPTION: Cámara de carga
+[[./media/image19.png]]
+#+CAPTION: Conducto de transporte
+[[./media/image20.png]]
+::::::
+
+** 3. Dosificación del Coagulante
+    
+Se agrega coagulante con la ayuda de un difusor para que toda el agua
+entre en contacto con el coagulante. Según las características del
+agua se agregan diferentes tipos de coagulantes.
+
+::: minipages 0.45 0.45
+#+CAPTION: Pileton donde se realiza la decantación
+[[./media/image21.jpeg]]
+#+CAPTION:
+[[./media/image22.jpeg]]
+::::::
+
+** 4. Floculación
+      
+El objetivo es aumentar el peso y la cohesión del floc formado. Se realiza una agitación suave por medio de palas a la entrada de los decantadores.
+ 
+** 5. Decantación
+      
+El agua ingresa a los decantadores en forma muy lenta permitiendo la precipitación de los floc. Al agua que sale de los decantadores se le eliminó el 95% de los floc.
+
+::: minipages 0.45 0.45
+#+CAPTION: 
+[[./media/image23.jpeg]]
+#+CAPTION: 
+[[./media/image24.png]]
+#+CAPTION:
+[[./media/image25.png]]
+--\caption{Proceso de Decantación}
+::::::
+
+** 6. Filtración
+      
+Existen 130 filtros que se encargan de retener las partículas que no
+fueron eliminadas en la etapa de decantación. La filtración mediante
+lechos filtrantes se realiza cuando existe una gran cantidad de
+materias en suspensión que deben eliminarse.
+  
+::: minipages 0.45 0.45
+#+CAPTION: 
+[[./media/image26.png]]
+#+CAPTION: 
+[[./media/image27.png]]
+#+CAPTION: 
+[[./media/image28.png]]
+--\caption{Proceso de Filtrado}
+::::::
+
+** 7. Cloración
+      
+Se utiliza para la desinfección del agua y la eliminación de bacterias.
+Se puede utilizar $\text{Cl}_2$, $\text{Cl}_2\text{O}$, $\text{O}_3$, etc.
+
+** 8. Dosificación de cal
+
+Se utiliza para ajustar el ph ya que en el proceso de coagulación se acidificó el agua.
+
+** 9. Distribución
+      
+El agua se distribuye a la red mediante cañerías subterráneas en donde circula por gravedad.
+
+::: minipages 0.45 0.45
+#+CAPTION: 
+[[./media/image30.jpeg]]
+#+CAPTION: 
+[[./media/image29.jpeg]]
+::::::
+
+\newpage
+
+** Controles de calidad
+
+Se efectúa el Monitoreo y Control de la Calidad del Agua en las distintas etapas del proceso :
+
+- En la Fuente (Río de la Plata)
+- Durante el Proceso de potabilización
+- Agua Potabilizada a la Salida de Planta
+- En el sistema de Transporte
+- En la canilla del Usuario
+
+** Sistema de Control
+   
+El Moniteoreo en las distintas partes del proceso se realiza a través de la implementación
+de un sistema de control llamado Topkapi, referencia: https://www.topkapi-scada.com/en/SCADA/AySA
+
+::: minipages 0.45 0.45
+#+CAPTION:
+#+ATTR_HTTP: :width 600
+[[./media/image31.jpeg]]
+#+CAPTION:
+#+ATTR_HTTP: :width 600
+[[./media/image32.jpeg]]
+#+CAPTION:
+#+ATTR_HTTP: :width 600
+[[./media/image33.png]]
+--\caption{Centros de monitoreo del sistema de control}
+::::::
+

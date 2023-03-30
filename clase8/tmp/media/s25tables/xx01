@@ -1,0 +1,42 @@
+            <table>
+              <tr h="640440">
+                <th>
+                        <p>Tipo de Estructura</p>
+                </th>
+                <th>
+                        <p>Periodo de Retorno (años)</p>
+                </th>
+              </tr>
+              <tr h="371520">
+                <td>
+                        <p>Drenaje Urbano</p>
+                </td>
+                <td>
+                        <p>2 – 5</p>
+                </td>
+              </tr>
+              <tr h="371520">
+                <td>
+                        <p>Drenaje Agrícola</p>
+                </td>
+                <td>
+                        <p>5 – 10</p>
+                </td>
+              </tr>
+              <tr h="369720">
+                <td>
+                        <p>Puente sobre carretera</p>
+                </td>
+                <td>
+                        <p>50 – 100</p>
+                </td>
+              </tr>
+              <tr h="370800">
+                <td>
+                        <p>Drenaje de Aeropuertos</p>
+                </td>
+                <td>
+                        <p>5</p>
+                </td>
+              </tr>
+            </table>

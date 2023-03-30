@@ -1,0 +1,279 @@
+* Setting                                                          :noexport:
+ 
+#+LATEX_ENGINE: xelatex
+#+LATEX_CLASS: extarticle
+#+LATEX_CLASS_OPTIONS: a4paper,12pt
+
+#+LaTeX_HEADER: \usepackage[spanish]{babel}
+#+LaTex_HEADER: \usepackage{placeins}
+#+LaTex_HEADER: \usepackage{graphicx} % Required to insert images
+#+LaTex_HEADER: \usepackage{courier} % Required for the courier font
+#+LaTex_HEADER: \usepackage{fixltx2e}
+#+LaTex_HEADER: \usepackage{amsmath}
+#+LaTex_HEADER: \usepackage{dsfont}
+#+LaTex_HEADER: \usepackage{amssymb}
+#+LaTex_HEADER: \usepackage{hyperref}
+#+LaTex_HEADER: \usepackage{fancyhdr} % Required for custom headers
+#+LaTex_HEADER: \usepackage{lastpage} % Required to determine the last page for the footer
+#+LaTex_HEADER: \usepackage{extramarks} % Required for headers and footers
+#+LaTex_HEADER: % Margins
+#+LaTex_HEADER: \usepackage{geometry}
+#+LaTex_HEADER:  \geometry{
+#+LaTex_HEADER:  a4paper,
+#+LaTex_HEADER:  left=20mm,
+#+LaTex_HEADER:  right=20mm,
+#+LaTex_HEADER:  top=20mm,
+#+LaTex_HEADER:  bottom=20mm,
+#+LaTex_HEADER:  }
+#+LaTex_HEADER: 
+#+LaTex_HEADER: \linespread{1.1} % Line spacing
+#+LaTex_HEADER: 
+#+LaTex_HEADER: % Set up the header and footer
+#+LaTex_HEADER: \pagestyle{fancy}
+#+LaTex_HEADER: \lhead{} % Top left header
+#+LaTex_HEADER: \chead{\hmwkClass\ (\hmwkClassTime): \hmwkTitle} % Top center head
+#+LaTex_HEADER: \rhead{\hmwkInstitucional} % Top right header
+#+LaTex_HEADER: \lfoot{\hmwkClassInstructor} % Bottom left footer
+#+LaTex_HEADER: \cfoot{} % Bottom center footer
+#+LaTex_HEADER: \rfoot{Página\ \thepage\ de\ \protect\pageref{LastPage}} % Bottom right footer
+#+LaTex_HEADER: \renewcommand\headrulewidth{0.4pt} % Size of the header rule
+#+LaTex_HEADER: \renewcommand\footrulewidth{0.4pt} % Size of the footer rule
+#+LaTex_HEADER: 
+#+LaTex_HEADER: \setlength\parindent{0pt} % Removes all indentation from paragraphs
+#+LaTex_HEADER: 
+#+LaTex_HEADER: % Encabezados y pies.
+#+LaTex_HEADER: 
+#+LaTex_HEADER: \newcommand{\hmwkTitle}{Clase 2 - Teoría} % Assignment title
+#+LaTex_HEADER: \newcommand{\hmwkDueDate}{Abril 2020} % Due date
+#+LaTex_HEADER: \newcommand{\hmwkClass}{Hidráulica Agrícola y Saneamiento} % Course/class
+#+LaTex_HEADER: \newcommand{\hmwkClassTime}{1-2020} % Class/lecture time
+#+LaTex_HEADER: \newcommand{\hmwkClassInstructor}{Mónica Fiore - Javier Clavijo} % Teacher/lecturer
+#+LaTex_HEADER: \newcommand{\hmwkInstitucional}{FI-UBA} % Your name
+
+#+LaTex_HEADER:\usepackage{lineno}
+#+LaTex_HEADER:\linenumbers
+
+#+BEGIN_SRC emacs-lisp
+
+(setq org-image-actual-width nil)
+
+#+END_SRC
+
+#+RESULTS:
+
+* Extremos
+
+#+BEGIN_EXPORT latex
+\null\hfill\begin{minipage}{0.7\linewidth}
+\textbf{Palabras Claves:} evento extremo, teoría de valores extremos, método de
+máxima anual, GEV, parámetro de locación, parámetro escala, parámetro de
+forma, período de retorno.
+\end{minipage}\hfill\null
+#+END_EXPORT
+
+Entre los impactos más relevantes del Cambio Climático, para la
+producción agrícola se pueden mencionar: el incremento de temperaturas,
+la disminución de disponibilidad hídrica, y el *incremento de eventos
+extremos* (inundaciones, heladas, granizo, etc.).
+
+Aunque los episodios extremos son intrínsecamente abruptos y aleatorios,
+se pueden reducir sus efectos mediante un análisis exhaustivo de los
+riesgos que acarrean. Se necesita mejorar la planificación de la
+preparación para desastres en muchas partes del mundo,
+independientemente que ese lugar este afectado o no por el cambio
+climático.
+
+Aunque todos los países se ven afectados en mayor o menor medida por
+efectos climáticos extremos, las naciones en desarrollo sufren la mayor
+parte de las pérdidas de vidas y medios de subsistencia ocasionadas por
+inundaciones, sequías y tormentas cada vez más intensas.
+
+Una mejor planificación y el uso de nuevas tecnologías ayudarían a
+reducir al mínimo las pérdidas humanas y materiales. Por ejemplo, las
+nuevas edificaciones podrían diseñarse y ubicarse de tal manera que se
+disminuyan al mínimo los daños ocasionados por inundaciones, al mismo
+tiempo, que las técnicas perfeccionadas de riego podrían proteger de la
+sequía a los cultivos.
+
+El Grupo Intergubernamental de Expertos sobre Cambio Climático (IPCC),
+define “evento meteorológico extremo” como un episodio, suceso o evento
+meteorológico que es raro, o infrecuente, según su distribución
+estadística para un lugar determinado. Y según esta definición, por
+“raro” debe entenderse todo episodio que se encuentre por encima del
+percentil 90 o por debajo del 10 en la función de probabilidad
+observada.
+
+A pesar de que los fenómenos extremos siempre han existido, el aumento
+de su frecuencia y de la intensidad de algunos de ellos es en la
+actualidad un hecho preocupante, por lo que ha sido objeto de análisis
+por parte del IPCC en el último de los informes que periódicamente
+elabora este Grupo.
+
+En la teoría de valores extremos el interés principal se encuentra en
+los valores más bajos o más altos de la variable a estudiar, es decir,
+el objetivo está en el análisis de los eventos asociados a las colas de
+la distribución.
+
+Por ejemplo, en estadística ambiental analizar niveles altos de ozono en
+determinada región, en climatología conocer el comportamiento de
+velocidades extremas de huracanes o valores extremos de temperatura,
+precipitación, etc., en oceanografía es necesario estudiar el
+comportamiento de niveles extremos de marea, ondas de tormenta y olas.
+
+El cálculo de los niveles extremos del mar es fundamental para ser
+utilizado en distintos estudios que se realicen en zonas costeras. Así
+para determinar zonas vulnerables a las crecidas del mar y evitar
+pérdidas de vidas y cuantiosas pérdidas económicas es necesario conocer
+las alturas máximas alcanzables en períodos de 100 años o mayores. Por
+otra parte, el manejo de playas requiere conocer los extremos que
+alcanza el nivel del mar en las grandes tormentas, debido a que éste
+último actúa como una plataforma sobre la cual las olas producen sus
+mayores efectos erosivos sobre la playa y construcciones costeras.
+
+También el diseño de distintas obras costeras requiere para su cálculo,
+del conocimiento del período de recurrencia (o retorno) de los niveles
+del mar. Finalmente, el cálculo de período de recurrencia de grandes
+bajantes, es aplicable a la navegación y también a la provisión de agua
+potable, como es el caso del Río de la Plata.
+
+Existen diferentes métodos para estudiar estos eventos, algunos de los
+cuales serán descriptos en este apunte.
+
+** Método de máxima anual
+
+El estudio de valores extremos puede enfocarse en diversos estadísticos.
+Uno de los más clásicos, es el análisis del máximo de un conjunto de
+observaciones independientes (método del bloque máximo) provenientes de
+una misma distribución F. Es decir, el objetivo es estudiar el
+comportamiento de
+
+$$M_k = max\left(X_{Nk},\dots,X_{N(k+1)}\right)$$
+
+donde N representa la cantidad de observaciones por bloque.
+
+Típicamente X representa la observación de un proceso en una escala
+regular de tiempo, por ejemplo, la temperatura máxima diaria, mensual,
+anual, etc.
+
+Como F habitualmente es desconocida, el estudio de M se realiza mediante
+distribuciones aproximadas. Este enfoque es similar a la práctica de
+aproximar la distribución del promedio X de un conjunto de observaciones
+por la distribución Normal, mediante el Teorema Central del Límite.
+
+Para el conjunto de máximos, la distribución límite es la familia de
+Valores Extremos Generalizados (GEV) introducida por Jenkinson (1955),
+cuya función de distribución acumulada es:
+
+$$F(x) = exp\left(-\left(1+\gamma \frac{x-\mu}{\sigma}\right)^\frac{-1}{\gamma}\right)$$
+
+Donde $\mu$, $\sigma$, $\gamma$, son los parámetros de locación, escala y forma.
+
+Según el signo de $\gamma$ se clasifica en tres tipos:
+                            
+- GEV tipo I (Gumbel) $\gamma = 0$
+- GEV tipo II (Frechet) $\gamma > 0$
+- GEV tipo III (Weibul) $\gamma < 0$
+
+La razón de esta clasificación es que el dominio de cada distribución
+cambia según el signo de $\gamma$, y está relacionado con el decaimiento de la
+cola derecha. Como se observa en la Figura 1, cuanto más positivo es $\gamma$,
+más lento será el decaimiento de la misma.
+
+#+CAPTION: Función de densidad de probabilidad GEV según el signo del parámetro de forma.
+#+ATTR_LATEX: :whidth 400
+[[file:media/image3.png]]
+
+Usualmente el período de tiempo elegido para el tamaño del bloque es de
+un año, con lo cual n corresponde a la cantidad de observaciones
+independientes anuales registradas y X corresponde a la observación
+máxima anual. Entonces, si se cuenta con un período de N años, se
+obtiene una serie N máximos que constituirán la serie a ajustar por GEV.
+
+Para realizar el ajuste de la serie de máximos anuales mediante la
+distribución GEV se deben cumplir los siguientes supuestos:
+
+El conjunto de observaciones máximas sigue una misma distribución.
+
+Independencia de las observaciones, es decir, la magnitud de cada suceso
+no tiene correlación con los sucesos anteriores. Al considerar máximas
+anuales, en el caso de la marea, este supuesto es válido pues asegura el
+espaciado temporal de los eventos muestreados, ya que no puede haber una
+onda de tormenta con dicha duración. Sin embargo, se deberá controlar
+que dos máximos anuales consecutivos, uno en diciembre y el otro en
+enero del año posterior, no correspondan al mismo evento de onda de
+tormenta.
+
+Estacionalidad: el proceso extremo no varía en el tiempo. Para
+satisfacer el supuesto de estacionalidad, se extrae la tendencia lineal
+a la serie de máximos anuales siguiendo la metodología de Graff (1981).
+Actualmente existen métodos que contemplan esta tendencia.
+
+** Cálculo de período de retorno
+
+Dado un nivel extremo X, el periodo de retorno T(X) correspondiente a
+dicha magnitud puede definirse como el promedio de tiempo que ha de
+transcurrir entre dos repeticiones extremas del mismo (Beguería
+Portugués, 2002).
+
+Existe una estrecha relación entre la función de distribución F(X) y el
+período de retorno de un determinado evento, dada por:
+
+$$T(x) = \frac{1}{1 - F(x)}$$
+
+La interpretación de la ecuación anterior puede verse de la siguiente
+forma:
+
+Si entendemos a la F(X) como la probabilidad de no exceder el valor X,
+entonces 1-F(X) es la probabilidad de superar dicho valor.
+
+Dado que la probabilidad de excedencia puede ser representada por el
+cociente entre número de eventos que superan un nivel dado y la cantidad
+de total de eventos, y teniendo en cuenta que la cantidad de eventos en
+este método es equivalente al período de tiempo utilizado, resulta ser
+
+$$T(X) = \frac{\text{período de tiempo utilizado}}{\text{cantidad de eventos que superan el nivel}}$$
+
+Por ejemplo, si la probabilidad de excedencia de un nivel es de 1\%,
+entonces en promedio han de pasar 100 años entre dos ocurrencias
+consecutivas superiores a dicha altura.
+
+En el caso de series anuales, a un período de T años le corresponde una
+probabilidad de excedencia de 1/T. Por lo tanto, el nivel
+correspondiente $X_{T}$ será aquel que tenga una probabilidad $F(X)$
+acumulada de $1-1/T$. Para el caso GEV, $X_{T}$ será la solución de la
+siguiente ecuación:
+
+$$1-\frac{1}{T} = exp\left(-\left[1+\gamma\frac{x_T-\mu}{\sigma}\right]^{-\frac{1}{\gamma}}\right)\,\text{si}\,\gamma \neq 0$$
+
+$$1-\frac{1}{T} = exp\left(-exp\left[-\frac{x_T-\mu}{\sigma}\right]\right)\,\text{si}\,\gamma = 0$$
+
+Despejando, se obtiene:
+
+$$X_T = \mu-\frac{\sigma}{\gamma}\left[1-\left\{-log(1-1/T)\right\}^{-\gamma}\right] \text{ si } \gamma \neq 0$$
+
+$$X_T = \mu - \sigma log\left\{-log(1-1/T)\right\} \text{ si } \gamma = 0$$
+
+La estimación de los parámetros se puede realizar mediante diversos
+métodos, por ejemplo el Método de los Momentos (PM), Método de los
+Momentos Pesados (PWM), Método de Máxima Verosimilitud (MLE) y Cuadrados
+Mínimos.
+
+** Referencias
+
+Beguería Portugués, S., 2002. Revisión de métodos paramétricos para la
+estimación de la probabilidad de ocurrencia de eventos extremos en
+Climatología e Hidrología: El uso de series de excedencias y su
+comparación con las series de máximos anuales, in: J.M. Cuadrat, S.M.
+Vicente y M.A. Saz (eds.), La información climática como herramienta de
+gestión ambiental, Univ. de Zaragoza, pp. 83-92.
+
+Graff, J., 1981. An investigation of the frequency distributions of
+annual sea level maxima at ports around Great Britain. Estuarie, Coastal
+and Shelf Science. 18, 389-449.
+
+Jenkinson, A.F., 1955. The frequency distribution of the annual maximum
+(or minimum) values of meteorological elements. Quarterly Journal of the
+Royal Meteorological Society. 81, 158 -172.
+
+Pickands, J., 1975. Statistical inference using extreme order statistics
+Ann. Stat., 3, 119--131.

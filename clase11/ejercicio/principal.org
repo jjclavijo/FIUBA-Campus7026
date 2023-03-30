@@ -1,0 +1,9 @@
+* Ejercicio: Canales.
+
+El ejercicio propuesto para este tema consiste en el diseño de un canal
+para transportar agua para riego. Les dejamos:
+
+- [[./enunciado.pdf][Enunciado del ejercicio]]
+- [[./anexo-canales.pdf][Procedimiento de cálculo]]
+- [[./planimetria.dxf][Planimetria de la zona del canal]]
+

@@ -1,0 +1,2778 @@
+* Setting                                                          :noexport:
+ 
+#+LATEX_ENGINE: xelatex
+#+LATEX_CLASS: extarticle
+#+LATEX_CLASS_OPTIONS: a4paper,12pt
+
+#+LaTeX_HEADER: \usepackage[spanish]{babel}
+#+LaTex_HEADER: \usepackage{placeins}
+#+LaTex_HEADER: \usepackage{graphicx} % Required to insert images
+#+LaTex_HEADER: \usepackage{courier} % Required for the courier font
+#+LaTex_HEADER: \usepackage{fixltx2e}
+#+LaTex_HEADER: \usepackage{amsmath}
+#+LaTex_HEADER: \usepackage{dsfont}
+#+LaTex_HEADER: \usepackage{amssymb}
+#+LaTex_HEADER: \usepackage{hyperref}
+#+LaTex_HEADER: \usepackage{fancyhdr} % Required for custom headers
+#+LaTex_HEADER: \usepackage{lastpage} % Required to determine the last page for the footer
+#+LaTex_HEADER: \usepackage{extramarks} % Required for headers and footers
+#+LaTex_HEADER: % Margins
+#+LaTex_HEADER: \usepackage{geometry}
+#+LaTex_HEADER:  \geometry{
+#+LaTex_HEADER:  a4paper,
+#+LaTex_HEADER:  left=20mm,
+#+LaTex_HEADER:  right=20mm,
+#+LaTex_HEADER:  top=20mm,
+#+LaTex_HEADER:  bottom=20mm,
+#+LaTex_HEADER:  }
+#+LaTex_HEADER: 
+#+LaTex_HEADER: \linespread{1.1} % Line spacing
+#+LaTex_HEADER: 
+#+LaTex_HEADER: % Set up the header and footer
+#+LaTex_HEADER: \pagestyle{fancy}
+#+LaTex_HEADER: \lhead{} % Top left header
+#+LaTex_HEADER: \chead{\hmwkClass\ (\hmwkClassTime): \hmwkTitle} % Top center head
+#+LaTex_HEADER: \rhead{\hmwkInstitucional} % Top right header
+#+LaTex_HEADER: \lfoot{\hmwkClassInstructor} % Bottom left footer
+#+LaTex_HEADER: \cfoot{} % Bottom center footer
+#+LaTex_HEADER: \rfoot{Página\ \thepage\ de\ \protect\pageref{LastPage}} % Bottom right footer
+#+LaTex_HEADER: \renewcommand\headrulewidth{0.4pt} % Size of the header rule
+#+LaTex_HEADER: \renewcommand\footrulewidth{0.4pt} % Size of the footer rule
+#+LaTex_HEADER: 
+#+LaTex_HEADER: \setlength\parindent{0pt} % Removes all indentation from paragraphs
+#+LaTex_HEADER: 
+#+LaTex_HEADER: % Encabezados y pies.
+#+LaTex_HEADER: 
+#+LaTex_HEADER: \newcommand{\hmwkTitle}{Clase 2 - Teoría} % Assignment title
+#+LaTex_HEADER: \newcommand{\hmwkDueDate}{Abril 2020} % Due date
+#+LaTex_HEADER: \newcommand{\hmwkClass}{Hidráulica Agrícola y Saneamiento} % Course/class
+#+LaTex_HEADER: \newcommand{\hmwkClassTime}{1-2020} % Class/lecture time
+#+LaTex_HEADER: \newcommand{\hmwkClassInstructor}{Mónica Fiore - Javier Clavijo} % Teacher/lecturer
+#+LaTex_HEADER: \newcommand{\hmwkInstitucional}{FI-UBA} % Your name
+
+#+LaTex_HEADER:\usepackage{lineno}
+#+LaTex_HEADER:\linenumbers
+
+#+BEGIN_SRC emacs-lisp
+
+(setq org-image-actual-width nil)
+
+#+END_SRC
+
+#+RESULTS:
+
+* Principal** tmp-slides/slide1.txt
+HIDRAULICA AGRICOLA Y SANEAMIENTO
+Facultad de Ingeniería, UBA
+** tmp-slides/slide2.txt
+
+Riego
+#+CAPTION: http://t1.gstatic.com/images?q=tbn:ANd9GcQAP4i-yZbVamnDVvqJbYY9_wAiqb8Qv5reOPFQi0gl1_9N1CKXvQ
+[[../media/image1.jpeg]]
+Existen muchas definiciones de riego, una de ellas es que es una herramienta para producir alimentos. 
+ 
+La disponibilidad del agua para el ser humano siempre ha sido vital, porque además del sustento que obtenía al cultivar la tierra, creaba riqueza y con ella conseguía poder. El dominio del agua ha originado en la historia de la humanidad disputas y confrontaciones. Con el dominio de esta técnica, se inicia la agricultura de regadío.
+Las zonas que necesitan ser regadas son muy extensas y se encuentran en todos los continentes.
+ 
+#+CAPTION: Imagen-037
+[[../media/image2.jpeg]]
+** tmp-slides/slide3.txt
+Riego
+Por qué se riega, dónde se riega y por qué no se  realiza en otro lado?
+En cualquier cultivo hay que considerar 3 factores fundamentales:
+ 
+Clima 
+ 
+Suelo
+ 
+Economía o política
+El suelo se origina a partir de la materia producida por los procesos químicos y mecánicos de transformación de las rocas de la superficie terrestre. A esta materia se agregan el agua, los gases, sobre todo el CO2, el tiempo transcurrido, los animales y las plantas que descomponen y transforman el humus, dando por resultado una compleja mezcla de materiales orgánicos e inorgánicos
+** tmp-slides/slide4.txt
+El suelo es decisivo al momento de determinar que se va a plantar y cuanto voy a producir. Cada suelo tiene un conjunto de características dentro de determinados límites. El superior es la superficie de la tierra; el inferior, se ubica donde ya no actúan los procesos formadores de suelos y los laterales, son los contactos con otros tipos de suelos. Es necesario establecer los límites dentro de los cuales deben ser estudiados.
+Riego
+
+Las características del suelo pueden conocerse a través de las observaciones e investigaciones de campo, gabinete y laboratorio. Su reconocimiento, clasificación y representación cartográfica es lo que se llama "Mapa de Suelos“.
+#+CAPTION: mosaico_imagen_sat_gr
+[[../media/image3.png]]
+** tmp-slides/slide5.txt
+Riego
+El suelo pude estudiarse desde 2 puntos de vista:
+#+CAPTION: perfil%20geo1-b
+[[../media/image4.jpeg]]
+1) desde la geotécnica son los ingenieros geotécnicos y también los geólogos los que investigan el suelo y las rocas por debajo de la superficie para determinar sus propiedades para el diseño de estructuras tales como edificios, puentes, centrales hidroeléctricas, etc.
+2) desde la edafología son los biólogos y los agrónomos los que estudian la composición y naturaleza del suelo en su relación con las plantas y el entorno que le rodea.
+#+CAPTION: Edafo
+[[../media/image5.jpeg]]
+
+** tmp-slides/slide6.txt
+Riego
+Cuando se estudia un suelo la calicata permiten la inspección directa del suelo que se desea estudiar y, por lo tanto, es el método de exploración que normalmente entrega la información más confiable y completa. 
+Calicata se define como la exploración que se hace con labores mineras en un terreno o perforación que se practica para determinar la existencia de minerales o la naturaleza del subsuelo.
+#+CAPTION: calicata
+[[../media/image6.jpeg]]
+#+CAPTION: calicata
+[[../media/image7.png]]
+
+** tmp-slides/slide7.txt
+Riego
+Nivelación de tierras para riego
+Se modifica la topografía para maximizar la eficiencia. Debe tenerse en cuenta:
+Profundidad y características físicas del suelo.
+Debemos conocer la profundidad hasta la que pueden llegar las     raíces sin encontrar una capa que impida el libre drenaje.
+#+CAPTION: unap7-161
+[[../media/image8.jpeg]]
+Pendiente natural del suelo. Es importante porque influirá en la orientación de los surcos. La longitud de los surcos será menor a medida que aumente la pendiente. Si el terreno no presenta grandes desniveles se aconseja nivelar con pendiente nula. En caso contrario conviene uniformar las pendientes.
+** tmp-slides/slide8.txt
+Riego
+Buscar las irregularidades de la superficie que dividen al campo. Se recomienda observar la topografía antes de comenzar la nivelación.
+Disponibilidad de agua. El método de riego a utilizar tiene que estar de acuerdo con los caudales de agua de riego disponibles.
+#+CAPTION: riego01
+[[../media/image9.jpeg]]
+Cultivos a plantar. El movimiento de tierra a efectuar durante la nivelación está directamente relacionado con el rendimiento económico. Es necesario registrar la ubicación y elevación de cada pozo, los que son numerados según la ubicación.
+#+CAPTION: calnivelaciones
+[[../media/image10.jpeg]]
+Una vez realizado el estudio del suelo, el edafólogo me indica que cultivos son recomendables para ese lugar. Luego el factor climático ayudará a descartar de esa lista otros de los cultivos. Finalmente el economista desde su punto de vista elimina otro u otros por la facilidad de venta del lugar.
+** tmp-slides/slide9.txt
+Riego
+El riego es la aplicación artificial de agua al terreno con el fin de suministrar a las especies vegetales la humedad necesaria para su desarrollo.
+Los objetivos de la irrigación son:
+                 
+Proporcionar la humedad necesaria
+            
+                 
+Asegurar las cosechas contra la sequia
+                 
+Disolver sales contenidas en el suelo
+                 
+Dar tempero a la tierra (
+Estado adecuado de la tierra para
+                     
+la siembra y otras labores agrícolas)
+
+** tmp-slides/slide10.txt
+Riego
+Sistemas de riego 
+superficiales o por gravedad. 
+ 
+El agua se desplaza sobre el área a regar, cubriéndola total o parcialmente, conducida solamente por la diferencia de cota entre un punto y otro por la acción de la fuerza de la gravedad.
+Los sistemas de riego por gravedad 
+tecnificados
+ buscan evitar alguna de las pérdidas que se producen al aplicar los  métodos tradicionales con el objeto de mejorar el control y la homogeneidad en la aplicación del agua.
+ 
+** tmp-slides/slide11.txt
+#+CAPTION: 
+[[../media/image11.png]]
+Riego
+La elección del método de riego está condicionada por:
+ 
+Suelo
+. La permeabilidad es un factor determinante en la elección del     método. 
+
+La permeabilidad del suelo suele medirse en función de la velocidad del flujo de agua a través de éste durante un período determinado. Se expresa en cm/h, mm/h  o cm/día, o bien como un ”coeficiente de permeabilidad” en m/s o cm/s.
+ 
+Relieve y pendiente
+. 
+** tmp-slides/slide12.txt
+Riego
+Cultivos.
+ Algunos cultivos necesitan estar sumergidos en el agua (ej. arroz), otras plantas necesitan que el tallo no se moje, etc.
+ 
+Recurso hídrico. 
+ 
+Mano de obra. 
+ 
+Eficiencia.
+ 
+ 
+Economía. 
+ Es un gran condicionante de todo proyecto de riego. 
+El éxito de todo proyecto de regadío radica en gran parte en la suficiencia y seguridad del suministro del agua.
+** tmp-slides/slide13.txt
+Riego
+El riego puede realizarse de diferentes formas:
+	
+ 
+Surcos
+                                         
+http://estaciones.ivia.es/recomendaciones_sal.html
+#+CAPTION: Aplicación de un riego por surcos en un campo de lechugas.
+[[../media/image12.jpeg]]
+En este método la capa radical del suelo (zona radicular) se humedece mediante la infiltración del agua a través del perímetro mojado de pequeños cauces que reciben el nombre de surcos. 
+Dado que los surcos están espaciado, el agua cubre parcialmente el terreno entre surcos y se va humedeciendo por efecto del avance de humedad en profundidad y lateralmente. 
+No es conveniente regar con este método terrenos salinos o con agua con sales. La razón de esto es que al subir el agua por capilaridad, ascienden también las sales.
+** tmp-slides/slide14.txt
+Riego
+La eficiencia que se logra con este método es media. Los costos de instalación y de operación del riego por surco no son elevados, ya que puede empleárselo con escasos trabajos de nivelación para la implantación de cultivos anuales.
+#+CAPTION: Resultado de imagen para forma de surcos de riego
+[[../media/image14.jpeg]]
+La forma de los surcos depende del implemento empleado para su construcción; puede ser de forma parabólica, triangular o rectangular. 
+#+CAPTION: Resultado de imagen para forma de surcos de riego
+[[../media/image13.jpeg]]
+El tamaño de los surcos depende en general del cultivo y oscilan entre 10 y
+ 
+40 cm de ancho superficial y entre 5 y 20 cm de profundidad.
+El espaciamiento de los surcos, o sea la distancia entre surco y surco, depende de la naturaleza física del suelo y de la profundidad del suelo que se intenta mojar. Puede variar entre 0.3 y 1 m.
+** tmp-slides/slide15.txt
+Riego
+#+CAPTION: Fotos de Tipos de riego en la agricultura
+[[../media/image15.jpeg]]
+ 
+Inundación o manta
+Es un sistema de irrigación que cosiste en inundar el terreno con una capa de agua. Es sencillo y poco costoso.
+Es el más tradicional y fue el usual hasta fines del Siglo XIX en que se comenzó a reemplazar por el riego localizado.  Actualmente tiende a ser sustituido por otras técnicas ya que su mayor inconveniente es la pérdida de agua que se produce con su aplicación.
+http://www.etceter.com/c-agriculturas-de-riego-en-la-agric/
+En este sistema el agua procede del centro de acopio que se puede denominar embalse, pantano o simplemente centro de almacenamiento. De ese sitio discurre a través de grandes canales hasta llegar a los centros de distribución que van a repartir por acequias medianas y pequeñas con el fin de poder alcanzar la parcela que sea el objeto del riego. En ese lugar, el agua va a llegar por gravedad y va a inundar la zona de plantación. 
+** tmp-slides/slide16.txt
+Riego
+ 
+Subterráneo
+#+CAPTION: http://2.bp.blogspot.com/-fkARC7ffcZU/TiCTbt8P_SI/AAAAAAAAATs/cGcSjAY5R70/s1600/goteo+subterraneo.jpg
+[[../media/image16.jpeg]]
+Este sistema es poco usado por su costo,  generalmente se limita a pequeñas áreas, y en cultivos de larga vida.  Es  una red de tubos filtrantes enterrados, por los cuales circula el agua de regadío.
+#+CAPTION: http://www.etceter.com/images/pill/988/40035-riego-por-aspersion.jpg
+[[../media/image17.jpeg]]
+ 
+El sistema de riego por aspersión imita al agua de lluvia, con lo cual la calidad de la entrega (en pequeñas gotas) y el ahorro de agua son muy superiores.
+http://www.vitivinicultura.net/
+Se requiere de componentes caros (bomba hidráulica de alta presión, tuberías, aspersores, etc). Es necesario un constante cuidado de la estabilidad de las presiones, del caudal de entrega en las boquillas aspersoras. Son altas las pérdidas por evaporación. 
+Aspersión
+http://www.etceter.com/c-agriculturas-de-riego-en-la-agric/
+** tmp-slides/slide17.txt
+Riego
+ 
+El método de riego a utilizar tiene que estar de acuerdo con los caudales de agua de riego disponibles necesarios para el cultivo a realizar.
+Los canales tienen la finalidad de conducir los caudales de captación desde la obra de toma hasta el lugar de carga o distribución, de acuerdo a la naturaleza del proyecto y en condiciones que permitan transportar los volúmenes necesarios para cubrir la demanda.
+** tmp-slides/slide18.txt
+Riego en Argentina
+El riego es una actividad fundamental para el desarrollo rural de vastas regiones de la Argentina, teniendo en cuenta que el 70% de su territorio es árido o semiárido.
+#+CAPTION: 
+[[../media/image18.png]]
+En Argentina la superficie total cultivada, presenta en los últimos veinte años (1992-2012), un crecimiento sostenido (de 27,80 millones de hectáreas en 1992 a 39,04 millones de ha en 2012), con un impulso particular desde 2002.
+** tmp-slides/slide19.txt
+Riego en Argentina
+El relevamiento realizado en 2015 
+(ESTUDIO DEL DE AMPLIACIÓN DEL RIEGO POTENCIAL EN ARGENTINA
+) muestra que la superficie en producción bajo riego, alcanza un total de 2,1 millones de ha, que representa un consumo anual aproximado de 44.213 Hm3. 
+Esto  corresponde a un 5% de la superficie total cultivada en el país. El 65% de los 2,1 millones de ha, se riega a partir de fuentes superficiales, y el resto con agua subterránea. 
+Superficie bajo riego por provincia. Fuente: 
+http://www.fao.org/3/a-i5183s.pdf
+#+CAPTION: 
+[[../media/image19.png]]
+** tmp-slides/slide20.txt
+Distribución de cultivos bajo riego en Argentina
+Riego en Argentina
+#+CAPTION: 
+[[../media/image20.png]]
+ 
+Fuente: 
+http://www.fao.org/3/a-i5183s.pdf
+** tmp-slides/slide21.txt
+Riego en Argentina
+#+TABLE:
+#+ATTR_HTML: :width 600
+[[./media/table.21-01.png]]
+
+#+BEGIN_EXPORT html
+<table>
+<tr h="128520">
+<th colspan="2" rowSpan="3">
+<p>Provincia</p>
+</th>
+<th colspan="7">
+<p>Sistema de riego</p>
+</th>
+</tr>
+<tr h="128520">
+<td rowSpan="2">
+<p>Total (1)</p>
+</td>
+<td rowSpan="2">
+<p>Gravitacional</p>
+</td>
+<td rowSpan="2">
+<p>Por aspersión</p>
+</td>
+<td colspan="3">
+<p>Localizado </p>
+</td>
+<td rowSpan="2">
+<p>Sin discriminar</p>
+</td>
+</tr>
+<tr h="128520">
+<td>
+<p>Goteo</p>
+</td>
+<td>
+<p>Microaspersión</p>
+</td>
+<td>
+<p>Otros</p>
+</td>
+</tr>
+<tr h="250200">
+<td>
+<p>Total del país</p>
+</td>
+<td>
+<p>EAP</p>
+</td>
+<td>
+<p>64.463</p>
+</td>
+<td>
+<p>60.708</p>
+</td>
+<td>
+<p>2.233</p>
+</td>
+<td>
+<p>2.201</p>
+</td>
+<td>
+<p>270</p>
+</td>
+<td>
+<p>521</p>
+</td>
+<td>
+<p>89</p>
+</td>
+</tr>
+<tr h="128520">
+<td>
+</td>
+<td>
+<p>ha</p>
+</td>
+<td>
+<p>1.355.600,6</p>
+</td>
+<td>
+<p>946.574,9</p>
+</td>
+<td>
+<p>281.360,7</p>
+</td>
+<td>
+<p>104.917,5</p>
+</td>
+<td>
+<p>13.644,3</p>
+</td>
+<td>
+<p>6.577,5</p>
+</td>
+<td>
+<p>2.525,7</p>
+</td>
+</tr>
+<tr h="250200">
+<td>
+<p>Buenos Aires</p>
+</td>
+<td>
+<p>EAP</p>
+</td>
+<td>
+<p>2.717</p>
+</td>
+<td>
+<p>1.674</p>
+</td>
+<td>
+<p>922</p>
+</td>
+<td>
+<p>368</p>
+</td>
+<td>
+<p>30</p>
+</td>
+<td>
+<p>71</p>
+</td>
+<td>
+<p>-</p>
+</td>
+</tr>
+<tr h="128520">
+<td>
+</td>
+<td>
+<p>ha</p>
+</td>
+<td>
+<p>166.482,9</p>
+</td>
+<td>
+<p>69.540,8</p>
+</td>
+<td>
+<p>89.661,8</p>
+</td>
+<td>
+<p>6.421,3</p>
+</td>
+<td>
+<p>121,3</p>
+</td>
+<td>
+<p>737,7</p>
+</td>
+<td>
+<p>-</p>
+</td>
+</tr>
+<tr h="250200">
+<td>
+<p>Catamarca</p>
+</td>
+<td>
+<p>EAP</p>
+</td>
+<td>
+<p>5.484</p>
+</td>
+<td>
+<p>5.342</p>
+</td>
+<td>
+<p>59</p>
+</td>
+<td>
+<p>104</p>
+</td>
+<td>
+<p>11</p>
+</td>
+<td>
+<p>20</p>
+</td>
+<td>
+<p>-</p>
+</td>
+</tr>
+<tr h="128520">
+<td>
+</td>
+<td>
+<p>ha</p>
+</td>
+<td>
+<p>61.847,6</p>
+</td>
+<td>
+<p>24.140,3</p>
+</td>
+<td>
+<p>19.012,2</p>
+</td>
+<td>
+<p>18.268,8</p>
+</td>
+<td>
+<p>375,4</p>
+</td>
+<td>
+<p>50,9</p>
+</td>
+<td>
+<p>-</p>
+</td>
+</tr>
+<tr h="128520">
+<td>
+<p>Chaco</p>
+</td>
+<td>
+<p>EAP</p>
+</td>
+<td>
+<p>149</p>
+</td>
+<td>
+<p>77</p>
+</td>
+<td>
+<p>43</p>
+</td>
+<td>
+<p>14</p>
+</td>
+<td>
+<p>-</p>
+</td>
+<td>
+<p>36</p>
+</td>
+<td>
+<p>-</p>
+</td>
+</tr>
+<tr h="128520">
+<td>
+</td>
+<td>
+<p>ha</p>
+</td>
+<td>
+<p>7.550,3</p>
+</td>
+<td>
+<p>4.684,0</p>
+</td>
+<td>
+<p>2.789,5</p>
+</td>
+<td>
+<p>19,3</p>
+</td>
+<td>
+<p>-</p>
+</td>
+<td>
+<p>57,5</p>
+</td>
+<td>
+<p>-</p>
+</td>
+</tr>
+<tr h="128520">
+<td>
+<p>Chubut</p>
+</td>
+<td>
+<p>EAP</p>
+</td>
+<td>
+<p>1.000</p>
+</td>
+<td>
+<p>899</p>
+</td>
+<td>
+<p>92</p>
+</td>
+<td>
+<p>77</p>
+</td>
+<td>
+<p>3</p>
+</td>
+<td>
+<p>6</p>
+</td>
+<td>
+<p>-</p>
+</td>
+</tr>
+<tr h="128520">
+<td>
+</td>
+<td>
+<p>ha</p>
+</td>
+<td>
+<p>18.154,8</p>
+</td>
+<td>
+<p>17.499,2</p>
+</td>
+<td>
+<p>403,0</p>
+</td>
+<td>
+<p>147,9</p>
+</td>
+<td>
+<p>1,2</p>
+</td>
+<td>
+<p>103,5</p>
+</td>
+<td>
+<p>-</p>
+</td>
+</tr>
+<tr h="128520">
+<td>
+<p>Córdoba</p>
+</td>
+<td>
+<p>EAP</p>
+</td>
+<td>
+<p>1.699</p>
+</td>
+<td>
+<p>1.501</p>
+</td>
+<td>
+<p>165</p>
+</td>
+<td>
+<p>38</p>
+</td>
+<td>
+<p>4</p>
+</td>
+<td>
+<p>14</p>
+</td>
+<td>
+<p>1</p>
+</td>
+</tr>
+<tr h="128520">
+<td>
+</td>
+<td>
+<p>ha</p>
+</td>
+<td>
+<p>93.834,8</p>
+</td>
+<td>
+<p>36.200,1</p>
+</td>
+<td>
+<p>56.850,1</p>
+</td>
+<td>
+<p>114,0</p>
+</td>
+<td>
+<p>112,8</p>
+</td>
+<td>
+<p>555,3</p>
+</td>
+<td>
+<p>2,5</p>
+</td>
+</tr>
+<tr h="128520">
+<td>
+<p>Corrientes</p>
+</td>
+<td>
+<p>EAP</p>
+</td>
+<td>
+<p>751</p>
+</td>
+<td>
+<p>388</p>
+</td>
+<td>
+<p>136</p>
+</td>
+<td>
+<p>158</p>
+</td>
+<td>
+<p>7</p>
+</td>
+<td>
+<p>98</p>
+</td>
+<td>
+<p>1</p>
+</td>
+</tr>
+<tr h="128520">
+<td>
+</td>
+<td>
+<p>ha</p>
+</td>
+<td>
+<p>59.014,2</p>
+</td>
+<td>
+<p>55.201,9</p>
+</td>
+<td>
+<p>257,9</p>
+</td>
+<td>
+<p>1.156,3</p>
+</td>
+<td>
+<p>236,8</p>
+</td>
+<td>
+<p>2.160,3</p>
+</td>
+<td>
+<p>1,0</p>
+</td>
+</tr>
+<tr h="250200">
+<td>
+<p>Entre Ríos</p>
+</td>
+<td>
+<p>EAP</p>
+</td>
+<td>
+<p>513</p>
+</td>
+<td>
+<p>299</p>
+</td>
+<td>
+<p>110</p>
+</td>
+<td>
+<p>142</p>
+</td>
+<td>
+<p>15</p>
+</td>
+<td>
+<p>6</p>
+</td>
+<td>
+<p>-</p>
+</td>
+</tr>
+<tr h="128520">
+<td>
+</td>
+<td>
+<p>ha</p>
+</td>
+<td>
+<p>71.736,2</p>
+</td>
+<td>
+<p>47.919,1</p>
+</td>
+<td>
+<p>19.166,3</p>
+</td>
+<td>
+<p>3.322,1</p>
+</td>
+<td>
+<p>899,8</p>
+</td>
+<td>
+<p>428,9</p>
+</td>
+<td>
+<p>-</p>
+</td>
+</tr>
+<tr h="128520">
+<td>
+<p>Formosa</p>
+</td>
+<td>
+<p>EAP</p>
+</td>
+<td>
+<p>122</p>
+</td>
+<td>
+<p>39</p>
+</td>
+<td>
+<p>20</p>
+</td>
+<td>
+<p>8</p>
+</td>
+<td>
+<p>2</p>
+</td>
+<td>
+<p>46</p>
+</td>
+<td>
+<p>9</p>
+</td>
+</tr>
+<tr h="128520">
+<td>
+</td>
+<td>
+<p>ha</p>
+</td>
+<td>
+<p>4.001,5</p>
+</td>
+<td>
+<p>2.169,8</p>
+</td>
+<td>
+<p>1.244,0</p>
+</td>
+<td>
+<p>508,2</p>
+</td>
+<td>
+<p>20,0</p>
+</td>
+<td>
+<p>51,3</p>
+</td>
+<td>
+<p>8,2</p>
+</td>
+</tr>
+<tr h="128520">
+<td>
+<p>Jujuy</p>
+</td>
+<td>
+<p>EAP</p>
+</td>
+<td>
+<p>4.043</p>
+</td>
+<td>
+<p>3.996</p>
+</td>
+<td>
+<p>9</p>
+</td>
+<td>
+<p>61</p>
+</td>
+<td>
+<p>9</p>
+</td>
+<td>
+<p>30</p>
+</td>
+<td>
+<p>-</p>
+</td>
+</tr>
+<tr h="128520">
+<td>
+</td>
+<td>
+<p>ha</p>
+</td>
+<td>
+<p>91.574,6</p>
+</td>
+<td>
+<p>84.247,0</p>
+</td>
+<td>
+<p>4.956,4</p>
+</td>
+<td>
+<p>894,4</p>
+</td>
+<td>
+<p>1.252,2</p>
+</td>
+<td>
+<p>224,6</p>
+</td>
+<td>
+<p>-</p>
+</td>
+</tr>
+<tr h="128520">
+<td>
+<p>La Pampa</p>
+</td>
+<td>
+<p>EAP</p>
+</td>
+<td>
+<p>70</p>
+</td>
+<td>
+<p>60</p>
+</td>
+<td>
+<p>7</p>
+</td>
+<td>
+<p>8</p>
+</td>
+<td>
+<p>-</p>
+</td>
+<td>
+<p>1</p>
+</td>
+<td>
+<p>-</p>
+</td>
+</tr>
+<tr h="128520">
+<td>
+</td>
+<td>
+<p>ha</p>
+</td>
+<td>
+<p>4.714,8</p>
+</td>
+<td>
+<p>3.205,7</p>
+</td>
+<td>
+<p>1.415,5</p>
+</td>
+<td>
+<p>90,6</p>
+</td>
+<td>
+<p>-</p>
+</td>
+<td>
+<p>3,0</p>
+</td>
+<td>
+<p>-</p>
+</td>
+</tr>
+<tr h="128520">
+<td>
+<p>La Rioja</p>
+</td>
+<td>
+<p>EAP</p>
+</td>
+<td>
+<p>3.896</p>
+</td>
+<td>
+<p>3.767</p>
+</td>
+<td>
+<p>8</p>
+</td>
+<td>
+<p>178</p>
+</td>
+<td>
+<p>7</p>
+</td>
+<td>
+<p>8</p>
+</td>
+<td>
+<p>-</p>
+</td>
+</tr>
+<tr h="128520">
+<td>
+</td>
+<td>
+<p>ha</p>
+</td>
+<td>
+<p>41.817,0</p>
+</td>
+<td>
+<p>15.216,4</p>
+</td>
+<td>
+<p>1.505,9</p>
+</td>
+<td>
+<p>24.408,6</p>
+</td>
+<td>
+<p>580,5</p>
+</td>
+<td>
+<p>105,6</p>
+</td>
+<td>
+<p>-</p>
+</td>
+</tr>
+#+END_EXPORT
+
+El Censo Nacional Agropecuario (CNA) es la fuente principal de datos estadísticos sobre todas las explotaciones agropecuarias.
+Explotaciones Agropecuarias (EAP) que riegan y superficie efectivamente regada por sistema, según provincia. Año 2002.
+** tmp-slides/slide22.txt
+Riego en Argentina
+#+TABLE:
+#+ATTR_HTML: :width 600
+[[./media/table.22-02.png]]
+
+#+BEGIN_EXPORT html
+<table>
+<tr h="130320">
+<th colspan="2" rowSpan="3">
+<p>Provincia</p>
+</th>
+<th colspan="7">
+<p>Sistema de riego</p>
+</th>
+</tr>
+<tr h="128520">
+<td rowSpan="2">
+<p>Total (1)</p>
+</td>
+<td rowSpan="2">
+<p>Gravitacional</p>
+</td>
+<td rowSpan="2">
+<p>Por aspersión</p>
+</td>
+<td colspan="3">
+<p>Localizado </p>
+</td>
+<td rowSpan="2">
+<p>Sin discriminar</p>
+</td>
+</tr>
+<tr h="130320">
+<td>
+<p>Goteo</p>
+</td>
+<td>
+<p>Microaspersión</p>
+</td>
+<td>
+<p>Otros</p>
+</td>
+</tr>
+<tr h="129960">
+<td>
+<p>Mendoza</p>
+</td>
+<td>
+<p>EAP</p>
+</td>
+<td>
+<p>22.460</p>
+</td>
+<td>
+<p>22.174</p>
+</td>
+<td>
+<p>-</p>
+</td>
+<td>
+<p>428</p>
+</td>
+<td>
+<p>71</p>
+</td>
+<td>
+<p>-</p>
+</td>
+<td>
+<p>66</p>
+</td>
+</tr>
+<tr h="128880">
+<td>
+</td>
+<td>
+<p>ha</p>
+</td>
+<td>
+<p>267.888,8</p>
+</td>
+<td>
+<p>244.918,5</p>
+</td>
+<td>
+<p>-</p>
+</td>
+<td>
+<p>19.665,4</p>
+</td>
+<td>
+<p>1.955,8</p>
+</td>
+<td>
+<p>-</p>
+</td>
+<td>
+<p>1.349,1</p>
+</td>
+</tr>
+<tr h="129960">
+<td>
+<p>Misiones</p>
+</td>
+<td>
+<p>EAP</p>
+</td>
+<td>
+<p>88</p>
+</td>
+<td>
+<p>12</p>
+</td>
+<td>
+<p>39</p>
+</td>
+<td>
+<p>33</p>
+</td>
+<td>
+<p>5</p>
+</td>
+<td>
+<p>16</p>
+</td>
+<td>
+<p>-</p>
+</td>
+</tr>
+<tr h="128520">
+<td>
+</td>
+<td>
+<p>ha</p>
+</td>
+<td>
+<p>170,0</p>
+</td>
+<td>
+<p>20,3</p>
+</td>
+<td>
+<p>79,6</p>
+</td>
+<td>
+<p>29,8</p>
+</td>
+<td>
+<p>4,4</p>
+</td>
+<td>
+<p>35,9</p>
+</td>
+<td>
+<p>-</p>
+</td>
+</tr>
+<tr h="130320">
+<td>
+<p>Neuquén</p>
+</td>
+<td>
+<p>EAP</p>
+</td>
+<td>
+<p>1.862</p>
+</td>
+<td>
+<p>1.784</p>
+</td>
+<td>
+<p>43</p>
+</td>
+<td>
+<p>56</p>
+</td>
+<td>
+<p>11</p>
+</td>
+<td>
+<p>34</p>
+</td>
+<td>
+<p>-</p>
+</td>
+</tr>
+<tr h="130320">
+<td>
+</td>
+<td>
+<p>ha</p>
+</td>
+<td>
+<p>15.798,0</p>
+</td>
+<td>
+<p>14.139,0</p>
+</td>
+<td>
+<p>86,9</p>
+</td>
+<td>
+<p>1.105,1</p>
+</td>
+<td>
+<p>238,4</p>
+</td>
+<td>
+<p>228,6</p>
+</td>
+<td>
+<p>-</p>
+</td>
+</tr>
+<tr h="128520">
+<td>
+<p>Río Negro</p>
+</td>
+<td>
+<p>EAP</p>
+</td>
+<td>
+<p>3.370</p>
+</td>
+<td>
+<p>3.282</p>
+</td>
+<td>
+<p>88</p>
+</td>
+<td>
+<p>47</p>
+</td>
+<td>
+<p>16</p>
+</td>
+<td>
+<p>18</p>
+</td>
+<td>
+<p>1</p>
+</td>
+</tr>
+<tr h="129960">
+<td>
+</td>
+<td>
+<p>ha</p>
+</td>
+<td>
+<p>72.784,3</p>
+</td>
+<td>
+<p>69.718,8</p>
+</td>
+<td>
+<p>1.605,3</p>
+</td>
+<td>
+<p>725,5</p>
+</td>
+<td>
+<p>634,2</p>
+</td>
+<td>
+<p>96,5</p>
+</td>
+<td>
+<p>4,0</p>
+</td>
+</tr>
+<tr h="130320">
+<td>
+<p>Salta</p>
+</td>
+<td>
+<p>EAP</p>
+</td>
+<td>
+<p>3.526</p>
+</td>
+<td>
+<p>3.484</p>
+</td>
+<td>
+<p>26</p>
+</td>
+<td>
+<p>61</p>
+</td>
+<td>
+<p>7</p>
+</td>
+<td>
+<p>10</p>
+</td>
+<td>
+<p>-</p>
+</td>
+</tr>
+<tr h="128520">
+<td>
+</td>
+<td>
+<p>ha</p>
+</td>
+<td>
+<p>118.898,0</p>
+</td>
+<td>
+<p>91.857,6</p>
+</td>
+<td>
+<p>21.216,9</p>
+</td>
+<td>
+<p>5.552,2</p>
+</td>
+<td>
+<p>79,6</p>
+</td>
+<td>
+<p>191,7</p>
+</td>
+<td>
+<p>-</p>
+</td>
+</tr>
+<tr h="130320">
+<td>
+<p>San Juan</p>
+</td>
+<td>
+<p>EAP</p>
+</td>
+<td>
+<p>5.962</p>
+</td>
+<td>
+<p>5.803</p>
+</td>
+<td>
+<p>-</p>
+</td>
+<td>
+<p>219</p>
+</td>
+<td>
+<p>45</p>
+</td>
+<td>
+<p>-</p>
+</td>
+<td>
+<p>10</p>
+</td>
+</tr>
+<tr h="128520">
+<td>
+</td>
+<td>
+<p>ha</p>
+</td>
+<td>
+<p>79.516,4</p>
+</td>
+<td>
+<p>57.240,6</p>
+</td>
+<td>
+<p>-</p>
+</td>
+<td>
+<p>16.872,4</p>
+</td>
+<td>
+<p>4.392,5</p>
+</td>
+<td>
+<p>-</p>
+</td>
+<td>
+<p>1.010,9</p>
+</td>
+</tr>
+<tr h="130320">
+<td>
+<p>San Luis</p>
+</td>
+<td>
+<p>EAP</p>
+</td>
+<td>
+<p>113</p>
+</td>
+<td>
+<p>100</p>
+</td>
+<td>
+<p>14</p>
+</td>
+<td>
+<p>1</p>
+</td>
+<td>
+<p>-</p>
+</td>
+<td>
+<p>5</p>
+</td>
+<td>
+<p>-</p>
+</td>
+</tr>
+<tr h="129960">
+<td>
+</td>
+<td>
+<p>ha</p>
+</td>
+<td>
+<p>18.575,1</p>
+</td>
+<td>
+<p>3.569,1</p>
+</td>
+<td>
+<p>14.940,0</p>
+</td>
+<td>
+<p>3,0</p>
+</td>
+<td>
+<p>-</p>
+</td>
+<td>
+<p>63,0</p>
+</td>
+<td>
+<p>-</p>
+</td>
+</tr>
+<tr h="128520">
+<td>
+<p>Santa Cruz</p>
+</td>
+<td>
+<p>EAP</p>
+</td>
+<td>
+<p>72</p>
+</td>
+<td>
+<p>64</p>
+</td>
+<td>
+<p>5</p>
+</td>
+<td>
+<p>6</p>
+</td>
+<td>
+<p>1</p>
+</td>
+<td>
+<p>-</p>
+</td>
+<td>
+<p>-</p>
+</td>
+</tr>
+<tr h="130320">
+<td>
+</td>
+<td>
+<p>ha</p>
+</td>
+<td>
+<p>3.840,6</p>
+</td>
+<td>
+<p>586,1</p>
+</td>
+<td>
+<p>3.214,0</p>
+</td>
+<td>
+<p>36,5</p>
+</td>
+<td>
+<p>4,0</p>
+</td>
+<td>
+<p>-</p>
+</td>
+<td>
+<p>-</p>
+</td>
+</tr>
+<tr h="130320">
+<td>
+<p>Santa Fe</p>
+</td>
+<td>
+<p>EAP</p>
+</td>
+<td>
+<p>676</p>
+</td>
+<td>
+<p>395</p>
+</td>
+<td>
+<p>192</p>
+</td>
+<td>
+<p>124</p>
+</td>
+<td>
+<p>4</p>
+</td>
+<td>
+<p>23</p>
+</td>
+<td>
+<p>1</p>
+</td>
+</tr>
+<tr h="128520">
+<td>
+</td>
+<td>
+<p>ha</p>
+</td>
+<td>
+<p>37.421,3</p>
+</td>
+<td>
+<p>10.030,2</p>
+</td>
+<td>
+<p>25.476,1</p>
+</td>
+<td>
+<p>461,1</p>
+</td>
+<td>
+<p>1.101,0</p>
+</td>
+<td>
+<p>202,9</p>
+</td>
+<td>
+<p>150,0</p>
+</td>
+</tr>
+<tr h="129960">
+<td>
+<p>Santiago del Estero</p>
+</td>
+<td>
+<p>EAP</p>
+</td>
+<td>
+<p>3.725</p>
+</td>
+<td>
+<p>3.704</p>
+</td>
+<td>
+<p>15</p>
+</td>
+<td>
+<p>4</p>
+</td>
+<td>
+<p>1</p>
+</td>
+<td>
+<p>5</p>
+</td>
+<td>
+<p>-</p>
+</td>
+</tr>
+<tr h="128880">
+<td>
+</td>
+<td>
+<p>ha</p>
+</td>
+<td>
+<p>53.954,1</p>
+</td>
+<td>
+<p>52.109,7</p>
+</td>
+<td>
+<p>1.623,0</p>
+</td>
+<td>
+<p>32,2</p>
+</td>
+<td>
+<p>0,1</p>
+</td>
+<td>
+<p>189,1</p>
+</td>
+<td>
+<p>-</p>
+</td>
+</tr>
+<tr h="129960">
+<td>
+<p>Tierra del Fuego</p>
+</td>
+<td>
+<p>EAP</p>
+</td>
+<td>
+<p>3</p>
+</td>
+<td>
+<p>-</p>
+</td>
+<td>
+<p>-</p>
+</td>
+<td>
+<p>3</p>
+</td>
+<td>
+<p>-</p>
+</td>
+<td>
+<p>1</p>
+</td>
+<td>
+<p>-</p>
+</td>
+</tr>
+<tr h="130320">
+<td>
+</td>
+<td>
+<p>ha</p>
+</td>
+<td>
+<p>0,4</p>
+</td>
+<td>
+<p>-</p>
+</td>
+<td>
+<p>-</p>
+</td>
+<td>
+<p>0,3</p>
+</td>
+<td>
+<p>-</p>
+</td>
+<td>
+<p>0,1</p>
+</td>
+<td>
+<p>-</p>
+</td>
+</tr>
+<tr h="128520">
+<td>
+<p>Tucumán</p>
+</td>
+<td>
+<p>EAP</p>
+</td>
+<td>
+<p>2.162</p>
+</td>
+<td>
+<p>1.864</p>
+</td>
+<td>
+<p>240</p>
+</td>
+<td>
+<p>63</p>
+</td>
+<td>
+<p>21</p>
+</td>
+<td>
+<p>73</p>
+</td>
+<td>
+<p>-</p>
+</td>
+</tr>
+<tr h="130320">
+<td>
+<p>  </p>
+</td>
+<td>
+<p>ha</p>
+</td>
+<td>
+<p>66.024,9</p>
+</td>
+<td>
+<p>42.360,7</p>
+</td>
+<td>
+<p>15.856,3</p>
+</td>
+<td>
+<p>5.082,5</p>
+</td>
+<td>
+<p>1.634,3</p>
+</td>
+<td>
+<p>1.091,1</p>
+</td>
+<td>
+<p>-</p>
+</td>
+</tr>
+#+END_EXPORT
+
+#+TABLE:
+#+ATTR_HTML: :width 600
+[[./media/table.22-03.png]]
+
+#+BEGIN_EXPORT html
+<table>
+<tr h="165240">
+<th colspan="8">
+<p>(1) El total de EAP puede no corresponder a la suma de los parciales por sistema de riego dado que</p>
+</th>
+</tr>
+<tr h="165240">
+<td colspan="8">
+<p>      </p>
+<p>las categorías no son excluyentes, porque una EAP puede tener más de un sistema de riego.</p>
+</td>
+</tr>
+<tr h="171360">
+<td colspan="5">
+<p>Fuente:</p>
+<p> INDEC, Censo Nacional Agropecuario 2002.</p>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+</tr>
+#+END_EXPORT
+
+El principal objetivo del CNA es obtener información sobre las características centrales de la actividad agrícola, ganadera y forestal. 
+#+TABLE:
+#+ATTR_HTML: :width 600
+[[./media/table.22-01.png]]
+
+#+BEGIN_EXPORT html
+<table>
+<tr h="619200">
+<th>
+<p>Explotaciones agropecuarias (EAP) que riegan; y superficie efectivamente regada por sistema, según provincia. </p>
+</th>
+</tr>
+#+END_EXPORT
+
+** tmp-slides/slide23.txt
+#+CAPTION: Salt-accumulation.jpg
+[[../media/image21.jpeg]]
+La calidad del agua constituye una variable a controlar en la agricultura de regadío, tanto a nivel fuente como sumidero.
+ La contaminación de las masas de agua por sales, fertilizantes y pesticidas provenientes del regadío es un problema creciente en muchas áreas del mundo. 
+
+Cuando se riega un cultivo, se aplica una cantidad de agua superior a la que éste consume, debido a que los sistemas de riego nunca son completamente eficientes.
+Salinidad y Áreas Degradadas
+Es necesario que una cierta cantidad de agua circule a través del suelo y arrastre sales y otros compuestos, evitando la acumulación excesiva de contaminantes, naturales o antrópicos, en el suelo. Por lo tanto, el regadío siempre usa más agua que la que consume, y el agua aplicada y no consumida vuelve al río o al acuífero (lo que se llama “aguas de retorno del riego”), y lo hace con una pérdida de calidad.
+#+CAPTION: https://www.eweb.unex.es/eweb/edafo/ECA/ImL589.JPG
+[[../media/image22.jpeg]]
+** tmp-slides/slide24.txt
+La salinización natural del suelo es un fenómeno asociado a condiciones climáticas de aridez y a la presencia de materiales originales ricos en sales.
+No obstante, existe una salinidad adquirida por el riego prolongado con aguas de elevado contenido salino, en suelos de baja permeabilidad y bajo climas secos subhúmedos o más secos.
+El contenido salino del suelo suele medirse de forma indirecta, dado que la presencia de iones en el agua la hace conductora de la electricidad. 
+La capacidad del agua para conducir la electricidad aumenta con la concentración de sales. 
+Salinidad y Áreas Degradadas
+** tmp-slides/slide25.txt
+La conductividad eléctrica se mide generalmente en unidades de dS/m (deciSiemens por metro). La conductividad eléctrica del agua depende de la temperatura por lo que, para realizar comparaciones válidas la conductividad eléctrica debe expresarse en relación a una temperatura de referencia. Habitualmente esta temperatura es de 25ºC. 
+#+CAPTION: Conductímetro
+[[../media/image23.jpeg]]
+Salinidad y Áreas Degradadas
+Estos aparatos deben se calibrados periódicamente con patrones de salinidad conocida para asegurar la fiabilidad de las mediciones. A partir de 15 dS/m el suelo se considera salino.
+No todas las sales se comportan de la misma manera,  mientras la mayoría de las plantas no son sensibles a la elevación del calcio, SI todas lo son al incremento de sodio.
+** tmp-slides/slide26.txt
+La presencia de sodio en la solución del suelo genera una alcalinidad más alta que el calcio, por la mayor fuerza de hidróxido de sodio como base que la del de calcio. Por esta razón es conveniente medir el pH al mismo tiempo que se mide la conductividad eléctrica, pues este parámetro nos sirve como índice de la sodicidad, o contenido en sodio, del suelo.
+Salinidad y Áreas Degradadas
+Cuando la conductividad eléctrica supera los 8 dS/m, la mayor parte de las plantas se ve afectada, pero su grado será máximo si abunda el sodio en la solución, lo que se traduce por un valor del pH superior a 8.5, que es el máximo generado por la presencia de carbonato cálcico. Esto hace que también se considere al suelo como salino cuando se dan estas circunstancias.
+** tmp-slides/slide27.txt
+#+TABLE:
+#+ATTR_HTML: :width 600
+[[./media/table.27-01.png]]
+
+#+BEGIN_EXPORT html
+<table>
+<tr h="770040">
+<th>
+<p>Conductividad</p>
+<p>dS/m</p>
+</th>
+<th>
+<p>Salinidad</p>
+</th>
+<th>
+<p>Desarrollo de los cultivos</p>
+</th>
+</tr>
+<tr h="534960">
+<td>
+<p>0 - 2</p>
+</td>
+<td>
+<p>Ninguna</p>
+</td>
+<td>
+<p>Normal para todos.</p>
+</td>
+</tr>
+<tr h="534960">
+<td>
+<p>2 - 4</p>
+</td>
+<td>
+<p>Escasa</p>
+</td>
+<td>
+<p>Se ven afectados algunos cultivos muy sensibles.</p>
+</td>
+</tr>
+<tr h="1006560">
+<td>
+<p>4 - 8</p>
+</td>
+<td>
+<p>Moderada</p>
+</td>
+<td>
+<p>Se afectan la mayoría de los cultivos. Solo se desarrollan las plantas tolerantes.</p>
+</td>
+</tr>
+<tr h="769680">
+<td>
+<p>8 - 16</p>
+</td>
+<td>
+<p>Alta</p>
+</td>
+<td>
+<p>Solo pueden desarrollarse las plantas muy tolerantes y con dificultad.</p>
+</td>
+</tr>
+<tr h="770040">
+<td>
+<p>&gt; 16</p>
+</td>
+<td>
+<p>Excesiva</p>
+</td>
+<td>
+<p>No hay posibilidad de cultivo. Solo se da la vegetación halófila.</p>
+</td>
+</tr>
+#+END_EXPORT
+
+Salinidad y Áreas Degradadas
+Fuente: https://www.eweb.unex.es/eweb/edafo/ECAP/ECAL5PQSalinidad.htm
+** tmp-slides/slide28.txt
+La recuperación de los suelos salinos puede efectuarse por un lavado de mismo por inundación con aguas libres de sales.
+No obstante es conveniente la instalación de un sistema de drenaje artificial, mediante la instalación de tubos porosos bajo el suelo o, al menos, bajo la zona de enraizamiento de las plantas.
+
+Salinidad y Áreas Degradadas
+Por último las aguas debes ser descargadas hacia un curso de agua cuyo caudal sea suficiente para diluir las sales aportadas y no transferir el problema a las zonas vecinas. 
+Muchas de estas zonas salinizadas se encuentran en áreas deltaicas por lo que el drenaje suele hacerse directamente al mar, que es la mejor manera de no salinizar otras zonas.
+#+CAPTION: 
+[[../media/image24.jpeg]]
+** tmp-slides/slide29.txt
+En Argentina existen dos procesos mayoritarios de afectación por sales y/o sodio, resultantes de la aplicación de agua de riego: 
+el que se verifica en las regiones áridas y semiáridas del país, estrechamente vinculado a láminas importantes de irrigación, elevación del plano freático, traslado de sales disueltas hacia el perfil del suelo y deposición de las mismas en superficie
+el proceso relacionado con el riego complementario presurizado con agua bicarbonatada sódica, en la región pampeana, cuyo efecto inmediato es el deterioro del suelo (por dispersión, disminución de la infiltración, intercambio gaseoso en el perfil y generación de toxicidad en los cultivos).
+#+CAPTION: http://www.i-ambiente.es/sites/default/files/styles/680x290/public/suelos_en_espana.jpg?itok=hgjLbaqb
+[[../media/image25.png]]
+Salinidad y Áreas Degradadas
+
+** tmp-slides/slide30.txt
+Las cualidades que tendría un sistema de riego ideal en relación con la posible salinización serían: ser altamente uniforme, continuo y capaz de eliminar las sales de la zona radicular. 
+El riego localizado no permite lavar las sales del conjunto de la zona radicular. Por eso, cuando exista un riesgo cierto de salinización, debería completarse con algún sistema de cobertura total que permita lavar las sales. 
+Salinidad y Áreas Degradadas
+** tmp-slides/slide31.txt
+Los suelos poco permeables y los que se vuelven impermeables al humedecerse, no deben ser puestos en riego sin realizar antes un ensayo que asegure su viabilidad y sostenibilidad. 
+La forma de controlar la salinidad es realizar un monitoreo periódico de las zonas regadas, en los mismos lugares y condiciones en que se produce y establecer medidas de control mediante lavado. 
+Salinidad y Áreas Degradadas
+** tmp-slides/slide32.txt
+Utilizar rastrojo o paja para cubrir el suelo salino es otro modo de evitar que la humedad del suelo se evapore y por ende el aumento de la salinidad.
+#+CAPTION: Passsstoreo.jpg
+[[../media/image27.jpeg]]
+Es bueno mantener alejado de los suelos salinos a los ganados y evitar el pastoreo. Eso puede profundizar la salinidad del suelo por lo que es siempre mejor mantener los animales lejos de donde queremos reducir la salinidad del suelo.
+
+Salinidad y Áreas Degradadas
+#+CAPTION: siembra directa en maíz
+[[../media/image26.jpeg]]
+Hay que destacar que no todas las sales son iguales. Algunas son más fácil de lavar  como el cloruro sódico mientras que otras como el cloruro magnésico y el sulfato magnésico  son mas difíciles y lleva más tiempo reducir su nivel. En este último caso, lo más recomendable es que después del regado se agregue calcio al suelo a fin de equilibrar el suelo y ayudar a evitar un suelo salino para tener más y mejores cultivos.
+** tmp-slides/slide33.txt
+Red hidrográfica Argentina: ríos y arroyos, lagos y embalses. Los ríos de Argentina son en su mayor parte navegables. 
+#+CAPTION: https://www.argentina.gob.ar/sites/default/files/obraspublica22.jpg
+[[../media/image29.jpeg]]
+Características hidrológicas 
+de la Argentina
+#+CAPTION: Mapa de la Red Hidrográfica SIAN en base a datos de SHN
+[[../media/image28.jpeg]]
+Estaciones de la Red Hidrológica Nacional
+https://www.argentina.gob.ar/subsecretaria-de-recursos-hidricosl
+http://www.surdelsur.com/argentinamapas/mapaderios.htm
+** tmp-slides/slide34.txt
+Ejemplo: Cuenca N°49
+Zona de canales al Sur del Río Salado
+Se encuentra ubicada en el centro Este de la Provincia de Buenos Aires. Esta formada por arroyos que corren de sur a noreste por una planicie de escasa pendiente donde diferentes canales ayudan a que las aguas alcancen la bahía de Samborombón. 
+https://www.argentina.gob.ar/sites/default/files/49.pdf
+Características hidrológicas 
+de la Argentina
+#+CAPTION: https://www.argentina.gob.ar/sites/default/files/mapacuenca.jpg
+[[../media/image30.jpeg]]
+** tmp-slides/slide35.txt
+El relieve incide en la forma en que los ríos vierten sus aguas, determinando la clasificación de la cuenca hidrográfica. Una de las más utilizada es:
+#+CAPTION: http://cuencaracteristicas.galeon.com/satelital.jpg
+[[../media/image32.jpeg]]
+Características hidrológicas 
+de la Argentina
+Cuencas exorreicas
+: 
+son aquellas cuyas aguas llegan
+                                    
+al mar o al océano. 
+Cuencas endorreicas
+:
+ son aquellas cuyas aguas no llegan
+ 
+al mar, esto se debe a que los ríos desembocan en lagunas 
+interiores o porque se agotan por evaporación, infiltración o 
+consumo. 
+Cuencas arreicas
+: 
+son aquellas zonas donde no se definen cursos fluviales, debido a la falta de agua de los suelos muy permeables. 
+#+CAPTION: http://www.freewebs.com/milanes1351/imagenes2005/Cuenca.gif
+[[../media/image31.png]]
+
+** tmp-slides/slide36.txt
+La cuenca exorreica de vertiente atlántica más importante de Argentina es la cuenca del Plata. 
+Características hidrológicas 
+de la Argentina
+#+CAPTION: http://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Riodelaplatabasinmap.png/400px-Riodelaplatabasinmap.png
+[[../media/image33.png]]
+Tiene una superficie de 3.200.000 km² y es la segunda cuenca hidrográfica más grande del mundo. Abarca parte del territorio Argentino, Boliviano, Brasilero, Uruguayo y la totalidad del territorio Paraguayo.
+** tmp-slides/slide37.txt
+CUENCAS ENDORREICAS
+Hay dos sistemas importantes con estas características en la Argentina:
+Cuenca del Desaguadero: 
+De gran importancia hidroeléctrica y para el riego, sus aguas pueden alcanzar el mar. Incluye los ríos: Jáchal, Mendoza, Tunuyán, Diamante y , siendo el Desaguadero es el colector.
+Cuenca de las Sierras Pampeanas:
+Comprende cursos de agua de gran interés hidroeléctrico y para el riego. Incluye los ríos: Salí, Primero, Segundo, Quinto y otros menores. 
+#+CAPTION: http://t0.gstatic.com/images?q=tbn:ANd9GcSzHA_meJdIewuB3Ce8ThxoT_ix97zPAU98-foqlaRpNox7OLc&amp;t=1
+[[../media/image34.jpeg]]
+
+Características hidrológicas 
+de la Argentina
+** tmp-slides/slide38.txt
+Tendencias Hidrológicas en la
+Cuenca del Plata
+#+CAPTION: 
+[[../media/image35.png]]
+Máximos, mínimos y medios anuales de los caudales diarios del río Paraná en la sección Paraná-Santa Fe para período 1902-2004
+Fuente:http//www-atmo.at.fcen.uba.ar/materias/cap6_cambioclimaticoH.pdf
+Observan una etapa de transición en los ‘70 entre dos estados diferentes de relativa estabilidad estadística
+1902-1970 “etapa antigua”
+1980-2000 “etapa moderna”
+
+** tmp-slides/slide39.txt
+#+CAPTION: 
+[[../media/image36.wmf]]
+#+CAPTION: 
+[[../media/image37.wmf]]
+#+CAPTION: 
+[[../media/image39.wmf]]
+Tendencias Hidrológicas
+#+CAPTION: 
+[[../media/image38.wmf]]
+Fuente:http//www-atmo.at.fcen.uba.ar/materias/cap6_cambioclimaticoH.pdf
+** tmp-slides/slide40.txt
+Se observa que:
+• 
+Los máximos anuales de la etapa moderna también se han incrementado respecto de la antigua
+• 
+Aumentó la frecuencia de las crecidas extraordinarias:
+de las 4 crecidas registradas con caudales pico mayores a 50.000 m
+3
+/s (1905, 1983, 1992, 1998), 3 se produjeron en la etapa moderna.
+• 
+Incremento de los mínimos anuales al pasar de la etapa antigua a la moderna
+Tendencias Hidrológicas en la
+Cuenca del Plata
+Los ríos Paraná, Uruguay y Paraguay muestran tendencias positivas en el caudal desde 1970 en concordancia con las tendencias positivas en la
+precipitación en la cuenca del Plata a partir de esa década.
+En la cuenca del Plata 70 % de la precipitación se evapora, sólo un  30 % llega a los ríos. Un aumento de 4 °C llevaría la evaporación a un 85% haciendo vulnerables los sistemas hidroeléctricos, la navegación, el suministro de agua.
+** tmp-slides/slide41.txt
+#+CAPTION: 
+[[../media/image40.png]]
+Tendencias Hidrológicas
+Camilloni y Barros (2007)
+** tmp-slides/slide42.txt
+#+CAPTION: 
+[[../media/image41.png]]
+Tendencias Hidrológicas
+En los ríos Atuel, San Juan, Colorado y Neuquén se observa una marcada tendencia negativa en los caudales anuales a partir de la década del ´80.
+** tmp-slides/slide43.txt
+#+CAPTION: 
+[[../media/image42.png]]
+Tendencias en la Precipitación
+** tmp-slides/slide44.txt
+Caudales
+El caudal es el parámetro mas importante para determinar las posibilidades de aprovechamiento de un río, arroyo, etc.
+ 
+Debemos conocer las fluctuaciones sufridas por el río con el transcurso del tiempo.
+Estas fluctuaciones son propias de cada caso y dependerán de las condiciones climáticas y de las características de la cuenca. 
+Para fines de riego me interesa conocer fundamentalmente el caudal  mínimo pero por ejemplo para la construcción de un puente necesitare el caudal máximo.
+#+CAPTION: http://gua30.files.wordpress.com/2012/03/baja-caudal-de-rio.jpg
+[[../media/image43.jpeg]]
+http://gua30.wordpress.com/2012/03/27/caudal-del-rio-baja-y-vuelve-la-calma/
+** tmp-slides/slide45.txt
+Hidrometría
+Ciencia que trata la medición y análisis del agua incluyendo métodos, técnicas e instrumentos utilizados en hidrología.
+Cuando se planifica una zona de riego es fundamental conocer a fondo el río del cual se va a extraer agua y sus características hidrológicas
+.
+#+CAPTION: GP0627
+[[../media/image44.jpeg]]
+#+CAPTION: Aforo%2520L%C3%ADquido%25201
+[[../media/image46.jpeg]]
+#+CAPTION: EstacionAforoSeguraOjos
+[[../media/image45.jpeg]]
+
+** tmp-slides/slide46.txt
+
+En la distribución del agua de riego, la Hidrometría tiene como objetivo principal, medir y registrar los caudales de agua que son captados, derivados y distribuidos a los usuarios, a través de los sistemas de riego.
+#+CAPTION: escalas3
+[[../media/image47.jpeg]]
+Hidrometría
+La altura de agua se mide con escalas hidrométricas o limnímetros
+.
+#+CAPTION: 
+[[../media/image49.png]]
+#+CAPTION: Imagen33
+[[../media/image48.jpeg]]
+Limnígrafo mecánico sobre un puente 
+** tmp-slides/slide47.txt
+#+CAPTION: RN 001
+[[../media/image50.jpeg]]
+Hidrómetro ubicado frente a la Prefectura de Carmen de Patagones, Río Negro
+** tmp-slides/slide48.txt
+Esa sección debe ser fija, para que las mediciones de alturas de agua se puedan relacionar en el tiempo.
+#+CAPTION: puerto_iguazu-rosario
+[[../media/image51.jpeg]]
+Las alturas de agua de un río se hacen en estaciones hidrométricas. Algunos ejemplos: Puerto Iguazú para el Paraná superior, Puerto Barranqueras en el Gran Resistencia. 
+Todas las mediciones  deben referirse a un cero.
+La determinación de los niveles o las alturas de agua de un río debe hacerse en una sección determinada.
+Red hidrométrica: conjunto de puntos de control ubicados estratégicamente en el sistema.
+** tmp-slides/slide49.txt
+El caudal de un río es la cantidad, o volumen, de agua que pasa por una sección determinada en un tiempo dado. En general el caudal se expresa en m
+3
+/s o l/s. 
+Ejemplos de Caudal medio 
+#+CAPTION: 1810526443_bef46ed3b8
+[[../media/image54.jpeg]]
+Río Paraná 16.000 m
+3
+/s en Corrientes (máximo 60.000 m
+3
+/s, inundación de 1983).
+#+CAPTION: PICT2471C
+[[../media/image53.jpeg]]
+Caudales
+#+CAPTION: Tour24%282%29
+[[../media/image52.jpeg]]
+Río Paraguay 4.000 m
+3
+/s en la desembocadura. Bermejo.
+Río Colorado 380 m
+3
+/s (máximo de 2.200 m
+3
+/s).
+ 
+** tmp-slides/slide50.txt
+#+CAPTION: corrientes7
+[[../media/image55.png]]
+Caudales Medios Mensuales del Río Uruguay en
+Paso de Los Libres
+** tmp-slides/slide51.txt
+#+CAPTION: 
+[[../media/image56.png]]
+Caudales Medios Mensuales de la Estación de Aforo de Buta Ranquil, Río Colorado
+** tmp-slides/slide52.txt
+Aforar es medir, en nuestro caso el caudal 
+Q [m3/seg] = V [m/seg] x A [m2]
+Q no es constante en el recorrido del río sino que normalmente se incrementa por la incorporación de nuevos aportes (afluentes, escurrimiento subterráneo, etc.) 
+
+Aforos
+#+CAPTION: 
+[[../media/image57.wmf]]
+#+CAPTION: 20080606klpgeogar_12_Ges_SCO
+[[../media/image58.png]]
+** tmp-slides/slide53.txt
+La medición puede efectuarse en:
+- Forma permanente (estaciones ubicadas en ríos caudalosos)
+- Semipermanentes
+- Ocasionales
+#+CAPTION: Estación de aforos de Calasparra (Nueva)
+[[../media/image60.jpeg]]
+Q 
+= 
+VELOCIDAD
+ x 
+AREA
+ 
+#+CAPTION: Ver imagen en tamaño completo
+[[../media/image59.jpeg]]
+Aforos
+
+#+CAPTION: REDI0330-ARROYOS-JC
+[[../media/image61.jpeg]]
+** tmp-slides/slide54.txt
+El lugar elegido para hacer el aforo o medición debe cumplir los siguientes requisitos:
+La sección transversal debe estar bien definida y en lo posible no  presentar agradación o degradación del lecho.
+ 
+Debe ser de fácil acceso .
+ 
+Debe estar en un sitio recto, para evitar las sobreelevaciones y cambios en la profundidad producidos por curvas.
+ 
+El sitio debe estar libre de efectos de controles aguas abajo , que puedan producir remansos que afecten luego los valores obtenidos con la curva de calibración. 
+Aforos
+En el sitio que se decidió hacer el aforo, se hace un levantamiento topográfico completo de la sección transversal. La sección escogida se divide en tramos iguales.
+** tmp-slides/slide55.txt
+Se determinan áreas parciales y velocidades medias en las áreas parciales con las cuales se determinan caudales parciales, cuya sumatoria da el caudal total.
+ 
+Al aforar medimos la sección del curso de agua y la velocidad en dicha sección. 
+#+CAPTION: AforoAreasParciales
+[[../media/image62.jpeg]]
+Q= A1 V1 + A2. V2 + A3. V3 + . . . . . . 
+** tmp-slides/slide56.txt
+  
+ 
+                                                                           
+#+CAPTION: t0848s0w
+[[../media/image63.png]]
+
+La velocidad media correspondiente a cada franja se calcula a partir de la media de la velocidad medida a 0,2 y 0,8 de la profundidad en esa franja. 
+** tmp-slides/slide57.txt
+#+TABLE:
+#+ATTR_HTML: :width 600
+[[./media/table.57-01.png]]
+
+#+BEGIN_EXPORT html
+<table>
+<tr h="518040">
+<th>
+<p>1</p>
+<p> </p>
+</th>
+<th>
+<p>2</p>
+<p> </p>
+</th>
+<th>
+<p>3</p>
+<p> </p>
+</th>
+<th>
+<p>4</p>
+<p> </p>
+</th>
+<th>
+<p>5</p>
+<p> </p>
+</th>
+<th>
+<p>6</p>
+<p> </p>
+</th>
+<th>
+<p>7</p>
+<p> </p>
+</th>
+<th>
+<p>8</p>
+<p> </p>
+</th>
+</tr>
+<tr h="518040">
+<td rowSpan="2">
+<p>Sección</p>
+<p> </p>
+</td>
+<td colspan="3">
+<p>Velocidad del caudal</p>
+<p>(m/s)</p>
+<p> </p>
+</td>
+<td rowSpan="2">
+<p>Profundidad</p>
+<p>(m)</p>
+<p> </p>
+</td>
+<td rowSpan="2">
+<p>Ancho</p>
+<p>(m)</p>
+<p> </p>
+</td>
+<td rowSpan="2">
+<p>área</p>
+<p>(m<sup>2</sup>)</p>
+<p>5x6</p>
+</td>
+<td rowSpan="2">
+<p>Caudal</p>
+<p>(m<sup>3</sup>/s)</p>
+<p>4x7</p>
+</td>
+</tr>
+<tr h="304920">
+<td>
+<p>0,2D</p>
+<p> </p>
+</td>
+<td>
+<p>0,8D</p>
+<p> </p>
+</td>
+<td>
+<p>Media</p>
+<p> </p>
+</td>
+</tr>
+<tr h="304920">
+<td>
+<p>1 </p>
+</td>
+<td>
+<p>- </p>
+</td>
+<td>
+<p>- </p>
+</td>
+<td>
+<p>0,5 </p>
+</td>
+<td>
+<p>1,3 </p>
+</td>
+<td>
+<p>2,0 </p>
+</td>
+<td>
+<p>2,6 </p>
+</td>
+<td>
+<p>1,30 </p>
+</td>
+</tr>
+<tr h="304920">
+<td>
+<p>2 </p>
+</td>
+<td>
+<p>0,8 </p>
+</td>
+<td>
+<p>0,6 </p>
+</td>
+<td>
+<p>0,7 </p>
+</td>
+<td>
+<p>1,7 </p>
+</td>
+<td>
+<p>1,0 </p>
+</td>
+<td>
+<p>1,7 </p>
+</td>
+<td>
+<p>1,19 </p>
+</td>
+</tr>
+<tr h="304920">
+<td>
+<p>3 </p>
+</td>
+<td>
+<p>0,9 </p>
+</td>
+<td>
+<p>0,6 </p>
+</td>
+<td>
+<p>0,75 </p>
+</td>
+<td>
+<p>2,0 </p>
+</td>
+<td>
+<p>1,0 </p>
+</td>
+<td>
+<p>2,0 </p>
+</td>
+<td>
+<p>1,50 </p>
+</td>
+</tr>
+<tr h="304920">
+<td>
+<p>4 </p>
+</td>
+<td>
+<p>1,1 </p>
+</td>
+<td>
+<p>0,7 </p>
+</td>
+<td>
+<p>0,9 </p>
+</td>
+<td>
+<p>2,2 </p>
+</td>
+<td>
+<p>1,0 </p>
+</td>
+<td>
+<p>2,2 </p>
+</td>
+<td>
+<p>1,98 </p>
+</td>
+</tr>
+<tr h="304920">
+<td>
+<p>5 </p>
+</td>
+<td>
+<p>1,0 </p>
+</td>
+<td>
+<p>0,6 </p>
+</td>
+<td>
+<p>0,8 </p>
+</td>
+<td>
+<p>1,8 </p>
+</td>
+<td>
+<p>1,0 </p>
+</td>
+<td>
+<p>1,8 </p>
+</td>
+<td>
+<p>1,44 </p>
+</td>
+</tr>
+<tr h="304920">
+<td>
+<p>6 </p>
+</td>
+<td>
+<p>0,9 </p>
+</td>
+<td>
+<p>0,6 </p>
+</td>
+<td>
+<p>0,75 </p>
+</td>
+<td>
+<p>1,4 </p>
+</td>
+<td>
+<p>1,0 </p>
+</td>
+<td>
+<p>1,4 </p>
+</td>
+<td>
+<p>1,05 </p>
+</td>
+</tr>
+<tr h="304920">
+<td>
+<p>7 </p>
+</td>
+<td>
+<p>- </p>
+</td>
+<td>
+<p>- </p>
+</td>
+<td>
+<p>0,55 </p>
+</td>
+<td>
+<p>0,7 </p>
+</td>
+<td>
+<p>2,0 </p>
+</td>
+<td>
+<p>1,4 </p>
+</td>
+<td>
+<p>0,77 </p>
+</td>
+</tr>
+<tr h="304920">
+<td colspan="7">
+<p>TOTAL </p>
+</td>
+<td>
+<p>9,23 </p>
+</td>
+</tr>
+#+END_EXPORT
+
+Cálculo del caudal a partir de las lecturas en el molinete
+ 
+D es la profundidad de la corriente en el punto medio de cada sección
+.
+** tmp-slides/slide58.txt
+El de hélice gira sobre un eje horizontal. El de taza cónica gira sobre un eje vertical. En ambos casos la velocidad de rotación es proporcional a la velocidad de la corriente. Se cuenta el número de revoluciones en un tiempo dado, ya sea con un contador digital o mecánico. 
+     
+En general para medir se utilizan puentes o rutas que pasen sobre el río. 
+#+CAPTION: Ver imagen en tamaño completo
+[[../media/image64.jpeg]]
+Aforo desde puente con molinete
+ 
+#+CAPTION: Ver imagen en tamaño completo
+[[../media/image65.jpeg]]
+Molinete; a) Tipo hélice; b) Tipo cazoleta 
+** tmp-slides/slide59.txt
+Basándose en el efecto Doppler mide el perfil de velocidades de toda la lámina de agua, desde su superficie hasta el fondo del cauce fluvial. 
+Perfilador de Corrientes, Batímetro y Medidor de Caudal para Ríos, Arroyos y Estuarios (para profundidades de 0.15 a 2 m)
+.
+ 
+#+CAPTION: Ver imagen en tamaño completo.
+[[../media/image66.jpeg]]
+Determina simultáneamente la batimetría en todo lo ancho del río, realiza el cálculo del caudal, en tiempo real
+** tmp-slides/slide60.txt
+#+CAPTION: RedVerted2
+[[../media/image67.jpeg]]
+Método de medición de caudal, útil en chorrillos pequeños, donde no es posible utilizar molinetes. 
+Aforos con vertederos
+El caudal es función de la altura de la lámina de agua sobre el vertedero. La estructura utilizada puede adoptar distintas formas; el río alcanzará distintas alturas en función del caudal, relacionadas por ecuaciones dependientes del tipo de vertedero, que puede ser rectangular, triangular o trapezoidal. 
+** tmp-slides/slide61.txt
+#+CAPTION: 
+[[../media/image69.png]]
+ADP esta pensado para la realización de aforos directos en grandes ríos. El equipo es capaz de obtener una lectura de la distribución de velocidades en la sección de aforo discretizada en celdas de un tamaño predefinido. Utiliza un triple sensor doppler que permite medir velocidades de flujo en las tres dimensiones, un transmisor por radio y tiene la posibilidad de acoplar un módulo GPS. Cuenta con un software que permite, entre otras funciones, visualizar los resultados mientras se realiza la medición. 
+Aforos con tecnología Perfilador Acústico Doppler 
+(
+ADP
+)
+ 
+#+CAPTION: 
+[[../media/image68.jpeg]]
+Catamarán Rivercat
+.
+Fte.  
+"Técnicas y algoritmos empleados en estudios 
+hidrológicos e hidráulicos" 
+M. Luisa Moreno Santaengracia 
+ 
+** tmp-slides/slide62.txt
+#+CAPTION: 
+[[../media/image70.png]]
+ 
+Se arrastra el equipo desde un puente de una orilla a otra con un cable. 
+Aforos con tecnología Perfilador Acústico Doppler 
+(
+ADP
+)
+ 
+Fte.  
+"Técnicas y algoritmos empleados en estudios 
+hidrológicos e hidráulicos" 
+M. Luisa Moreno Santaengracia 
+ 
+El sistema ADP permite de una pasada obtener la sección del río con la distribución de velocidades medidas. El software obtiene por integración, el caudal total. 
+** tmp-slides/slide63.txt
+Método Volumétrico
+Se utiliza en general para caudales muy pequeños y se requiere de un recipiente para colectar el agua. 
+El caudal resulta de dividir el volumen de agua que se recoge en el recipiente por el tiempo que transcurre en colectar dicho volumen.
+Q = V/T 
+Donde:
+Q = Caudal (l /s)
+V = Volumen (l)
+T = Tiempo (s)
+Aforos 
+Método Químico
+Consiste en incorporar a la corriente una cantidad conocida de cierta sustancia química durante un tiempo dado. Se toman muestras aguas abajo en donde se estime que la sustancia se haya disuelto uniformemente, para determinar la cantidad de sustancia contenida por unidad de volumen.
+** tmp-slides/slide64.txt
+Decimos que una estación de aforo está calibrada cuando se ha obtenido una curva del caudal con relación al nivel de agua.
+Las estimaciones posteriores del caudal se pueden obtener midiendo el nivel y leyendo el caudal correspondiente en la curva de calibración. 
+Curva Altura – Caudal
+#+CAPTION: t0848s0x
+[[../media/image71.png]]
+El caudal es una función no lineal de la altura en la escala
+** tmp-slides/slide65.txt
+Esta relación  entre altura y caudal, puede verse afectada por 3 causas en cuyo caso se debe realizar trabajos de corrección para la adecuada información de caudal. Las correcciones de la curva H – Q pueden ser: 
+Por variación de la sección       
+#+CAPTION: Erosion Sedimentacion
+[[../media/image72.jpeg]]
+Si la sección elegida para construir la curva H – Q, tiene cambios debido a acciones de erosión o sedimentación, al no ser fija la superficie de la sección de escurrimiento, la altura medida no reflejará el caudal de la curva, sino otro mayor o menor según la sección sea mayor por erosión o menor por sedimentación.
+#+CAPTION: 
+[[../media/image73.png]]
+Curva Altura – Caudal
+
+** tmp-slides/slide66.txt
+Por cambio del régimen del río
+Por efecto de remanso
+Si hay modificaciones como por ejemplo por erosión o por  acumulación de sedimentos, se tendrá que trazar una nueva curva de calibrado. 
+Curva Altura – Caudal
+** tmp-slides/slide67.txt
+#+CAPTION: Archivo:RioParanaTomaVieja.JPG
+[[../media/image74.jpeg]]
+La construcción de la curva H - Q requiere la ejecución de numerosos aforos, barriendo toda la gama de alturas posibles en la sección elegida, incluyendo caudales poco frecuentes que producen inundaciones. 
+Las mayores crecidas, registradas, del río Paraná fueron
+:
+#+TABLE:
+#+ATTR_HTML: :width 600
+[[./media/table.67-01.png]]
+
+#+BEGIN_EXPORT html
+<table>
+<tr h="518040">
+<th>
+<p>Año</p>
+</th>
+<th>
+<p>Lectura de escala en m</p>
+</th>
+<th>
+<p>Caudal (m<sup>3</sup>/s)</p>
+</th>
+</tr>
+<tr h="304920">
+<td>
+<p>1982 / 83</p>
+</td>
+<td>
+<p>8,98</p>
+</td>
+<td>
+<p>60.000</p>
+</td>
+</tr>
+<tr h="304920">
+<td>
+<p>1858</p>
+</td>
+<td>
+<p>8,93</p>
+</td>
+<td>
+<p>51.000 – 54.000</p>
+</td>
+</tr>
+<tr h="304920">
+<td>
+<p>1878</p>
+</td>
+<td>
+<p>8,65</p>
+</td>
+<td>
+<p>47.000 – 50.000</p>
+</td>
+</tr>
+<tr h="304920">
+<td>
+<p>1905</p>
+</td>
+<td>
+<p>8,56</p>
+</td>
+<td>
+<p>47.000 – 49.000</p>
+</td>
+</tr>
+<tr h="304920">
+<td>
+<p>1966</p>
+</td>
+<td>
+<p>7,93</p>
+</td>
+<td>
+<p>41.000 – 42.000</p>
+</td>
+</tr>
+<tr h="304920">
+<td>
+<p>1977</p>
+</td>
+<td>
+<p>7,13</p>
+</td>
+<td>
+<p>34.000</p>
+</td>
+</tr>
+<tr h="304920">
+<td>
+<p>1991 / 92</p>
+</td>
+<td>
+<p>6,78</p>
+</td>
+<td>
+<p>54.000</p>
+</td>
+</tr>
+<tr h="304920">
+<td>
+<p>1997 / 98</p>
+</td>
+<td>
+<p>5,89</p>
+</td>
+<td>
+<p>42.000</p>
+</td>
+</tr>
+#+END_EXPORT
+
+Curva Altura – Caudal
+Fuente: Entidad Binacional Yacyretá (EBY)
+ 
+** tmp-slides/slide68.txt
+Existen distintos métodos para la extrapolación de la curva, los más comunes son:
+Métodos de extrapolación de la 
+Curva H-Q
+Extrapolación manual
+Método de Manning
+Método de Stevens
+Método logarítmico
+#+CAPTION: Crecida%2BRio%2BUruguay
+[[../media/image75.jpeg]]
+Crecida Río Uruguay
+#+CAPTION: bajante%2520rio
+[[../media/image76.jpeg]]
+Estos métodos se utilizan debido a que en las épocas de avenida es casi imposible aforar ya que corre riesgo no sólo el equipo sino la gente que lo utiliza
+Bajante Río Uruguay
+** tmp-slides/slide69.txt
+Extrapolación manual
+Se emplea como análisis preliminar previo a la utilización de otros métodos. Se grafican los valores y se extiende la curva utilizando un curvímetro, manteniendo la tendencia observada en la curva.
+#+CAPTION: t0848s0x
+[[../media/image77.png]]
+Métodos de extrapolación de la 
+Curva H-Qº
+
+** tmp-slides/slide70.txt
+Método LOGARÍTMICO. 
+Q = K (H – Ho)
+n
+ 
+Métodos de extrapolación de la 
+Curva H-Q
+donde: 
+ 
+ 
+Ho: altura de la escala hidrométrica para la cual Q = 0 (estiaje) 
+ 
+H: altura de escala hidrométrica para el caudal que se quiere conocer 
+ 
+n, K: constantes propias de la expresión. 
+logQ = logK +n ·log(H – Ho) 
+Primero se estima el valor de Ho en estiaje a partir de los datos observados.  
+** tmp-slides/slide71.txt
+Método de Manning
+Este método está basado en la fórmula de Manning, la misma que se utiliza para canales abiertos
+Métodos de extrapolación de la 
+Curva H-Q
+Factor Geométrico
+Factor Hidráulico
+Donde:
+A : Area de la sección de control o de aforo (m
+2
+) 
+S : Pendiente del canal 
+R : Radio hidráulico, R = A / P
+P : Perímetro mojado de la sección de control (m)
+n : Coeficiente de rugosidad. 
+Q : Caudal o descarga en (m
+3
+/s) 
+#+CAPTION: http://www.cybertesis.edu.pe/sisbib/2002/vera_hl/xml/ressources/fig045.jpg
+[[../media/image78.jpeg]]
+** tmp-slides/slide72.txt
+Método de Stevens
+Este método se basa en la fórmula de Chezy y es usado para ríos relativamente anchos y poco profundos
+A : Área de la sección de control para un nivel determinado (m
+2
+) 
+S : Pendiente de la superficie libre del agua y la del fondo del canal 
+R : Radio hidráulico. 
+C : Coeficiente de Chezy, que depende de las características del escurrimiento y de la naturaleza del cauce.
+Q : Caudal o descarga (m
+3
+/s) 
+  
+ 
+#+CAPTION: http://www.cybertesis.edu.pe/sisbib/2002/vera_hl/xml/ressources/fig051.jpg
+[[../media/image79.jpeg]]
+Métodos de extrapolación de la 
+Curva H-Q
+
+** tmp-slides/slide73.txt
+Es la representación del caudal en función del tiempo, expresando las variaciones temporales de los caudales o los aportes de un río en una sección determinada. Es decir Q = f(t). 
+El área bajo la curva  es el volumen de agua que ha pasado por el punto de aforo en el tiempo considerado.
+#+CAPTION: c2
+[[../media/image80.png]]
+
+Hidrograma
+** tmp-slides/slide74.txt
+ 
+Curva de 
+descenso
+Curva de 
+  
+crecida
+ 
+Curva de 
+agotamiento
+
+Hidrograma de una Crecida
+#+CAPTION: 
+[[../media/image81.png]]
+Si a este hidrograma lo asociamos con un hietograma (precipitación en función del tiempo)  puedo separar que parte del caudal es debida a la precipitación.
+** tmp-slides/slide75.txt
+Volumen total en un período determinado
+Derrame
+Módulo
+Caudal Medio Anual
+Caudal Específico
+Caudal Medio Anual/Area 
+Definiciones
+Lámina
+Volumen/Area
+
+** tmp-slides/slide76.txt
+Elevación rápida del nivel del agua de un curso.
+Avenida
+Nivel mas bajo o caudal mínimo que alcanzan las aguas de un río.
+Estiaje
+Definiciones

@@ -1,0 +1,14 @@
+*** 70.26 - Hidráulica Agrícola y Saneamiento
+** Práctico: Nivelación de tierras con fines de Riego
+
+Calcular el movimiento de suelo que debe realizarse para la
+sistematización por gravedad de los predios indicados en las Figuras 1
+y 2. Para cada cuadrícula se indican las dimensiones, pesos y cotas
+medidas en el terreno. 
+
+
+#+CAPTION: Distribución de las parcelas del predio 1.
+[[./media/predio1.png]]
+
+#+CAPTION: Distribución de las parcelas del predio 2.
+[[./media/predio2.png]]

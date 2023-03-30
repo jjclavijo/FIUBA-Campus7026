@@ -1,0 +1,264 @@
+*Palabras Clave: sistematización, riego por gravedad, cuartel de riego,
+dominio de riego, volumen de desmonte, cota roja.*
+
+*Proyecto de un sistema de riego superficial*
+
+*A la hora de proyectar un sistema de riego hay que tener presente por
+lo menos diez criterios principales que están condicionados al resultado
+económico de la gestión agraria. Puede decirse que el proyectar un
+sistema de riego es un problema complejo.*
+
+*1) Almacenamiento de agua necesaria en la zona radicular del terreno.*
+
+*El volumen de agua que es preciso almacenar depende del cultivo y del
+estadío de desarrollo. El proyectar un sistema de riego que tenga la
+flexibilidad suficiente para hacer frente a condiciones variables es muy
+importante, pero resulta difícil en muchos casos.*
+
+*2) Conseguir una aplicación relativamente uniforme del agua.*
+
+*Es difícil proyectar un sistema de riego superficial que permita un
+control satisfactorio bajo las diferentes condiciones. El caudal puede
+variar y la velocidad de penetración difiere de acuerdo con los
+diferentes cultivos y con el período de riego y la hora del comienzo del
+mismo. Es lógico pensar que cuanto más caro y cuidadoso sea el control
+del sistema de riego, la uniformidad será a su vez mayor. Para que la
+distribución sea considerada como buena es preciso que el agua llegue al
+final de la parcela en un tiempo que equivale a la cuarta parte de la
+duración total del riego.*
+
+*3) Hacer mínima la erosión.*
+
+*Si bien la erosión no puede ser eliminada, debe tender a minimizarse y
+su medida para los diferentes caudales nos da casi la única medida del
+caudal permisible. La observación nos dirá que caudal puede ser
+utilizado sin que la erosión sea excesiva. Criddle ha sugerido que el
+caudal máximo que no produce erosión para riego por surcos puede ser
+estimado en: (3.78 litros/minuto/10) * % pendiente.*
+
+*4) Hacer mínima la escorrentía.*
+
+*En contraposición a la entrada de agua, se pierden en las parcelas
+cantidades apreciables de agua durante el riego. Este fenómeno se
+denomina escorrentía. Uno de los medios más eficaces para reducir al
+mínimo las pérdidas por escorrentía consiste en reducir el caudal del
+agua que penetra en las parcelas, cuando la lámina de agua está a punto
+de llegar al final de la misma. La superficie humedecida se reduce en
+cierta medida, produciendo una disminución ligera de la penetración
+mientras que la velocidad disminuye considerablemente. Siempre que sea
+posible es conveniente reemplear el agua de escorrentía en tierras de
+menor cota.*
+
+*5) Buscar una aplicación útil al agua de drenaje y escorrentía.*
+
+*No hay que olvidar el problema del reempleo del agua que procede del
+drenaje y de la escorrentía, puesto que los volúmenes que movilizan
+estas pérdidas de agua de las parcelas son a veces considerables.*
+
+*6) Minimizar la cantidad de mano de obra empleada durante el riego.*
+
+*Las necesidades de mano de obra deben ser reducidas al mínimo. En
+general hay que disponer de mano de obra calificada y con sentido de la
+responsabilidad. La preparación adecuada del terreno, el control del
+agua y la bondad del sistema harán mínimas las necesidades de mano de
+obra.*
+
+*7) Reducir al mínimo la superficie de terreno ocupada por las acequias
+y otras partes del sistema de riego.*
+
+*Es normal que el 5% del terreno esté ocupado por los elementos del
+sistema de riego. En muchos casos un cuidadoso planteo del sistema puede
+reducir al mínimo estas pérdidas, como sucede cuando se emplean parcelas
+largas que además de facilitar la distribución uniforme del agua,
+reducen la parte del terreno desperdiciada y facilitan el cultivo.*
+
+*8) Adaptar el sistema de riego a la finca y a las parcelas.*
+
+*El proyecto de un sistema de riego está determinado generalmente por
+las dimensiones y forma de finca. En la práctica es frecuente que las
+dimensiones de una parcela están dadas por los límites legales y no por
+los que serían deseables desde el punto de vista del riego.*
+
+*9) Facilitar el empleo de maquinaria para la preparación de la tierra,
+el cultivo, el surcado y alomado, la recolección y transporte, etc.*
+
+*Hay que tener siempre presente la maquinaria, puesto que a medida que
+aumenta el grado de maquinización es preciso que las parcelas sean más
+anchas y largas.*
+
+*10) Adaptar el sistema a los cambios de suelo y pendiente.*
+
+*En el caso de que un surco atraviese suelos de texturas, estructuras y
+pendientes diversas, las dificultades que surjan se plasman en:*
+
+1) *diferencias de velocidad de penetración para cada una de las
+   parcelas, haciendo imposible que el caudal se ajuste a los diferentes
+   tipos de suelo.*
+
+2) *La capacidad de retención del agua, al variar de una parcela a otra,
+   hace que las frecuencias de riego no sean las mismas a lo largo del
+   recorrido.*
+
+*El proyecto de riego debe ser tal que prevea las mínimas variaciones de
+este tipo en una parcela regada.*
+
+*Sistematización de predios para riego por gravedad*
+
+En el método que se conoce como /*Riego por Superficie o Riego por
+Gravedad*/ la única energía que mueve el agua es la de posición o la
+gravedad.
+
+A diferencia de los métodos a presión, al avanzar el agua sobre la
+superficie del suelo se produce simultáneamente la distribución del agua
+en la parcela y la infiltración de la misma en el perfil del suelo. Este
+hecho plantea problemas teóricos de gran complejidad para el diseño de
+los sistemas.
+
+El riego por superficie puede dividirse en 3 clases (esto ya fue visto
+anteriormente):
+
+- Riego por inundación
+
+- Riego por melgas
+
+- Riego por surcos
+
+*Riego por inundación*
+
+Áreas planas, superficies niveladas, rodeadas por bordos.
+
+*Riego por melgas*
+
+Similar al riego por inundación, pero con salida libre de agua en el
+extremo inferior.
+
+Superficies rectangulares o en contorno.
+
+Con pendiente longitudinal, pero sin pendiente transversal. El agua
+avanza sobre toda la superficie de la melga.
+
+*Riego por surcos*
+
+No moja toda la superficie (puede ser un riego localizado). Se
+construyen pequeños canales (surcos) que conducirán el movimiento del
+agua. El agua infiltra a través del perímetro mojado.
+
+Cuando se utiliza riego por gravedad es necesario sistematizar el suelo
+para el manejo del agua. En los valles templados de Jujuy y Salta donde
+la principal actividad es el tabaco, si bien se ha adelantado en los
+últimos años, aun la mayoría de las fincas no han sistematizado sus
+suelos. En cuanto al cultivo de caña, en las mismas provincias la
+sistematización para riego esta mas difundida.
+
+A lo dicho se agrega que, en la mayoría de los proyectos de
+sistematización para riego por gravedad, es conveniente considerar la
+conservación del suelo por efecto de las lluvias e incluir el enfoque de
+cuenca hídrica. En la práctica los pocos proyectos que han utilizado ese
+criterio integral han usado y diseñado los caminos como terrazas de
+protección y a los costados han trazado las acequias (INTA Salta). A
+secano cuando la pendiente es del 1 % o más, también es necesaria, en la
+mayoría de los casos la sistematización, debido a las pendientes largas,
+a la susceptibilidad de los suelos a la degradación y a las lluvias
+torrenciales (Sciortino y Villanueva 2000).
+
+Por lo tanto, gran parte de Salta y Jujuy requiere sistematización. Para
+hacerlo es importante planificar las acciones y trabajar con enfoque de
+cuenca hídrica, programando los desagües empastados y las terrazas.
+Conviene incluir en los proyectos también represas de contención
+localizadas en las vías de desagüe en depresiones, es decir en donde más
+convenga según el relieve. Estas represas se llenan con las lluvias
+fuertes y se vacían en 2 ó 3 días, por los cauces programados lo cual
+evita los golpes de agua que erosionan los suelos y además rompen:
+puentes, caminos, las alcantarillas y las mismas rutas.
+
+*Lo primero que se debe realizar es*
+
+- *Plano de suelos*
+
+- *Topografía general (1:10.000)*
+
+- *Catastro (figura el derecho a riego)*
+
+- *Dominio de riego (es importante sobretodo si se quiere ampliar la
+  zona de riego porque puede ocurrir que el agua no llegue a la
+  ampliación)*
+
+*Línea de nivel Equidistancia = 0,25 m*
+
+*Es necesario cuadricular de 25 m X 25 m = 16 puntos por hectárea.*
+
+*Pendientes*
+
+*0 -- 3% 10 a 14 puntos por hectárea*
+
+*> 3% 14 a 20 puntos por hectárea*
+
+*Cuartel de riego medio*
+
+*Un cuartel de riego esta constituido por una superficie que varia entre
+½ hectárea a 2 hectáreas. El cuartel de riego debe tener 2 pendientes
+dominantes una de 2%_{0} (pendiente de transporte) y otra de 1%_{0}
+(pendiente de riego o aplicación). El cuartel de riego va a estar divido
+en surcos, al final del surco se debe llegar con la lamina mínima
+prevista.*
+
+*Las pendientes usuales son de:*
+
+- *transporte 2%_{0}*
+
+- *Riego 1%_{0}*
+
+- *En general el terreno virgen tendrá una forma cualquiera y la quiero
+  llevar a un plano que tenga una pendiente de transporte de 2%_{0} y
+  una de riego de 1%_{0}*
+
+*En la zona de la derecha de la figura debo hacer desmonte ya que sobra
+suelo, en la parte izquierda debo rellenar. Al realizar el desmonte debo
+tener cuidado de no decapitar el suelo, es decir dejarlo inútil para la
+siembra. El limite de suelo a extraer va a estar dado por el estudio
+edafológico. No es conveniente utilizar maquinarias grandes ya que dañan
+el suelo para el cultivo.*
+
+*Si dividimos la superficie en n cuadriculas iguales, entonces el
+volumen total a mover será la suma de los volúmenes elementales.*
+
+$V_{1} = \frac{S}{n}\text{.}C_{1}$
+
+$V_{2} = \frac{S}{n}\text{.}C_{2}$
+
+*..................*
+
+$V_{n} = \frac{S}{n}\text{.}C_{n}$
+
+*Siendo:*
+
+*S la superficie total C la cota roja de la cuadricula.*
+
+*Poniendo como condición la total compensación y siendo V_{D} el volumen
+de desmonte*
+
+$V = 2\text{.}V_{D} = n\text{.}\frac{S}{n}\text{.}\sum_{}^{}C_{n}$
+
+*V_{D} = ½ . S Cota roja media*
+
+*La cota roja media se calcula utilizando el método del centro de
+gravedad o centroide. Para utilizar este método debo hacer un
+relevamiento topográfico. Se colocan estacas de 1cmx1cmx10cm en el
+centro de cada cuadricula o se pueden estaquear las cuatro esquinas de
+cada cuadricula, nivelarlas y considerar la cota del centro como el
+promedio de las cuatro cotas. Es mas trabajoso y no tiene ventajas.
+Luego busco el centro de todo el terreno y le asigno como cota al
+promedio ponderado de las cotas.*
+
+*Cota roja
+media*$= \frac{C_{1}\text{.}P_{1} + C_{2}\text{.}P_{2} + \text{.}\text{.}\text{.} + C_{n}\text{.}P_{n}}{P_{1} + P_{2} + \text{.}\text{.}\text{.} + P_{n}}$
+
+*Siendo el peso equivalente a la superficie que presenta cada cota de la
+cuadricula. En general los pesos son 1, pero en chacras de forma
+irregular puede variar considerablemente.*
+
+*Luego se calcula para cada cuadricula la diferencia entre la cota de
+calculo y la natural. Para verificar la utilidad del Cg se suman las
+diferencias positivas por un lado y las negativas por otro. Las
+diferencias entre las sumas debe ser como máximo el 10% de la menor de
+las sumatorias en valor absoluto.*

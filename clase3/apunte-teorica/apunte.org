@@ -1,0 +1,527 @@
+﻿* Setting                                                          :noexport:
+ 
+#+LATEX_ENGINE: xelatex
+#+LATEX_CLASS: extarticle
+#+LATEX_CLASS_OPTIONS: a4paper,12pt
+
+#+LaTeX_HEADER: \usepackage[spanish]{babel}
+#+LaTex_HEADER: \usepackage{placeins}
+#+LaTex_HEADER: \usepackage{graphicx} % Required to insert images
+#+LaTex_HEADER: \usepackage{courier} % Required for the courier font
+#+LaTex_HEADER: \usepackage{fixltx2e}
+#+LaTex_HEADER: \usepackage{amsmath}
+#+LaTex_HEADER: \usepackage{dsfont}
+#+LaTex_HEADER: \usepackage{amssymb}
+#+LaTex_HEADER: \usepackage{hyperref}
+#+LaTex_HEADER: \usepackage{fancyhdr} % Required for custom headers
+#+LaTex_HEADER: \usepackage{lastpage} % Required to determine the last page for the footer
+#+LaTex_HEADER: \usepackage{extramarks} % Required for headers and footers
+#+LaTex_HEADER: % Margins
+#+LaTex_HEADER: \usepackage{geometry}
+#+LaTex_HEADER:  \geometry{
+#+LaTex_HEADER:  a4paper,
+#+LaTex_HEADER:  left=20mm,
+#+LaTex_HEADER:  right=20mm,
+#+LaTex_HEADER:  top=20mm,
+#+LaTex_HEADER:  bottom=20mm,
+#+LaTex_HEADER:  }
+#+LaTex_HEADER: 
+#+LaTex_HEADER: \linespread{1.1} % Line spacing
+#+LaTex_HEADER: 
+#+LaTex_HEADER: % Set up the header and footer
+#+LaTex_HEADER: \pagestyle{fancy}
+#+LaTex_HEADER: \lhead{} % Top left header
+#+LaTex_HEADER: \chead{\hmwkClass\ (\hmwkClassTime): \hmwkTitle} % Top center head
+#+LaTex_HEADER: \rhead{\hmwkInstitucional} % Top right header
+#+LaTex_HEADER: \lfoot{\hmwkClassInstructor} % Bottom left footer
+#+LaTex_HEADER: \cfoot{} % Bottom center footer
+#+LaTex_HEADER: \rfoot{Página\ \thepage\ de\ \protect\pageref{LastPage}} % Bottom right footer
+#+LaTex_HEADER: \renewcommand\headrulewidth{0.4pt} % Size of the header rule
+#+LaTex_HEADER: \renewcommand\footrulewidth{0.4pt} % Size of the footer rule
+#+LaTex_HEADER: 
+#+LaTex_HEADER: \setlength\parindent{0pt} % Removes all indentation from paragraphs
+#+LaTex_HEADER: 
+#+LaTex_HEADER: % Encabezados y pies.
+#+LaTex_HEADER: 
+#+LaTex_HEADER: \newcommand{\hmwkTitle}{Clase 2 - Teoría} % Assignment title
+#+LaTex_HEADER: \newcommand{\hmwkDueDate}{Abril 2020} % Due date
+#+LaTex_HEADER: \newcommand{\hmwkClass}{Hidráulica Agrícola y Saneamiento} % Course/class
+#+LaTex_HEADER: \newcommand{\hmwkClassTime}{1-2020} % Class/lecture time
+#+LaTex_HEADER: \newcommand{\hmwkClassInstructor}{Mónica Fiore - Javier Clavijo} % Teacher/lecturer
+#+LaTex_HEADER: \newcommand{\hmwkInstitucional}{FI-UBA} % Your name
+
+#+LaTex_HEADER:\usepackage{lineno}
+#+LaTex_HEADER:\linenumbers
+
+#+BEGIN_SRC emacs-lisp
+
+(setq org-image-actual-width nil)
+
+#+END_SRC
+
+#+RESULTS:
+
+* Hidráulica Agrícola y Saneamiento
+** Disponibilidad de Agua
+
+Uno de los factores determinantes de la salud humana es la
+disponibilidad de agua dulce. El crecimiento demográfico, la
+urbanización, la industrialización y el aumento de la producción han
+generado una demanda de agua dulce cada vez mayor.
+
+La Organización de Naciones Unidas para la Alimentación y la
+Agricultura (FAO) sostiene que el agua es un recurso con 3 facetas, la
+económica, la ambiental y la social. Luego si se quiere hacer una
+adecuada valoración de este recurso se deben considerar las tres
+facetas en forma conjunta
+(https://www.unwater.org/publications/world-water-development-report-2018/).
+
+El crecimiento demográfico y los cambios en las pautas de consumo
+hacen que la demanda de agua, tanto a nivel regional como global,
+aumente considerablemente. Los países en donde la demanda es mayor son
+aquellos con economías en desarrollo. Más de 2.000 millones de
+personas viven en países que sufren una fuerte escasez de agua, y
+aproximadamente 4.000 millones de personas padecen una grave escasez
+de agua durante al menos un mes al año.
+
+Algo que acrecentará la escasez de agua, es el cambio climático, que
+producirá la intensificación de zonas más áridas donde para mantener
+la producción se necesitará contar con riego artificial. Los cambios
+en los patrones de precipitación y temperatura amenazan más aún la
+disponibilidad de agua, la productividad agrícola y el equilibrio de
+los ecosistemas.
+
+Se espera que la demanda global de agua continúe aumentando a un ritmo
+similar hasta 2050, hasta un aumento del 20 al 30% por encima del
+nivel actual de uso del agua (Burek et al., 2016). Los analistas
+sugieren que gran parte de este crecimiento se atribuirá a los
+aumentos en la demanda de los sectores industrial y doméstico (OCDE,
+2012). Teniendo en cuenta esto último, es probable que el uso del agua
+en la agricultura disminuya en comparación con otros sectores, pero
+seguirá siendo el mayor usuario en general en las próximas décadas, en
+términos de extracción y consumo de agua.
+
+La disponibilidad del agua debe analizarse teniendo en cuenta la
+fuente de donde extraerla y la accesibilidad a la misma. Las fuentes
+de donde extraerla pueden ser de superficie y/o subterráneas, así como
+no convencionales. Las fuentes no convencionales incluyen la
+desalinización del agua de mar, la reutilización y reciclaje del agua
+y la acopiada de agua de lluvia y niebla (este tipo de fuentes son
+utilizadas en países con gran escasez de agua y con gran poder
+económico, dado que son muy caras de implementar). La accesibilidad,
+implica el transporte del agua desde la fuente hasta los diferentes
+usuarios en cantidades suficientes y con la calidad adecuada para su
+utilización.
+
+Aumentar la eficiencia en el uso del agua en todos los sectores que la
+utilizan (agricultura, energía, industria, uso doméstico) puede
+contribuir a reducir la demanda general y, de esta manera, liberar el
+suministro de agua para otros usuarios.
+
+Existen áreas en donde la necesidad de mejora de los recursos hídricos
+es imperiosa, en estos casos la demanda excede el suministro
+sostenible o el suministro puede estar en peligro por contaminación o
+degradación de la tierra. También hay que considerar que zonas con una
+relativa abundancia de agua, la mayor demanda implica una mejora en la
+accesibilidad al recurso.
+
+Todos los años se publica el “Informe Mundial sobre el Desarrollo de
+los Recursos Hídricos de las Naciones Unidas”, en este informe se
+muestran los resultados de estudios exhaustivos que ofrece un panorama
+global sobre el estado de los recursos de agua dulce del planeta y
+tiene como objetivo proporcionar herramientas a los responsables de la
+toma de decisiones para la implementación del uso sostenible de los
+recursos hídricos.
+
+El Informe Mundial sobre el Desarrollo del Agua presentado en el 8º
+Foro Mundial del Agua, en Brasilia (Brasil), el 19 de marzo de 2018,
+informa a los responsables políticos y tomadores de decisiones, sobre
+el potencial de las soluciones basadas en la naturaleza para afrontar
+los desafíos actuales de la gestión del agua en todos los sectores,
+particularmente los relacionados con el agua para la agricultura, para
+las ciudades sostenibles, para la reducción del riesgo de desastres
+naturales y los de la calidad del agua. Las soluciones basadas en la
+naturaleza (Nature-Based Solutions, NBS) están inspiradas y
+respaldadas por la naturaleza, usan o imitan los procesos naturales
+para contribuir al manejo mejorado del agua.
+
+Una solución basada en la naturaleza, como su propio nombre indica, es
+una opción innovadora y medio ambiental, basada en el ciclo natural
+del planeta, sobre todo en vegetación, suelos y humedales, para
+complementar las insuficientes infraestructuras de agua (UNESCO,
+2018).
+
+Trabajar con la naturaleza mejora la gestión de los recursos hídricos,
+ayuda a lograr la seguridad del agua para todos y respalda los
+aspectos centrales del desarrollo sostenible. Las NBS para el agua
+también generan beneficios colaterales sociales, económicos y
+ambientales, incluidos la salud humana y los medios de subsistencia,
+la seguridad alimentaria y energética, el crecimiento económico
+sostenible, empleos decentes, rehabilitación y mantenimiento de
+ecosistemas y biodiversidad.
+
+Algunos ejemplos de NBS son:
+
+- Para la disponibilidad y el abastecimiento de agua: almacenamiento
+  de agua a través de los humedales, recarga de aguas subterráneas a
+  través del suelo, espacios verdes a través de la infiltración,
+  pavimentos permeables, etc.
+- Para la calidad del agua: agricultura sostenible para reducir la
+  contaminación de la agricultura actual, reforestación y conservación
+  de bosques, construcción de humedales, etc.
+- Para la gestión de eventos extremos (sequías, inundaciones, etc):
+  protección y restauración de manglares, marismas costeras y dunas,
+  protección de las barreras de coral, construcción de pavimentos
+  permeables y techos verdes, desvíos de las inundaciones, etc.
+
+** El consumo de Agua
+
+El consumo de agua en sus diferentes usos varía en función de la zona
+a considerar, un clima, más húmedo, hace que se necesite menos
+cantidad de agua para la actividad agrícola de regadío. En general, un
+mayor grado de urbanización e industrialización conlleva un aumento
+del consumo en los sectores industrial y doméstico, en detrimento del
+agrícola.
+
+En el mundo, los cultivos de regadío consumen una gran parte del agua
+disponible, mientras que el uso doméstico y el ganadero tienen una
+pequeña incidencia en la explotación de este recurso natural. Por otra
+parte, del análisis del consumo de agua de una comunidad, puede
+deducirse mucho sobre sus hábitos sociales, el grado de desarrollo
+económico y la disponibilidad hidráulica natural.
+
+Usos consuntivos. Son aquellos usos en los que el agua no puede volver
+a utilizarse de la misma forma. Ejemplos: el agua que se utiliza en
+agricultura, ganadería, industria. Es decir, es aquel en el que el
+agua, una vez usada, no se devuelve al medio donde se ha captado, ni
+de la misma manera que se ha extraído. La agricultura, en especial la
+de riego, es el sector con mayor extracción y uso consuntivo de agua a
+nivel mundial. En la agricultura, se utiliza agua para el riego que
+después se pierde por la evapotranspiración (evaporación del suelo y
+transpiración de las plantas) y por lo tanto no se incorpora de forma
+líquida al ciclo del agua, sino en forma de vapor a la atmosfera.
+
+En el uso no consuntivo, el agua que se utiliza es devuelta
+posteriormente al medio del cual ha sido extraída, aunque no al mismo
+lugar. Sin embargo, el agua devuelta puede presentar diversas
+alteraciones fisicoquímicas y biológicas dependiendo del uso que se le
+haya dado. El ejemplo más representativo es el urbano - doméstico, que
+aporta una gran concentración de materia orgánica por lo que el agua
+se debe tratar en una depuradora antes de devolverla al medio.
+
+Para perfeccionar la gestión de los dos usos es fundamental introducir
+mejoras que vayan dirigidas tanto a reducir la cantidad de agua
+utilizada como a aumentar la calidad de agua devuelta al medio. Así,
+en el caso de los usos consuntivos como la agricultura, la clave para
+hacer un uso más eficiente es reducir las pérdidas por
+evapotranspiración, mejorando el rendimiento agrario, tanto por
+hectárea cultivada como por litro de agua utilizado. En el caso de los
+usos no consuntivos, el objetivo que se debe conseguir es que el agua
+vuelva al medio con el menor grado de contaminación posible, y para
+ello hay que cuidar los recursos hídricos locales para que no se
+dañen, como sucede en algunos de los recursos subterráneos.
+
+Hay usos no consuntivos que, a pesar de que no alteran
+significativamente la calidad del agua, pueden alterar el medio de la
+cual la extraen, al afectar a la dinámica de los ecosistemas
+acuáticos. Este es el caso, por ejemplo, de las centrales
+minihidráulicas, pequeñas presas de pocos metros de altura que derivan
+un caudal determinado del río y lo devuelven unos centenares de metros
+o pocos kilómetros más abajo.
+
+** Cambio Climático 
+
+Desde comienzos del siglo XX, el planeta ha
+evidenciado un aumento en la temperatura media global, cuya tasa de
+calentamiento se ha intensificado en las últimas décadas, ocasionando
+uno de los mayores desafíos para la sociedad actual. La influencia
+humana en el sistema climático es clara y las recientes emisiones de
+gases de efecto invernadero de origen antropogénico son las más altas
+de la historia (IPCC, 2014).
+
+En la Figura 1. se observan anomalías de temperatura anuales desde
+1880 hasta 2019, con respecto a la media de 1951-1980.  Se observan
+pequeñas variaciones de un año a otro, pero los cinco registros de
+temperatura muestran picos y valles sincronizados entre sí. Todos
+indican un rápido calentamiento en las últimas décadas, y todos
+señalan que la última década ha sido la más cálida en el registro.
+
+
+#+CAPTION: Fuente: https://data.giss.nasa.gov/gistemp
+#+ATTR_HTML: :width 450
+[[./img/image1.jpeg]]
+
+Este ascenso no fue uniforme, ni en forma temporal ni espacial. Entre
+1945-1978, la temperatura media global de la superficie terrestre
+tendió a estabilizarse e incluso a tener una tendencia negativa. Esta
+evolución desigual probablemente indique que han existido factores
+naturales, y no sólo antrópicos, en las variaciones térmicas,
+especialmente durante el primer período de ascenso (1910-1945), ya que
+en ese lapso las emisiones de CO2 y de otros gases invernadero eran
+todavía muy escasas.
+
+Las diferencias regionales en la evolución térmica son importantes. No
+hay que olvidar que la temperatura media global es una media que suele
+contabilizar fenómenos simultáneos de calentamiento en unas zonas y de
+enfriamiento en otras.
+
+El calentamiento global ya ha alcanzado 1°C por encima del nivel
+pre-industrial, debido a emisiones de gases. El último reporte del
+IPCC, Special Report on the Ocean and Cryosphere in a Changing Climate
+(SROCC) (IPCC, 2019), recopila los últimos datos mejorando el
+conocimiento disponible para entender el rol del cambio climático
+inducido por el hombre en el océano y la criosfera (las partes
+congeladas de nuestro planeta), y enumera los cambios que serán
+inevitables en las próximas décadas y aquellos que dependen de las
+decisiones que se tomen ahora.
+
+El océano regula el clima global dada su alta capacidad para retener,
+por lo que responde en forma diferente que la atmósfera a forzantes
+externos. Según el SROCC el océano ya absorbió más del 90% del calor
+generado por la emisión de gases, limitando el calentamiento en otras
+regiones del sistema terrestre
+
+** Gases responsables del Efecto Invernadero
+
+Son gases que se encuentran presentes en la atmósfera terrestre y que
+dan lugar al fenómeno denominado efecto invernadero. Su concentración
+atmosférica es baja, pero tienen una importancia fundamental en el
+aumento de la temperatura del aire próximo al suelo, haciéndola
+permanecer en un rango de valores aptos para la existencia de vida en
+el planeta.
+
+Los principales gases que producen el invernadero son:
+
+1. CO2: Actualmente es el principal responsable del efecto
+   invernadero. Este gas se encuentra en concentraciones relativamente
+   bajas en la atmósfera, aproximadamente un 0.03%. A pesar de sus
+   bajos niveles, se trata del mayor impulsor del calentamiento
+   global. Es el culpable de alrededor de las 3/4 partes del efecto de
+   calentamiento procedente de las actuales emisiones de gases de
+   efecto invernadero. La concentración en la atmósfera es debido al
+   uso de combustibles fósiles como el carbón, el petróleo y el gas,
+   aunque la deforestación es también un contribuyente muy importante,
+   dado que las hojas verdes mediante la fotosíntesis son un regulador
+   natural para este gas. El océano absorbió entre 20-30% de las
+   emisiones de dióxido de carbono inducidas por el hombre, aumentando
+   la acidificación oceánica, originando cambios en los ecosistemas
+   acuáticos.
+2. CH4: Es un gas incoloro, inflamable y no tóxico. Su origen se
+   encuentra en las fermentaciones producidas por bacterias anaerobias
+   que se encuentran en zonas pantanosas, cultivos como el arroz y en
+   las emisiones del tracto intestinal del ganado. Actualmente, el
+   metano contribuye al Calentamiento Global con un 15%. Se sospecha
+   que a fines del siglo XXI el efecto de este gas supere al del
+   CO2. La ganadería vacuna y ovina repartidas por todo el planeta son
+   las responsables de casi una cuarta parte de todas las emisiones de
+   metano en el planeta.
+3. N2O: Gas invernadero que se produce principalmente a través del uso
+   masivo de fertilizantes nitrogenados en la agricultura. También lo
+   producen otras fuentes como las centrales térmicas, tubos de escape
+   de automóviles y motores de aviones, etc. Estudios realizados en
+   2018 en España por la Universidad Politéctinca de Madrid indican
+   que el uso de los fertilizantes con Zinc en cultivos de secano
+   reduce hasta en un 20% las emisiones de óxido nitroso a la
+   atmósfera constituyendo una estrategia para mitigar la emisión de
+   gases de efecto invernadero.
+4. Los clorofluorocarbonos (CFC): Son compuestos químicos artificiales
+   que se encuentran presentes en pequeñas concentraciones en la
+   atmósfera pero que son extremadamente potentes en su efecto
+   invernadero. Tienen múltiples usos industriales en sistemas de
+   refrigeración, como componentes de aerosoles, producción de
+   aluminio y aislantes eléctricos entre otros. Son los principales
+   responsables del adelgazamiento de la capa de ozono. Los CFCs han
+   disminuido la concentración de ozono en la zona de la Antártida.
+
+En la Argentina en 2015 se elaboró el Inventario Nacional de Gases de
+Efecto Invernadero (INVGEI) que incluye las estimaciones de emisiones
+por las fuentes y la absorción por los sumideros de los sectores
+Energía, Procesos Industriales, Agricultura y Ganadería, Cambio del
+Uso del Suelo y Silvicultura, y Residuos, de la República Argentina
+para el año 2012. Describe, asimismo, la evolución de las emisiones en
+el período 1990 a 2012La versión completa del INVGEI para el año 2012
+y la documentación detallada se encuentra publicada en el sitio web de
+la Secretaría de Ambiente y Desarrollo Sustentable de la Nación
+(http://www.ambiente.gob.ar/?idseccion=356).
+
+** Cambio Climático y Agricultura
+
+El cambio climático, en particular el calentamiento del planeta,
+afecta muchos aspectos como por ejemplo el de las actividades
+agrícolas. El cambio climático produce que el clima sea menos
+previsible, lo que complicar la planificación de las actividades
+agrícolas. Los extremos climáticos que son difíciles de prever son más
+frecuentes y en algunos casos más intensos.
+
+Se observa que las siembras de otoño – invierno se retrasan debido a
+que las heladas y precipitaciones llegan mas tarde. Las siembras de
+primavera - verano también se retrasan debido a la falta de
+precipitaciones que hacen que disminuya la humedad del suelo y las
+bajas temperaturas se adelantan perjudicando la cosecha a último
+momento.
+
+Los efectos del cambio climático pueden reducirse mejorando los
+sistemas de gestión de agua y riego. Muchas zonas agrícolas de secano*
+se están volcando paulatinamente a la incorporación de tecnologías de
+riego tanto sea para incrementar los rendimientos como para asegurar
+las cosechas en los años de sequía.
+
+Por otra parte, si el exceso de lluvia es mucho, se deben tener medios
+para eliminarlos, siendo el drenaje una alternativa.
+
+*Zona de secano*: es la zona en la que el hombre no contribuye con
+agua. Utiliza solo el agua de lluvia
+
+Los riesgos y desastres relacionados con el agua, como las
+inundaciones y sequías asociadas a una creciente variabilidad temporal
+de los recursos hídricos debido al cambio climático, provocan pérdidas
+humanas y económicas inmensas y cada vez mayores a nivel mundial. Se
+calcula que alrededor del 30% de la población mundial vive en áreas y
+regiones que sufren los efectos de inundaciones y sequías de manera
+habitual.
+
+La agricultura de riego es, en promedio, al menos dos veces más
+productiva por unidad de tierra, tiene un importante efecto de
+amortiguación contra el aumento de la variabilidad climática y permite
+una diversificación de los cultivos más segura, sin duda alguna el
+riego seguirá siendo clave para la seguridad alimentaria y nutricional
+en el mundo.
+
+La agricultura argentina ha experimentado en las últimas décadas un
+marcado crecimiento, tanto en toneladas producidas como en la
+superficie cultivada. El proceso de crecimiento se explica por la
+incorporación de superficie cultivada y la adopción de nuevas
+tecnologías que se incorporaron a los sistemas productivos, generando
+una mayor eficiencia en el uso de los recursos
+(https://www.argentina.gob.ar/sites/default/files/1.-inventario-geis-agricultura-ganaderia-y-cuss-v2.pdf).
+
+La siembra directa (SD) ha sido uno de los cambios tecnológicos más
+significativos. Su adopción comenzó en 1990, aumentando a casi 10
+millones de hectáreas en el 2000 bajo este sistema y llegando en el
+año 2010 a 26 millones de hectáreas cultivadas (Aapresid, 2012). La
+Siembra Directa es parte de un sistema integral de producción de
+granos que evolucionó hacia la implantación del cultivo sin remoción
+de suelo y con una cobertura permanente del suelo con residuos de
+cosecha.
+
+R. Negri, et al. (2009) sostienen que la siembra directa (SD) en poco
+tiempo contribuyó a reducir efectivamente la pérdida de suelo por
+erosión (tanto eólica como hídrica) y a mejorar la eficiencia del uso
+del agua, el principal factor limitante en los sistemas de producción
+sin riego.
+
+La Figura 2 resume los impactos observados y esperados
+producidos/a producir por el cambio climático.
+
+#+CAPTION: Fuente: inventario nacional de Gases de Efecto Invernadero, https://www.argentina.gob.ar/ambiente/aire/efectoinvernadero
+[[./img/image2.png]]
+
+** Nivel Medio del Mar
+
+Como se mencionó anteriormente, tanto a nivel global como regional, se
+ha detectado un incremento relativo del Nivel del Mar que varía según
+la zona analizada. Cada región del planeta presenta tendencias
+originadas por efectos climáticos, oceánicos y geológicos.
+
+El aumento del nivel medio del mar es causado por calentamiento del
+océano (que produce expansión térmica) y por pérdida de hielo en
+glaciares y capas de hielo, y reducción del almacenamiento de agua
+líquida en la tierra. Los glaciares y los mantos de hielo de las
+regiones polares y de montaña pierden masa, y ello contribuye no solo
+a la aceleración de la elevación del nivel del mar, sino también a la
+expansión de las aguas cálidas en los océanos.
+
+Durante el siglo XX, la elevación del nivel del mar a escala mundial
+ha sido de unos 15 cm, pero el ritmo actual se ha más que duplicado
+(3.6 mm/año durante el período 2005-2015) y no deja de acelerarse,
+según se evidencia. Los estudios realizados indican que de aquí a 2100
+podría llegar a registrar una elevación de entre aproximadamente 30 y
+60 cm incluso aunque se logre una reducción drástica de las emisiones
+de gases de efecto invernadero y el calentamiento global se mantenga
+muy por debajo de 2 °C. Sin embargo, si las emisiones siguen
+aumentando, el aumento del nivel de las aguas podría ser del orden de
+60 a 110 cm (IPCC, 2019 ).
+
+Desde 1992, los altímetros de las misiones satelitales TOPEX/Poseidon,
+Jason-1, Jason-2 y Jason 3
+(https://www.aviso.altimetry.fr/en/home.html) han contribuido con la
+obtención de datos de elevación del Nivel del Mar para zonas alejadas
+de la costa. Se ha logrado mantener una serie de alturas del Nivel del
+Mar sin interrupciones sobre las trazas originales de los satélites,
+obteniendo más de 26 años de información continua de altura del
+mar. Estas mediciones altimétricas han permitido analizar la evolución
+a diferentes escalas espaciales y temporales (Ablain et al.,2017;
+Saraceno et al., 2014). Se considera, entonces, que desde 1993 se
+dispondría de un monitoreo de todos los componentes que inciden en el
+aumento del Nivel del Mar aunque con ciertas incertidumbres (Church et
+al., 2013).
+
+Si se considera el período correspondiente a las mediciones
+altimétrica registradas durante 1993-2016, el nivel medio del mar a
+escala global ha aumentado a un ritmo de 3.3 mm/año. El aumento del
+nivel medio del mar tiene impacto directo sobre los sistemas costeros
+debido a que son afectados por una mayor frecuencia de inundaciones,
+procesos erosivos, pérdida de humedales, cambios en el paisaje y uso
+del suelo, intrusión de agua salada, etc. Éste resulta un índice
+importante del cambio climático, debido a que refleja tanto el
+calentamiento de los océanos como el efecto del deshielo (Dieng et
+al., 2017; IPCC, 2019).
+
+Existen escasos estudios sobre la tendencia del nivel medio en el
+Hemisferio Sur y sobre todo para la plataforma continental
+Sudamericana. En las costas argentinas los cálculos realizados son en
+general para evaluar la tendencia relativa del nivel medio, es decir
+que no consideran el movimiento vertical de la corteza terrestre donde
+están posicionados los mareógrafos (San Fernando, Palermo-Buenos
+Aires, La Plata, Atalaya, Torre Oyarvide, San Clemente del Tuyú, Santa
+Teresita, Mar del Plata, Quequén, Puerto Belgrano, Puerto Madryn,
+Puerto Deseado). En este sentido hay mareógrafos instalados en sitios
+de indudable influencia tectónica (Ushuaia) y otros en los que la
+influencia de las crecidas ENSO originan un sesgo indiscutible.
+
+#+CAPTION: tendencias relativas de ascenso del nivel medio del mar registradas por mareógrafos en cuatro localidades de la costa argentina (*no se reporta la incertidumbre en el estudio citado).
+| Localidad     |   Período | Tendencia (mm/año) | Autores                |
+|---------------+-----------+--------------------+------------------------|
+| Quequén       | 1918-1981 | 1.60 ± 0.20        | Lanfredi et al. (1998) |
+| Buenos Aires  | 1905-2006 | 1.67 ± 0.05        | Fiore et al. (2014)    |
+| Mar del Plata | 1953-2006 | 1.53 ± 0.11        | Fiore et al. (2014)    |
+| Ushuaia       | 1952-2005 | -0.20*             | Dragani et al. (2014)  |
+
+Los cambios del nivel del mar tienen aparejados impactos en las
+ciudades balnearias tanto en bienes privados (viviendas) o públicos
+(infraestructura), como, por ejemplo, eventuales aumentos de la altura
+de las olas (Dragani et al., 2010), que deben ser considerados en los
+planes de crecimiento de estas localidades.
+
+** Referencias
+
+AAPRESID (2012). Evolución de la Superficie en Siembra Directa en Argentina. Recuperado el 14 de Marzo 2014, de http://www.aapresid.org.ar/wpcontent/uploads/2013/02/aapresid.evolucion_superficie_sd _argentina.1977_a_2011.pdf.
+
+ABLAIN, M., LEGEAIS, J.F., PRANDI, P., FENOGLIO MARC, L., MARCOS, M., DIENG, H.B., BENVENISTE, J. & CAZENAVE, A. 2017. Satellite altimetry-based Sea level at global and regional scales. Surv Geophys. 38:7–31. doi:10.1007/s10712-016-9389-8.
+
+ABRAM N., GATTUSO J.-P., PRAKASH A., CHEN L., CHIDICHIMO M. P., CRATE S., ENOMOTO H., GARSCHAGEN M., GRUBER N., HARPER S., HOLLAND E., KUDELA R. M., RICE J. D., STEFFEN K. & VON SCHUKMANN K., 2019. Framing and context of the report. In: Pörtner H.-O., Roberts D., Masson-Delmotte V. & Zhai P. (Eds.), Special Report on Ocean and Cryosphere in a Changing Climate. Geneva: Intergovernmental Panel on Climate Change. In press. 2019.
+
+Burek, P., Satoh, Y., Fischer, G., Kahil, M. T., Scherzer, A., Tramberend, S., Nava, L. F., Wada, Y., Eisner, S., Flörke, M., Hanasaki, N., Magnuszewski, P., Cosgrove, B. y Wiberg, D. 2016. Water Futures and Solution: Fast Track Initiative (Final Report). IIASA Documento de trabajo. Laxenburg, Austria, International Institute for Applied Systems Analysis (IIASA). pure.iiasa.ac.at/13008/
+
+CHURCH, J.A., CLARCK, P.U., CAZENAVE, A., GREGORY, J.M., JEVREJEVA, S., LEVERMANN, A., MERRIFIELD, M.A, MILNE, G.A., NEREM, R.S., NUNN, P.D., PAYNE, A.J., PFEFFER, W.T., STAMMER, D. & UNNIKRISHNAN, A.S., 2013. Sea Level Change. En: Climate Change 2013: The Physical Science Basis. Contribution of Working Group I to the Fifth Assessment Report of the Intergovernmental Panel on Climate Change [Stocker, T.F., Qin D., Plattner G.-K., Tignor M., Allen S.K., Boschung J., Nauels A., Xia Y., Bex V., Midgley P.M. (eds.)]. Cambridge University Press, Cambridge, United Kingdom and New York, NY, USA, 1137-1216.
+
+DIENG, H.B., CAZENAVE, A., MEYSSIGNAC, B., VON SCHUCKMANN, K. & PALANISAMY, H. 2017. Sea and land surface temperatures, ocean heat content, Earth’s energy imbalance and net radiative forcing over the recent years. Int Journal Climatol. 37:218–229. doi:10.1002/joc.4996.
+
+DRAGANI, W.C., MARTIN, P.B., SIMIONATO, C.G. & CAMPOS, M.I., 2010. Are wind wave heights increasing in south-eastern south American continental shelf between 32°S and 40°S? Cont. Shelf Res. 30, 481–490. doi:10.1016/j.csr.2010.01.002.
+
+DRAGANI, W.C., D'ONOFRIO, E.E., ALONSO, G., FIORE, M. & OREIRO F. 2014 Sea-Level Trend at the Southernmost Region of South America. Journal of Coastal Research: Volume 30, Issue 1: pp. 210 – 213.
+
+FIORE, M.M.E., D’ONOFRIO, E.E. GRISMEYER, W.H. & MEDIAVILLA D. G. 2014.El ascenso del nivel del mar en la costa de la Provincia de Buenos Aires. Publicado en el libro “Ciencias del mar – Volumen Temático 1. Editado por Pablo Enrique Penchaszadeh. Publicado en Ciencia Hoy, ISBN 978-987-45584-04, 19-25, 256p.
+
+IPCC, 2014: Climate Change 2014: Synthesis Report. Contribution of Working Groups I, II and III to the Fifth Assessment Report of the Intergovernmental Panel on Climate Change [Core Writing Team, R.K. Pachauri and L.A. Meyer (eds.)]. IPCC, Geneva, Switzerland, 151 pp
+
+IPCC, 2019: Summary for Policymakers. In: IPCC Special Report on the Ocean and Cryosphere in a Changing Climate [H.-O. Pörtner, D.C. Roberts, V. Masson-Delmotte, P. Zhai, M. Tignor, E. Poloczanska, K. Mintenbeck, A. Alegría, M. Nicolai, A. Okem, J. Petzold, B. Rama, N.M. Weyer (eds.)]. In press.
+
+LANFREDI, N., POUSA, J. & D’ONOFRIO, E., 1998. Sea-level rise and related potential hazards on the Argentine coast. Journal of Coastal Research, 1(14), 47–60.
+
+OCDE (Organización para la Cooperación y el Desarrollo Económicos). 2012. OECD Environmental Outlook to 2050: The Consequences of Inaction. París, OECD Publishing. doi.org/10.1787/9789264122246
+
+SARACENO, M., SIMIONATO, C.G. & RUIZ-ETCHEVERRY, L.A. 2014. Sea surface height trend and variability at seasonal and interannual time scales in the Southeastern South American continental shelf between 27°S and 40°S, Continental Shelf Research, 91, 82-94, ISSN 0278-4343,https://doi.org/10.1016/j.csr.2014.09.002.
+
+UNESCO (2018) United Nations World Water Development Report 2018: Nature-based solutions for water
+

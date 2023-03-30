@@ -1,0 +1,462 @@
+* Setting                                                          :noexport:
+ 
+#+LATEX_ENGINE: xelatex
+#+LATEX_CLASS: extarticle
+#+LATEX_CLASS_OPTIONS: a4paper,12pt
+
+#+LaTeX_HEADER: \usepackage[spanish]{babel}
+#+LaTex_HEADER: \usepackage{placeins}
+#+LaTex_HEADER: \usepackage{graphicx} % Required to insert images
+#+LaTex_HEADER: \usepackage{courier} % Required for the courier font
+#+LaTex_HEADER: \usepackage{fixltx2e}
+#+LaTex_HEADER: \usepackage{amsmath}
+#+LaTex_HEADER: \usepackage{dsfont}
+#+LaTex_HEADER: \usepackage{amssymb}
+#+LaTex_HEADER: \usepackage{hyperref}
+#+LaTex_HEADER: \usepackage{fancyhdr} % Required for custom headers
+#+LaTex_HEADER: \usepackage{lastpage} % Required to determine the last page for the footer
+#+LaTex_HEADER: \usepackage{extramarks} % Required for headers and footers
+#+LaTex_HEADER: % Margins
+#+LaTex_HEADER: \usepackage{geometry}
+#+LaTex_HEADER:  \geometry{
+#+LaTex_HEADER:  a4paper,
+#+LaTex_HEADER:  left=20mm,
+#+LaTex_HEADER:  right=20mm,
+#+LaTex_HEADER:  top=20mm,
+#+LaTex_HEADER:  bottom=20mm,
+#+LaTex_HEADER:  }
+#+LaTex_HEADER: 
+#+LaTex_HEADER: \linespread{1.1} % Line spacing
+#+LaTex_HEADER: 
+#+LaTex_HEADER: % Set up the header and footer
+#+LaTex_HEADER: \pagestyle{fancy}
+#+LaTex_HEADER: \lhead{} % Top left header
+#+LaTex_HEADER: \chead{\hmwkClass\ (\hmwkClassTime): \hmwkTitle} % Top center head
+#+LaTex_HEADER: \rhead{\hmwkInstitucional} % Top right header
+#+LaTex_HEADER: \lfoot{\hmwkClassInstructor} % Bottom left footer
+#+LaTex_HEADER: \cfoot{} % Bottom center footer
+#+LaTex_HEADER: \rfoot{Página\ \thepage\ de\ \protect\pageref{LastPage}} % Bottom right footer
+#+LaTex_HEADER: \renewcommand\headrulewidth{0.4pt} % Size of the header rule
+#+LaTex_HEADER: \renewcommand\footrulewidth{0.4pt} % Size of the footer rule
+#+LaTex_HEADER: 
+#+LaTex_HEADER: \setlength\parindent{0pt} % Removes all indentation from paragraphs
+#+LaTex_HEADER: 
+#+LaTex_HEADER: % Encabezados y pies.
+#+LaTex_HEADER: 
+#+LaTex_HEADER: \newcommand{\hmwkTitle}{Clase: Saneamiento} % Assignment title
+#+LaTex_HEADER: \newcommand{\hmwkDueDate}{Agosto 2020} % Due date
+#+LaTex_HEADER: \newcommand{\hmwkClass}{Hidráulica Agrícola y Saneamiento} % Course/class
+#+LaTex_HEADER: \newcommand{\hmwkClassTime}{1-2020} % Class/lecture time
+#+LaTex_HEADER: \newcommand{\hmwkClassInstructor}{Mónica Fiore - Javier Clavijo} % Teacher/lecturer
+#+LaTex_HEADER: \newcommand{\hmwkInstitucional}{FI-UBA} % Your name
+
+#+LaTex_HEADER:\usepackage{lineno}
+#+LaTex_HEADER:\linenumbers
+
+#+BEGIN_SRC emacs-lisp
+
+(setq org-image-actual-width nil)
+
+#+END_SRC
+
+#+RESULTS:
+
+* SANEAMIENTO: Higiene, Limpieza, Depuración, Reparación
+
+::: minipagesnf 0.45 0.45 
+#+CAPTION: 
+[[./media/image1.jpeg]]
+
+#+BEGIN_EXPORT latex
+
+\begingroup
+\Large
+\emph{
+Segun la Oficina de Naciones Unidas para la Coordinación de Asuntos
+Humanitarios, El saneamiento es el medio higiénico de promoción de la
+salud a través de prevención de contacto humano con las amenazas de
+los desechos. Las amenazas pueden ser las agentes de enfermedad tanto
+físico, microbiológico, biológico o químico. Los desechos que causan
+problemas de salud son heces humano y animal, desechos sólidos, aguas
+negras, y polución industrial y agrícola.
+}
+\endgroup
+
+#+END_EXPORT
+
+** Contaminación de aguas
+
+::: minipagesnf 0.31 0.31
+#+CAPTION:
+[[./media/image3.jpeg]]
+#+CAPTION:
+[[./media/image2.jpeg]]
+#+CAPTION: 
+[[./media/image4.jpeg]]
+::::::
+
+Los lagos, ríos y mares reciben la basura producida por la actividad
+humana. El ciclo natural del agua tiene una gran capacidad de
+purificación pero no es suficiente.
+
+Pesticidas, desechos químicos, metales pesados, residuos radiactivos,
+etc., se encuentran, en cantidades mayores o menores, al analizar las
+aguas de los lugares más remotos del mundo. En muchos casos es tan
+elevada la contaminación que las hacen peligrosas para la salud humana
+
+#+CAPTION: El ciclo del agua actua como un proceso natural de purificación.
+[[./media/image6.jpeg]]
+
+La degradación de las aguas no es algo de estas últimas décadas, pero
+es en este siglo cuando se ha extendido a ríos y mares de todo el
+mundo.
+ 
+En un principio fueron los ríos, las zonas portuarias e industriales
+las que se contaminaron con productos químicos, espumas, etc. Con la
+industrialización y el desarrollo económico este problema se ha ido
+globalizando.
+
+::: minipages 0.4 0.4 
+#+CAPTION:
+[[./media/image7.jpeg]]
+#+CAPTION:
+[[./media/image8.jpeg]]
+--\caption{El río Citarun, cerca de la capital de Indonesia, Yakarta, es considerado como el más contaminado del mundo.}
+::::::
+
+Las aguas superficiales continentales fueron las más visiblemente
+contaminadas durante muchos años, pero precisamente al ser tan
+visibles son las más vigiladas y las que están siendo regeneradas con
+más eficacia especialmente en los países desarrollados.
+
+Los vertidos son la principal fuente de contaminación de las
+costas. En la mayor parte de los países en vías de desarrollo y en
+muchos lugares de los desarrollados, los vertidos de las ciudades se
+suelen hacer directamente al mar, sin tratamientos previos de
+depuración.
+ 
+::: minipages 0.45 0.45
+#+CAPTION: 
+[[./media/image9.jpeg]]
+#+CAPTION: 
+[[./media/image10.jpeg]]
+#+CAPTION: 
+[[./media/image11.jpeg]]
+--\caption{Los vertidos pueden ser costeros o incluso mar adentro}
+::::::
+
+Las zonas donde la renovación del agua es más lenta (estuarios,
+bahías, puertos) son las más maltratadas. En ellas es frecuente
+encontrar peces con tumores y graves enfermedades, o moluscos y
+crustáceos cuya pesca y consumo están prohibidos, porque contienen
+altas dosis de productos tóxicos.
+
+::: minipages 0.45 0.45
+#+CAPTION: 
+[[./media/image14.jpeg]]
+#+CAPTION: 
+[[./media/image13.jpeg]]
+#+CAPTION:
+[[./media/image12.jpeg]]
+#+CAPTION:
+[[./media/image15.jpeg]]
+--\caption{Los efectos de la contaminación del agua en el ecosistema son muy diversos}
+::::::
+
+Los efectos de los vertidos también se dejan sentir en las aguas no
+costeras. Las grandes cantidades de plástico echadas al mar son las
+responsables de la muerte de muchas focas, ballenas, delfines,
+tortugas, y aves marinas, que quedan atrapadas en ellas o se las
+comen.
+
+
+*** Contaminación por falta de oxigeno 
+ 
+En algunos casos el exceso de materia orgánica y de nutrientes que
+hacen proliferar las algas, genera procesos de putrefacción tan
+fuertes, que se consume el oxígeno disuelto en el mar y los peces y
+otros organismos mueren, originándose grandes "zonas sin vida“.
+ 
+En los últimos diez años aumentó casi una tercera parte la cantidad de
+"zonas de la muerte o sin vida", en los mares del mundo. Según los
+investigadores esto es consecuencia de que cada vez son más los
+fertilizantes utilizados en la agricultura, que llegan a los mares a
+través de los ríos. Junto con la sobrepesca, la destrucción de los
+hábitats y la aparición de peligrosas floraciones de algas, la falta
+de oxígeno es uno de los principales problemas del medio ambiente
+marino.
+
+#+CAPTION: En 1995 más de 305 regiones marinas estaban afectadas por la falta de oxígeno. Foto: CEDOC
+[[./media/image16.jpeg]]
+
+** Sustancias contaminantes del agua
+  
+*** Microorganismos patógenos
+
+Son las bacterias, virus, protozoos y otros organismos que transmiten
+enfermedades como el cólera, tifus, gastroenteritis diversas,
+hepatitis, etc.
+
+Un buen índice para medir la salubridad de las aguas, en lo que se
+refiere a estos microorganismos, es el número de bacterias coliformes
+presentes en el agua. La OMS recomienda que en el agua para beber haya
+0 colonias de coliformes por 100 ml de agua.
+
+::: minipagesnf 0.4 0.4
+#+CAPTION: bacteria
+[[./media/image17.jpeg]]
+#+CAPTION: Ver imagen en tamaño completo
+[[./media/image18.jpeg]]
+::::::
+
+*** Desechos orgánicos 
+
+son el conjunto de residuos orgánicos producidos por los seres
+humanos, ganado, etc. Cuando este tipo de desechos se encuentran en
+exceso, la proliferación de bacterias agota el oxígeno, y ya no pueden
+vivir en estas aguas peces y otros seres vivos que necesitan
+oxígeno. Buenos índices para medir la contaminación por desechos
+orgánicos son la cantidad de oxígeno disuelto en agua, o la Demanda
+Biológica de Oxígeno (DBO).
+
+::: minipages 0.4 0.4
+#+CAPTION:
+[[./media/image19.jpeg]]
+#+CAPTION:
+[[./media/image20.jpeg]]
+--\caption{La determinación de la Demanda Biológica de Oxigeno se realiza con equipo especial}
+::::::
+
+*** Sustancias Químicas Inorgánicas.
+
+En este grupo están incluidos *ácidos* , *sales* y *metales tóxicos* como el
+mercurio y el plomo. Si están en cantidades altas pueden causar
+graves daños a los seres vivos, disminuir los rendimientos agrícolas,
+etc.
+
+**** Nutrientes vegetales inorgánicos
+
+Nitratos y fosfatos son sustancias solubles en agua que las plantas
+necesitan para su desarrollo, pero si se encuentran en cantidad
+excesiva inducen el crecimiento desmesurado de algas y otros
+organismos provocando la eutrofizacíón de las aguas. Cuando estas
+algas y otros vegetales mueren, al ser descompuestos por los
+microorganismos, se agota el oxígeno y se hace imposible la vida de
+otros seres vivos. El resultado es un agua maloliente e inutilizable.
+
+::: minipages 0.45 0.45
+#+CAPTION:
+[[./media/image21.jpeg]]
+#+CAPTION:
+[[./media/image23.jpeg]]
+#+CAPTION:
+[[./media/image22.jpeg]]
+--\caption{El desbalance de nutrientes produce una alteración en el
+--crecimiento de las algas, que a largo plazo termina reduciendo la
+--disponibilidad de oxigeno e imposibilitando la vida en el agua}
+::::::
+
+*** Compuestos orgánicos
+
+Muchas moléculas orgánicas como petróleo , gasolina , plásticos ,
+plaguicidas , disolventes , detergentes , etc. acaban en el agua y
+permanecen, en algunos casos, largos períodos de tiempo, porque son
+difíciles de degradar.
+
+#+CAPTION: Derrame de Petroleo
+[[./media/image24.jpeg]]
+
+*** Sedimentos y materiales suspendidos. 
+Muchas partículas provenientes del suelo y arrastradas a las aguas,
+junto con otros materiales que hay en suspensión son, la mayor fuente
+de contaminación del agua. La turbidez que provocan en el agua
+dificulta la vida de algunos organismos, y los sedimentos que se van
+acumulando destruyen sitios de alimentación o desove de los peces,
+rellenan lagos o pantanos y obstruyen canales, rías y puertos.
+
+*** Sustancias radiactivas.
+ 
+Isótopos radiactivos solubles pueden estar presentes en el agua y, a
+veces, se pueden ir acumulando a los largo de las cadenas tróficas,
+alcanzando concentraciones considerablemente más altas en algunos
+tejidos vivos que las que tenían en el agua.
+
+*** Contaminación térmica.
+
+El agua caliente liberada por centrales de energía o procesos
+industriales eleva, en ocasiones, la temperatura de ríos o embalses
+con lo que disminuye su capacidad de contener oxígeno y afecta a la
+vida de los organismos.
+
+::: minipages 0.45 0.45
+#+CAPTION: El agua utilizada para refrigerar generadores eléctricos puede alterar el equilibrio biológico.
+[[./media/image26.jpeg]]
+::::::
+
+** Químicos inorgánicos contaminantes.
+
+| Contaminante        | Posibles efectos             | Fuentes de contaminación comunes                |
+|                     | sobre la salud               | en agua potable                                 |
+|---------------------+------------------------------+-------------------------------------------------|
+| Antimonio           | $++$ colesterol              | Efluentes de refinerías de petróleo, cerámicas; |
+|                     | $--$ azúcar en sangre.       | productos electrónicos, soldaduras.             |
+| Arsénico            | Lesiones en la piel,         | Erosión de depósitos naturales,                 |
+|                     | trastornos circulatorios,    | agua de escorrentía de huertas,                 |
+|                     | alto riesgo de cáncer.       | aguas con residuos de fabricación de vidrio .   |
+|                     |                              | y productos electrónicos                        |
+| Bario               | $++$ presión arterial.       | Aguas con residuos de perforaciones,            |
+|                     |                              | efluentes de refinerías de metales,             |
+|                     |                              | erosión de depósitos naturales.                 |
+| Berilio             | Lesiones intestinales.       | Efluentes de refinerías de metales              |
+|                     |                              | y fábricas que emplean carbón,                  |
+|                     |                              | efluentes de industrias eléctricas,             |
+|                     |                              | aeroespaciales y de defensa.                    |
+| Cadmio              | Lesiones renales.            | Corrosión de tubos galvanizados,                |
+|                     |                              | erosión de depósitos naturales,                 |
+|                     |                              | efluentes de refinerías de metales,             |
+|                     |                              | líquidos de escorrentía de baterías             |
+|                     |                              | usadas y de pinturas.                           |
+| Cianuro             | Lesiones en sistema nervioso | Efluentes de fábricas de acero y metales,       |
+| (como $CN^-$ libre) | o problemas de tiroides      | efluentes de fábricas de                        |
+|                     |                              | plásticos y fertilizantes                       |
+| Flúor               | Enfermedades óseas           | Erosión de depósitos naturales,                 |
+|                     | Problemas dentales           | efluentes de fábricas de                        |
+|                     |                              | fertilizantes y de aluminio.                    |
+| Plomo               | Bebés y niños con retardo en | Corrosión de cañerías en el hogar,              |
+|                     | desarrollo físico o mental   | erosión de depósitos naturales.                 |
+|                     | Adultos: trastornos renales  |                                                 |
+|                     | , hipertensión               |                                                 |
+| Nitratos y          | Dificultad respiratoria      | Aguas contaminadas por el uso                   |
+|                     |                              | de fertilizantes, percolado de                  |
+| Nitritos            | síndrome de bebé             | tanques sépticos y de redes de alcantarillado,  |
+| (como nitrógeno)    | cianótico (azul).            | erosión de depósitos naturales.                 |
+
+*** Alteraciónes físicas del agua
+
+| Alteraciones físicas     | Características y contaminación que indica                               |
+|--------------------------+--------------------------------------------------------------------------|
+| Color                    | Agua no contaminada suele tener ligeros colores rojizos, pardos,         |
+|                          | amarillentos o verdosos debido, principalmente, a los compuestos         |
+|                          | férricos o los pigmentos verdes de las algas que contienen.              |
+|                          |                                                                          |
+|                          | Agua contaminada puede tener diversos colores en general, no se          |
+|                          | pueden establecer relaciones claras entre el color y el tipo de          |
+|                          | contaminación                                                            |
+|                          |                                                                          |
+| Olor y sabor             | Compuestos químicos presentes en el agua como los fenoles,               |
+|                          | diversos hidrocarburos, cloro, materias orgánicas en descomposición      |
+|                          | o esencias liberadas por diferentes algas u hongos pueden dar olores y   |
+|                          | sabores muy fuertes al agua, aunque están en muy pequeñas                |
+|                          | concentraciones. Las sales o los minerales dan sabores salados o         |
+|                          | metálicos, en ocasiones sin ningún olor.                                 |
+|                          |                                                                          |
+| Temperatura              | El aumento de temperatura disminuye la solubilidad de gases              |
+|                          | (oxígeno) y aumenta, en general, la de las sales. Aumenta la             |
+|                          | velocidad de las reacciones del metabolismo, acelerando la               |
+|                          | putrefacción. La temperatura óptima del agua para beber está entre       |
+|                          | 10 y 14 ºC.                                                              |
+|                          |                                                                          |
+| Materiales en suspensión | Partículas como arcillas, limo, etc., aunque no lleguen a estar          |
+|                          | disueltas, son arrastradas por el agua de dos maneras: en suspensión     |
+|                          | estable (disoluciones coloidales); o en suspensión que sólo dura         |
+|                          | mientras el movimiento del agua las arrastra. Las suspendidas            |
+|                          | coloidalmente sólo precipitarán después de haber sufrido coagulación     |
+|                          | o floculación.                                                           |
+|                          |                                                                          |
+| Radiactividad            | Las aguas naturales tienen bajos valores de radiactividad, debidos sobre |
+|                          | todo a isótopos del K.                                                   |
+|                          |                                                                          |
+| Espumas                  | Los detergentes producen espumas y añaden fosfato al agua. Disminuyen    |
+|                          | el poder autodepurador de los ríos al dificultar la actividad            |
+|                          | bacteriana. También interfieren en los procesos de floculación y         |
+|                          | sedimentación en las estaciones depuradoras.                             |
+|                          |                                                                          |
+| Conductividad            | El agua pura tiene una conductividad elÃ©ctrica muy baja. El agua        |
+|                          | natural tiene iones en disolución y su conductividad es mayor y          |
+|                          | proporcional a la cantidad y características de esos electrolitos. Por   |
+|                          | esto se usan los valores de conductividad como índice aproximado de      |
+|                          | concentración de solutos. Como la temperatura modifica la conductividad  |
+|                          | las medidas se deben hacer a 20 ºC                                       |
+
+** Aguas Residuales
+
+Aguas Residuales: 
+son aquellas que proceden del uso doméstico o industrial y no pueden ser vertidas directamente a lagos o ríos debido a su contaminación. 
+Es agua que suele estar contaminada con materia fecal.
+Las aguas residuales generalmente contienen sustancias orgánicas e inorgánicas potencialmente peligrosas, así como microorganismos patógenos. El tratamiento completo de las aguas residuales requiere tratamientos químicos y biológicos que sirven para eliminar o neutralizar los contaminantes.
+Las aguas residuales industriales suelen contener sustancias tóxicas que deben ser pre tratadas antes de ser tratadas como aguas residuales.
+
+** Tratamiento de Aguas Residuales
+
+El objetivo del tratamiento de las aguas residuales es reducir la cantidad de materiales tanto orgánicos como inorgánicos a un nivel que no permita el crecimiento microbiano, así como la eliminación de los compuestos tóxicos que pudiera haber.
+
+La eficiencia del tratamiento se expresa en términos de reducción de la demanda biológica de oxígeno (DBO). Los valores normales en aguas residuales domésticas están en 200 unidades de DBO. En aguas de origen industrial los valores pueden alcanzar hasta 1500 unidades de DBO. Un tratamiento eficaz reduce los niveles a menos de 5 unidades de DBO en el agua resultante del tratamiento.
+Una planta típica de aguas residuales trata tanto aguas domésticas como industriales. El tratamiento incluye múltiples etapas de carácter físico y biológico. Tratamientos primarios, secundarios y en algunos casos terciarios se utilizan para reducir la contaminación fecal y química del agua.  Cada nivel de tratamiento emplea tecnologías mas complejas y caras.
+
+- Tratamiento Primario :: proceso que se usa para eliminar los sólidos de las aguas contaminadas. El agua entra en la planta de tratamiento y se pasa a través de cribas y filtros que eliminan los objetos de gran tamaño. El agua resultante está muy contaminada y no debería ser vertida en ríos o lagos.  
+- Tratamiento Secundario :: proceso que se usa para reducir la cantidad de materia orgánica por acción de bacterias (objetivo: disminuir la DBO). Son procesos biológicos que pueden ser de dos tipos: aerobios y anaerobios. Entre las variables a controlar en este proceso se encuentran la temperatura, el oxigeno disuelto, el ph , etc.
+- Tratamiento Terciario :: proceso que se usa para eliminar los productos químicos como fosfatos, nitratos, plaguicidas, sales, materia orgánica persistente, etc. Se utilizan procesos físicos y químicos especiales con los que se consigue limpiar las aguas de contaminantes concretos: fósforo, nitrógeno, metales pesados, etc.
+
+Las principales técnicas son:
+
+- Arrastre con vapor de agua o aire :: proceso de stripping para 
+     la eliminación de compuestos orgánicos volátiles como disolventes
+     clorados (tricloroetileno , clorobenceno , etc.,) o contaminantes
+     gaseosos como amoníaco.
+- Procesos de Membrana :: proceso en el cual el agua residual pasa a
+     través de una membrana porosa consiguiendo la separación de
+     acuerdo al tamaño de las moléculas presentes y de la membrana
+     utilizada.
+- Intercambio Iónico :: sirve para eliminar sales minerales a través de
+     una resina por intercambio con otros iones.
+- Adsorción con carbón activado :: sirve para eliminar compuestos
+     orgánicos. Se puede utilizar en forma granular (columnas de
+     carbón activado granular) y en polvo.
+- Procesos de Oxidación :: sirven para eliminar o transformar la
+     materia orgánica e inorgánica oxidable.
+- Procesos de Reducción :: proceso para reducir elementos metálicos en
+     alto estado de oxidación (reducción de Cr+6 a Cr+3 mediante
+     sulfito de sodio, tiosulfato de sodio, etc.
+- Precipitación Química :: se basa en la utilización de reacciones
+     químicas para obtener productos de baja solubilidad. La especie
+     contaminante a eliminar pasa a formar parte de la sustancia
+     insoluble que precipitará y se podrá separar por sedimentación y
+     filtración.
+
+** Red de Saneamiento
+- Se dispone de un sistema troncal de transporte de efluentes, el que
+  colecta y transporta hacia un punto de bombeo y de allí hacia la
+  Planta Berazategui para luego ser vertido en el Río de la Plata.
+- Sistemas independientes del troncal, con plantas y vertidos de
+  efluentes en los ríos Matanza o Reconquista.
+- El sistema de red de Saneamiento supera los 10.000 km de longitud.
+
+#+CAPTION: Fuente: AySA, http://www.aysa.com.ar/Media/contenidos/472/mapa_desagues.jpg
+[[./media/image27.jpeg]]
+
+*** Estructura:
+
+- Colector Ribereño :: que se extiende a lo largo de la costa del Río de
+  la Plata desde la zona de Tigre hasta el límite de CABA. Su diámetro
+  varía de 500 a 1100 mm y su longitud es de aproximadamente 16 km.
+
+- Colector Costanero :: que prolonga el anterior tiene una longitud de más
+  de 17 km con un diámetro que varía entre 1100 y 3400 mm. Este
+  colector se extiende también a lo largo del Río de la Plata y llega a
+  la estación elevadora Boca-Barracas.
+
+- Tres Cloacas Máximas ::
+
+  - Drena la parte Este de CABA y fluye por gravedad hasta el Establecimiento Wilde. 
+  - Drena la parte central de CABA y se dirige, por gravedad, hasta la Estación de Bombeo Wilde. 
+  - Drena la parte sur de CABA fluyendo hasta la Estación de Bombeo Wilde.
+
+- El tramo Wilde – Berazategui – Emisario :: Aguas abajo de la
+     estación Wilde las Cloacas Máximas son cuatro y se extienden
+     hasta la Planta Berazategui. Sus diámetros son de 2286, 3000,
+     3500 y 4000 mm con longitudes de 12, 14, 14 y 15 km
+     respectivamente. 
+
+     Los efluentes llegan a la Planta Berazategui
+     para luego ser descargados en el Río de la Plata a 2,5 km de la
+     costa por un emisario de DN 5.000 mm.

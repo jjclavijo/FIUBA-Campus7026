@@ -1,0 +1,342 @@
+* Setting                                                          :noexport:
+ 
+#+LATEX_ENGINE: xelatex
+#+LATEX_CLASS: extarticle
+#+LATEX_CLASS_OPTIONS: a4paper,12pt
+
+#+LaTeX_HEADER: \usepackage[spanish]{babel}
+#+LaTex_HEADER: \usepackage{placeins}
+#+LaTex_HEADER: \usepackage{graphicx} % Required to insert images
+#+LaTex_HEADER: \usepackage{courier} % Required for the courier font
+#+LaTex_HEADER: \usepackage{fixltx2e}
+#+LaTex_HEADER: \usepackage{amsmath}
+#+LaTex_HEADER: \usepackage{dsfont}
+#+LaTex_HEADER: \usepackage{amssymb}
+#+LaTex_HEADER: \usepackage{hyperref}
+#+LaTex_HEADER: \usepackage{fancyhdr} % Required for custom headers
+#+LaTex_HEADER: \usepackage{lastpage} % Required to determine the last page for the footer
+#+LaTex_HEADER: \usepackage{extramarks} % Required for headers and footers
+#+LaTex_HEADER: % Margins
+#+LaTex_HEADER: \usepackage{geometry}
+#+LaTex_HEADER:  \geometry{
+#+LaTex_HEADER:  a4paper,
+#+LaTex_HEADER:  left=20mm,
+#+LaTex_HEADER:  right=20mm,
+#+LaTex_HEADER:  top=20mm,
+#+LaTex_HEADER:  bottom=20mm,
+#+LaTex_HEADER:  }
+#+LaTex_HEADER: 
+#+LaTex_HEADER: \linespread{1.1} % Line spacing
+#+LaTex_HEADER: 
+#+LaTex_HEADER: % Set up the header and footer
+#+LaTex_HEADER: \pagestyle{fancy}
+#+LaTex_HEADER: \lhead{} % Top left header
+#+LaTex_HEADER: \chead{\hmwkClass\ (\hmwkClassTime): \hmwkTitle} % Top center head
+#+LaTex_HEADER: \rhead{\hmwkInstitucional} % Top right header
+#+LaTex_HEADER: \lfoot{\hmwkClassInstructor} % Bottom left footer
+#+LaTex_HEADER: \cfoot{} % Bottom center footer
+#+LaTex_HEADER: \rfoot{Página\ \thepage\ de\ \protect\pageref{LastPage}} % Bottom right footer
+#+LaTex_HEADER: \renewcommand\headrulewidth{0.4pt} % Size of the header rule
+#+LaTex_HEADER: \renewcommand\footrulewidth{0.4pt} % Size of the footer rule
+#+LaTex_HEADER: 
+#+LaTex_HEADER: \setlength\parindent{0pt} % Removes all indentation from paragraphs
+#+LaTex_HEADER: 
+#+LaTex_HEADER: % Encabezados y pies.
+#+LaTex_HEADER: 
+#+LaTex_HEADER: \newcommand{\hmwkTitle}{Clase 5 - Riego: Teoría} % Assignment title
+#+LaTex_HEADER: \newcommand{\hmwkDueDate}{Mayo 2020} % Due date
+#+LaTex_HEADER: \newcommand{\hmwkClass}{Hidráulica Agrícola y Saneamiento} % Course/class
+#+LaTex_HEADER: \newcommand{\hmwkClassTime}{1-2020} % Class/lecture time
+#+LaTex_HEADER: \newcommand{\hmwkClassInstructor}{Mónica Fiore - Javier Clavijo} % Teacher/lecturer
+#+LaTex_HEADER: \newcommand{\hmwkInstitucional}{FI-UBA} % Your name
+
+#+LaTex_HEADER:\usepackage{lineno}
+#+LaTex_HEADER:\linenumbers
+
+#+BEGIN_SRC emacs-lisp
+
+(setq org-image-actual-width nil)
+
+#+END_SRC
+
+#+RESULTS:
+
+* Riego
+
+#+BEGIN_EXPORT latex
+\null\hfill\begin{minipage}{0.7\textwidth}
+\textbf{Palabras Claves}: \textit{Riego --- Salinidad --- Sodicidad --- Toxicidad --- RAS --- drenabilidad --- aguas de retorno --- edafología --- calicata --- riego por gravedad.}
+\end{minipage}\hfill\null
+#+END_EXPORT
+
+Existen muchas definiciones de riego, una de ellas es que es una
+herramienta para producir alimentos. Regar no es solo tirar agua, es una
+labor cultural dentro del sistema agropecuario. Se debe regar con
+criterio y pensando siempre que el agua es un recurso natural escaso.
+
+El riego es un requisito indispensable para lograr buenas cosechas en
+climas secos, que mejoran aún más con la aplicación de fertilizantes.
+Existen países como Irak o India done no se puede confiar en la lluvia y
+es necesario regar para obtener resultados. En Argentina el área regada
+ocupa alrededor de 1.500.000 ha y representa el 5% del área total
+cultivada.
+
+Cuando se riega un cultivo, se aplica una cantidad de agua superior a la
+que éste consume, debido a que los sistemas de riego nunca son
+completamente eficientes. Además, es necesario que una cierta cantidad
+de agua circule a través del suelo y arrastre sales y otros compuestos,
+evitando la acumulación excesiva de contaminantes, naturales o
+antrópicos, en el suelo. Por lo tanto, el regadío siempre usa más agua
+que la que consume, y el agua aplicada y no consumida vuelve al río o al
+acuífero (lo que se llama “aguas de retorno del riego”), y lo hace con
+una pérdida de calidad.
+
+La contaminación de las masas de agua por sales, fertilizantes y
+pesticidas provenientes del regadío son un problema creciente en muchas
+áreas del mundo
+([[https://www.esferadelagua.es/ciencia-y-agua/uso-del-agua-en-agricultura-de-regadio-y-investigacion-publica]]).
+
+La calidad del agua constituye una variable a controlar en la
+agricultura de regadío, tanto a nivel fuente como sumidero (Tartabull
+Puñales, T., et al., 2016). Es importante no solo para por razones de
+seguridad, debido a su potencial efecto sobre la salud humana y de los
+ecosistemas en general (Graczik et al., 2011). Cuando se habla de
+calidad de agua para el riego se deben analizar las características del
+agua que puedan afectar a los recursos suelo y cultivo en su uso a largo
+plazo (Bosch et al., 2012). Una forma de evaluar la calidad del agua
+para el riego es analizando:
+
+- Salinidad
+- Sodicidad
+- Toxicidad
+
+Para evaluar la /*salinidad*/ es necesario considerar el tipo y cantidad
+de sales disueltas. La salinidad dificulta la absorción de agua y cuando
+es alta aumenta la velocidad de infiltración, mientras que cuando es
+baja la disminuye, debido a su naturaleza corrosiva. Los principales
+indicadores a tener en cuenta son la concentración total de sales
+solubles, calcio, magnesio, sodio, potasio, sulfatos, cloruros,
+carbonatos, bicarbonatos, la conductividad eléctrica y el pH).
+
+La /*sodicidad*/ se mide en relación a la concentración relativa del
+sodio con respecto a otros cationes (Lingaswamy et al., 2015). Una
+proporción alta de sodio sobre el calcio produce descenso en la
+infiltración como consecuencia de su efecto dispersante sobre los
+agregados del suelo.
+
+La /*toxicidad*/ es un problema interno que se produce cuando
+determinados iones, absorbidos principalmente por las raíces, se
+acumulan en las hojas mediante la transpiración, llegando a alcanzar
+concentraciones nocivas. Para evaluar la toxicidad se consideran la
+concentración de boro y otros elementos como el sodio y el cloruro
+(Ayers et al., 1985).
+
+En general, los productores pueden controlar la salinidad, pero el
+peligro de sodicidad es más complejo y difícil de manejar. Los suelos
+sódicos no sólo se encuentran física y químicamente degradados sino
+también biológicamente degradados. El riego a largo plazo con aguas
+sódicas deteriora significativamente propiedades del suelo como el pH,
+la conductividad eléctrica, etc. Altos valores de sodio en el agua
+también afectan la germinación de la semilla y dificultan la aireación
+del suelo enfermando la planta y sus raíces (Ayers et al., 1985).
+También provocan un incremento de la presión osmótica de la solución del
+suelo, lo cual dificulta la toma de agua por las raíces con la
+consecuente disminución de la disponibilidad de agua para las funciones
+de la planta (Asamoah et al., 2015).
+
+La toxicidad del sodio depende en gran medida de los niveles de calcio y
+magnesio. Si el magnesio y calcio son altos, éstos atenúan el efecto
+dañino del sodio; esto explica que para un Relación de Absorción de
+Sodio (RAS) dada, la infiltración del agua aumenta conforme la salinidad
+se incrementa. Los valores altos de RAS pueden ser tolerados cuando la
+salinidad del agua de riego aumenta; en contraposición, bajos valores de
+RAS del agua puede ser peligrosa en el suelo si la conductividad
+eléctrica es baja (Arzola et al., 2013).
+
+En las regiones húmedas de Argentina, la situación de deterioro es
+causada por la presencia de sodio y el consecuente deterioro de la
+matriz del suelo. Según Siebertet.al. (2006), en Argentina la superficie
+afectada por sales era de 600.000 ha. Las sales se encuentran en el agua
+de riego, a partir de la meteorización de las rocas, además de la
+disolución lenta del carbonato de calcio, sulfato de calcio y otros
+minerales, transportados por el agua de riego y depositados en el suelo
+donde se acumulan, en la medida que el agua se evapora o es consumida
+por los cultivos.
+
+La salinidad denominada cíclica, es el continuo retorno de las sales del
+mar a la tierra. Las partículas de polvo funcionan como núcleo, para las
+sales que el viento lleva, hasta encontrar las cortinas forestales (a
+estas las obliga a sedimentar). La drenabilidad es una de las
+propiedades que el usuario de un suelo regado debiera considerar
+(determina el ascenso o descenso del plano freático que, siendo por lo
+general más salino que el agua de riego, al evaporarse el agua del
+perfil traccionada por la evapotranspiración, deposita las sales en
+superficie previamente a la vaporización atmosférica).
+
+*Por qué se riega, ¿dónde se riega y por qué no se realiza en otro
+lado?*
+
+En cualquier cultivo hay que considerar 3 factores fundamentales:
+
+- Clima
+
+- Suelo
+
+- Economía o política
+
+Con respecto al clima se puede hacer poco y depende del lugar en donde
+esté ubicado el campo.
+
+El suelo se origina a partir de la materia madre producida por los
+procesos químicos y mecánicos de transformación de las rocas de la
+superficie terrestre. A esta materia madre se agregan el agua, los
+gases, sobre todo el [[http://es.wikipedia.org/wiki/Di%C3%B3xido_de_carbono][dióxido de carbono]], el tiempo transcurrido, los
+animales y las plantas que descomponen y transforman el [[http://es.wikipedia.org/wiki/Humus][humus]], dando
+por resultado una compleja mezcla de materiales orgánicos e
+inorgánicos.
+
+Es decisivo al momento de determinar que se va a plantar y cuanto voy a
+producir.
+
+En la naturaleza, cada suelo tiene un conjunto de características dentro
+de determinados límites. El superior es la superficie de la tierra; el
+inferior, se ubica donde ya no actúan los procesos formadores de suelos
+y, los laterales, son los contactos con otros tipos de suelos. En
+consecuencia, existen en el mundo muchas clases individuales de suelos,
+aunque en el ambiente no se los encuentre como unidades separadas. Por
+eso es necesario establecer los límites dentro de los cuales deben ser
+estudiados. Las características de cada uno pueden conocerse a través de
+las observaciones e investigaciones de campo, gabinete y laboratorio. Su
+reconocimiento, clasificación y representación cartográfica es lo que se
+llama "Mapa de Suelos".
+
+El suelo pude estudiarse desde 2 puntos de vista:
+
+1. desde la geotécnica son los ingenieros geotécnicos y también los
+   geólogos los que investigan el suelo y las rocas por debajo de la
+   superficie para determinar sus propiedades para el diseño de
+   estructuras tales como [[http://es.wikipedia.org/wiki/Edificio][edificios]], [[http://es.wikipedia.org/wiki/Puente][puentes]], [[http://es.wikipedia.org/wiki/Central_hidroel%C3%A9ctrica][centrales hidroeléctricas]], etc.
+
+2. desde la edafología son los biólogos y los agrónomos los que
+   estudian la composición y naturaleza del [[http://es.wikipedia.org/wiki/Suelo][suelo]] en su relación con
+   las plantas y el entorno que le rodea.
+
+Cuando se estudia un suelo la calicata permite la inspección directa
+del suelo que se desea estudiar y, por lo tanto, es el método de
+exploración que normalmente entrega la información más confiable y
+completa. Calicata (Figura 1) se define como la exploración que se
+hace con labores mineras en un terreno o perforación que se practica
+para determinar la existencia de minerales o la naturaleza del
+subsuelo.
+
+En cada calicata se deberá realizar una descripción visual o registro
+de estratigrafía comprometida. Es necesario registrar la ubicación y
+elevación de cada pozo, los que son numerados según la ubicación. Si
+un pozo programado no se ejecuta, es preferible mantener el número del
+pozo en el registro como "no realizado" en vez de volver a usar el
+número en otro lugar, para eliminar confusiones. La profundidad está
+determinada por las exigencias de la investigación, pero es dada,
+generalmente, por el nivel freático. La sección mínima recomendada es
+de 0,80 m por 1,00 m, a fin de permitir una adecuada inspección de las
+paredes. El material excavado deberá depositarse en la superficie en
+forma ordenada separado de acuerdo a la profundidad y horizonte
+correspondiente.
+
+#+BEGIN_COMMENT
+#+CAPTION: Calicatas con diversos perfiles de suelo
+[[file:media/image2.png]]
+[[file:media/image1.jpeg]]
+#+END_COMMENT
+
+#+BEGIN_EXPORT latex
+\begin{figure}
+\null\hfill%
+\begin{minipage}{0.45\textwidth}
+\includegraphics[width=\textwidth]{media/image2.png}
+\end{minipage}%
+\hfill%
+\begin{minipage}{0.3\textwidth}
+\includegraphics[width=\textwidth]{media/image1.jpeg}
+\end{minipage}
+\caption{Pozos de Cateo}
+\end{figure}
+#+END_EXPORT
+
+Una vez que se realizó el estudio del suelo, el edafólogo me indica que
+cultivos son recomendables para ese lugar. Luego el factor climático
+ayudará a descartar de esa lista otros de los cultivos.
+
+Finalmente el economista desde su punto de vista elimina otro u otros
+por la facilidad de venta del lugar.
+
+Una vez que decidí que plantar tengo que ver la forma de riego (las
+unidades de riego son: litro/seg/hectárea). La determinación de las
+necesidades de agua de los cultivos es el paso previo para establecer
+los volúmenes de agua que será necesario aportar con el riego.
+
+Posteriormente debe consultarse la legislación sobre derecho del agua en
+el lugar. No se puede sacar agua sin la autorización.
+
+Puedo utilizar una bomba colocada a la orilla del río, pero este sistema
+es sumamente costoso por los caudales que necesito. Luego la utilización
+de bombas es costosa por la cantidad de energía necesaria para obtener
+ese volumen de agua. Un método no costoso es el riego por gravedad.
+
+El aumento de la demanda de alimentos y el incremento de sus precios,
+junto con los impactos generados por el Cambio Climático, presentan
+desafíos y oportunidades para el riego como herramienta de desarrollo.
+
+En Argentina, el riego es una actividad fundamental para el desarrollo
+rural de vastas regiones. Teniendo en cuenta que el 70% de su territorio
+es árido o semiárido, esta actividad permite poner en valor grandes
+superficies que de otra manera solo estarían valorizadas por ganadería
+de muy baja densidad y productividad.
+
+El relevamiento realizado en la República Argentina
+([[http://www.fao.org/3/a-i5183s.pdf]]) indica que, la superficie en
+producción bajo riego, alcanza un total de 2,1 millones de ha,
+representando un consumo anual aproximado de 44.213 Hm3. Esta cifra
+corresponde a un 5% de la superficie total cultivada en el país. El 65%
+de los 2,1 millones de has, se riega a partir de fuentes superficiales,
+y el resto con agua subterránea.
+
+#+CAPTION: Distribución de superficie irrigada por provincia y por fuente hídrica (superficial o subterránea).Fuente: http://www.fao.org/3/a-i5183s.pdf
+#+ATTR_HTML: :width 400
+[[file:media/image3.png]]
+
+En cuanto a Argentina en particular, es importante destacar que su
+superficie total cultivada, presenta en los últimos veinte años
+(1992-2012), un crecimiento sostenido (de 27,80 millones de hectáreas en
+1992 a 39,04 millones de ha en 2012), con un impulso particular desde 2002.
+
+En el siguiente link ([[http://www.fao.org/3/a-i5183s.pdf]]) se detalla
+por región las áreas y el tipo de riego existente.
+
+* Referencias
+
+Arzola, N.C.,Fundora, O., de Mello, R.(2013). Manejo de suelos para una
+agricultura sostenible. Jaboticabal: FCAV/UNESP,. 509 p.
+
+Asamoah, E., Nketia, K.A., Sadick, A., Asenso, D., Kwabena, E., Ayer,
+J.,Owusu, E. (2015). Water Quality Assessment Of Lake Bosomtwe For
+Irrigation Purpose, Ghana. Intl J Agri Crop Sci. Vol., 8 (3), 366-372
+
+Ayers R.S., Westcot D.W. (1985). Water quality for agriculture. Irrig.
+Drain. FAO, Rome, pp 174
+
+Bosch M., Costa, J.L., Cabria, F.N., Aparicio, V.C. (2012). Relación
+entre la variabilidad espacial de la conductividad eléctrica y el
+contenido de sodio del suelo. Ciencia del Suelo, 30 (2), 27-38.
+
+Graczik Z., Graczik, T., Naprauska, A. (2011). A rol some food
+arthropods as vectors of human enteric infections. Center Eur. J. Biol.
+6(2): 145-149.
+
+Lingaswamy, M., Saxena, P.R. (2015). Water Quality of Fox Sagar Lake,
+Hyderabad, Telangana State, India, Its Suitability for Irrigation
+Purpose. Int. J. Adv. Res. Sci. Technol., 4(8), 490-494.
+
+Tartabull Puñales, T., & Betancourt Aguilarm, C. (2016). La calidad del
+agua para el riego. Principales indicadores de medida y procesos que la
+impactan. Revista Científica Agroecosistemas [seriada en línea], 4 (1).
+pp. 47-61. Recuperado de [[http://aes.ucf.edu.cu/index.php/ras]]

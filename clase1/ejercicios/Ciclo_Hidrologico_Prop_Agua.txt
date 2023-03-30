@@ -1,0 +1,77 @@
+70.26 - Hidráulica Agrícola y Saneamiento
+Propiedades del Agua Pura
+
+Práctico N°1
+
+1) a) En virtud de qué hecho físico se mantienen unidos los componentes atómicos
+de la molécula de agua:
+- como molécula de agua
+- como agrupación de moléculas
+b) Dé una posible explicación para que se produzca un máximo de densidad cuando
+la temperatura alcanza los 4° c.
+2) a) Cuánto tiempo se requiere para elevar 1°C la temperatura de un piletón de agua de
+10 metros de lado por 10 metros de profundidad?
+b) Repita el cálculo considerando que el piletón tiene 1000 metros de lado por 100
+metros de profundidad.
+c) Idem b) pero considerando un piletón rectangular de 1000 metros por 100 metros y
+con una profundidad de 1000 metros.
+d) Compare los resultados obtenidos en a), b) y c). Explique las diferencias.
+Datos a utilizar:
+
+=
+
+.
+
+.∆
+
+=
+
+.∆
+
+: calor
+
+: calor
+
+: superficie
+
+: masa
+
+: constante solar
+
+: capacidad calorífica del agua
+
+∆
+
+.
+
+: diferencia de temperatura
+
+∆
+
+: diferencia de tiempo
+
+Cagua = 4,18 x 103 J/kg C
+So = 2 cal/cm2 min. Constante solar: Energía recibida en el tope de la atmósfera
+por unidad de superficie y unidad de tiempo sobre una superficie perpendicular a los rayos
+solares.
+ (4°C) = 1 gr / cm3 (densidad del agua pura a 4°C)
+1 caloría = 4.1855 J
+El Ciclo Hidrológico
+1) Identificar en un esquema las componentes del ciclo hidrológico en la interfaz
+suelo-atmósfera.
+Balance Global del Agua
+19
+
+2) Se estima que en promedio la atmósfera contiene 1.24 x 10 g de vapor de agua. Si
+todo el vapor de agua se condensara: ¿a cuántos mm de agua precipitable
+equivaldría? Sup.= 551. 106 km2, =1g/cm3
+3) ¿Qué ocurriría en mares, lagos y ríos si la densidad del agua aumentara siempre al
+disminuir la temperatura, como pasa en el resto de los líquidos?
+4) Mencione las actividades humanas que pudieran causar directa o
+indirectamente un impacto sobre los recursos hídricos importante a su juicio, y
+modificar significativamente la cantidad o calidad del agua en los reservorios
+conceptuales del sistema climático o las tasas de transferencias entre los mismos.
+5) Explique brevemente en que forma el cambio climático podría afectar el ciclo
+hidrológico
+
+

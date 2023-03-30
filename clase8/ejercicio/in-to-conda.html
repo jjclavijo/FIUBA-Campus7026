@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>70.26 Hidráulica Agriola y Saneamiento</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+    <style type="text/css">
+        #principal{ margin: 0 auto; font-size: 13pt; line-height: 1.5em; font-family: Georgia, serif; max-width: 1100px;}
+        code{white-space: pre-wrap;}
+        span.smallcaps{font-variant: small-caps;}
+        span.underline{text-decoration: underline;}
+        div.column{display: inline-block; vertical-align: top; width: 50%;}
+        .derecha{width: 300px; float: right; margin: 10px; padding: 10px;
+                 background: lightgray }
+        .ejemplo{max-width:600px; width: 80%; background: lightgray}
+        p{max-width: 800px; text-align:justify; margin: 10px}
+        figure{padding:30px; margin:10px}
+        h1, h2, h3 { font-weight: normal; border-bottom: 1px solid black; }
+        h4 { font-size: 14pt; font-style: bold; margin-top: 1em; }
+        h1 { font-size: 20pt; }
+        h2 { font-size: 18pt; }
+        h3 { font-size: 16pt; }
+        h1,h2,h3,h4,h5,h6,p,a{font-family: "Raleway",sans-serif;}
+        p{max-width: 650px}
+        #main-div{max-width: 850px; padding: 25px; background: #f5f5f5}
+        #title-block-header{visibility: hidden; height: 0px }
+      table a:link {
+      	color: #666;
+      	font-weight: bold;
+      	text-decoration:none;
+      }
+      table a:visited {
+      	color: #999999;
+      	font-weight:bold;
+      	text-decoration:none;
+      }
+      table a:active,
+      table a:hover {
+      	color: #bd5a35;
+      	text-decoration:underline;
+      }
+      table {
+      	font-family:Arial, Helvetica, sans-serif;
+      	color:#666;
+      	font-size:14px;
+      	text-shadow: 1px 1px 0px #fff;
+      	background:#eaebec;
+      	margin:20px;
+      	border:#ccc 1px solid;
+      
+      	-moz-border-radius:3px;
+      	-webkit-border-radius:3px;
+      	border-radius:3px;
+      
+      	-moz-box-shadow: 0 1px 2px #d1d1d1;
+      	-webkit-box-shadow: 0 1px 2px #d1d1d1;
+      	box-shadow: 0 1px 2px #d1d1d1;
+      }
+      table th {
+      	padding:21px 25px 22px 25px;
+      	border-top:1px solid #fafafa;
+      	border-bottom:1px solid #e0e0e0;
+      
+      	background: #ededed;
+      	background: -webkit-gradient(linear, left top, left bottom, from(#ededed), to(#ebebeb));
+      	background: -moz-linear-gradient(top,  #ededed,  #ebebeb);
+      }
+      table th:first-child {
+      	text-align: left;
+      	padding-left:20px;
+      }
+      table tr:first-child th:first-child {
+      	-moz-border-radius-topleft:3px;
+      	-webkit-border-top-left-radius:3px;
+      	border-top-left-radius:3px;
+      }
+      table td { margin: 5px; background-color: white; text-align: center }
+    </style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">70.26 Hidráulica Agriola y Saneamiento</h1>
+</header>
+<div id="main-div">
+
+<h1 id="tutorial-miniconda-jupyter-lab-r.">Tutorial: Miniconda + Jupyter-Lab + R.</h1>
+<p>En este tutorial vamos a instalar los programas necesarios para correr un notebook de R en jupyter-lab en un entorno anaconda, en sistema operativo Windows.</p>
+<h2 id="que-es-anaconda">Que es Anaconda</h2>
+<p>Al abrir la pagina web de anaconda nos encontramos con que se define como:</p>
+<pre class="example"><code>With over 20 million users worldwide, the open-source Individual
+Edition (Distribution) is the easiest way to perform Python/R data
+science and machine learning on a single machine. Developed for solo
+practitioners, it is the toolkit that equips you to work with
+thousands of open-source packages and libraries.
+</code></pre>
+<p>Es decir, se define como un "conjunto de herramientas". En otros lugares podemos encontrarlo definido como un "entorno virtual", o como un "gestor de paquetes".</p>
+<p>Por detras, lo que hace anaconda es crear un directorio en nuestro sistema, y gestionar la instalación y ejecución de programas desde ese directorio, de forma que conserven:</p>
+<ul>
+<li>Compatibilidad entre si</li>
+<li>Aislación con respecto al resto del sistema</li>
+<li>Disponibilidad de los recursos igual que si se instalaran en forma nativa.</li>
+</ul>
+<p>Una de las ventajas de Anaconda es que podemos generar la cantidad de "carpetas", llamados "entornos", que querramos. Esto lo podemos hacer en dos maneras:</p>
+<dl>
+<dt>por nombre</dt>
+<dd><p>dejando a Anaconda que decida la forma en que los ubica en el sistema.</p>
+</dd>
+<dt>por ruta</dt>
+<dd><p>especificando en que carpeta se ubicaran los archivos en el sistema. (Ver: <a href="https://www.wikihow.com/Find-a-File%27s-Path-on-Windows">Este Link</a> para ubicar la ruta a una carpeta ya creada en windows).</p>
+</dd>
+</dl>
+<p>En ambas formas es muy simple eliminar todo lo instalado con un solo comando en caso de querer reconstruir la instalación.</p>
+<h2 id="instalación-de-anaconda-en-su-version-liviana-miniconda">Instalación de Anaconda (en su version liviana: Miniconda)</h2>
+<p>El primer paso es instalar anaconda. Aqui dejamos el <a href="https://docs.conda.io/en/latest/miniconda.html">Link A la descarga</a>.</p>
+<p>La instalación es trivial, deben descargar el archivo correspondiente a miniconda 3 para windows (en version de 64bit), ejecutarlo y seguir los pasos indicados por el programa.</p>
+<p>Para los pasos que siguen, al final les dejamos una serie de capturas de pantalla ilustrativas.</p>
+<p>Una vez realizada la instalación tendremos disponible la consola de anaconda en el menu de inicio. En realidad aparecen dos consola:</p>
+<ul>
+<li>Anaconda Powershell Prompt.</li>
+<li>Anaconda Prompt.</li>
+</ul>
+<p>Si bien para el uso cotidiano es indistinto cual usemos, recomendamos la primra. Porque en caso de que sigan utilizandolo para otras cosas, podrán utilizar las ventajas de PowerShell. Si no estan acostumbrados a realizar tareas a traves de la consola, que en windows pueden conocer como cmd.exe o simbolo del sistema, les recomiendo que hagan una pequeña busqeda en internet para saber que es y para qué puede serles util conocerlo. Por ejemplo:</p>
+<ul>
+<li><a href="http://dgg.gg?q=que+para+que+powershell&amp;kl=ar-es">http://dgg.gg?q=que+para+que+powershell&amp;kl=ar-es</a></li>
+<li><a href="http://dgg.gg?q=que+para+que+simbolo+del+sistema&amp;kl=ar-es">http://dgg.gg?q=que+para+que+simbolo+del+sistema&amp;kl=ar-es</a></li>
+</ul>
+<p>Todos los comandos para operar con anaconda, instalar programas o crear y modificar entornos, tendran la forma siguiente:</p>
+<pre class="example"><code>conda &lt;subcomando&gt; [opciones] objetivo
+</code></pre>
+<p>Donde las opciones se especifican con el signo "-" o "–", por ejemplo la opción "-y" significa "si a todo", y la opcion "–name" significa "nombre (de un entorno virtual por ejemplo)"</p>
+<h2 id="crear-y-activar-un-entorno-virtual.">Crear y activar un entorno virtual.</h2>
+<p>Para crear un entorno virtual, podemos hacerlo con el comando (desde la consola de anaconda) conda create. Las opciones que utilizaremos serán:</p>
+<ol>
+<li><strong>-y</strong> para responder si a todo lo que anaconda nos pregunte</li>
+<li><strong>-n nombre_deseado</strong> si queremos crear un entorno por nombre</li>
+<li><strong>-p "C:\carpeta\otra_carpeta"</strong> si queremos crear un entorno por ruta de la carpeta donde se ubicaran los programas.</li>
+</ol>
+<p>Por ejemplo, si cree una carpeta Hidraulica en "mis documentos", y dentro de esta una carpeta "entornoconda" donde quiero ubicar mi entorno, utilizaré:</p>
+<pre class="example"><code>conda create -y -p &quot;C:\Users\Javier\Documnts\Hidraulica\entornoconda&quot;
+</code></pre>
+<p>Aclaramos que las comillas se utilizan solamente para encerrar las rutas, porque pueden contener espacios y la terminal lo interpretaría como argumentos separados</p>
+<p>Una vez creado el entorno, para trabajar en el debemos activarlo con:</p>
+<pre class="example"><code>conda activate ruta_o_nombre
+</code></pre>
+<p>En nuestro ejemplo:</p>
+<pre class="example"><code>conda activate &quot;C:\Users\Javier\Documnts\Hidraulica\entornoconda&quot;
+</code></pre>
+<h2 id="insalación-de-programas.">Insalación de programas.</h2>
+<p>Para instalar un programa en un entorno virtual de anaconda debemos:</p>
+<ol>
+<li>Abrir la terminal de anaconda.</li>
+<li>Activar el entorno deseado.</li>
+<li>Ejecutar "conda install programa_ainstalar".</li>
+</ol>
+<p>En algunas ocaciones los programas deseados no se encuentran en los repositorios oficiales, y se deben usar otros alternativos, el mas seguro y completo es conda-forge (<a href="http://ddg.gg?q=\conda-forge">http://ddg.gg?q=\conda-forge</a>). En este caso se agrega la opción "-c conda-forge".</p>
+<p>Nosotros instalaremos los programas que siguen, agregamos un link a la web de cada uno como referencia. Para instalarlos utilizaremos el comando conda install y no es necesario descargar nada previamente:</p>
+<dl>
+<dt>r</dt>
+<dd>base del lenguaje r (<a href="http://ddg.gg?q=\r-lang">http://ddg.gg?q=\r-lang</a>)
+</dd>
+<dt>jupyterlab</dt>
+<dd>entorno de desarrollo en notebooks de jupyter (<a href="http://ddg.gg?q=\jupyter-lab">http://ddg.gg?q=\jupyter-lab</a>)
+</dd>
+<dt>r-irkernel</dt>
+<dd>kernel para utilizar r en jupyter-lab (<a href="https://irkernel.github.io/">https://irkernel.github.io/</a>)
+</dd>
+<dt>r-ismev</dt>
+<dd>Paquete de R para modelar GEV. (<a href="http://ddg.gg?q=\ismev+site=rdocumentation.org">http://ddg.gg?q=\ismev+site=rdocumentation.org</a>)
+</dd>
+</dl>
+<p>Para realizar la instalación utilizar el siguiente comando en la consola (Recuerden tener activo el entorno que crearon antes.)</p>
+<pre class="example"><code>conda install -c conda-forge r jupyterlab r-irkernel r-ismev
+</code></pre>
+<h2 id="correr-jupyterlab.">Correr jupyterlab.</h2>
+<p>Para trabajar con jupyterlab debemos ejecutarlo desde una terminal de anaconda, con el entorno activado y desde la carpeta donde queremos trabajar.</p>
+<p>Para acceder a la carpeta utilizamos el comando "cd", con la ruta que obtenemos como vimos mas arriba.</p>
+<pre class="example"><code>conda activate &quot;C:\Users\Javier\Documnts\Hidraulica\entornoconda&quot;
+cd &quot;C:\Users\Javier\Documnts\Hidraulica\notebooks&quot;
+jupyter-lab
+</code></pre>
+<p>Una vez hecho esto, se nos abrirá una ventana de navegador donde podremos abrir los notebooks que tengamos en la carpeta o crear uno nuevo. Además de muchas otras opciones que puden explorar a gusto. Noten que para crear un nuevo notebook, además de R tenemos la opcion de crear un notebook de Python. Esto es simplemente porque jupyter está escrito en python y funciona por defecto con ese lenguaje.</p>
+<p>Aqui pueden ver los comandos básicos dentro de un notebook: <a href="http://ddg.gg?q=jupyter+cheatsheet&amp;ia=cheatsheet&amp;iax=1">http://ddg.gg?q=jupyter+cheatsheet&amp;ia=cheatsheet&amp;iax=1</a> Cada celda puede ejecutarse independientemente, y la salida queda grabada. Les recomendamos igualmente comenzar por revisar el notebook que les dejamos de ejemplo del ejercicio.</p>
+<h2 id="capturas-de-pantalla">Capturas de pantalla</h2>
+<figure>
+<img src="./media/01-create.png" width="600" alt="" /><figcaption>Creación del entorno virtual</figcaption>
+</figure>
+<figure>
+<img src="./media/02-install.png" width="600" alt="" /><figcaption>Instalación de programas en el entorno</figcaption>
+</figure>
+<figure>
+<img src="./media/03-install.png" width="600" alt="" /><figcaption>Finalizada la instalacion</figcaption>
+</figure>
+<figure>
+<img src="./media/04-jupyter.png" width="600" alt="" /><figcaption>Correr Jupyter Lab</figcaption>
+</figure>
+<figure>
+<img src="./media/05-jupyter.png" width="600" alt="" /><figcaption>Jupyter Lab en ejecución</figcaption>
+</figure>
+<h2 id="extras">Extras</h2>
+<p>Extra 1: Algunos comandos básicos en r: <a href="http://ddg.gg?q=r+cheatsheet&amp;ia=cheatsheet&amp;iax=1">http://ddg.gg?q=r+cheatsheet&amp;ia=cheatsheet&amp;iax=1</a></p>
+<p>Extra 2: ¿Por que los links en este tutorial comienzan en su mayoria con ddg.gg? <a href="https://ddg.gg/?q=duckduckgo+funciones+utiles&amp;kl=ar-es&amp;ia=web">https://ddg.gg/?q=duckduckgo+funciones+utiles&amp;kl=ar-es&amp;ia=web</a> <a href="https://ddg.gg/?q=\filtro+burbuja+site:wikipedia.org&amp;kl=ar-es&amp;ia=web">https://ddg.gg/?q=\filtro+burbuja+site:wikipedia.org&amp;kl=ar-es&amp;ia=web</a></p>
+</div>
+</body>
+</html>

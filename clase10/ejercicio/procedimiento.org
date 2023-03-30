@@ -1,0 +1,78 @@
+** Objetivo
+
+El objetivo de los dos ejercicios es calcular el volumen del suelo que deben mover.
+
+** Procedimiento
+
+El procedimiento que queremos que apliquen es el siguiente:
+
+1. Ubicar el centro de gravedad o centroide (utilizar AutoCAD, funcion
+   Region) y asignarle el promedio de las cotas naturales de cada
+   predio. 
+2. Utilizar el valor del centroide obtenido para calcular la cota que
+   le correspondería a cada uno de los predios respetando las
+   pendientes propuestas. Una alternativa para realizar esto puede ser
+   (ejercicio 1): 
+
+*** a. Calcular
+
+la cota que le corresponde al centro de los predios que están
+alineados en sentido vertical con el centroide. Considerar que la
+pendiente que hay que conservar es 1\textperthousand (uno por mil): 
+
+Para el predio que se encuentra al norte del centroide, al desplazarse
+12,5m, la cota aumenta \[ 8.342m + 12,5m * \frac{1m}{1000m} = 8,35m \]
+
+\[(\text{cota centroide}) + (\text{distancia}) * (\text{pendiente}) = (\text{cota que asigno al predio})\]
+
+Para el predio que se encuentra al sur del centroide desplazarse
+12,5m, la cota disminuye \[8.342m - 12,5m * \frac{1m}{1000m} = 8,33m\]
+
+\[(\text{cota centroide}) - (\text{distancia}) * (\text{pendiente}) = (\text{cota que asigno al predio})\]
+
+*** b. En base a las cotas calculadas, 
+
+desplazarse en sentido este-oeste al resto de los predios considerando
+que la pendiente que hay que conservar es 2\textperthousand: 
+
+Para el predio que se encuentra al oeste del primer predio calculado
+(cota 8,35), desplazarse en sentido este-oeste 25 metros, la cota
+aumenta: \[8.35m + 25m * \frac{2m}{1000m} = 8,40m\]
+
+\[(\text{cota centroide}) + (\text{distancia}) * (\text{pendiente}) = (\text{cota que asigno al predio})\]
+
+Para el resto de los predios realizan el mismo cálculo hasta obtener
+las cotas de cada uno. 
+
+Una vez obtenidas, las cotas naturales se restan de las calculadas
+(cota roja) y se calculan dos sumatorias, una positiva
+(correspondiente a aquellos predios con cota superior a la calculada y
+de donde se realizaría el desmonte) y otra negativa (correspondiente a
+aquellos predios con cota inferior a la calculada, donde se realizaría
+el relleno). 
+
+Como control, se verifica que el modulo de la diferencia de las dos
+sumatorias, sea más chico que el 10% del modulo del valor más grande
+de las dos sumatorias: 
+
+1. Sumar, con su signo, las dos sumatorias anteriores, valor Z
+   (cercano a 0). 
+2. Calcular el 10% de cada sumatoria (negativa y positiva), en valor
+   absoluto (T1 y T2). 
+3. Seleccionar T1, si es mayor que T2, o T2 si es mayor que T1. 
+4. Comparar la T elegida con el valor de Z, si T es mayor, se puede
+   continuar con el cálculo, sino se debe modificar la cota del
+   centroide para que la diferencia disminuya, y recalcular todas las
+   cotas calculadas para cada predio. 
+
+Una vez verificada la diferencia, se calcula la Cota Roja Media Ponderada:
+
+1. Calcular el valor absoluto de la cota roja de cada predio
+   multiplicado por su peso (en el ejercicio 1 los pesos son 1, y en
+   el 2 están indicados). 
+2. Sumar los valores de cada predio calculados en 1) y dividir por la
+   suma de los pesos. 
+
+Finalmente el volumen de tierra a mover se calcula como:
+
+\[(\frac{1}{2}) * (\text{Superficie Total}) * (\text{Cota Roja Media Ponderada})\]

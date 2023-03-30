@@ -1,0 +1,370 @@
+* Setting                                                          :noexport:
+ 
+#+LATEX_ENGINE: xelatex
+#+LATEX_CLASS: extarticle
+#+LATEX_CLASS_OPTIONS: a4paper,12pt
+
+#+LaTeX_HEADER: \usepackage[spanish]{babel}
+#+LaTex_HEADER: \usepackage{placeins}
+#+LaTex_HEADER: \usepackage{graphicx} % Required to insert images
+#+LaTex_HEADER: \usepackage{courier} % Required for the courier font
+#+LaTex_HEADER: \usepackage{fixltx2e}
+#+LaTex_HEADER: \usepackage{amsmath}
+#+LaTex_HEADER: \usepackage{dsfont}
+#+LaTex_HEADER: \usepackage{amssymb}
+#+LaTex_HEADER: \usepackage{hyperref}
+#+LaTex_HEADER: \usepackage{fancyhdr} % Required for custom headers
+#+LaTex_HEADER: \usepackage{lastpage} % Required to determine the last page for the footer
+#+LaTex_HEADER: \usepackage{extramarks} % Required for headers and footers
+#+LaTex_HEADER: % Margins
+#+LaTex_HEADER: \usepackage{geometry}
+#+LaTex_HEADER:  \geometry{
+#+LaTex_HEADER:  a4paper,
+#+LaTex_HEADER:  left=20mm,
+#+LaTex_HEADER:  right=20mm,
+#+LaTex_HEADER:  top=20mm,
+#+LaTex_HEADER:  bottom=20mm,
+#+LaTex_HEADER:  }
+#+LaTex_HEADER: 
+#+LaTex_HEADER: \linespread{1.1} % Line spacing
+#+LaTex_HEADER: 
+#+LaTex_HEADER: % Set up the header and footer
+#+LaTex_HEADER: \pagestyle{fancy}
+#+LaTex_HEADER: \lhead{} % Top left header
+#+LaTex_HEADER: \chead{\hmwkClass\ (\hmwkClassTime): \hmwkTitle} % Top center head
+#+LaTex_HEADER: \rhead{\hmwkInstitucional} % Top right header
+#+LaTex_HEADER: \lfoot{\hmwkClassInstructor} % Bottom left footer
+#+LaTex_HEADER: \cfoot{} % Bottom center footer
+#+LaTex_HEADER: \rfoot{Página\ \thepage\ de\ \protect\pageref{LastPage}} % Bottom right footer
+#+LaTex_HEADER: \renewcommand\headrulewidth{0.4pt} % Size of the header rule
+#+LaTex_HEADER: \renewcommand\footrulewidth{0.4pt} % Size of the footer rule
+#+LaTex_HEADER: 
+#+LaTex_HEADER: \setlength\parindent{0pt} % Removes all indentation from paragraphs
+#+LaTex_HEADER: 
+#+LaTex_HEADER: % Encabezados y pies.
+#+LaTex_HEADER: 
+#+LaTex_HEADER: \newcommand{\hmwkTitle}{Clase 9 - Notas Uso Consuntivo} % Assignment title
+#+LaTex_HEADER: \newcommand{\hmwkDueDate}{Junio 2020} % Due date
+#+LaTex_HEADER: \newcommand{\hmwkClass}{Hidráulica Agrícola y Saneamiento} % Course/class
+#+LaTex_HEADER: \newcommand{\hmwkClassTime}{1-2020} % Class/lecture time
+#+LaTex_HEADER: \newcommand{\hmwkClassInstructor}{Mónica Fiore - Javier Clavijo} % Teacher/lecturer
+#+LaTex_HEADER: \newcommand{\hmwkInstitucional}{FI-UBA} % Your name
+
+#+LaTex_HEADER:\usepackage{lineno}
+#+LaTex_HEADER:\linenumbers
+
+#+BEGIN_SRC emacs-lisp
+
+(setq org-image-actual-width nil)
+
+#+END_SRC
+
+#+RESULTS:
+
+* Uso consuntivo / Balance Hidrico.
+
+** Bibliografía
+
+1. Apuntes de Clase del Ing. Heriberto Ruiz
+2. “Manejo de Riego por Goteo”.  Autor: Dr. Megh R. Goyal, Profesor en
+   Ingeniería Agrícola y Biomédica, Universidad de Puerto Rico –
+   Recinto de Mayagüez, P.O. Box 5984, Mayagüez, Puerto Rico 00681 –
+   5984
+3. https://www.portalfruticola.com/noticias/2018/01/25/la-capacidad-de-campo-de-un-suelo-tecnicas-para-su-medicion/
+
+** El balance hídrico
+
+El balance del agua o balance hídrico es una parte fundamental de
+la hidrología agrícola, que también estudia el manejo del agua.
+
+Se basa en el balance de masas, ya que representa el equilibrio entre los
+recursos hídricos que entran al sistema y los que salen del mismo, en
+un período de tiempo dado.
+
+El balance hídrico es la herramienta que permite conocer la cantidad
+de agua que tiene disponible un cultivo en el suelo. El contenido
+inicial de agua en el perfil del mismo, las precipitaciones y el
+requerimiento de agua de acuerdo al estado de desarrollo del cultivo
+son algunos factores que deben tenerse en cuenta.
+
+Las ganancias o ingresos de agua se producen a través de las
+precipitaciones y las pérdidas o egresos ocurren debido a los procesos
+de evapotranspiración, que involucran a la evaporación directa de las
+superficies de agua y de la humedad del suelo y al agua que transpiran
+los vegetales a través de sus hojas luego de extraerla del suelo.
+
+La cantidad y tasa de absorción de agua por las plantas no sólo
+depende de la habilidad de las raíces para tomar el agua del suelo con
+la cual están en contacto, sino también de la capacidad del suelo para
+suministrarla. La retención de agua característica es diferente para
+cada tipo de suelo.
+
+Para caracterizarla se utilizan la capacidad de campo (CC) y el punto
+de marchitez (PM) que son los límites que definen la necesidad
+de agua de un cultivo para su óptimo desarrollo.
+
+En el momento en que el agua presente está tan fuertemente retenida
+por el suelo que las plantas no pueden absorberla y se marchitan, sin
+reponerse ante un nuevo agregado de agua, se llega al punto de
+marchitez permanente.
+
+El agua contenida en el suelo entre la capacidad de campo y el punto
+de marchitez es el agua útil. A medida que se va utilizando el agua
+útil, y las reservas se acercan al punto de marchitez permanente, el
+esfuerzo del vegetal para extraer agua es cada vez mayor.
+
+La cantidad de agua retenida por el suelo depende, entre otros
+factores, de la distribución de los diferentes componentes sólidos,
+distribución y tamaño de los poros, contenido de materia orgánica,
+estabilidad de la estructura del suelo y tipo de arcillas
+presentes. Una buena estructura del suelo aumenta la fracción de agua
+útil.
+
+La humedad del suelo puede estar en su máxima capacidad de retención o
+capacidad de campo (en donde la extracción de agua por los vegetales
+se produce sin ninguna dificultad) o puede descender a valores por
+debajo del punto de marchitez permanente, en que un vegetal se
+marchitaría sin capacidad de recuperación ni aún dentro de una
+atmósfera saturada.
+
+Supongamos que llueve intensamente de tal forma que el agua llega a
+ocupar todos los poros del suelo. Se dice entonces que el suelo esta
+saturado.
+
+Luego, la acción de la gravedad hace que el agua drene hacia abajo
+hasta que el contenido de agua es muy pequeño y se estabiliza el
+sistema.  Cuando se alcanza este punto se dice que el suelo esta a la
+capacidad de campo.
+
+Buena parte del agua retenida a la capacidad de campo puede ser
+utilizada por las plantas, pero a medida que el agua disminuye se
+llega a un punto en que la planta no puede absorberla. En este estado
+se dice que el suelo esta en el punto de marchitez. La diferencia
+entre la cc y el punto de marchitez representa la fracción de agua
+útil o disponible para el cultivo. .
+
+::: minipages 1 0.58
+#+CAPTION: Poros, espacio aéreo u agua ene el suelo, en situaciones de saturación, capacidad de campo y seco.
+[[./media/image1-crop.png]]
+Fuente: https://www.portalfruticola.com/noticias/2018/01/25/la-capacidad-de-campo-de-un-suelo-tecnicas-para-su-medicion/
+::::::
+
+::: minipages 0.33 0.32
+#+CAPTION: 
+[[./media/image2.jpeg]]
+#+CAPTION: 
+[[./media/image3.jpeg]]
+#+CAPTION:
+[[./media/image6.jpeg]]
+\caption{El estado hídrico del suelo muchas veces puede observarse a través del estado de la vegetación.}
+::::::
+
+** Deficit hídrico: Un Caso de ejemplo
+   
+Si la pérdida mensual o anual de humedad excede a la precipitación, puede acumularse un deficit de humedad en el suelo
+
+Tomamos como ejemplo, del informe de la bolsa de cereales de Entre
+Rios, el estado de la provincia al iniciar diciembre de 2008. Fuente:
+http://centrales.bolsacer.org.ar/informes/321_InformeRed04_12_08bcer.pdf
+
+Como referencia recomendamos consultar también un informe actual,
+donde puede observarse Exceso Hidrico:
+http://www.bolsacer.org.ar/Fuentes/siberd.php?Id=1202
+
+::: minipages 0.47 0.46
+#+CAPTION: Balance deficitario de la provincia
+[[./media/image4-hi.png]]
+#+CAPTION: Precipitaciones durante la semana estudiada.
+[[./media/image5-hi.png]]
+
+Notamos en las imágenes que si la precipitación es mayor a las
+pérdidas un excedente que permite recuperar la humedad del suelo, sin
+embargo el balance hídrico del primer metro de suelo continúa marcando
+una importante extensión de la sequía.  Se observa una recomposición
+heterogénea de una buena porción del sur de la provincia.
+
+** Balance Hidrico
+#+CAPTION: Balance hidrico a nivel nacional, agosto/2008. Cada región posee valores diferentes, tanto para la precipitación como para la evapotranspiración, ya que dependen de sus propias condiciones climáticas 
+[[./media/image7.jpeg]]
+
+El balance hídrico puede presentarse por medio de la siguiente ecuación: 
+
+$$PI + SW - RO – D – ET = 0$$
+ 
+- $PI \rightarrow$ :: Precipitación y/o riego 
+- $RO \rightarrow$ :: Escorrentía 
+- $D \rightarrow$ :: Percolación 
+- $SW \rightarrow$ :: Cambio en el contenido de agua del suelo 
+- $ET \rightarrow$ :: Evapotranspiración
+
+De esta ecuación, el termino PI surge de consideraciones meteorológicas. Los terminos RO y D tienen que ver con la topografía y la edafología.
+
+El estudio del termino de evapotranspiración (ET), requiere un tratamiento diferente, y existen varios métodos para abordarlo.
+
+#+CAPTION: Componentes del ciclo hidrológico, en corte transversal. Fuente: http://caminos.udc.es/info/asignaturas/grado_itop/415/pdfs/Capitulo%207.pdf
+[[./media/image8.png]]
+
+*** Evapotranspiración
+
+La evapotranspiración (ET) es la combinación de dos procesos:
+Evaporación y transpiración.  La evaporación es el proceso físico
+mediante el cual el agua se convierte a su forma gaseosa.  La
+evaporación del agua a la atmósfera ocurre en la superficie de ríos,
+lagos, suelos y vegetación.
+
+La transpiración es el proceso mediante el cual el agua fluye desde el
+suelo hacia la atmósfera a través del tejido de la planta.  La
+transpiración es básicamente un proceso de evaporación. El agua se
+evapora dentro de las hojas y el vapor resultante se difunde hacia el
+exterior a través de las estomas.
+
+Las estomas de la mayor parte de las plantas verdes permanecen
+abiertas durante el día y cerradas en la noche.  Si el suelo está muy
+seco las estomas permanecerán cerradas durante el día para que la
+pérdida del agua sea más lenta.
+ 
+La evaporación y transpiración ocurren simultáneamente y no es fácil
+de distinguirlos.
+
+Cuando la planta es pequeña, el agua perdida es por evaporación del
+agua del suelo, pero cuando la planta va desarrollándose
+paulatinamente, la transpiración va cobrando mayor importancia. Se
+expresa en mm/unidad de tiempo.
+
+La expansión agrícola, y las áreas bajo riego han aumentado en los
+últimos años ocasionando una mayor demanda de agua.
+ 
+La gran demanda junto al incremento en los costos del agua y de la
+energía ha hecho absolutamente necesario desarrollar tecnologías para
+su apropiado manejo.
+
+La evaporación, la transpiración y la evapotranspiración son
+importantes para estimar los requisitos de riego y al
+programarlo. Para determinar los requisitos de riego es necesario
+estimar la Evapotranspiración por medidas directamente en el campo o
+utilizando datos meteorológicos.
+
+Las medidas directamente en el campo son muy costosas y se utilizan
+mayormente para calibrar los métodos que estiman la Evapotranspiración
+utilizando datos climáticos.
+ 
+Se han propuesto numerosas ecuaciones empíricas que requieren datos
+meteorológicos y varias de estas se usan comúnmente para estimar la
+Evapotranspiración para períodos de un día o más.
+
+Los métodos más simples requieren solo datos de temperatura media del
+aire, duración del día y la cosecha.  Otras ecuaciones requieren datos
+de radiación diaria, temperatura, presión de vapor y velocidad de
+viento.
+
+No todas las ecuaciones son igualmente precisas y confiables para
+diferentes regiones.  Además, no existe un método único que utilizando
+datos meteorológicos sea adecuado universalmente bajo todas las
+condiciones climatológicas.
+
+** Metodos para estimar EVT
+   
+*** Métodos Directos
+
+Miden directamente los consumos por evaporación y requieren para su
+determinación la instalación de aparatos, el cuidado de ellos y el
+seguimiento de una metodología específica en cada paso.
+
+Se aplican en zonas donde existe una agricultura establecida, ya que
+proporcionan valores mucho más reales y sirven a la vez para ajustar
+los parámetros de los métodos empíricos.
+
+*** Métodos indirectos (empíricos)
+
+- Thornwaite
+- Blaney Criddle
+- Grassi-christensen
+- Penman
+
+** Método de Thornthwaite
+
+Este método es muy útil para la primera etapa de un proyecto debido a
+que utiliza pocos datos.
+
+Originalmente lo utilizó para efectuar una clasificación climática,
+para la cual tomó datos de 140.000 parcelas y definió que el suelo es
+capaz de contener 100 mm, es decir que si se le agrega más agua se
+iría por percolación o por escorrentía.
+
+Define a la Evapotranspiración (Ev) como el agua que el sol evapora
+del suelo y de las plantas. Luego Ev está asociada a la latitud debido
+a las horas de sol recibidas.
+
+#+CAPTION: La distribución de climas a nivel mundial justifica el uso de la latitud como un indice de la energía que el suelo recibe.
+[[./media/image9.jpeg]]
+
+Cuando se habla de Evapotranspiración, se distinguen dos términos:
+
+- Evaptranspiración Real: :: Es la que realmente evapora una planta en un lugar y tiempo específicos.
+
+- Evapotranspiración potencial: :: Es la que la planta evaporaría si dispusiera de toda el agua que necesita.
+ 
+El método de Thornthwaite se basa, para calcular la segunda, en la
+temperatura y en la latitud determinando que esta última constituye un
+buen índice de la energía en un lugar específico.
+
+Estima la evapotranspiración potencial a partir de la media mensual de
+las temperaturas medias diarias del aire, con el que calcula un índice
+de calor anual, a partir de la expresión
+
+El indice mensual se calcula como $$i = \left(\frac{t}{5}\right)^{1,514}$$
+, siendo $t$ la temperatura media mensual en $\,^\circ C$
+ 
+El índice de calor anual es simplemente $$I = \sum i$$,
+
+Finalmente, se calcula $E \left[\frac{mm}{día}\right]$, la evapotranspiración potencial media:
+ 
+$$E = 16\left(10 \frac{t}{I}\right)^a$$
+
+Donde a es un polinomio, que surge de un ajuste empírico con respecto a potencias de I.
+
+$$a = 675 10^{-9} I^3 – 771 10^{-7} I^2 + 1972 10^{-5} I + 0,49239$$
+
+Una vez obtenido $E$, se aplica se realiza la corrección en base a las horas de sol. 
+Finalmente puede calcularse el momento del año donde sobra o falta agua.
+
+Se calcula entonces la evapotranspiración potencial como: $$ETP = K \, E$$  
+
+- $K:$ :: $\frac{N}{12} \frac{d}{30} d$
+- $N:$ :: número máximo de horas de sol según la latitud
+- $d:$ :: número de días del mes
+
+** Método de Blaney-Criddle
+La ecuación original de fue desarrollada para climas áridos para
+predecir la evapotranspiración potencial. Esta fórmula utiliza el
+porciento de horas de luz mensual y la temperatura promedio mensual.
+                                       
+$$f = p\,\left(\frac{T+17.8}{21.8}\right)$$
+
+$$F = \sum^n f$$
+
+$$UC = K\,F$$
+
+
+- $K:$ :: coeficiente de cultivo (de Tablas).
+- $F:$ :: factor de uso consuntivo anual o suma de factores mensuales.
+- $n:$ :: número de meses que cubre el ciclo vegetativo del cultivo.
+- $f:$ :: factor climático.
+- $T:$ :: temperatura media mensual (°C)
+- $p:$ :: porcentaje de horas-luz del mes, con respecto al total anual (de Tablas).
+
+*** Coeficiente de corrección “KT”
+
+Penman introdujo una corrección por temperatura “KT”, que se efectúa solamente en zonas desérticas:
+
+$$KT = 0.031144 T + 0.2396$$
+
+- $T:$ :: temperatura media mensual ($\,^\circ C$)
+
+Luego se calcula la precipitación efectiva como $$Pe = P (1-Kr)$$ donde Kr representa en gran medida la escorrentìa y se asume como 0.20.
+
+$$Pe = 0.8 \, P$$
+
+Finalmente: lámina de reposición se calcula como:
+
+$$Uc - Pe$$

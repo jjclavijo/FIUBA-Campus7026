@@ -1,0 +1,246 @@
+* Setting                                                          :noexport:
+ 
+#+LATEX_ENGINE: xelatex
+#+LATEX_CLASS: extarticle
+#+LATEX_CLASS_OPTIONS: a4paper,12pt
+
+#+LaTeX_HEADER: \usepackage[spanish]{babel}
+#+LaTex_HEADER: \usepackage{placeins}
+#+LaTex_HEADER: \usepackage{graphicx} % Required to insert images
+#+LaTex_HEADER: \usepackage{courier} % Required for the courier font
+#+LaTex_HEADER: \usepackage{fixltx2e}
+#+LaTex_HEADER: \usepackage{amsmath}
+#+LaTex_HEADER: \usepackage{dsfont}
+#+LaTex_HEADER: \usepackage{amssymb}
+#+LaTex_HEADER: \usepackage{hyperref}
+#+LaTex_HEADER: \usepackage{fancyhdr} % Required for custom headers
+#+LaTex_HEADER: \usepackage{lastpage} % Required to determine the last page for the footer
+#+LaTex_HEADER: \usepackage{extramarks} % Required for headers and footers
+#+LaTex_HEADER: % Margins
+#+LaTex_HEADER: \usepackage{geometry}
+#+LaTex_HEADER:  \geometry{
+#+LaTex_HEADER:  a4paper,
+#+LaTex_HEADER:  left=20mm,
+#+LaTex_HEADER:  right=20mm,
+#+LaTex_HEADER:  top=20mm,
+#+LaTex_HEADER:  bottom=20mm,
+#+LaTex_HEADER:  }
+#+LaTex_HEADER: 
+#+LaTex_HEADER: \linespread{1.1} % Line spacing
+#+LaTex_HEADER: 
+#+LaTex_HEADER: % Set up the header and footer
+#+LaTex_HEADER: \pagestyle{fancy}
+#+LaTex_HEADER: \lhead{} % Top left header
+#+LaTex_HEADER: \chead{\hmwkClass\ (\hmwkClassTime): \hmwkTitle} % Top center head
+#+LaTex_HEADER: \rhead{\hmwkInstitucional} % Top right header
+#+LaTex_HEADER: \lfoot{\hmwkClassInstructor} % Bottom left footer
+#+LaTex_HEADER: \cfoot{} % Bottom center footer
+#+LaTex_HEADER: \rfoot{Página\ \thepage\ de\ \protect\pageref{LastPage}} % Bottom right footer
+#+LaTex_HEADER: \renewcommand\headrulewidth{0.4pt} % Size of the header rule
+#+LaTex_HEADER: \renewcommand\footrulewidth{0.4pt} % Size of the footer rule
+#+LaTex_HEADER: 
+#+LaTex_HEADER: \setlength\parindent{0pt} % Removes all indentation from paragraphs
+#+LaTex_HEADER: 
+#+LaTex_HEADER: % Encabezados y pies.
+#+LaTex_HEADER: 
+#+LaTex_HEADER: \newcommand{\hmwkTitle}{Clase 2 - Teoría} % Assignment title
+#+LaTex_HEADER: \newcommand{\hmwkDueDate}{Abril 2020} % Due date
+#+LaTex_HEADER: \newcommand{\hmwkClass}{Hidráulica Agrícola y Saneamiento} % Course/class
+#+LaTex_HEADER: \newcommand{\hmwkClassTime}{1-2020} % Class/lecture time
+#+LaTex_HEADER: \newcommand{\hmwkClassInstructor}{Mónica Fiore - Javier Clavijo} % Teacher/lecturer
+#+LaTex_HEADER: \newcommand{\hmwkInstitucional}{FI-UBA} % Your name
+
+#+LaTex_HEADER:\usepackage{lineno}
+#+LaTex_HEADER:\linenumbers
+
+#+BEGIN_SRC emacs-lisp
+
+(setq org-image-actual-width nil)
+
+#+END_SRC
+
+#+RESULTS:
+
+* Precipitación
+
+La precipitación se produce por la condensación del vapor del agua
+contenido en las masas de aire. Pueden ser de agua líquida, de agua
+sólida como nieve o granizo, o de mezcla de ambas: aguanieve. Están
+asociadas con fenómenos relacionados con la circulación del aire en la
+atmósfera.
+
+Las masas de aire cálido y frío se mueven, interactuando unas con otras.
+Las zonas de contacto reciben el nombre de frentes. Una masa de aire
+frío puede empujar a otra de aire cálido, en cuyo caso a la zona de
+interacción se le denomina frente frío. En el caso contrario, cuando es
+la masa de aire caliente la que empuja a la de aire frío, a la zona de
+contacto se le denomina frente cálido.
+
+El aire cálido es menos denso que el frío, luego cuando dos de estas
+masas entran en contacto, la cálida siempre asciende sobre la más fría.
+En el ascenso, el vapor de agua se va condensando en pequeñas gotitas,
+apareciendo las nubes. Cuando las gotas alcanzan un tamaño superior a
+las 500 mm, el agua precipita en forma de llovizna. Las gotas de lluvia
+normales tienen un tamaño entre 1 y 2 mm. de diámetro. Por encima de 7
+mm se vuelven inestables y se disgregan en otras menores.En la mayoría
+de las ocasiones, el agua precipita de forma líquida, la lluvia, pero no
+es la única forma de precipitación. Si la nube contiene cristales de
+hielo, estos pueden crecer por la colisión con otros cristales o con
+gotas de agua subenfriada y caer por gravedad. Cuando la capa inferior a
+la nube está por debajo de 0ºC, el hielo se aglutina en masas
+algodonosas, transformándose en copos nieve y se produce una nevada. En
+el caso contrario, la nieve se funde y cae en forma de lluvia. Si la
+nube desprende gotas de agua líquida y la temperatura por debajo de la
+nube es inferior a 0ºC, parte del agua puede solidificarse dando lugar
+al aguanieve.
+
+El granizo es un tipo especial de precipitación asociado a tormentas,
+donde las partículas de hielo crecen hasta alcanzar tamaños entre 3 y 5
+cm. de diámetro, que llegan a alcanzar el suelo. El origen del granizo
+tiene lugar en el interior de la nube. Sin embargo, no todas las nubes
+pueden generar granizo en superficie. Para que se forme se necesitan
+grandes cantidades de agua sobre enfriada (es decir líquida, pero a
+temperaturas menor a 0ºC). Para poder mantener estas cantidades y
+aumentarlas, se requiere la presencia de fuertes corrientes ascendentes.
+Si la corriente ascendente fuera débil el agua sobre enfriada se
+congelaría antes de formar una piedra de granizo. Al tener agua sobre
+enfriada y una fuerte corriente ascendente el cristal sigue creciendo
+porque se agregan partículas de hielo. Cuando el empuje hacia arriba
+cesa o el granizo alcanza un tamaño tal que el aire no puede aguantar el
+peso entonces cae.
+
+Las precipitaciones varían de acuerdo a ciertos ciclos temporales
+determinados por los movimientos de rotación y traslación terrestres y
+por la localización astronómica o geográfica del lugar a considerar.
+Esos ciclos pueden ser: diarios, mensuales o estacionales o anuales.
+Siempre hay meses en que las precipitaciones son mayores que en otros.
+La variación estacional de las precipitaciones, en especial de la
+lluvia, define *el año hidrológico.* Este da inicio en el mes siguiente
+al de menor precipitación media de largo período.
+
+La distribución espacial de la precipitación sobre los continentes es
+muy variada, existen extensas áreas como los desiertos, donde las
+precipitaciones son extremadamente escasas, y en contraposición áreas
+donde la precipitación anual es muy grande. La orografía influye
+fuertemente en las precipitaciones. Una elevación del terreno provoca
+muy frecuentemente un aumento local de las precipitaciones, al provocar
+el ascenso de las masas de aire saturadas de vapor de agua.
+
+La precipitación, presenta una gran variabilidad espacio - temporal,
+haciendo que la obtención de un valor de precipitación representativo de
+un área sea importante. La medición de la precipitación se realiza para
+obtener información sobre las características espaciales y temporales,
+como intensidad, frecuencia, duración, cantidad etc.
+
+Las mediciones de precipitación son especialmente sensibles a la
+exposición, viento y la topografía, es por esto que, en este caso en
+particular, la información del metadato cobra vital importancia para la
+utilización a posteriori del dato. El diseño de una red pluviométrica no
+es un trabajo trivial y debe ser realizado por expertos. El análisis de
+los datos de precipitación será más fácil y más confiable si se utiliza
+el mismo tipo de pluviómetro y los mismos criterios de instalación en
+toda la red. La tasa de precipitación, se define como la cantidad de
+agua líquida o sólida que alcanza el suelo en cierta unidad de tiempo,
+aunque por lo general la unidad de tiempo no se especifica, por lo
+general es del día (mm/día) o por período de tormenta. El caso de
+granizo se trata diferente que los otros tipos de precipitación (lluvia,
+nieve, etc), ya que se especifican otro tipo de características como:
+estructura, tamaño, forma, aspereza, color (claro, opaco, etc),
+densidad, etc.
+
+En el siguiente link pueden encontrar información detallada sobre los
+métodos de medición de precipitación:
+[[http://meteo.fisica.edu.uy/Materias/PBMA/PBMA_teotico/Bolilla6-PLUVIOMETRIA.pdf]]
+
+* Medición de lluvia areal
+
+El conocimiento de las precipitaciones medias y extremas es fundamental
+para realizar el dimensionamiento adecuado de las obras hidráulicas. Por
+ejemplo, el cálculo de las lluvias extremas, de corta duración, es
+importante para el dimensionamiento del drenaje urbano, y así evitar
+inundaciones.
+
+Para el cálculo de la precipitación media caída en una determinada zona
+y en un tiempo determinado, existen diferentes métodos.
+
+** Media aritmética
+En este caso se calcula el promedio de los datos
+pluviométricos puntuales de estaciones ubicadas en un área geográfica
+determinada. En caso de que la diferencia de las precipitaciones de las
+distintas estaciones sea importante, y si las estaciones no están
+repartidas en la zona uniformemente, se pueden introducir con este
+método grandes errores. La principal carencia del método es no
+considerar características anexas que pueden influir en las
+precipitaciones, como podría ser la presencia de cordones montañosos,
+cercanía a océanos, condiciones atmosféricas predominantes etc.
+
+** Polígonos de Thiessen
+
+El método de /*los Polígonos de Thiessen*/ además de la información
+pluviométrica, requiere la ubicación espacial de las estaciones. En este
+caso se hace una media ponderada de las precipitaciones con respecto al
+área de influencia de cada estación. Se supone que cada estación
+representa un valor medio de su área de influencia. Este método para
+determinar la lluvia media en una zona, se aplica cuando se sabe que la
+cuenca es de topografía suave o en lo posible plana. El procedimiento
+para el cálculo es el siguiente:
+
+1. Se unen las estaciones pluviómetros adyacentes con líneas rectas (en
+   la Figura 1 las líneas azules).
+2. Se trazan mediatrices a las líneas que unen los pluviómetros (en la
+   Figura 1 las líneas rosas).
+3. Se prolongan las mediatrices hasta el límite de la cuenca
+   determinando polígonos de superficie Aj.
+4. Se calcula el área formada por las mediatrices para cada pluviómetro
+   y el límite de la cuenca.
+
+#+CAPTION: Diagramación de los polígonos de Thiessen
+#+ATTR_HTML: :width 400px
+#+ATTR_LaTeX: :width 8cm
+[[./img/image1.jpeg]]
+
+Se observa que cada pluviómetro queda con un área de influencia dentro
+de la cuenca. El siguiente paso es medir el área asociada a cada
+pluviómetro y determinar el ponderador de área para encontrar la
+precipitación media. (En las notas anexas tienen un ejemplo y las
+formulas a ser utilizadas).
+
+La principal falencia del método radica en que sólo considera el
+posicionamiento de las estaciones y una superficie plana de influencia
+para cada una, sin considerar las diferencias topográficas que se pueden
+presentar. Además, asume que la precipitación de la estación es la misma
+de la zona que representa geométricamente, lo cual no siempre es cierto.
+
+** Método de la Isoyetas
+
+Las isoyetas son contornos que unen puntos de igual precipitación y se
+calculan a partir de la interpolación entre pluviómetros adyacentes y
+con la ayuda de un mapa de curvas de nivel. Para la ejecución del Método
+de las Isoyetas es necesario disponer, además de las mediciones de
+precipitación en los períodos de interés y de las ubicaciones de los
+puntos de observación, de las precipitaciones normales de cada estación,
+del material cartográfico correspondiente y de un conocimiento espacial
+y atmosférico lo más detallado posible de las áreas consideradas. Dado
+que este método incorpora muchos más factores que los anteriores debería
+dar mejores resultados.
+
+El procedimiento para el cálculo es el siguiente:
+
+1. Por facilidad se puede partir de los triángulos construidos en el
+   método de los polígonos de Thiessen. Se debe tener en cuenta el valor de
+   precipitación de cada uno de los pluviómetros.
+2. Se asume que la precipitación varía en forma lineal entre uno y otro
+   pluviómetro, es decir sobre la línea que los une se puede trazar a
+   intervalos regulares la curva que hace falta.
+3. Se grafican las isoyetas.
+4. Se calcula el área formada por dos isoyetas consecutivas (ver Figura 2).
+
+#+CAPTION:Diagramacion para utilizar el método de Isoyetas.
+#+ATTR_HTML: :width 400px
+#+ATTR_LaTeX: :width 8cm
+[[./img/image2.png]]
+
+
+En el siguiente link pueden encontrar información detallada sobre los
+métodos de medición de precipitación:
+[[https://www.academia.edu/31556202/Metodo_de_los_poligonos_de_Thiessen]]

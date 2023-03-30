@@ -1,0 +1,369 @@
+* Setting                                                          :noexport:
+ 
+#+LATEX_ENGINE: xelatex
+#+LATEX_CLASS: extarticle
+#+LATEX_CLASS_OPTIONS: a4paper,12pt
+
+#+LaTeX_HEADER: \usepackage[spanish]{babel}
+#+LaTex_HEADER: \usepackage{placeins}
+#+LaTex_HEADER: \usepackage{graphicx} % Required to insert images
+#+LaTex_HEADER: \usepackage{courier} % Required for the courier font
+#+LaTex_HEADER: \usepackage{fixltx2e}
+#+LaTex_HEADER: \usepackage{amsmath}
+#+LaTex_HEADER: \usepackage{dsfont}
+#+LaTex_HEADER: \usepackage{amssymb}
+#+LaTex_HEADER: \usepackage{hyperref}
+#+LaTex_HEADER: \usepackage{fancyhdr} % Required for custom headers
+#+LaTex_HEADER: \usepackage{lastpage} % Required to determine the last page for the footer
+#+LaTex_HEADER: \usepackage{extramarks} % Required for headers and footers
+#+LaTex_HEADER: % Margins
+#+LaTex_HEADER: \usepackage{geometry}
+#+LaTex_HEADER:  \geometry{
+#+LaTex_HEADER:  a4paper,
+#+LaTex_HEADER:  left=20mm,
+#+LaTex_HEADER:  right=20mm,
+#+LaTex_HEADER:  top=20mm,
+#+LaTex_HEADER:  bottom=20mm,
+#+LaTex_HEADER:  }
+#+LaTex_HEADER: 
+#+LaTex_HEADER: \linespread{1.1} % Line spacing
+#+LaTex_HEADER: 
+#+LaTex_HEADER: % Set up the header and footer
+#+LaTex_HEADER: \pagestyle{fancy}
+#+LaTex_HEADER: \lhead{} % Top left header
+#+LaTex_HEADER: \chead{\hmwkClass\ (\hmwkClassTime): \hmwkTitle} % Top center head
+#+LaTex_HEADER: \rhead{\hmwkInstitucional} % Top right header
+#+LaTex_HEADER: \lfoot{\hmwkClassInstructor} % Bottom left footer
+#+LaTex_HEADER: \cfoot{} % Bottom center footer
+#+LaTex_HEADER: \rfoot{Página\ \thepage\ de\ \protect\pageref{LastPage}} % Bottom right footer
+#+LaTex_HEADER: \renewcommand\headrulewidth{0.4pt} % Size of the header rule
+#+LaTex_HEADER: \renewcommand\footrulewidth{0.4pt} % Size of the footer rule
+#+LaTex_HEADER: 
+#+LaTex_HEADER: \setlength\parindent{0pt} % Removes all indentation from paragraphs
+#+LaTex_HEADER: 
+#+LaTex_HEADER: % Encabezados y pies.
+#+LaTex_HEADER: 
+#+LaTex_HEADER: \newcommand{\hmwkTitle}{Clase 1} % Assignment title
+#+LaTex_HEADER: \newcommand{\hmwkDueDate}{Abril 2020} % Due date
+#+LaTex_HEADER: \newcommand{\hmwkClass}{Hidráulica Agrícola y Saneamiento} % Course/class
+#+LaTex_HEADER: \newcommand{\hmwkClassTime}{1-2020} % Class/lecture time
+#+LaTex_HEADER: \newcommand{\hmwkClassInstructor}{Mónica Fiore - Javier Clavijo} % Teacher/lecturer
+#+LaTex_HEADER: \newcommand{\hmwkInstitucional}{FI-UBA} % Your name
+
+#+LaTex_HEADER:\usepackage{lineno}
+#+LaTex_HEADER:\linenumbers
+
+#+BEGIN_SRC emacs-lisp
+
+(setq org-image-actual-width nil)
+
+#+END_SRC
+
+#+RESULTS:
+
+* HIDROLOGIA
+
+** Definición
+La Hidrología es la ciencia que estudia el agua. Su circulación y
+  distribución en la superficie terrestre, sus propiedades químicas y
+  físicas y su relación con el medio ambiente.
+
+Nuestro planeta está cubierto por agua en más de sus dos terceras
+partes.
+
+Visto desde el espacio los continentes son islas rodeadas de mares
+(agua líquida) y cubiertos por nubes (agua gaseosa).
+
+#+CAPTION: Distribución de principales reservas de agua dulce en el mundo.
+#+ATTR_HTML: :width 300px
+#+ATTR_LaTeX: :width 8cm
+[[./img/image2.jpeg]]
+
+** Propiedades el agua pura
+
+#+CAPTION: Representación del puente de hidrógeno(1) entre moléculas de agua. https://commons.wikimedia.org/wiki/File:3D_model_hydrogen_bonds_in_water.svg CC-By-SA.   
+#+ATTR_HTML: :width 400px
+#+ATTR_LaTeX: :width 9cm :center
+[[./img/Puente-hidrogeno.png]]
+
+
+#+BEGIN_EXPORT latex
+\begin{figure}
+\begin{minipage}{0.45\textwidth}
+#+END_EXPORT
+
+#+ATTR_HTML: :width 150px
+#+ATTR_LaTeX: :width 5cm 
+[[./img/image4.jpeg]]
+
+#+BEGIN_EXPORT latex
+\caption{Lord Henry Cavendish. Físico y químico británico.
+Sintetiza agua y demuestra que no era un elemento sino un compuesto: 
+\url{http://www.biografiasyvidas.com/}}
+\end{minipage}\hfill\begin{minipage}{0.45\textwidth}
+#+END_EXPORT
+
+#+ATTR_HTML: :width 150px
+#+ATTR_LaTeX: :width 5cm 
+[[./img/image5.jpeg]]
+
+#+BEGIN_EXPORT latex
+\caption{Antoine-Laurent de Lavoisier Químico, biólogo y economista Frances y Marie Anne Pierrette Paulze}
+\end{minipage}
+\end{figure}
+#+END_EXPORT
+
+*** Propiedades Físicas
+
+#+TABLE: propiedades
+#+CAPTION: Propiedades físicas del agua, las particulares características se deben principalmente a la union en puente de hidrógeno que se da entre las moléculas
+| Punto de Fusión                | $0{\,}^{0}C$                             |
+| Punto de ebullición            | $100^{0}C$                               |
+| Capacidad calorífica           | $1000 \frac{kcal}{m^3 {\,}^{0}C}$ [fn:1] |
+| Temperatura de máxima densidad | $3.7^{\circ}C$                           |
+
+#+CAPTION: Densidad del agua en función de la temperatura.
+#+ATTR_HTML: :width 200px
+#+ATTR_LaTeX: :width 7cm
+[[./img/image6.jpeg]]
+
+** Utilidad de la Hidrología.
+
+La importancia de la hidrología radica en Determinar caudales de una fuente (río, nacimiento, pozo) para
+
+- abastecimiento de agua potable a una población
+- abastecimiento de agua a una industria
+- satisfacer la demanda de un proyecto de irrigación
+- satisfacer la demanda de un proyecto de generación de energía eléctrica
+- permitir la navegación
+- Diseñar obras como:
+  - Alcantarillas
+  - Puentes
+  - Presas
+  - Vertedores
+  - Sistemas de drenaje
+    - agrícola
+    - poblaciones
+    - carreteras
+    - Aeropuertos
+
+** El Ciclo hidrológico
+
+*El ciclo del agua o ciclo hidrológico, describe el movimiento continuo
+y cíclico del agua en el planeta.*
+
+Se estima que la cantidad de agua existente en la tierra es
+aproximadamente 1386 millones de km3 y se ha mantenido casi
+constantemente y en equilibrio dinámico entre sus tres estados desde el
+orígen de la vida hasta la actualidad mediante el ciclo del agua.
+
+#+CAPTION: Ciclo: Volumenes que representa cada etapa del ciclo hidrológico.
+#+ATTR_HTML: :width 600px
+#+ATTR_LaTeX: :width 15cm
+[[./img/image11.jpeg]]
+
+Podemos asumir que el ciclo comienza con la precipitación, llega a la superficie terrestre y el agua puede infiltrarse.
+
+Infiltración es el proceso de entrada de agua al suelo (es un proceso vertical). La capacidad de infiltración depende del suelo.
+
+Si la precipitación es intensa y supera la capacidad de infiltración se produce escurrimiento superficial.
+
+Al escurrimiento encausado se lo llama escorrentía.
+
+#+CAPTION: Fases del agua
+#+ATTR_HTML: :width 300px
+#+ATTR_LaTeX: :width 7cm
+[[./img/image12.jpeg]]
+
+Al hablar de infiltración de agua en el suelo, estamos ante un proceso de percolación, es decir,
+el movimiento del agua por el solo efecto de la gravedad a traves de un medio poroso, como el suelo.
+
+El intercambio entre las fases líquida y gaseosa se da, por un lado en la transpiración, que
+ es el flujo de agua hacia la atmósfera que se realiza a través de las plantas. Por otro lado en la 
+condensación, que es el proceso por el cual el vapor de agua del aire se transforma en agua líquida. 
+Finalmente, tambien se da la evaporación, que es el principal proceso mediante el cual
+ el agua cambia de estado líquido a gaseoso.
+
+Los océanos, mares, lagos y ríos proveen alrededor del 90% de humedad a
+la atmósfera vía evaporación; el restante 10% proviene de la
+transpiración de las plantas.
+
+A escala global, la misma cantidad de agua evaporada vuelve a la Tierra
+como precipitación. Esto varia geográficamente. Sobre los océanos, la
+evaporación es más común que la precipitación; mientras que, sobre la
+tierra la precipitación supera a la evaporación.*
+
+La mayor parte del agua evaporada de los océanos, cae sobre los mismos
+como precipitación. Una vez evaporada, una molécula de agua permanece
+alrededor de diez días en la atmósfera (Tiempo de residencia).
+
+** El tiempo de Residencia
+
+El *tiempo de residencia* es una medida de la edad media del agua en ese
+reservorio, aunque parte del agua pase mucho menos tiempo que el
+promedio y otra parte mucho más tiempo.
+
+$$Tiempo_{residencia}= Volumen_{reservorio} / Tasa_{transporte de o hacia}$$
+
+#+CAPTION: Tiempos de residencia aproximados en cada reservorio del ciclo hidrológico
+| Reservorio de agua       | Tiempo de residencia promedio |
+| Océanos                  | 3200 años                     |
+| Glaciares                | 20 a 100 años                 |
+| Agua del suelo: profunda | 10000 años                    |
+| Lagos                    | 50 a 100 años                 |
+| Ríos                     | 2 a 6 meses                   |
+| Atmósfera                | 9 días                        |
+
+
+*** Efectos químicos del ciclo del agua
+
+ El agua al desplazarse a través del ciclo hidrológico transporta
+ sólidos y gases en disolución. El C, el N y el S, son volátiles y
+ solubles, y por lo tanto, pueden desplazarse por la atmósfera y realizar ciclos completos,
+ semejantes al ciclo del agua.
+
+ Si el agua del suelo se mueve en sentido ascendente, por efecto de la
+ capilaridad y se evapora en la superficie, las sales disueltas pueden
+ ascender también en el suelo y concentrarse en la superficie, donde es
+ frecuente ver un estrato blancuzco producido por la acumulación de
+ sales.
+
+ #+CAPTION: Ciclo Hidrológico, representación esquemática.
+ #+ATTR_HTML: :width 400px
+ #+ATTR_LaTeX: :width 10cm
+ [[./img/image21.jpeg]]
+
+*** Importancia del Agua para el Riego
+
+ La disponibilidad del agua para el ser humano siempre ha sido vital. El
+ dominio del agua ha originado en la historia de la humanidad disputas y
+ confrontaciones.
+
+ En el 60% de los casos del mundo y en más del 80% en el caso de nuestro
+ país el riego en general ocupa el 4% del área cultivable y origina el
+ 35% de la producción.
+
+ Tanto la calidad del agua de riego como el manejo adecuado del mismo
+ son esenciales para la producción exitosa de cultivos.
+
+ La calidad del agua para el riego es de gran importancia por razones de
+ seguridad, debido a su potencial efecto sobre la salud humana y de los
+ ecosistemas en general.
+
+
+ La calidad del agua constituye una variable a controlar en la
+ agricultura de regadío, tanto a nivel fuente como a nivel sumidero.
+
+ La agricultura aporta constantemente diferentes tipos de contaminantes
+ como sales procedentes del riego, pesticidas, fertilizantes, etc.
+
+ Las aguas de retorno por su elevada salinidad y contenido en nutrientes
+ pueden producir un impacto medioambiental negativo sobre las masas de
+ agua (superficiales o subterráneas) que las reciben, condicionando la
+ calidad de las aguas de ríos y acuíferos tanto para el riego como para
+ otros usos.
+
+ La calidad del agua de riego afecta principalmente al rendimientos de
+ los cultivos y a las condiciones físicas del suelo.
+
+ Luego es fundamental tener en cuenta la calidad del agua. Se recomienda
+ realizar análisis del agua de riego antes de seleccionar el sitio y los
+ cultivos a producir.
+
+ Es aconsejable no realizar un único análisis, debido a que la calidad
+ de algunas fuentes de agua puede variar significativamente en función de
+ la época del año. Se deben tomar más de una muestra, en distintos
+ períodos de tiempo.
+
+ La toxicidad se produce cuando determinados iones, absorbidos
+ principalmente por las raíces, se acumulan en las hojas mediante la
+ transpiración, llegando a alcanzar concentraciones nocivas.
+
+ Se deben analizar:
+
+ Las características químicas del agua de riego, es decir el contenido
+ de sales en el agua, parámetros tales como la alcalinidad y la dureza
+ del agua, etc.
+
+ Los parámetros Físicos como Sabor y Olor (estos parámetros tienen
+ interés muy evidente en las aguas para el consumo humano, no teniendo
+ importancia relevante en el agua de riego agrícola).
+
+ La Conductividad y Resistividad: Son indicativas de la materia
+ ionizable presente en el agua. El agua pura prácticamente no conduce la
+ electricidad; por lo tanto la conductividad que podamos medir será
+ consecuencia de las impurezas presentes en el agua. Es por lo tanto un
+ parámetro físico bastante bueno para medir la calidad de un agua.
+
+ Los parámetros biológicos son indicativos de la contaminación orgánica
+ y biológica.
+
+ El incremento del contenido salino de las aguas usadas en el riego se
+ debe a que las raíces de los cultivos toman el agua pero no sus sales
+ disueltas, por lo que disminuye el volumen pero no la masa. Esto se ve
+ agravado por el aumento de la transpiración de los cultivos debido al
+ cambio climático (aumento en la temperatura y disminución en algunas
+ regiones de las precipitaciones).
+
+ Varios autores (Ayers y Westcot 1987; Gholami y Shahinzadeh, 2014;
+ Asamoah et al., 2015) señalan que para evaluar la calidad del agua para
+ el riego se debe estudiar :
+
+ - *Salinidad*
+ - *Sodicidad*
+ - *Toxicidad.*
+
+ Para evaluar la salinidad es necesario considerar el tipo y cantidad de
+ sales disueltas. La salinidad es un problema externo de la planta y
+ dificulta la absorción de agua. Cuando es alta aumenta la velocidad de
+ infiltración, porque contrarresta el efecto dispersivo del sodio,
+ mientras que cuando es baja disminuye, como resultado de su naturaleza
+ corrosiva.
+
+ Los principales indicadores a tener en cuenta son la concentración
+ total de sales solubles, los iones calcio, magnesio, sodio, potasio,
+ sulfatos, cloruros, carbonatos, bicarbonatos, la conductividad eléctrica y pH.
+
+ La sodicidad se mide en relación a la concentración relativa del sodio
+ con respecto a otros cationes. Una proporción alta de Na sobre el Ca
+ produce descenso en la infiltración debido a su efecto dispersante sobre
+ los agregados del suelo. 
+
+ La Toxicidad es un problema interno que se produce cuando determinados
+ iones, absorbidos principalmente por las raíces, se acumulan en las
+ hojas mediante la transpiración, llegando a alcanzar concentraciones
+ nocivas.
+
+ La toxicidad del sodio depende en gran medida de los niveles de calcio
+ y magnesio. Si el magnesio y calcio son altos, éstos atenúan el efecto
+ dañino del sodio; esto explica que para una Relación de Absorción de
+ Sodio dada, la infiltración del agua aumenta conforme la salinidad se incrementa.
+
+ El clima es un factor fundamenta a tener en cuenta. Argentina posee
+ todos los climas, aunque predomina el templado*
+
+ Las zonas húmedas ocupan un tercio del país, del cual un 30%
+ corresponde a bosques y montes subtropicales del nordeste y el resto, a
+ la llanura pampeana de 600.000 km2
+
+ #+CAPTION: Variables climáticas en argentina, media anual: Temperatura y Precipitación.
+ #+ATTR_HTML: :width 600px
+ #+ATTR_LaTeX: :width 15cm
+ [[./img/image25.jpeg]]
+
+ La isoyeta de 700 mm indica la zona de /secano/, que es el lugar en
+ donde llueve 700 mm o más por año o donde tengo las expectativas de que
+ llueva esa cantidad. La agricultura de secano es aquella en la que 
+ el hombre no contribuye a la irrigación de los campos, sino que utiliza únicamente la que
+ proviene de la lluvia.
+
+
+ #+CAPTION: Desplazamiento hacia el Oeste de las isoyetas (hasta 100 Km). Las rojas representan el periodo 1911-1980. Las verdes el periodo 1981-1994, (INTA).
+ #+ATTR_HTML: :width 300px
+ #+ATTR_LaTeX: :width 10cm
+ [[./img/image26.jpeg]]
+
+* Footnotes                                                        :noexport:
+
+[fn:1] muy elevada es decir, es necesaria una gran cantidad de calor para elevar su temperatura $1 \,^{\circ}K$.
+

@@ -1,0 +1,85 @@
+#+BEGIN_EXPORT html
+<div id="main-div">
+#+END_EXPORT
+* Ciclo y Propiedades del agua
+
+70.26 - Hidráulica Agrícola y Saneamiento - 1-2022
+
+** Propiedades del Agua Pura
+
+1. 
+   - Responda en virtud de qué hecho físico se mantienen unidos
+     los componentes atómicos de la molécula de agua:
+     - como molécula de agua
+     - como agrupación de moléculas
+   - Dé una posible explicación para que se produzca un máximo de densidad cuando
+     la temperatura alcanza los 4° c.
+
+2. 
+   - Cuánto tiempo se requiere para elevar 1°C la temperatura de un piletón de agua de
+     10 metros de lado por 10 metros de profundidad?
+   - Repita el cálculo considerando que el piletón tiene 1000 metros de lado por 100
+     metros de profundidad.
+   - Idem pero considerando un piletón rectangular de 1000 metros por 100 metros y
+     con una profundidad de 1000 metros.
+   - Compare los resultados obtenidos en los puntos anteriores. Explique las diferencias.
+
+Datos a utilizar:
+
+#+BEGIN_EXPORT html
+<div style="display: inline-block; width: 100%;">
+<div style="display: inline; float:left; width: 50%">
+#+END_EXPORT
+
+$Q=m\,C_{agua}\,\Delta T$ \\
+$Q$:calor\\
+$m$:masa\\
+$C_{agua}$ [fn:2] $= 4,18\,\times\,10^3\,\frac{J}{kg\,^{\circ}C}$ \\
+$\Delta T$: diferencia de temperatura\\
+
+#+BEGIN_EXPORT html
+</div>
+<div style="display: inline; float:left; width: 50%">
+#+END_EXPORT
+
+$Q=Sup\, S_0\, \Delta t$ \\
+$Q$: calor\\
+$Sup$: superficie\\
+$S_0$ [fn:1] $=2 \frac{cal}{cm^2 min}$ \\
+$\Delta T$ : diferencia de tiempo\\
+
+#+BEGIN_EXPORT html
+</div>
+</div>
+#+END_EXPORT
+
+\\
+$\rho(4^{\circ}C) = 1 gr / cm^3$ (densidad del agua pura a 4°C) \\
+$1 cal = 4.1855 J$
+
+** El Ciclo Hidrológico
+
+1. Identificar en un esquema las componentes del ciclo hidrológico en la interfaz suelo-atmósfera. 
+
+** Balance Global del Agua
+
+2. Se estima que en promedio la atmósfera contiene $1.24 \times 10^{19} g$ de vapor de agua.
+   todo el vapor de agua se condensara: ¿a cuántos mm de agua precipitable
+   equivaldría? $Sup.= 551\,\times\, 10^6 km^2$, $\delta=1\frac{g}{cm^3}$
+3. La precipitación global anual se estima en $1033mm$. Como es evidente, el vapor
+   de agua en la atmosfera debe reemplazarse. ¿Cada cuantos días pasará eso aproximadamente?
+3. ¿Qué ocurriría en mares, lagos y ríos si la densidad del agua aumentara siempre al disminuir la temperatura, como pasa en el resto de los líquidos? Plantee -- aún cuando esté sujeta a muchas simplificaciones -- cómo se resolvería este interrogante con un modelo numérico.
+4. Mencione las actividades humanas que pudieran causar directa o
+   indirectamente un impacto sobre los recursos hídricos importante a su juicio, y
+   modificar significativamente la cantidad o calidad del agua en los reservorios
+   conceptuales del sistema climático o las tasas de transferencias entre los mismos.
+
+
+* Footnotes                                                        :noexport:
+
+[fn:2] *capcidad calorífica del agua*
+
+[fn:1] *Constante solar:* Energía recibida en el tope de la atmósfera por unidad de superficie y unidad de tiempo sobre una superficie perpendicular a los rayos solares.
+#+BEGIN_EXPORT html
+</div>
+#+END_EXPORT

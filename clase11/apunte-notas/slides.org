@@ -1,0 +1,300 @@
+* Setting                                                          :noexport:
+ 
+#+LATEX_ENGINE: xelatex
+#+LATEX_CLASS: extarticle
+#+LATEX_CLASS_OPTIONS: a4paper,12pt
+
+#+LaTeX_HEADER: \usepackage[spanish]{babel}
+#+LaTex_HEADER: \usepackage{placeins}
+#+LaTex_HEADER: \usepackage{graphicx} % Required to insert images
+#+LaTex_HEADER: \usepackage{courier} % Required for the courier font
+#+LaTex_HEADER: \usepackage{fixltx2e}
+#+LaTex_HEADER: \usepackage{amsmath}
+#+LaTex_HEADER: \usepackage{dsfont}
+#+LaTex_HEADER: \usepackage{amssymb}
+#+LaTex_HEADER: \usepackage{hyperref}
+#+LaTex_HEADER: \usepackage{fancyhdr} % Required for custom headers
+#+LaTex_HEADER: \usepackage{lastpage} % Required to determine the last page for the footer
+#+LaTex_HEADER: \usepackage{extramarks} % Required for headers and footers
+#+LaTex_HEADER: % Margins
+#+LaTex_HEADER: \usepackage{geometry}
+#+LaTex_HEADER:  \geometry{
+#+LaTex_HEADER:  a4paper,
+#+LaTex_HEADER:  left=20mm,
+#+LaTex_HEADER:  right=20mm,
+#+LaTex_HEADER:  top=20mm,
+#+LaTex_HEADER:  bottom=20mm,
+#+LaTex_HEADER:  }
+#+LaTex_HEADER: 
+#+LaTex_HEADER: \linespread{1.1} % Line spacing
+#+LaTex_HEADER: 
+#+LaTex_HEADER: % Set up the header and footer
+#+LaTex_HEADER: \pagestyle{fancy}
+#+LaTex_HEADER: \lhead{} % Top left header
+#+LaTex_HEADER: \chead{\hmwkClass\ (\hmwkClassTime): \hmwkTitle} % Top center head
+#+LaTex_HEADER: \rhead{\hmwkInstitucional} % Top right header
+#+LaTex_HEADER: \lfoot{\hmwkClassInstructor} % Bottom left footer
+#+LaTex_HEADER: \cfoot{} % Bottom center footer
+#+LaTex_HEADER: \rfoot{Página\ \thepage\ de\ \protect\pageref{LastPage}} % Bottom right footer
+#+LaTex_HEADER: \renewcommand\headrulewidth{0.4pt} % Size of the header rule
+#+LaTex_HEADER: \renewcommand\footrulewidth{0.4pt} % Size of the footer rule
+#+LaTex_HEADER: 
+#+LaTex_HEADER: \setlength\parindent{0pt} % Removes all indentation from paragraphs
+#+LaTex_HEADER: 
+#+LaTex_HEADER: % Encabezados y pies.
+#+LaTex_HEADER: 
+#+LaTex_HEADER: \newcommand{\hmwkTitle}{Clase 11 - Notas sobre Canales} % Assignment title
+#+LaTex_HEADER: \newcommand{\hmwkDueDate}{Abril 2020} % Due date
+#+LaTex_HEADER: \newcommand{\hmwkClass}{Hidráulica Agrícola y Saneamiento} % Course/class
+#+LaTex_HEADER: \newcommand{\hmwkClassTime}{1-2020} % Class/lecture time
+#+LaTex_HEADER: \newcommand{\hmwkClassInstructor}{Mónica Fiore - Javier Clavijo} % Teacher/lecturer
+#+LaTex_HEADER: \newcommand{\hmwkInstitucional}{FI-UBA} % Your name
+
+#+LaTex_HEADER:\usepackage{lineno}
+#+LaTex_HEADER:\linenumbers
+
+#+LaTex_HEADER:\setmainfont{Latin Modern Sans}
+
+#+BEGIN_SRC emacs-lisp
+
+(setq org-image-actual-width nil)
+
+#+END_SRC
+
+#+RESULTS:
+
+* Canales
+
+** ¿para que se hacen canales?
+
+Tienen la finalidad de conducir los caudales de captación desde la
+obra de toma hasta el lugar de carga o distribución, de acuerdo a la
+naturaleza del proyecto y en condiciones que permitan transportar los
+volúmenes necesarios para cubrir la demanda.
+
+
+#+BEGIN_COMMENT
+%::: minipages 0.49 0.4
+#+CAPTION:
+[[./media/image1.jpeg]]
+#+CAPTION:
+[[./media/image2.jpeg]]
+%::::::
+#+END_COMMENT
+
+Los canales se pueden clasificar según el uso final que tengan:
+ 
+- Canales para provisión de agua potable
+- Riego
+- Otros usos: Energía hidroeléctrica, industrial, producciónes específicas.
+
+::: minipages 0.47 0.4
+#+CAPTION: Se usan canales agua ``bruta'' o no tratada. ver: https://www.aristegui.info/como-funciona-una-red-de-abastecimiento-de-agua-potable/
+[[./media/canales_potable.jpg]]
+#+CAPTION: Conducción del agua en sistemas de provision de energía electrica. Fuente: http://infraestructuraperuana.blogspot.com/2009/11/central-hidroelectrica-de-gallito-ciego.html
+[[./media/canales_represa.jpg]]
+#+CAPTION: En el riego se utilizan canales tanto para conducir como para distribuír el agua. Fuente: http://www.fao.org/3/y4525s/y4525s06.htm
+[[./media/canales_riego.jpg]]
+::::::
+
+\newpage
+
+** Algunos datos interesantes (de la FAO)
+
+En todas las considerasiones sobre eficiencia del uso del agua
+aparece como punto importante la reducción de perdidas en canales.
+ver:
+
+Publicación: Descubrir el Potencial del Agua para la Agricultura (2003)
+
+http://www.fao.org/3/y4525s/y4525s06.htm
+
+Publicación: Agua y Cultivos (2002)
+
+http://www.fao.org/3/Y3918S/y3918s10.htm 
+
+El diseño de canales es independiente de su uso, por ejemplo,
+ver esta guia, donde está detallado el diseño y construcción de canales, 
+y se aplica a la piscicultura.
+
+http://www.fao.org/tempref/FI/CDrom/FAO_Training/FAO_Training/General/x6708s/x6708s08.htm
+
+** Canales para riego
+
+El agua que necesitan los cultivos es aportada en forma natural por
+las lluvias. Si es escasa o no llueve es necesario regar.
+ 
+El riego puede aumentar y mejorar la producción, y da la posibilidad
+de efectuar otros cultivos.  El canal lleva el agua desde el río o
+arroyo hasta la chacra. Allí se podrá regar por surcos o por manto.
+
+La forma, tamaño y pendiente del canal determinan la cantidad de agua
+que puede llevar, es decir el caudal.  Una pendiente de 1/1000
+significa que el fondo del canal baja 1 m en 1000 m de recorrido.  Un
+caudal de 1 l/seg riega aproximadamente 1 Ha.  Un canal puede adoptar
+diferentes formas desde trapezoidal hasta rectangular (pasando por
+formas poligonales, parabólicas, semicirculares, etc.).
+
+::: minipages 0.48 0.47
+#+CAPTION: Canal En la cuenca del rio Atuel, Mendoza.
+[[./media/image7.jpeg]]
+#+CAPTION: Medidas de un canal de riego.
+[[./media/image8.png]]
+::::::
+
+#+BEGIN_EXAMPLE
+h: tirante 
+t: talud 
+b: solera 
+r: revancha 
+H: altura total
+T: ancho de la "lámina" de agua 
+E: ancho total ocupado por el canal
+c: "corona" del borde o "banquina" tiene el propósito 
+   de dar mayor solidez a los lados del canal.
+#+END_EXAMPLE
+
+Al proyectar la construcción de un canal hay que considerar: 
+
+- El tipo de suelo.  
+- La pendiente del terreno.  
+- La capacidad o cantidad de agua que va a conducir
+
+La capacidad o cantidad de agua que va a conducir depende de: La forma
+del canal, la pendiente y la altura del agua en el canal
+
+El tipo de suelo determinará: La inclinación de las paredes del canal en relación
+a su base (el canal será más cerrado en suelos arcillosos y más
+abierto en suelos arenosos). 
+
+La pendiente o desnivel depende del tipo de suelo (suele ser mayor en
+suelos arcillosos que en suelos arenosos).
+
+Tener en cuenta que: Excesiva pendiente, aumenta la
+velocidad del agua y erosiona el fondo del canal.  Poca pendiente,
+disminuye la velocidad del agua y se acumulan piedras y tierra en el
+fondo (embancamiento del canal).
+
+Cuando los canales recorren largas distancias es importante reducir
+las pérdidas de agua. Los sectores del canal donde hay muchas
+pérdidas se deben sellar, empleando greda ó arcilla ó revestimientos.
+
+Los canales con revestimiento son más eficientes. Al elegir el
+revestimiento hay que considerar:
+
+- Impermeabilidad.
+- Resistencia estructural y a la erosión.
+- Durabilidad.
+- Máxima eficiencia hidráulica.
+- Resistencia a la acción destructiva proveniente del paso de animales o caída de piedras, etc.
+- Costo moderado.
+
+::: minipages 0.4 0.35
+#+CAPTION:
+[[./media/image9.jpeg]]
+#+CAPTION:
+[[./media/image10.jpeg]]
+\caption{Canales con revestimiento}
+::::::
+
+*** Tareas de mantenimiento Limpieza: 
+
+Es importante realizar una limpieza periódica de los canales, eliminar piedras, raíces, troncos,
+arbustos y malezas. Esta tarea se realiza a fines del invierno, para
+tener los canales listos al inicio de la primavera.
+
+::: minipages 0.4 0.35
+#+CAPTION:
+[[./media/image11.jpeg]]
+#+CAPTION:
+[[./media/image12.jpeg]]
+\caption{Limpieza de canales con maquinaria}
+::::::
+
+** Topografía de una Canal
+
+Al proyectar y materializar un canal deben realizarse 3 operaciones principales:
+
+1) Reconocimiento del terreno Se deben determinar las posible
+   posiciones del eje del canal, para lo cual hay que considerar: 
+                                    
+- Pendiente 
+- Distancia 
+- Rumbo
+
+2) Se traza la poligonal preliminar colocando estacones cada 20m. Se nivela la poligonal.
+
+3) Se procede a la traza definitiva, segun el diseño realizado con los
+   niveles relevados.
+
+** Proyecto de un sistema de riego.
+
+A la hora de proyectar un sistema de riego hay que tener en cuenta por
+lo menos 10 puntos principales que están en relación con el resultado
+económico.
+
+
+*** 1) Almacenar el agua necesaria en la zona radicular del terreno. 
+
+#+CAPTION: La cantidad de agua a almacenar en el sistema radicular (izq.) es que determina el riego necesario. Esto depende del cultivo a regar.
+[[./media/image13.jpeg]]
+
+El volumen de agua a almacenar dependerá del cultivo y del estadio de
+desarrollo.
+
+*** 2) Conseguir una aplicación relativamente uniforme del agua. 
+
+#+BEGIN_COMMENT
+#+CAPTION: 
+[[./media/image14.jpeg]]
+#+END_COMMENT
+
+El caudal puede variar y la velocidad de penetración difiere de
+acuerdo con el cultivo, período de riego, hora de comienzo etc.
+
+*** 3) Minimizar la erosión 
+
+Se debe determinar el Máximo Caudal No Erosivo
+que se pueda aportar en el surco.  La velocidad del agua en el
+surco estará afectada directamente por la pendiente. 
+ 
+A mayor pendiente el agua escurrirá más rápido sobre su superficie.
+
+::: minipages 0.51 0.5
+#+CAPTION: Sedimentación en un canal revestido.
+[[./media/sedimentacion.jpg]]
+::::::
+
+Si su velocidad aumenta, su capacidad de transporte de partículas será
+mayor, podrá transportar más cantidad de partículas y más grandes
+desde la cabecera hasta el pie del surco .
+
+*** 4) Minimizar la escorrentía
+
+Una forma de reducir la pérdida de agua por escorrentía es reducir el
+caudal de entrada de agua a la parcela cuando la lámina de agua está a
+punto de llegar al final de la misma.
+
+*** 5) Buscar una aplicación para el agua de drenaje y escorrentía
+
+*** 6) Minimizar la mano de obra empleada para el riego
+
+*** 7) Reducir al mínimo la superficie ocupada por la acequia y el sistema de riego
+
+*** 8) Adaptar el sistema de riego a las fincas y parcelas.
+
+El sistema estará determinado por las dimensiones y formas de las
+parcelas a regar.
+
+*** 9) Facilitar el empleo de maquinaria para la preparación de la tierra, el cultivo, la recolección y el transporte.
+
+*** 10) Adaptar el sistema a los cambios de suelo y pendientes.
+
+Hay que tener en cuenta si un canal atraviesa suelos de diferentes
+texturas, estructuras y pendientes . 
+
+Luego hay que considerar:
+1. Diferencias de velocidad de penetración del agua para cada parcela.
+2. capacidad de retención del agua, al variar de una parcela a otra,
+   hace que las frecuencias de riego no sean las mismas a lo largo del
+   recorrido.  Proyecto de un sistema de riego superficial

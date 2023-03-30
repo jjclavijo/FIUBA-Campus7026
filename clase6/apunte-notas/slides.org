@@ -1,0 +1,986 @@
+* Setting                                                          :noexport:
+ 
+#+LATEX_ENGINE: xelatex
+#+LATEX_CLASS: extarticle
+#+LATEX_CLASS_OPTIONS: a4paper,12pt
+
+#+LaTeX_HEADER: \usepackage[spanish]{babel}
+#+LaTex_HEADER: \usepackage{placeins}
+#+LaTex_HEADER: \usepackage{graphicx} % Required to insert images
+#+LaTex_HEADER: \usepackage{courier} % Required for the courier font
+#+LaTex_HEADER: \usepackage{fixltx2e}
+#+LaTex_HEADER: \usepackage{amsmath}
+#+LaTex_HEADER: \usepackage{dsfont}
+#+LaTex_HEADER: \usepackage{amssymb}
+#+LaTex_HEADER: \usepackage{hyperref}
+#+LaTex_HEADER: \usepackage{fancyhdr} % Required for custom headers
+#+LaTex_HEADER: \usepackage{lastpage} % Required to determine the last page for the footer
+#+LaTex_HEADER: \usepackage{extramarks} % Required for headers and footers
+#+LaTex_HEADER: % Margins
+#+LaTex_HEADER: \usepackage{geometry}
+#+LaTex_HEADER:  \geometry{
+#+LaTex_HEADER:  a4paper,
+#+LaTex_HEADER:  left=20mm,
+#+LaTex_HEADER:  right=20mm,
+#+LaTex_HEADER:  top=20mm,
+#+LaTex_HEADER:  bottom=20mm,
+#+LaTex_HEADER:  }
+#+LaTex_HEADER: 
+#+LaTex_HEADER: \linespread{1.1} % Line spacing
+#+LaTex_HEADER: 
+#+LaTex_HEADER: % Set up the header and footer
+#+LaTex_HEADER: \pagestyle{fancy}
+#+LaTex_HEADER: \lhead{} % Top left header
+#+LaTex_HEADER: \chead{\hmwkClass\ (\hmwkClassTime): \hmwkTitle} % Top center head
+#+LaTex_HEADER: \rhead{\hmwkInstitucional} % Top right header
+#+LaTex_HEADER: \lfoot{\hmwkClassInstructor} % Bottom left footer
+#+LaTex_HEADER: \cfoot{} % Bottom center footer
+#+LaTex_HEADER: \rfoot{Página\ \thepage\ de\ \protect\pageref{LastPage}} % Bottom right footer
+#+LaTex_HEADER: \renewcommand\headrulewidth{0.4pt} % Size of the header rule
+#+LaTex_HEADER: \renewcommand\footrulewidth{0.4pt} % Size of the footer rule
+#+LaTex_HEADER: 
+#+LaTex_HEADER: \setlength\parindent{0pt} % Removes all indentation from paragraphs
+#+LaTex_HEADER: 
+#+LaTex_HEADER: % Encabezados y pies.
+#+LaTex_HEADER: 
+#+LaTex_HEADER: \newcommand{\hmwkTitle}{Aforos: Notas} % Assignment title
+#+LaTex_HEADER: \newcommand{\hmwkDueDate}{Mayo 2020} % Due date
+#+LaTex_HEADER: \newcommand{\hmwkClass}{Hidráulica Agrícola y Saneamiento} % Course/class
+#+LaTex_HEADER: \newcommand{\hmwkClassTime}{1-2020} % Class/lecture time
+#+LaTex_HEADER: \newcommand{\hmwkClassInstructor}{Mónica Fiore - Javier Clavijo} % Teacher/lecturer
+#+LaTex_HEADER: \newcommand{\hmwkInstitucional}{FI-UBA} % Your name
+
+#+LaTex_HEADER:\usepackage{lineno}
+#+LaTex_HEADER:\linenumbers
+
+#+BEGIN_SRC emacs-lisp
+
+(setq org-image-actual-width nil)
+
+#+END_SRC
+
+#+RESULTS:
+
+* Principal
+** Red hidrográfica Argentina: ríos y arroyos, lagos y embalses. 
+
+Los ríos de Argentina son en su mayor parte navegables. 
+
+
+#+BEGIN_EXPORT latex
+\begin{figure}
+\null\hfill%
+\begin{minipage}{0.48\textwidth}
+\includegraphics[width=0.9\textwidth]{./media/image29.jpeg}
+\caption{Estaciones de la Red Hidrológica Nacional}
+\end{minipage}%
+\hfill\begin{minipage}{0.48\textwidth}
+\includegraphics[width=\textwidth]{./media/image28.jpeg}
+\caption{Mapa de la Red Hidrográfica SIAN en base a datos de SHN}
+\end{minipage}\hfill\null
+\begin{minipage}{\textwidth}
+\begin{center}
+\vspace{0.5cm}
+Fuentes: Subsecretaria de recursos Hidricos\footnote{https://www.argentina.gob.ar/subsecretaria-de-recursos-hidricos} suldelsur.com\footnote{http://www.surdelsur.com/argentinamapas/mapaderios.htm}
+\end{center}
+\end{minipage}
+\end{figure}
+#+END_EXPORT
+
+
+** Ejemplo: Cuenca N°49
+
+Zona de canales al Sur del Río Salado \footnote{https://www.argentina.gob.ar/sites/default/files/49.pdf}
+
+Se encuentra ubicada en el centro Este de la Provincia de Buenos
+Aires. Esta formada por arroyos que corren de sur a noreste por una
+planicie de escasa pendiente donde diferentes canales ayudan a que las
+aguas alcancen la bahía de Samborombón.
+
+
+::: minipages 1 0.7
+#+CAPTION: Mapa de Cuencas Hidrográficas de argentina. 
+#+ATTR_HTML: :width 400
+[[./media/image30.jpeg]]
+Fuente: \href{https://www.argentina.gob.ar/sites/default/files/mapacuenca.jpg}{Secretaría de recursos Hídricos}
+::::::
+
+El relieve incide en la forma en que los ríos vierten sus aguas, determinando la clasificación de la cuenca hidrográfica. Una de las más utilizada es:
+
+- Cuencas exorreicas :: son aquellas cuyas aguas llegan al mar o al océano. 
+
+- Cuencas endorreicas :: son aquellas cuyas aguas no llegan al mar,
+     esto se debe a que los ríos desembocan en lagunas interiores o
+     porque se agotan por evaporación, infiltración o consumo.
+
+- Cuencas arreicas :: son aquellas zonas donde no se definen cursos
+     fluviales, debido a la falta de agua de los suelos muy
+     permeables.
+
+::: minipages 0.48 0.45
+#+CAPTION: Ejemplo: Cuenca Endorreica
+[[./media/image32.jpeg]]
+#+CAPTION: Ejemplo: Cuenta Exorreica
+[[./media/image31.png]]
+Fuentes: \href{http://cuencaracteristicas.galeon.com/satelital.jpg}{Link1} \href{http://www.freewebs.com/milanes1351/imagenes2005/Cuenca.gif}{Link2}
+::::::
+
+La cuenca exorreica de vertiente atlántica más importante de Argentina es la cuenca del Plata. 
+
+::: minipages 1 0.5
+#+CAPTION: Mapa de la cuenca del Rio de la plata, 
+[[./media/image33.png]]
+Fuente: Wikipedia\footnote{\url{http://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Riodelaplatabasinmap.png/400px-Riodelaplatabasinmap.png}}
+::::::
+
+Tiene una superficie de 3.200.000 km² y es la segunda cuenca
+hidrográfica más grande del mundo. Abarca parte del territorio
+Argentino, Boliviano, Brasilero, Uruguayo y la totalidad del
+territorio Paraguayo.
+
+** Cuencas endorreicas en Argentina.
+
+Hay dos sistemas importantes con estas características en la Argentina:
+
+- Cuenca del Desaguadero :: De gran importancia hidroeléctrica y para
+  el riego, sus aguas pueden alcanzar el mar. Incluye los ríos: Jáchal,
+  Mendoza, Tunuyán, Diamante y , siendo el Desaguadero es el colector.
+
+- Cuenca de las Sierras Pampeanas :: Comprende cursos de agua de gran
+  interés hidroeléctrico y para el riego. Incluye los ríos: Salí,
+  Primero, Segundo, Quinto y otros menores.
+
+::: minipages 0.48 0.45
+#+CAPTION: Cuenca de las sierras pampeanas. 
+[[./media/image34.jpeg]]
+#+CAPTION: Rio Desagüadero 
+[[./media/desaguadero.jpeg]]
+Fuente: Wikipedia\footnote{\url{https://es.wikipedia.org/wiki/R\%C3\%ADo\_Desaguadero\_(Argentina)\#/media/Archivo:Argentina\_-\_R\%C3\%ADo\_Desaguadero.JPG}}
+::::::
+
+** Tendencias Hidrológicas en la Cuenca del Plata
+
+::: minipages 1 0.6
+#+CAPTION: Máximos, mínimos y medios anuales de los caudales diarios del río Paraná en la sección Paraná-Santa Fe para período 1902-2004 
+[[./media/image35.png]]
+Fuente: Facultad de Ciencias Exactas UBA \footnote{\url{http//www-atmo.at.fcen.uba.ar/materias/cap6_cambioclimaticoH.pdf}}
+::::::
+
+Las tendencias Hidrológias en la cuenca observan una etapa de transición en los ‘70 entre dos estados diferentes de relativa estabilidad estadística
+
+- 1902-1970 “etapa antigua”
+- 1980-2000 “etapa moderna”
+
+::: minipages 0.48 0.45
+#+CAPTION: 
+[[./media/image36.png]]
+#+CAPTION: 
+[[./media/image37.png]]
+#+CAPTION: 
+[[./media/image39.png]]
+#+CAPTION: 
+[[./media/image38.png]]
+Fuente: Facultad de Ciencias Exactas UBA \footnote{\url{http//www-atmo.at.fcen.uba.ar/materias/cap6_cambioclimaticoH.pdf}}
+::::::
+
+Se observa que:
+
+- Los máximos anuales :: de la etapa moderna se han incrementado
+ respecto de la antigua
+
+- Aumentó la frecuencia de las crecidas extraordinarias :: de las 4
+ crecidas registradas con caudales pico mayores a 50.000
+ $\frac{m^3}{s}$ (1905, 1983, 1992, 1998), 3 se produjeron en la etapa
+ moderna.
+
+- Incremento de los mínimos anuales :: al pasar de la etapa antigua a la
+ moderna
+
+Los ríos Paraná, Uruguay y Paraguay muestran tendencias positivas en
+el caudal desde 1970 en concordancia con las tendencias positivas en
+la precipitación en la cuenca del Plata a partir de esa década.
+
+En la cuenca del Plata 70 % de la precipitación se evapora, sólo un 30
+% llega a los ríos. Un aumento de 4 °C llevaría la evaporación a un
+85% haciendo vulnerables los sistemas hidroeléctricos, la navegación,
+el suministro de agua.
+
+** Tendencias en otras cuencas
+
+::: minipages 1 0.7
+#+CAPTION: Tendencias Hidrológicas Fuente: Camilloni y Barros (2007)
+[[./media/image40.png]]
+::::::
+
+::: minipages 1 0.6
+#+CAPTION: Tendencias en el Rio Limay.
+[[./media/image41.png]]
+::::::
+
+En los ríos Atuel, San Juan, Colorado y Neuquén se observa una marcada
+tendencia negativa en los caudales anuales a partir de la década del
+´80.
+
+::: minipages 0.49 0.7
+#+CAPTION: Tendencias de Extremos Climáticos: Dias secos consecutivos. 
+[[./media/tendencias_cdd.png]]
+#+CAPTION: Tendencias Climáticas en argentina: Precipitación, Periodos comparados: 1931-1932/1998-1999
+[[./media/tendencias_pp.png]]
+Fuentes: \href{http://turismo.salta.gov.ar/images/uploads/4.\%20PNUD\%20tendencias\%20de\%20extremos\%20clim\%C3\%A1ticos\%20en\%20Argentina.pdf}{Pizzarro et. al 2013 (INTA, Sectretaría de Ambiente)}
+\href{http://www.scielo.org.mx/scielo.php?script=sci\_arttext\&pid=S0187-62362003000200004\#f2}{Minetti et. al 2002}
+::::::
+
+** Caudales
+
+El caudal es el parámetro mas importante para determinar las
+posibilidades de aprovechamiento de un río, arroyo, etc.
+ 
+Debemos conocer las fluctuaciones sufridas por el río con el
+transcurso del tiempo.  Estas fluctuaciones son propias de cada caso y
+dependerán de las condiciones climáticas y de las características de
+la cuenca.  Para fines de riego me interesa conocer fundamentalmente
+el caudal mínimo pero por ejemplo para la construcción de un puente
+necesitare el caudal máximo.
+
+::: minipages 1 0.4
+#+CAPTION: El caudal mínimo es la limitante a tener en cuenta para el riego. 
+[[./media/image43.jpeg]]
+Fuente: \href{http://gua30.wordpress.com/2012/03/27/caudal-del-rio-baja-y-vuelve-la-calma/}{Seguir Link}
+::::::
+
+** Hidrometría
+
+Ciencia que trata la medición y análisis del agua incluyendo métodos, técnicas e instrumentos utilizados en hidrología.
+Cuando se planifica una zona de riego es fundamental conocer a fondo el río del cual se va a extraer agua y sus características hidrológicas
+.
+
+::: minipages 0.48 0.3
+#+CAPTION: Escala Hidrométrica
+[[./media/image44.jpeg]]
+#+CAPTION: Aforo Semipermanente
+[[./media/image46.jpeg]]
+#+CAPTION: Estación permanente de Aforo
+[[./media/image45.jpeg]]
+::::::
+
+En la distribución del agua de riego, la Hidrometría tiene como
+objetivo principal, medir y registrar los caudales de agua que son
+captados, derivados y distribuidos a los usuarios, a través de los
+sistemas de riego.
+
+::: minipages 0.48 0.4
+#+CAPTION: 
+[[./media/image47.jpeg]]
+#+CAPTION: 
+[[./media/image49.png]]
+#+CAPTION: 
+[[./media/image48.jpeg]]
+#+CAPTION: 
+[[./media/image50.jpeg]]
+\caption{La altura de agua se mide con escalas hidrométricas o limnímetros, (abajo,der.) Limnígrafo mecánico sobre un puente, (abajo,izq.) Hidrómetro ubicado frente a la Prefectura de Carmen de Patagones, Río Negro RN 001}
+::::::
+
+La determinación de los niveles o las alturas de agua de un río debe
+hacerse en una sección determinada.  Esa sección debe ser fija, para
+que las mediciones de alturas de agua se puedan relacionar en el
+tiempo. Todas las mediciones  deben referirse a un cero.
+
+::: minipages 1 0.5
+#+CAPTION: Las alturas de agua de un río se hacen en estaciones hidrométricas. Algunos ejemplos: Puerto Iguazú para el Paraná superior, Puerto Barranqueras en el Gran Resistencia. 
+[[./media/image51.jpeg]]
+
+Red hidrométrica es el conjunto de puntos de control ubicados estratégicamente en el sistema.
+
+El caudal de un río es la cantidad, o volumen, de agua que pasa por
+una sección determinada en un tiempo dado. En general el caudal se
+expresa en $\frac{m^3}{s}$ o $\frac{l}{s}$.
+
+::: minipages 0.48 0.35
+#+CAPTION: Río Paraná 16.000 $m^3/s$ en Corrientes (máximo 60.000 $m^3/s$, inundación de 1983).
+[[./media/image54.jpeg]]
+#+CAPTION: Río Paraguay 4.000 $m^3/s$ en la desembocadura. Bermejo.
+[[./media/image53.jpeg]]
+#+CAPTION: Río Colorado 380 $m^3/s$ (máximo de 2.200 $m^3/s$).
+[[./media/image52.jpeg]]
+::::::
+ 
+::: minipages 0.48 0.46
+#+CAPTION: Caudales Medios Mensuales del Río Uruguay en Paso de Los Libres
+[[./media/image55.png]]
+#+CAPTION: Caudales Medios Mensuales de la Estación de Aforo de Buta Ranquil, Río Colorado
+[[./media/image56.png]]
+:::::::
+
+** Aforo
+
+Aforar es medir, en nuestro caso el caudal 
+
+$$Q \left[\frac{m^3}{seg}\right] = V \left[\frac{m}{seg}\right] \,x\, A \left[m^2\right]$$
+
+Q no es constante en el recorrido del río sino que normalmente se incrementa por la incorporación de nuevos aportes (afluentes, escurrimiento subterráneo, etc.) 
+
+::: minipages 0.48 0.46
+#+CAPTION: Orden de magnitud de los cursos dentro de una red hidrográfica.
+[[./media/image57.png]]
+#+CAPTION: Cuenca del Río de la Plata.
+[[./media/image58.png]]
+::::::
+
+La medición puede efectuarse en:
+
+- Forma permanente (estaciones ubicadas en ríos caudalosos)
+- Semipermanentes
+- Ocasionales
+
+::: minipages 0.48 0.46
+#+CAPTION: Estación de aforos de Calasparra (Nueva)
+[[./media/image60.jpeg]]
+#+CAPTION: Una sección regular de un canal se puede aforar en forma semipermanente
+[[./media/image59.jpeg]]
+#+CAPTION: Aforos ocacionales pueden realizarse en cauces de menor importancia.
+[[./media/image61.jpeg]]
+::::::
+
+El lugar elegido para hacer el aforo o medición debe cumplir los
+siguientes requisitos:
+
+- La sección transversal debe estar bien definida y en lo posible no
+ presentar agradación o degradación del lecho.
+
+- Debe ser de fácil acceso .
+ 
+- Debe estar en un sitio recto, para evitar las sobreelevaciones y
+ cambios en la profundidad producidos por curvas.
+ 
+- El sitio debe estar libre de efectos de controles aguas abajo , que
+ puedan producir remansos que afecten luego los valores obtenidos con
+ la curva de calibración.
+
+En el sitio que se decidió hacer el aforo, se hace un levantamiento
+topográfico completo de la sección transversal. La sección escogida se
+divide en tramos iguales.
+
+Se determinan áreas parciales y velocidades medias en las áreas
+parciales con las cuales se determinan caudales parciales, cuya
+sumatoria da el caudal total.
+ 
+#+CAPTION: Al aforar medimos la sección del curso de agua y la velocidad en dicha sección. 
+#+ATTR_HTML: :width 600
+[[./media/image62.jpeg]]
+
+$$Q= A_1 V_1 + A_2 V_2 + A_3 V_3 + \ldots$$ 
+
+#+CAPTION: La velocidad media correspondiente a cada franja se calcula a partir de la media de la velocidad medida a 0,2 y 0,8 de la profundidad en esa franja. 
+#+ATTR_HTML: :width 600
+[[./media/image63.png]]
+
+#+CAPTION: Cálculo del caudal a partir de las lecturas en el molinete D es la profundidad de la corriente en el punto medio de cada sección.
+#+ATTR_HTML: :width 500
+[[./media/table.57-01.png]]
+
+#+BEGIN_EXPORT html
+<table>
+<tr h="518040">
+<th>
+<p>1</p>
+<p> </p>
+</th>
+<th>
+<p>2</p>
+<p> </p>
+</th>
+<th>
+<p>3</p>
+<p> </p>
+</th>
+<th>
+<p>4</p>
+<p> </p>
+</th>
+<th>
+<p>5</p>
+<p> </p>
+</th>
+<th>
+<p>6</p>
+<p> </p>
+</th>
+<th>
+<p>7</p>
+<p> </p>
+</th>
+<th>
+<p>8</p>
+<p> </p>
+</th>
+</tr>
+<tr h="518040">
+<td rowSpan="2">
+<p>Sección</p>
+<p> </p>
+</td>
+<td colspan="3">
+<p>Velocidad del caudal</p>
+<p>(m/s)</p>
+<p> </p>
+</td>
+<td rowSpan="2">
+<p>Profundidad</p>
+<p>(m)</p>
+<p> </p>
+</td>
+<td rowSpan="2">
+<p>Ancho</p>
+<p>(m)</p>
+<p> </p>
+</td>
+<td rowSpan="2">
+<p>área</p>
+<p>(m<sup>2</sup>)</p>
+<p>5x6</p>
+</td>
+<td rowSpan="2">
+<p>Caudal</p>
+<p>(m<sup>3</sup>/s)</p>
+<p>4x7</p>
+</td>
+</tr>
+<tr h="304920">
+<td>
+<p>0,2D</p>
+<p> </p>
+</td>
+<td>
+<p>0,8D</p>
+<p> </p>
+</td>
+<td>
+<p>Media</p>
+<p> </p>
+</td>
+</tr>
+<tr h="304920">
+<td>
+<p>1 </p>
+</td>
+<td>
+<p>- </p>
+</td>
+<td>
+<p>- </p>
+</td>
+<td>
+<p>0,5 </p>
+</td>
+<td>
+<p>1,3 </p>
+</td>
+<td>
+<p>2,0 </p>
+</td>
+<td>
+<p>2,6 </p>
+</td>
+<td>
+<p>1,30 </p>
+</td>
+</tr>
+<tr h="304920">
+<td>
+<p>2 </p>
+</td>
+<td>
+<p>0,8 </p>
+</td>
+<td>
+<p>0,6 </p>
+</td>
+<td>
+<p>0,7 </p>
+</td>
+<td>
+<p>1,7 </p>
+</td>
+<td>
+<p>1,0 </p>
+</td>
+<td>
+<p>1,7 </p>
+</td>
+<td>
+<p>1,19 </p>
+</td>
+</tr>
+<tr h="304920">
+<td>
+<p>3 </p>
+</td>
+<td>
+<p>0,9 </p>
+</td>
+<td>
+<p>0,6 </p>
+</td>
+<td>
+<p>0,75 </p>
+</td>
+<td>
+<p>2,0 </p>
+</td>
+<td>
+<p>1,0 </p>
+</td>
+<td>
+<p>2,0 </p>
+</td>
+<td>
+<p>1,50 </p>
+</td>
+</tr>
+<tr h="304920">
+<td>
+<p>4 </p>
+</td>
+<td>
+<p>1,1 </p>
+</td>
+<td>
+<p>0,7 </p>
+</td>
+<td>
+<p>0,9 </p>
+</td>
+<td>
+<p>2,2 </p>
+</td>
+<td>
+<p>1,0 </p>
+</td>
+<td>
+<p>2,2 </p>
+</td>
+<td>
+<p>1,98 </p>
+</td>
+</tr>
+<tr h="304920">
+<td>
+<p>5 </p>
+</td>
+<td>
+<p>1,0 </p>
+</td>
+<td>
+<p>0,6 </p>
+</td>
+<td>
+<p>0,8 </p>
+</td>
+<td>
+<p>1,8 </p>
+</td>
+<td>
+<p>1,0 </p>
+</td>
+<td>
+<p>1,8 </p>
+</td>
+<td>
+<p>1,44 </p>
+</td>
+</tr>
+<tr h="304920">
+<td>
+<p>6 </p>
+</td>
+<td>
+<p>0,9 </p>
+</td>
+<td>
+<p>0,6 </p>
+</td>
+<td>
+<p>0,75 </p>
+</td>
+<td>
+<p>1,4 </p>
+</td>
+<td>
+<p>1,0 </p>
+</td>
+<td>
+<p>1,4 </p>
+</td>
+<td>
+<p>1,05 </p>
+</td>
+</tr>
+<tr h="304920">
+<td>
+<p>7 </p>
+</td>
+<td>
+<p>- </p>
+</td>
+<td>
+<p>- </p>
+</td>
+<td>
+<p>0,55 </p>
+</td>
+<td>
+<p>0,7 </p>
+</td>
+<td>
+<p>2,0 </p>
+</td>
+<td>
+<p>1,4 </p>
+</td>
+<td>
+<p>0,77 </p>
+</td>
+</tr>
+<tr h="304920">
+<td colspan="7">
+<p>TOTAL </p>
+</td>
+<td>
+<p>9,23 </p>
+</td>
+</tr>
+#+END_EXPORT
+
+** Metodos de Medición: Molinete
+
+El de hélice gira sobre un eje horizontal. El de taza cónica gira
+sobre un eje vertical. En ambos casos la velocidad de rotación es
+proporcional a la velocidad de la corriente. Se cuenta el número de
+revoluciones en un tiempo dado, ya sea con un contador digital o
+mecánico.
+     
+En general para medir se utilizan puentes o rutas que pasen sobre el río. 
+
+::: minipages 0.45 0.40
+#+CAPTION: Aforo desde puente con molinete
+[[./media/image64.jpeg]]
+#+CAPTION: Molinete; a) Tipo hélice; b) Tipo cazoleta 
+[[./media/image65.jpeg]]
+::::::
+
+** Metodos de Medición: Perfilador de corrientes
+
+#+CAPTION: Perfilador de Corrientes, Batímetro y Medidor de Caudal para Ríos, Arroyos y Estuarios (para profundidades de 0.15 a 2 m).
+[[./media/image66.jpeg]]
+
+Basándose en el efecto Doppler mide el perfil de velocidades de toda
+la lámina de agua, desde su superficie hasta el fondo del cauce
+fluvial.
+Determina simultáneamente la batimetría en todo lo ancho del río, realiza el cálculo del caudal, en tiempo real.
+
+** Metodos de Medición: Aforos con vertederos
+
+#+CAPTION: Un ejemplo de medición con vertedero.
+[[./media/image67.jpeg]]
+
+Método de medición de caudal, útil en chorrillos pequeños, donde no es
+posible utilizar molinetes.  El caudal es función de la altura de la
+lámina de agua sobre el vertedero. La estructura utilizada puede
+adoptar distintas formas; el río alcanzará distintas alturas en
+función del caudal, relacionadas por ecuaciones dependientes del tipo
+de vertedero, que puede ser rectangular, triangular o trapezoidal.
+
+** Métodos de Medicion: Perfilador Acustico Doppler
+
+Fuente: "Técnicas y algoritmos empleados en estudios hidrológicos e hidráulicos" M. Luisa Moreno Santaengracia 
+
+#+CAPTION: Aforos con tecnología Perfilador Acústico Doppler (ADP)
+#+ATTR_HTML: :width 500
+[[./media/image69.png]]
+
+ADP esta pensado para la realización de aforos directos en grandes
+ríos. El equipo es capaz de obtener una lectura de la distribución de
+velocidades en la sección de aforo discretizada en celdas de un tamaño
+predefinido. Utiliza un triple sensor doppler que permite medir
+velocidades de flujo en las tres dimensiones, un transmisor por radio
+y tiene la posibilidad de acoplar un módulo GPS. Cuenta con un
+software que permite, entre otras funciones, visualizar los resultados
+mientras se realiza la medición.
+ 
+#+CAPTION: Catamarán Rivercat
+[[./media/image68.jpeg]]
+
+#+CAPTION: Perfil levantado con ADP
+[[./media/image70.png]]
+ 
+Se arrastra el equipo desde un puente de una orilla a otra con un
+cable.
+ 
+El sistema ADP permite de una pasada obtener la sección del río con la
+distribución de velocidades medidas. El software obtiene por
+integración, el caudal total.
+
+** Métodos de Medición: Método Volumétrico
+
+Se utiliza en general para caudales muy pequeños y se requiere de un
+recipiente para colectar el agua.  El caudal resulta de dividir el
+volumen de agua que se recoge en el recipiente por el tiempo que
+transcurre en colectar dicho volumen.
+
+Q = V/T 
+Donde:
+Q = Caudal (l /s)
+V = Volumen (l)
+T = Tiempo (s)
+
+** Métodos de Medición: Método Químico
+
+Consiste en incorporar a la corriente una cantidad conocida de cierta
+sustancia química durante un tiempo dado. Se toman muestras aguas
+abajo en donde se estime que la sustancia se haya disuelto
+uniformemente, para determinar la cantidad de sustancia contenida por
+unidad de volumen.
+
+** Calibración de una Estación.
+
+Decimos que una estación de aforo está calibrada cuando se ha obtenido
+una curva del caudal con relación al nivel de agua.  Las estimaciones
+posteriores del caudal se pueden obtener midiendo el nivel y leyendo
+el caudal correspondiente en la curva de calibración.  El caudal es
+una función no lineal de la altura en la escala.
+
+::: minipages 1 0.5
+#+CAPTION: Curva Altura – Caudal
+[[./media/image71.png]]
+::::::
+
+Esta relación entre altura y caudal, puede verse afectada por 3 causas
+en cuyo caso se debe realizar trabajos de corrección para la adecuada
+información de caudal. Las correcciones de la curva H – Q pueden ser:
+
+::: minipages 1 0.7
+#+CAPTION: Esquema de Erosión y Sedimentación
+[[./media/image72.jpeg]]
+#+CAPTION: Variación en la curva H-Q por variación de la sección.
+[[./media/image73.png]]
+::::::
+
+- Por variación de la sección :: Si la sección elegida para construir
+ la curva H – Q, tiene cambios debido a acciones de erosión o
+ sedimentación, al no ser fija la superficie de la sección de
+ escurrimiento, la altura medida no reflejará el caudal de la curva,
+ sino otro mayor o menor según la sección sea mayor por erosión o
+ menor por sedimentación. En este caso se tendrá que trazar una nueva curva.
+- Por cambio del régimen del río ::
+- Por efecto de remanso ::
+
+
+La construcción de la curva H - Q requiere la ejecución de numerosos
+aforos, barriendo toda la gama de alturas posibles en la sección
+elegida, incluyendo caudales poco frecuentes que producen
+inundaciones.
+
+::: minipages 0.45 0.44
+#+CAPTION: Una sección del Río Paraná, en Toma Vieja.
+[[./media/image74.jpeg]]
+#+CAPTION: Crecidas registradas en el río paraná y sus correspondientes alturas/caudales en una sección de control. Fuente: Entidad Binacional Yacyretá (EBY)
+[[./media/tabla-h-q.png]]
+::::::
+
+#+BEGIN_EXPORT html
+<table>
+<tr h="518040">
+<th>
+<p>Año</p>
+</th>
+<th>
+<p>Lectura de escala en m</p>
+</th>
+<th>
+<p>Caudal (m<sup>3</sup>/s)</p>
+</th>
+</tr>
+<tr h="304920">
+<td>
+<p>1982 / 83</p>
+</td>
+<td>
+<p>8,98</p>
+</td>
+<td>
+<p>60.000</p>
+</td>
+</tr>
+<tr h="304920">
+<td>
+<p>1858</p>
+</td>
+<td>
+<p>8,93</p>
+</td>
+<td>
+<p>51.000 – 54.000</p>
+</td>
+</tr>
+<tr h="304920">
+<td>
+<p>1878</p>
+</td>
+<td>
+<p>8,65</p>
+</td>
+<td>
+<p>47.000 – 50.000</p>
+</td>
+</tr>
+<tr h="304920">
+<td>
+<p>1905</p>
+</td>
+<td>
+<p>8,56</p>
+</td>
+<td>
+<p>47.000 – 49.000</p>
+</td>
+</tr>
+<tr h="304920">
+<td>
+<p>1966</p>
+</td>
+<td>
+<p>7,93</p>
+</td>
+<td>
+<p>41.000 – 42.000</p>
+</td>
+</tr>
+<tr h="304920">
+<td>
+<p>1977</p>
+</td>
+<td>
+<p>7,13</p>
+</td>
+<td>
+<p>34.000</p>
+</td>
+</tr>
+<tr h="304920">
+<td>
+<p>1991 / 92</p>
+</td>
+<td>
+<p>6,78</p>
+</td>
+<td>
+<p>54.000</p>
+</td>
+</tr>
+<tr h="304920">
+<td>
+<p>1997 / 98</p>
+</td>
+<td>
+<p>5,89</p>
+</td>
+<td>
+<p>42.000</p>
+</td>
+</tr>
+#+END_EXPORT
+
+** Extrapolación de la curva H-Q. 
+
+Existen distintos métodos para la extrapolación de la curva, los más comunes son:
+
+- Extrapolación manual
+- Método de Manning
+- Método de Stevens
+- Método logarítmico
+  
+::: minipages 0.45 0.44
+#+CAPTION: Crecida en el Río Uruguay
+[[./media/image75.jpeg]]
+#+CAPTION: Bajante en el Río Uruguay
+[[./media/image76.jpeg]]
+::::::
+
+Estos métodos se utilizan debido a que en las épocas de avenida es
+casi imposible aforar ya que corre riesgo no sólo el equipo sino la
+gente que lo utiliza
+
+*** Extrapolación manual
+
+Se emplea como análisis preliminar previo a la utilización de otros
+métodos. Se grafican los valores y se extiende la curva utilizando un
+curvímetro, manteniendo la tendencia observada en la curva.
+
+*** Método LOGARÍTMICO. 
+
+$$Q = K (H – H_0)^n$$
+ 
+donde: 
+ 
+- $H_0$ :: altura de la escala hidrométrica para la cual Q = 0 (estiaje) 
+- $H$ :: altura de escala hidrométrica para el caudal que se quiere conocer 
+- $n,\, K$ :: constantes propias de la expresión. 
+
+$$ log\,Q = log\,K + n\, log(H – H_0) $$
+
+Primero se estima el valor de $$H_0$$ en estiaje a partir de los datos observados.  
+
+*** Método de Manning
+
+Este método está basado en la fórmula de Manning, la misma que se utiliza para canales abiertos
+
+\[Q = \underbrace{A\,R^{2/3}}_{\text{Factor Geometrico}} \underbrace{\frac{\sqrt{S}}{n}}_{\text{Factor Hidraulico}}\]
+
+Donde:
+- $A$ :: Area de la sección de control o de aforo ($m^2$) 
+- $S$ :: Pendiente del canal 
+- $P$ :: Perímetro mojado de la sección de control ($m$)
+- $R$ :: Radio hidráulico, $R = A / P$
+- $n$ :: Coeficiente de rugosidad. 
+- $Q$ :: Caudal o descarga en ($\frac{m^3}{s}$) 
+
+*** Método de Stevens
+
+Este método se basa en la fórmula de Chezy y es usado para ríos relativamente anchos y poco profundos
+
+$$Q=A\,C\sqrt{(S\,R)}$$
+
+- $A$ :: Área de la sección de control para un nivel determinado ($m^2$)
+- $S$ :: Pendiente de la superficie libre del agua y la del fondo del canal 
+- $R$ :: Radio hidráulico. 
+- $C$ :: Coeficiente de Chezy, que depende de las características del escurrimiento y de la naturaleza del cauce.
+- $Q$ :: Caudal o descarga en ($\frac{m^3}{s}$) 
+  
+** Hidrograma
+
+Un Hidrograma es la representación del caudal en función del tiempo, expresando las
+variaciones temporales de los caudales o los aportes de un río en una
+sección determinada. Es decir Q = f(t).  El área bajo la curva es el
+volumen de agua que ha pasado por el punto de aforo en el tiempo
+considerado.
+
+::: minipages 1 0.7
+#+CAPTION: 
+[[./media/image80.png]]
+#+CAPTION: 
+[[./media/image81.png]]
+\caption{(arriba) Hidrograma del Río Colorado en la sección Ranquil. (abajo) Hidrograma de una Crecida. A->B: Curva de Crecida, C->D: Curva de descenso, D-> : Curva de Agotamiento.}
+::::::
+
+Si a este hidrograma lo asociamos con un hietograma (precipitación en
+función del tiempo) puedo separar que parte del caudal es debida a la
+precipitación.
+
+** Algunas definiciones:
+
+- Derrame :: Volumen total en un período determinado
+- Módulo :: Caudal Medio Anual
+- Caudal Específico :: Caudal Medio Anual/Area 
+- Lámina :: Volumen/Area
+- Avenida :: Elevación rápida del nivel del agua de un curso.
+- Estiaje :: Nivel mas bajo o caudal mínimo que alcanzan las aguas de un río.

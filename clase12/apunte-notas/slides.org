@@ -1,0 +1,374 @@
+* Setting                                                          :noexport:
+ 
+#+LATEX_ENGINE: xelatex
+#+LATEX_CLASS: extarticle
+#+LATEX_CLASS_OPTIONS: a4paper,12pt
+
+#+LaTeX_HEADER: \usepackage[spanish]{babel}
+#+LaTex_HEADER: \usepackage[section]{placeins}
+#+LaTex_HEADER: \makeatletter
+#+LaTex_HEADER: \AtBeginDocument{%
+#+LaTex_HEADER:   \expandafter\renewcommand\expandafter\subsection\expandafter{%
+#+LaTex_HEADER:     \expandafter\@fb@secFB\subsection
+#+LaTex_HEADER:   }%
+#+LaTex_HEADER: }
+#+LaTex_HEADER: \AtBeginDocument{%
+#+LaTex_HEADER:   \expandafter\renewcommand\expandafter\subsubsection\expandafter{%
+#+LaTex_HEADER:     \expandafter\@fb@secFB\subsubsection
+#+LaTex_HEADER:   }%
+#+LaTex_HEADER: }
+#+LaTex_HEADER: \makeatother
+#+LaTex_HEADER: \usepackage{graphicx} % Required to insert images
+#+LaTex_HEADER: \usepackage{courier} % Required for the courier font
+#+LaTex_HEADER: \usepackage{fixltx2e}
+#+LaTex_HEADER: \usepackage{amsmath}
+#+LaTex_HEADER: \usepackage{dsfont}
+#+LaTex_HEADER: \usepackage{amssymb}
+#+LaTex_HEADER: \usepackage{hyperref}
+#+LaTex_HEADER: \usepackage{fancyhdr} % Required for custom headers
+#+LaTex_HEADER: \usepackage{lastpage} % Required to determine the last page for the footer
+#+LaTex_HEADER: \usepackage{extramarks} % Required for headers and footers
+#+LaTex_HEADER: % Margins
+#+LaTex_HEADER: \usepackage{geometry}
+#+LaTex_HEADER:  \geometry{
+#+LaTex_HEADER:  a4paper,
+#+LaTex_HEADER:  left=20mm,
+#+LaTex_HEADER:  right=20mm,
+#+LaTex_HEADER:  top=20mm,
+#+LaTex_HEADER:  bottom=20mm,
+#+LaTex_HEADER:  }
+#+LaTex_HEADER: 
+#+LaTex_HEADER: \linespread{1.1} % Line spacing
+#+LaTex_HEADER: 
+#+LaTex_HEADER: % Set up the header and footer
+#+LaTex_HEADER: \pagestyle{fancy}
+#+LaTex_HEADER: \lhead{} % Top left header
+#+LaTex_HEADER: \chead{\hmwkClass\ (\hmwkClassTime): \hmwkTitle} % Top center head
+#+LaTex_HEADER: \rhead{\hmwkInstitucional} % Top right header
+#+LaTex_HEADER: \lfoot{\hmwkClassInstructor} % Bottom left footer
+#+LaTex_HEADER: \cfoot{} % Bottom center footer
+#+LaTex_HEADER: \rfoot{Página\ \thepage\ de\ \protect\pageref{LastPage}} % Bottom right footer
+#+LaTex_HEADER: \renewcommand\headrulewidth{0.4pt} % Size of the header rule
+#+LaTex_HEADER: \renewcommand\footrulewidth{0.4pt} % Size of the footer rule
+#+LaTex_HEADER: 
+#+LaTex_HEADER: \setlength\parindent{0pt} % Removes all indentation from paragraphs
+#+LaTex_HEADER: 
+#+LaTex_HEADER: % Encabezados y pies.
+#+LaTex_HEADER: 
+#+LaTex_HEADER: \newcommand{\hmwkTitle}{Clase 2 - Teoría} % Assignment title
+#+LaTex_HEADER: \newcommand{\hmwkDueDate}{Abril 2020} % Due date
+#+LaTex_HEADER: \newcommand{\hmwkClass}{Hidráulica Agrícola y Saneamiento} % Course/class
+#+LaTex_HEADER: \newcommand{\hmwkClassTime}{1-2020} % Class/lecture time
+#+LaTex_HEADER: \newcommand{\hmwkClassInstructor}{Mónica Fiore - Javier Clavijo} % Teacher/lecturer
+#+LaTex_HEADER: \newcommand{\hmwkInstitucional}{FI-UBA} % Your name
+
+#+LaTex_HEADER:\usepackage{lineno}
+#+LaTex_HEADER:\linenumbers
+
+#+BEGIN_SRC emacs-lisp
+
+(setq org-image-actual-width nil)
+
+#+END_SRC
+
+#+RESULTS:
+
+
+* Presas
+
+Es una estructura que se emplaza en una corriente de agua para
+embalsarla y/o desviarla para su posterior aprovechamiento o para
+proteger una zona de sus efectos dañinos , generalmente se ubican en
+un estrechamiento y aguas abajo de una zona con pendiente pronunciada.
+
+::: minipages 0.45 0.45
+#+CAPTION: Presa Hoover, rio Colorado (USA). Período de construcción 1931-1936. Altura: 221,4 m. Potencia 4 TW por año.
+[[./media/image1.jpeg]]
+#+CAPTION: Presa de Asuán en el río Nilo (Egipto). Construcción 1960-70.
+[[./media/image2.jpeg]]
+#+CAPTION: Presa de Itaipú, actualmente la presa de mayor generación del mundo.
+[[./media/image3.jpeg]]
+*Referencias:*
+- https://en.wikipedia.org/wiki/Hoover_Dam
+- https://earthobservatory.nasa.gov/images/85992/aswan-high-dam
+- https://es.wikipedia.org/wiki/Represa_de_Itaip%C3%BA
+::::::
+
+Es interesante como el aprovechamiento a través de grandes presas
+puede generar complejos problemas sociales y ambientales.  Ver por
+ejemplo
+https://earthobservatory.nasa.gov/images/146932/fueled-by-the-nile y
+los articulos allí mencionados.
+
+** Aplicaciones del agua embalsada
+
+1. Para riego
+2. Para Control de crecidas
+3. Para regularización general del río
+4. Para Generación Eléctrica
+5. Para dotar de agua a canales de navegación ó hacer navegables algunos tramos del río
+6. Para defensa contra grandes crecidas
+7. Para Turismo, Esparcimiento y Recreación
+8. Para Piscicultura
+
+::: minipages 0.45 0.45
+#+CAPTION: Lago San Roque, en Villa Carlos Paz, Córdoba, con su característico vertedero en Embudo.
+[[./media/image4.jpeg]]
+#+CAPTION: Embalse de Río Hondo, una presa principalmente usada para regulación y provisión de agua.
+[[./media/image6.jpeg]]
+#+CAPTION: Dique La Viña, Córdoba. Con el segundo paredón mas alto del país. 
+[[./media/image5.jpeg]]
+*Referencias:*
+- https://es.wikipedia.org/wiki/Dique_San_Roque
+- https://riosdelplaneta.com/lago-san-roque/
+- *Muy Interesante:* https://web.archive.org/web/20060712190856/http://fcf.unse.edu.ar/lpr/batimetria.htm
+- https://es.wikipedia.org/wiki/Dique_de_La_Vi%C3%B1a
+
+** Consideraciones para su ubicación
+1. Que haya posibilidad de llenar el embalse con los aportes de la cuenca, afluentes
+1. Que el terreno ensanche lo suficiente aguas arriba de la presa, para que el vaso tenga aceptable capacidad 
+1. Que el vaso sea impermeable
+1. Que exista  un  estrecho o angostura para que la presa sea relativamente corta, y en consecuencia, económica 
+1. Que no se embalsen terrenos de mucho valor, ni poblados, ni obras públicas (rutas, ferrocarriles, etc.) 
+1. Que los materiales que necesite la obra se encuentren cerca de la presa y sean de buena calidad 
+1. Que haya facilidad de acceso a la obra por caminos existentes, o que la apertura de estos sea fácil y económica 
+1. Que el aliviadero tenga  buena ubicación en el valle, y no sea una gran obra, y que el desvío de agua no sea muy costoso 
+1. Que haya facilidad de acampar  y abastecer a los obreros que trabajan  en la obra 
+1. Que el embalse genere un  empleo remunerador durante uno  o  varios años 
+1. Que el caudal sólido de las  aguas  afluentes, al sedimentarse, no disminuya muy rápido la capacidad del embalse
+
+* Clasificación de Presas
+** Presas de Gravedad
+
+Las presas de gravedad son estructuras de hormigón de sección
+triangular; la base es ancha y se va estrechando hacia la parte
+superior; la cara que da al embalse es prácticamente vertical.
+
+La estabilidad de estas presas radica en su propio peso. Es el tipo de
+construcción más duradero y el que requiere menor mantenimiento.
+
+Generalmente la base de una presa de gravedad hecha de concreto es
+aproximadamente igual a 0.7 veces su altura: \[b = 0,7 * h\]
+
+La forma de una presa de gravedad se asemeja a un triángulo.
+
+Esto se debe a la distribución triangular de la presión de agua. En la
+superficie del embalse el agua no está ejerciendo presión sobre la
+presa pero en el fondo, está actuando la máxima presión.
+
+Los vertederos o aliviaderos de una presa están destinados a propiciar
+el pase, libre o controlado del agua de los escurrimientos
+superficiales.
+
+::: minipages 0.40 0.35
+#+CAPTION: 
+[[./media/image7.jpeg]]
+#+CAPTION: 
+[[./media/image8.jpeg]]
+#+CAPTION: Presa Grande Dixence, en Suiza, tiene una altura de 284 m y es una de las más grandes del mundo .
+[[./media/image9.jpeg]]
+#+CAPTION: Corte esquemático de una presa de gravedad de hormigón
+[[./media/image10.jpeg]]
+::::::
+
+*** Lago San Roque
+
+#+CAPTION: Dique San Roque en Villa Carlos Paz - Dique San Roque Villa Carlos Paz
+
+Lago San Roque, Ríos Cosquín , San Antonio y los arroyos Los Chorrillos y Las Mojarras Córdoba. 
+
+::: minipages 0.45 0.45
+#+CAPTION: El dique del lago San Roque es una Presa de Gravedad
+[[./media/image11.png]]
+#+CAPTION: Esquemático: Cargas en una presa triangular.
+[[./media/image13.jpeg]]
+- Tipo de presa: de gravedad de eje curvo
+- Material: Hormigón 
+- Capacidad de embalse: 201 hm3 
+- Potencia instalada: 24 MW
+::::::
+ 
+*** Presa American Falls, Altos del Río Colorado, NorthFork Oklahoma (USA)
+
+::: minipages 0.45 0.45
+#+CAPTION: 
+[[./media/image15.jpeg]]
+- Año de construcción: 1941 - 1945
+- Materiales:
+    - Estructura de la presa: Concreto
+::::::
+
+\newpage
+
+*** Presa en el Río Snake, Idaho (USA)
+
+::: minipages 0.49 0.45
+#+CAPTION:
+[[./media/image14.jpeg]]
+- Año de construcción: 1925 - 1927, Fue reemplazada en 1976
+- Materiales:
+    - Estructura de la presa: Concreto
+::::::
+ 
+*** Presa Itaipu 
+
+::: minipages 0.45 0.45
+#+CAPTION:
+[[./media/image17.jpeg]]
+#+CAPTION:
+[[./media/image16.jpeg]]
+- Río Paraná
+- Función: Aprovechamiento hidroeléctrico
+- Ubicación: Paraná (Brasil) y a la altura Ciudad del Este, Alto Paraná (Paraguay)
+- Año de construcción: 1971
+::::::
+
+\newpage
+
+** Presas de Arco
+
+::: minipages 0.45 0.45
+#+CAPTION:
+[[./media/image20.jpeg]]
+#+CAPTION: Corte esquemático de una presa arco de hormigón
+[[./media/image22.jpeg]]
+::::::
+
+La curvatura presenta una convexidad dirigida hacia el Embalse. En
+condiciones favorables, esta estructura necesita menos hormigón que la
+de gravedad, pero es difícil encontrar emplazamientos donde se puedan
+construir.
+
+
+Corte esquemático de una presa arco de hormigón Las presas de arco
+generalmente se clasifican en delgadas, medianas y gruesas dependiendo
+de la razón entre el ancho de la base (b) y la altura (h):
+
+- Delgada: \(b/h \less 0,2 \)
+- Media: \(0,2 \less b/h \less 0,3\)
+- Gruesa: \(b/h \greater 0,3\)
+
+*** Presa El Atazar 
+
+::: minipages 0.45 0.45
+#+CAPTION:
+[[./media/image26.jpeg]]
+- Río Lozoya, Madrid (España)
+- Función: Abastecimiento de agua y regulación, también ha servido para generación de energía eléctrica.
+- Año de construcción: 1968 - 1972
+- Altura: 134 m
+- Longitud de corona: 400 m
+
+\newpage
+
+*** Presa de Agua del Toro
+
+::: minipages 0.45 0.45
+#+CAPTION: 
+[[./media/image23a.png]]
+#+CAPTION: 
+[[./media/image23b.png]]
+- Río Diamante, Mendoza 
+- Tipo de presa: Arco simétrico, doble curvatura.
+- Fundación: Roca 
+- Altura de presa: 118,50 m 
+- Longitud de coronamiento: 325 m 
+- Volumen de la presa: 450.000 m3 
+- Capacidad de embalse: 325 hm3 
+- Capacidad de vertedero: 790 m3 /s 
+- Potencia instalada: 150 MW 
+- Generación media anual: 252 GWh
+::::::
+
+*** Presa de Bimont
+
+::: minipages 0.45 0.45
+#+CAPTION:
+[[./media/image25.jpeg]]
+#+CAPTION:
+#[[./media/image24.jpeg]]
+- Río Infernet, (Francia)
+- Función: Abastecimiento de agua
+- Año de construcción: 1946 - 1951
+- Altura: 87,50 m
+- Longitud de corona: 180 m
+- Capacidad del depósito: 25.000.000 m3
+::::::
+
+\newpage
+
+*** Presa Glen Canyon
+
+::: minipages 0.45 0.45
+#+CAPTION:
+[[./media/image27.jpeg]]
+- Río Colorado, Arizona (USA)
+- Año de construcción: 1957 - 1964
+- Estructura de la presa: Concreto
+::::::
+ 
+** Presas de Contrafuerte
+
+Las presas de contrafuertes tienen una pared que soporta el agua y una
+serie de contrafuertes o pilares, de forma triangular, que sujetan la
+pared y transmiten la carga del agua a la base. Estas presas precisan
+de un 35 a un 50% del hormigón que necesitaría una de gravedad de
+tamaño similar.
+
+::: minipages 0.45 0.45
+#+CAPTION: Las presas de contrafuerte pueden tomar muchas formas: la cara puede ser plana o curva.
+[[./media/image29.jpeg]]
+#+CAPTION: 
+[[./media/image28.jpeg]]
+::::::
+
+#+CAPTION: Comparación: Tipos de presas
+[[./media/image30.png]]
+
+::: minipages 0.45 0.45
+#+CAPTION: Presa de Contrafuertes Castellar, en España
+[[./media/image32.png]]
+
+*** Presa Pueblo, Arkansas USA
+ 
+::: minipages 0.45 0.45
+#+CAPTION:
+[[./media/image31.jpeg]]
+- Río Arkansas, Colorado (USA)
+- Año de construcción: 1970 - 1975
+- Estructura de la presa: Concreto
+- Elevación de la cresta: 1501,14 m
+- Altura estructural: 76,20 m
+- Altura hidráulica: 58,22 m
+::::::
+
+** Presa de Desviación
+ 
+Es una presa o vertedero construido a través de un río para desviar 
+el agua hacia un canal. Eleva el nivel aguas arriba en el río  pero no 
+proporciona ningún almacenamiento  volumétrico importante.
+
+::: minipages 0.45 0.45
+#+CAPTION: Presa de desviación Leasburg
+[[./media/image33.jpeg]]
+::::::
+
+\newpage
+*** Presa de desviación de Isleta
+
+::: minipages 0.45 0.45
+#+CAPTION:
+[[./media/image34.jpeg]]
+- Río Grande New Mexico (USA)
+- Año de construcción: 1919
+::::::
+
+*** Presa de desviación de Harper
+
+::: minipages 0.45 0.45
+#+CAPTION:
+[[./media/image35.jpeg]]
+- Oregon (USA)
+- Año de construcción: 1929
+::::::
+  

@@ -1,0 +1,52 @@
+#+BEGIN_EXPORT html
+<div id="main-div">
+#+END_EXPORT
+* Ejercicio Práctico: Valores Extremos.
+
+Para trabajar e el análisis de valores extremos, utilizaremos datos de
+lluvia de 5 estaciones diferentes del SMN. 
+
+Los datos vienen provistos en una planilla de calculo, que se puede
+[[./Datos.xlsx][acceder en este link]]. 
+
+Realizaremos el analisis de los datos utilizando "R", para lo cual les
+dejamos un [[./in-to-conda.html][tutorial de uso e instalación]]. 
+
+** Parte 1
+
+Para comenzar el análisis de los datos, los primeros puntos de la
+consigna los realizaremos en una planilla de cálculo. 
+
+1. Calcular los máximos y minimos anuales para cada serie. 
+2. Graficar los datos, Verificar si existen tendencias lineales en las
+   series.
+3. Realizar un histograma para cada estación.
+4. En caso de existir tendencia lineal en los datos, calcularla con la
+   herramienta de tendencia lineal de los gráficos de la planilla,
+   eliminarla y recomputar el historgrama.
+5. Mirando a simple vista, ¿Puede responder a que familia de
+   distribuciones GEV pertenece cada serie?. 
+
+** Parte 2
+
+Para trabajar en el resto del ejercicio utilizaremos R. [[./ej_nbk.zip][en este link]]
+pueden descargar un notebook de R de ejemplo con las funciones que
+necesitarán. Para abrir el notebook deben correr "jupyter-lab" desde
+una carpeta donde hayan descomprimido el archivo zip descargado. Luego
+navegan desde el panel izquierdo de jupyter-lab y le dan dobleclick al 
+archivo del notebook.
+
+1. Utilize la funcion gev.fit para obtener las distribuciones GEV
+   ajustadas para cada serie de datos.
+2. Clasificar el tipo (I,II,III) de distribución que corresponde a
+   cada una.
+3. Calcular las alturas correspondientes a períodos de retorno de
+   entre 5 y 500 años, y hacer un gráfico precipitación vs período de
+   retorno.
+4. Graficar para cada serie de datos la comparación entre el
+   histograma y la función de distribución de la GEV ajustada.
+
+
+#+BEGIN_EXPORT html
+</div>
+#+END_EXPORT

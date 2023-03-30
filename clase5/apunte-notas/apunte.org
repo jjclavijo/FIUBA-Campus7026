@@ -1,0 +1,748 @@
+* Setting                                                          :noexport:
+ 
+#+LATEX_ENGINE: xelatex
+#+LATEX_CLASS: extarticle
+#+LATEX_CLASS_OPTIONS: a4paper,12pt
+
+#+LaTeX_HEADER: \usepackage[spanish]{babel}
+#+LaTex_HEADER: \usepackage{placeins}
+#+LaTex_HEADER: \usepackage{graphicx} % Required to insert images
+#+LaTex_HEADER: \usepackage{courier} % Required for the courier font
+#+LaTex_HEADER: \usepackage{fixltx2e}
+#+LaTex_HEADER: \usepackage{amsmath}
+#+LaTex_HEADER: \usepackage{dsfont}
+#+LaTex_HEADER: \usepackage{amssymb}
+#+LaTex_HEADER: \usepackage{hyperref}
+#+LaTex_HEADER: \usepackage{fancyhdr} % Required for custom headers
+#+LaTex_HEADER: \usepackage{lastpage} % Required to determine the last page for the footer
+#+LaTex_HEADER: \usepackage{extramarks} % Required for headers and footers
+#+LaTex_HEADER: % Margins
+#+LaTex_HEADER: \usepackage{geometry}
+#+LaTex_HEADER:  \geometry{
+#+LaTex_HEADER:  a4paper,
+#+LaTex_HEADER:  left=20mm,
+#+LaTex_HEADER:  right=20mm,
+#+LaTex_HEADER:  top=20mm,
+#+LaTex_HEADER:  bottom=20mm,
+#+LaTex_HEADER:  }
+#+LaTex_HEADER: 
+#+LaTex_HEADER: \linespread{1.1} % Line spacing
+#+LaTex_HEADER: 
+#+LaTex_HEADER: % Set up the header and footer
+#+LaTex_HEADER: \pagestyle{fancy}
+#+LaTex_HEADER: \lhead{} % Top left header
+#+LaTex_HEADER: \chead{\hmwkClass\ (\hmwkClassTime): \hmwkTitle} % Top center head
+#+LaTex_HEADER: \rhead{\hmwkInstitucional} % Top right header
+#+LaTex_HEADER: \lfoot{\hmwkClassInstructor} % Bottom left footer
+#+LaTex_HEADER: \cfoot{} % Bottom center footer
+#+LaTex_HEADER: \rfoot{Página\ \thepage\ de\ \protect\pageref{LastPage}} % Bottom right footer
+#+LaTex_HEADER: \renewcommand\headrulewidth{0.4pt} % Size of the header rule
+#+LaTex_HEADER: \renewcommand\footrulewidth{0.4pt} % Size of the footer rule
+#+LaTex_HEADER: 
+#+LaTex_HEADER: \setlength\parindent{0pt} % Removes all indentation from paragraphs
+#+LaTex_HEADER: 
+#+LaTex_HEADER: % Encabezados y pies.
+#+LaTex_HEADER: 
+#+LaTex_HEADER: \newcommand{\hmwkTitle}{Clase 5 - Notas sobre Riego} % Assignment title
+#+LaTex_HEADER: \newcommand{\hmwkDueDate}{Mayo 2020} % Due date
+#+LaTex_HEADER: \newcommand{\hmwkClass}{Hidráulica Agrícola y Saneamiento} % Course/class
+#+LaTex_HEADER: \newcommand{\hmwkClassTime}{1-2020} % Class/lecture time
+#+LaTex_HEADER: \newcommand{\hmwkClassInstructor}{Mónica Fiore - Javier Clavijo} % Teacher/lecturer
+#+LaTex_HEADER: \newcommand{\hmwkInstitucional}{FI-UBA} % Your name
+
+#+LaTex_HEADER:\usepackage{lineno}
+#+LaTex_HEADER:\linenumbers
+
+#+BEGIN_SRC emacs-lisp
+
+(setq org-image-actual-width nil)
+
+#+END_SRC
+
+#+RESULTS:
+
+
+* Riego
+
+#+BEGIN_EXPORT latex
+\null\hfill\includegraphics{./media/image1.jpeg}\hfill\null
+#+END_EXPORT
+
+Existen muchas definiciones de riego, una de
+ellas es que es una herramienta para producir alimentos.
+ 
+La disponibilidad del agua para el ser humano siempre ha sido vital,
+porque además del sustento que obtenía al cultivar la tierra, creaba
+riqueza y con ella conseguía poder. El dominio del agua ha originado
+en la historia de la humanidad disputas y confrontaciones. Con el
+dominio de esta técnica, se inicia la agricultura de regadío.  Las
+zonas que necesitan ser regadas son muy extensas y se encuentran en
+todos los continentes.
+ 
+¿Por qué se riega, dónde se riega y por qué no se realiza en otro
+lado?
+
+En cualquier cultivo hay que considerar 3 factores
+fundamentales:
+ 
+- Clima
+- Suelo
+- Economía o política 
+
+El suelo se origina a partir de la materia
+producida por los procesos químicos y mecánicos de transformación de
+las rocas de la superficie terrestre. A esta materia se agregan el
+agua, los gases, sobre todo el CO2, el tiempo transcurrido, los
+animales y las plantas que descomponen y transforman el humus, dando
+por resultado una compleja mezcla de materiales orgánicos e
+inorgánicos
+
+** Suelo
+
+El suelo es decisivo al momento de determinar que se va a plantar y
+cuanto voy a producir. Cada suelo tiene un conjunto de características
+dentro de determinados límites. El superior es la superficie de la
+tierra; el inferior, se ubica donde ya no actúan los procesos
+formadores de suelos y los laterales, son los contactos con otros
+tipos de suelos. Es necesario establecer los límites dentro de los
+cuales deben ser estudiados. 
+
+Las características del suelo pueden conocerse a través de las
+observaciones e investigaciones de campo, gabinete y laboratorio. Su
+reconocimiento, clasificación y representación cartográfica es lo que
+se llama "Mapa de Suelos“.
+
+#+CAPTION: Mosaico de Imagenes Satelitales de Argentina.
+#+ATTR_HTML: :width 400
+[[./media/image3.png]]
+
+Riego El suelo pude estudiarse desde 2 puntos de vista:
+
+#+CAPTION: Sección del suelo, esquemático
+#+ATTR_HTML: :width 400
+[[./media/image4.jpeg]]
+
+1. desde la geotécnica son los ingenieros geotécnicos y también los
+ geólogos los que investigan el suelo y las rocas por debajo de la
+ superficie para determinar sus propiedades para el diseño de
+ estructuras tales como edificios, puentes, centrales hidroeléctricas,
+ etc.
+
+2. desde la edafología son los biólogos y los agrónomos los que estudian
+ la composición y naturaleza del suelo en su relación con las plantas
+ y el entorno que le rodea.
+
+#+CAPTION: Perfil de un pozos de Cateo, donde pueden identificarse los horizontes del suelo.
+#+ATTR_HTML: :width 500
+[[./media/image5.jpeg]]
+
+
+Cuando se estudia un suelo la calicata permiten la inspección
+directa del suelo que se desea estudiar y, por lo tanto, es el método
+de exploración que normalmente entrega la información más confiable y
+completa.
+
+Calicata se define como la exploración que se hace con
+labores mineras en un terreno o perforación que se practica para
+determinar la existencia de minerales o la naturaleza del subsuelo.
+
+
+*** Nivelación de tierras para riego 
+
+Se modifica la topografía para maximizar la eficiencia. 
+
+#+CAPTION: Distintas profundidas de la capa impermeable y penetración de raices
+#+ATTR_HTML: :width 200
+[[./media/image8.jpeg]] 
+
+Debe tenerse en cuenta: 
+
+- Profundidad y características físicas del suelo :: Debemos conocer la
+ profundidad hasta la que pueden llegar las raíces sin encontrar una
+ capa que impida el libre drenaje.
+
+- Pendiente natural del suelo :: Es importante porque influirá en la
+ orientación de los surcos. La longitud de los surcos será menor a
+ medida que aumente la pendiente. Si el terreno no presenta grandes
+ desniveles se aconseja nivelar con pendiente nula. En caso contrario
+ conviene uniformar las pendientes.
+
+- Buscar las irregularidades de la superficie que dividen al campo :: Se
+ recomienda observar la topografía antes de comenzar la nivelación.
+
+- Disponibilidad de agua :: El método de riego a utilizar tiene que estar
+ de acuerdo con los caudales de agua de riego disponibles.
+
+- Cultivos a plantar :: El movimiento de tierra a efectuar durante la
+ nivelación está directamente relacionado con el rendimiento
+ económico. Es necesario registrar la ubicación y elevación de
+ cada pozo, los que son numerados según la ubicación.
+
+#+CAPTION: Cultivo Regado por Inundación
+#+ATTR_HTML: :width 200
+[[./media/image9.jpeg]] 
+
+Una vez realizado el estudio del suelo, el
+edafólogo me indica que cultivos son recomendables para ese
+lugar. Luego el factor climático ayudará a descartar de esa lista
+otros de los cultivos. Finalmente el economista desde su punto de
+vista elimina otro u otros por la facilidad de venta del lugar.
+
+** Objetivo: ¿Para qué se Riega?
+
+El riego es la aplicación artificial de agua al terreno con el
+fin de suministrar a las especies vegetales la humedad necesaria para
+su desarrollo.  Los objetivos de la irrigación son:
+                 
+- Proporcionar la humedad necesaria
+- Asegurar las cosechas contra la sequia
+- Disolver sales contenidas en el suelo
+- Dar tempero a la tierra ( Estado adecuado de la tierra para
+  la siembra y otras labores agrícolas)
+
+** Sistemas de riego superficiales o por gravedad.
+ 
+El agua se desplaza sobre el área a regar, cubriéndola total o
+parcialmente, conducida solamente por la diferencia de cota entre un
+punto y otro por la acción de la fuerza de la gravedad.  Los sistemas
+de riego por gravedad tecnificados buscan evitar alguna de las
+pérdidas que se producen al aplicar los métodos tradicionales con el
+objeto de mejorar el control y la homogeneidad en la aplicación del
+agua.
+
+#+CAPTION: Permeabilidad del suelo segun el tipo de suelo. Fuente: FAO, http://www.fao.org/fishery/static/FAO_Training/FAO_Training/General/x6706e/F1.htm
+[[./media/image11.png]]
+
+La elección del método de riego está condicionada por:
+ 
+- Suelo :: La permeabilidad es un factor determinante en la elección del
+  método. La permeabilidad del suelo suele medirse en función de la velocidad
+  del flujo de agua a través de éste durante un período determinado. Se
+  expresa en cm/h, mm/h o cm/día, o bien como un ”coeficiente de
+  permeabilidad” en m/s o cm/s.
+ 
+- Relieve y pendiente ::
+
+- Cultivos :: Algunos cultivos necesitan estar sumergidos en el
+  agua (ej. arroz), otras plantas necesitan que el tallo no se moje,
+  etc.
+ 
+- Recurso hídrico. ::
+ 
+- Mano de obra. ::
+ 
+- Eficiencia. ::
+ 
+ 
+- Economía ::  Es un gran condicionante de todo proyecto de riego.  El
+ éxito de todo proyecto de regadío radica en gran parte en la
+ suficiencia y seguridad del suministro del agua.
+
+** Sistemas de Riego
+
+El riego puede realizarse de diferentes formas:
+	
+*** Surcos
+                                         
+
+#+CAPTION: Aplicación de un riego por surcos en un campo de lechugas. Fuente: http://estaciones.ivia.es/recomendaciones_sal.html
+[[./media/image12.jpeg]] 
+
+En este método la capa radical del suelo
+(zona radicular) se humedece mediante la infiltración del agua a
+través del perímetro mojado de pequeños cauces que reciben el nombre
+de surcos.  Dado que los surcos están espaciado, el agua cubre
+parcialmente el terreno entre surcos y se va humedeciendo por efecto
+del avance de humedad en profundidad y lateralmente.  No es
+conveniente regar con este método terrenos salinos o con agua con
+sales. La razón de esto es que al subir el agua por capilaridad,
+ascienden también las sales.
+
+La eficiencia que se logra con este método es media. Los costos
+de instalación y de operación del riego por surco no son elevados, ya
+que puede empleárselo con escasos trabajos de nivelación para la
+implantación de cultivos anuales.
+
+La forma de los surcos depende del
+implemento empleado para su construcción; puede ser de forma
+parabólica, triangular o rectangular.
+
+#+CAPTION: Representación esquemática y perfil: Surcos de riego
+[[./media/image13.jpeg]] 
+
+El tamaño de los surcos depende en general del cultivo y oscilan entre 10 y
+40 cm de ancho superficial y entre 5 y 20 cm de profundidad.  El
+espaciamiento de los surcos, o sea la distancia entre surco y surco,
+depende de la naturaleza física del suelo y de la profundidad del
+suelo que se intenta mojar. Puede variar entre 0.3 y 1 m.
+
+*** Inundación o manta 
+
+#+CAPTION: Riego por inundación.
+[[./media/image15.jpeg]]
+
+Es un sistema de irrigación que cosiste en inundar
+el terreno con una capa de agua. Es sencillo y poco costoso.  Es el
+más tradicional y fue el usual hasta fines del Siglo XIX en que se
+comenzó a reemplazar por el riego localizado.  Actualmente tiende a
+ser sustituido por otras técnicas ya que su mayor inconveniente es la
+pérdida de agua que se produce con su aplicación.
+
+En este
+sistema el agua procede del centro de acopio que se puede denominar
+embalse, pantano o simplemente centro de almacenamiento. De ese sitio
+discurre a través de grandes canales hasta llegar a los centros de
+distribución que van a repartir por acequias medianas y pequeñas con
+el fin de poder alcanzar la parcela que sea el objeto del riego. En
+ese lugar, el agua va a llegar por gravedad y va a inundar la zona de
+plantación.
+
+*** Subterráneo
+#+CAPTION: Esquema de Instalación de riego subterráneo, Fuente: https://riegospous.es/riego-por-goteo-subterraneo-ventajas-noticias-riegos-pous/
+[[./media/riego-subterraneo-por-goteo.jpg]]
+
+#+CAPTION: Riego subterráneo, cabecera de la instalación. Fuente: http://www.vitivinicultura.net/ 
+[[./media/image16.jpeg]] 
+
+Este sistema es poco usado por su costo,
+generalmente se limita a pequeñas áreas, y en cultivos de larga vida.
+Es una red de tubos filtrantes enterrados, por los cuales circula el
+agua de regadío.
+
+*** Aspersion
+
+#+CAPTION: Sistema de riego por asperción en INTA Catamarca. Fuente: https://inta.gob.ar/sites/default/files/inta_aportes_para_el_mejoramiento_del_manejo_de_los_sistemas_de_riego.pdf
+[[./media/riego_aspersion.jpg]] 
+
+El sistema de riego por aspersión imita al
+agua de lluvia, con lo cual la calidad de la entrega (en pequeñas
+gotas) y el ahorro de agua son muy superiores.
+
+Se requiere de componentes caros
+(bomba hidráulica de alta presión, tuberías, aspersores, etc). Es
+necesario un constante cuidado de la estabilidad de las presiones, del
+caudal de entrega en las boquillas aspersoras. Son altas las pérdidas
+por evaporación.  
+
+*** Conclusión
+El método de riego a utilizar tiene que estar de acuerdo con los
+caudales de agua de riego disponibles y necesarios para el cultivo a
+realizar.  Los canales tienen la finalidad de conducir los caudales de
+captación desde la obra de toma hasta el lugar de carga o
+distribución, de acuerdo a la naturaleza del proyecto y en condiciones
+que permitan transportar los volúmenes necesarios para cubrir la
+demanda.
+
+** Riego en Argentina 
+
+El riego es una actividad fundamental para el
+desarrollo rural de vastas regiones de la Argentina, teniendo en
+cuenta que el 70% de su territorio es árido o semiárido.
+
+#+CAPTION: Indice de cobertura vegetal (Verde Mayor, Amarillo Menor) en Argentina. Fuente: Ministerio de Agroidustria.
+[[./media/image18.png]] 
+
+En Argentina la superficie total cultivada,
+presenta en los últimos veinte años (1992-2012), un crecimiento
+sostenido (de 27,80 millones de hectáreas en 1992 a 39,04 millones de
+ha en 2012), con un impulso particular desde 2002.
+
+El relevamiento realizado en 2015 (ESTUDIO DEL DE
+AMPLIACIÓN DEL RIEGO POTENCIAL EN ARGENTINA ) muestra que la
+superficie en producción bajo riego, alcanza un total de 2,1 millones
+de ha, que representa un consumo anual aproximado de 44.213 Hm3.  Esto
+corresponde a un 5% de la superficie total cultivada en el país. El
+65% de los 2,1 millones de ha, se riega a partir de fuentes
+superficiales, y el resto con agua subterránea.  
+
+#+CAPTION: Superficie bajo riego por provincia. Fuente: http://www.fao.org/3/a-i5183s.pdf
+[[./media/image19.png]]
+
+#+CAPTION: Distribución de cultivos bajo riego en Argentina Fuente: http://www.fao.org/3/a-i5183s.pdf
+[[./media/image20.png]]
+
+#+TABLE: Explotaciones Agropecuarias (EAP) que riegan y superficie efectivamente regada por sistema, según provincia. Año 2002.
+#+ATTR_HTML: :width 600
+[[./media/table.21-01.png]]
+
+#+BEGIN_EXPORT html
+<table> <tr h="128520"> <th colspan="2" rowSpan="3"> <p>Provincia</p>
+</th> <th colspan="7"> <p>Sistema de riego</p> </th> </tr> <tr
+h="128520"> <td rowSpan="2"> <p>Total (1)</p> </td> <td rowSpan="2">
+<p>Gravitacional</p> </td> <td rowSpan="2"> <p>Por aspersión</p> </td>
+<td colspan="3"> <p>Localizado </p> </td> <td rowSpan="2"> <p>Sin
+discriminar</p> </td> </tr> <tr h="128520"> <td> <p>Goteo</p> </td>
+<td> <p>Microaspersión</p> </td> <td> <p>Otros</p> </td> </tr> <tr
+h="250200"> <td> <p>Total del país</p> </td> <td> <p>EAP</p> </td>
+<td> <p>64.463</p> </td> <td> <p>60.708</p> </td> <td> <p>2.233</p>
+</td> <td> <p>2.201</p> </td> <td> <p>270</p> </td> <td> <p>521</p>
+</td> <td> <p>89</p> </td> </tr> <tr h="128520"> <td> </td> <td>
+<p>ha</p> </td> <td> <p>1.355.600,6</p> </td> <td> <p>946.574,9</p>
+</td> <td> <p>281.360,7</p> </td> <td> <p>104.917,5</p> </td> <td>
+<p>13.644,3</p> </td> <td> <p>6.577,5</p> </td> <td> <p>2.525,7</p>
+</td> </tr> <tr h="250200"> <td> <p>Buenos Aires</p> </td> <td>
+<p>EAP</p> </td> <td> <p>2.717</p> </td> <td> <p>1.674</p> </td> <td>
+<p>922</p> </td> <td> <p>368</p> </td> <td> <p>30</p> </td> <td>
+<p>71</p> </td> <td> <p>-</p> </td> </tr> <tr h="128520"> <td> </td>
+<td> <p>ha</p> </td> <td> <p>166.482,9</p> </td> <td> <p>69.540,8</p>
+</td> <td> <p>89.661,8</p> </td> <td> <p>6.421,3</p> </td> <td>
+<p>121,3</p> </td> <td> <p>737,7</p> </td> <td> <p>-</p> </td> </tr>
+<tr h="250200"> <td> <p>Catamarca</p> </td> <td> <p>EAP</p> </td> <td>
+<p>5.484</p> </td> <td> <p>5.342</p> </td> <td> <p>59</p> </td> <td>
+<p>104</p> </td> <td> <p>11</p> </td> <td> <p>20</p> </td> <td>
+<p>-</p> </td> </tr> <tr h="128520"> <td> </td> <td> <p>ha</p> </td>
+<td> <p>61.847,6</p> </td> <td> <p>24.140,3</p> </td> <td>
+<p>19.012,2</p> </td> <td> <p>18.268,8</p> </td> <td> <p>375,4</p>
+</td> <td> <p>50,9</p> </td> <td> <p>-</p> </td> </tr> <tr h="128520">
+<td> <p>Chaco</p> </td> <td> <p>EAP</p> </td> <td> <p>149</p> </td>
+<td> <p>77</p> </td> <td> <p>43</p> </td> <td> <p>14</p> </td> <td>
+<p>-</p> </td> <td> <p>36</p> </td> <td> <p>-</p> </td> </tr> <tr
+h="128520"> <td> </td> <td> <p>ha</p> </td> <td> <p>7.550,3</p> </td>
+<td> <p>4.684,0</p> </td> <td> <p>2.789,5</p> </td> <td> <p>19,3</p>
+</td> <td> <p>-</p> </td> <td> <p>57,5</p> </td> <td> <p>-</p> </td>
+</tr> <tr h="128520"> <td> <p>Chubut</p> </td> <td> <p>EAP</p> </td>
+<td> <p>1.000</p> </td> <td> <p>899</p> </td> <td> <p>92</p> </td>
+<td> <p>77</p> </td> <td> <p>3</p> </td> <td> <p>6</p> </td> <td>
+<p>-</p> </td> </tr> <tr h="128520"> <td> </td> <td> <p>ha</p> </td>
+<td> <p>18.154,8</p> </td> <td> <p>17.499,2</p> </td> <td>
+<p>403,0</p> </td> <td> <p>147,9</p> </td> <td> <p>1,2</p> </td> <td>
+<p>103,5</p> </td> <td> <p>-</p> </td> </tr> <tr h="128520"> <td>
+<p>Córdoba</p> </td> <td> <p>EAP</p> </td> <td> <p>1.699</p> </td>
+<td> <p>1.501</p> </td> <td> <p>165</p> </td> <td> <p>38</p> </td>
+<td> <p>4</p> </td> <td> <p>14</p> </td> <td> <p>1</p> </td> </tr> <tr
+h="128520"> <td> </td> <td> <p>ha</p> </td> <td> <p>93.834,8</p> </td>
+<td> <p>36.200,1</p> </td> <td> <p>56.850,1</p> </td> <td>
+<p>114,0</p> </td> <td> <p>112,8</p> </td> <td> <p>555,3</p> </td>
+<td> <p>2,5</p> </td> </tr> <tr h="128520"> <td> <p>Corrientes</p>
+</td> <td> <p>EAP</p> </td> <td> <p>751</p> </td> <td> <p>388</p>
+</td> <td> <p>136</p> </td> <td> <p>158</p> </td> <td> <p>7</p> </td>
+<td> <p>98</p> </td> <td> <p>1</p> </td> </tr> <tr h="128520"> <td>
+</td> <td> <p>ha</p> </td> <td> <p>59.014,2</p> </td> <td>
+<p>55.201,9</p> </td> <td> <p>257,9</p> </td> <td> <p>1.156,3</p>
+</td> <td> <p>236,8</p> </td> <td> <p>2.160,3</p> </td> <td>
+<p>1,0</p> </td> </tr> <tr h="250200"> <td> <p>Entre Ríos</p> </td>
+<td> <p>EAP</p> </td> <td> <p>513</p> </td> <td> <p>299</p> </td> <td>
+<p>110</p> </td> <td> <p>142</p> </td> <td> <p>15</p> </td> <td>
+<p>6</p> </td> <td> <p>-</p> </td> </tr> <tr h="128520"> <td> </td>
+<td> <p>ha</p> </td> <td> <p>71.736,2</p> </td> <td> <p>47.919,1</p>
+</td> <td> <p>19.166,3</p> </td> <td> <p>3.322,1</p> </td> <td>
+<p>899,8</p> </td> <td> <p>428,9</p> </td> <td> <p>-</p> </td> </tr>
+<tr h="128520"> <td> <p>Formosa</p> </td> <td> <p>EAP</p> </td> <td>
+<p>122</p> </td> <td> <p>39</p> </td> <td> <p>20</p> </td> <td>
+<p>8</p> </td> <td> <p>2</p> </td> <td> <p>46</p> </td> <td> <p>9</p>
+</td> </tr> <tr h="128520"> <td> </td> <td> <p>ha</p> </td> <td>
+<p>4.001,5</p> </td> <td> <p>2.169,8</p> </td> <td> <p>1.244,0</p>
+</td> <td> <p>508,2</p> </td> <td> <p>20,0</p> </td> <td> <p>51,3</p>
+</td> <td> <p>8,2</p> </td> </tr> <tr h="128520"> <td> <p>Jujuy</p>
+</td> <td> <p>EAP</p> </td> <td> <p>4.043</p> </td> <td> <p>3.996</p>
+</td> <td> <p>9</p> </td> <td> <p>61</p> </td> <td> <p>9</p> </td>
+<td> <p>30</p> </td> <td> <p>-</p> </td> </tr> <tr h="128520"> <td>
+</td> <td> <p>ha</p> </td> <td> <p>91.574,6</p> </td> <td>
+<p>84.247,0</p> </td> <td> <p>4.956,4</p> </td> <td> <p>894,4</p>
+</td> <td> <p>1.252,2</p> </td> <td> <p>224,6</p> </td> <td> <p>-</p>
+</td> </tr> <tr h="128520"> <td> <p>La Pampa</p> </td> <td> <p>EAP</p>
+</td> <td> <p>70</p> </td> <td> <p>60</p> </td> <td> <p>7</p> </td>
+<td> <p>8</p> </td> <td> <p>-</p> </td> <td> <p>1</p> </td> <td>
+<p>-</p> </td> </tr> <tr h="128520"> <td> </td> <td> <p>ha</p> </td>
+<td> <p>4.714,8</p> </td> <td> <p>3.205,7</p> </td> <td>
+<p>1.415,5</p> </td> <td> <p>90,6</p> </td> <td> <p>-</p> </td> <td>
+<p>3,0</p> </td> <td> <p>-</p> </td> </tr> <tr h="128520"> <td> <p>La
+Rioja</p> </td> <td> <p>EAP</p> </td> <td> <p>3.896</p> </td> <td>
+<p>3.767</p> </td> <td> <p>8</p> </td> <td> <p>178</p> </td> <td>
+<p>7</p> </td> <td> <p>8</p> </td> <td> <p>-</p> </td> </tr> <tr
+h="128520"> <td> </td> <td> <p>ha</p> </td> <td> <p>41.817,0</p> </td>
+<td> <p>15.216,4</p> </td> <td> <p>1.505,9</p> </td> <td>
+<p>24.408,6</p> </td> <td> <p>580,5</p> </td> <td> <p>105,6</p> </td>
+<td> <p>-</p> </td> </tr> 
+#+END_EXPORT
+
+El Censo Nacional Agropecuario (CNA) es la fuente principal de datos
+estadísticos sobre todas las explotaciones agropecuarias.
+
+** tmp-slides/slide22.txt
+#+TABLE: Explotaciones agropecuarias (EAP) que riegan; y superficie efectivamente regada por sistema, según provincia.
+#+ATTR_HTML: :width 600
+[[./media/table.22-02.png]]
+
+(1) El total de EAP puede no corresponder a la suma de los parciales
+por sistema de riego dado que las categorías no son excluyentes,
+porque una EAP puede tener más de un sistema de riego. Fuente: INDEC,
+Censo Nacional Agropecuario 2002.
+
+#+BEGIN_EXPORT html
+<table> <tr h="130320"> <th colspan="2" rowSpan="3"> <p>Provincia</p>
+</th> <th colspan="7"> <p>Sistema de riego</p> </th> </tr> <tr
+h="128520"> <td rowSpan="2"> <p>Total (1)</p> </td> <td rowSpan="2">
+<p>Gravitacional</p> </td> <td rowSpan="2"> <p>Por aspersión</p> </td>
+<td colspan="3"> <p>Localizado </p> </td> <td rowSpan="2"> <p>Sin
+discriminar</p> </td> </tr> <tr h="130320"> <td> <p>Goteo</p> </td>
+<td> <p>Microaspersión</p> </td> <td> <p>Otros</p> </td> </tr> <tr
+h="129960"> <td> <p>Mendoza</p> </td> <td> <p>EAP</p> </td> <td>
+<p>22.460</p> </td> <td> <p>22.174</p> </td> <td> <p>-</p> </td> <td>
+<p>428</p> </td> <td> <p>71</p> </td> <td> <p>-</p> </td> <td>
+<p>66</p> </td> </tr> <tr h="128880"> <td> </td> <td> <p>ha</p> </td>
+<td> <p>267.888,8</p> </td> <td> <p>244.918,5</p> </td> <td> <p>-</p>
+</td> <td> <p>19.665,4</p> </td> <td> <p>1.955,8</p> </td> <td>
+<p>-</p> </td> <td> <p>1.349,1</p> </td> </tr> <tr h="129960"> <td>
+<p>Misiones</p> </td> <td> <p>EAP</p> </td> <td> <p>88</p> </td> <td>
+<p>12</p> </td> <td> <p>39</p> </td> <td> <p>33</p> </td> <td>
+<p>5</p> </td> <td> <p>16</p> </td> <td> <p>-</p> </td> </tr> <tr
+h="128520"> <td> </td> <td> <p>ha</p> </td> <td> <p>170,0</p> </td>
+<td> <p>20,3</p> </td> <td> <p>79,6</p> </td> <td> <p>29,8</p> </td>
+<td> <p>4,4</p> </td> <td> <p>35,9</p> </td> <td> <p>-</p> </td> </tr>
+<tr h="130320"> <td> <p>Neuquén</p> </td> <td> <p>EAP</p> </td> <td>
+<p>1.862</p> </td> <td> <p>1.784</p> </td> <td> <p>43</p> </td> <td>
+<p>56</p> </td> <td> <p>11</p> </td> <td> <p>34</p> </td> <td>
+<p>-</p> </td> </tr> <tr h="130320"> <td> </td> <td> <p>ha</p> </td>
+<td> <p>15.798,0</p> </td> <td> <p>14.139,0</p> </td> <td> <p>86,9</p>
+</td> <td> <p>1.105,1</p> </td> <td> <p>238,4</p> </td> <td>
+<p>228,6</p> </td> <td> <p>-</p> </td> </tr> <tr h="128520"> <td>
+<p>Río Negro</p> </td> <td> <p>EAP</p> </td> <td> <p>3.370</p> </td>
+<td> <p>3.282</p> </td> <td> <p>88</p> </td> <td> <p>47</p> </td> <td>
+<p>16</p> </td> <td> <p>18</p> </td> <td> <p>1</p> </td> </tr> <tr
+h="129960"> <td> </td> <td> <p>ha</p> </td> <td> <p>72.784,3</p> </td>
+<td> <p>69.718,8</p> </td> <td> <p>1.605,3</p> </td> <td> <p>725,5</p>
+</td> <td> <p>634,2</p> </td> <td> <p>96,5</p> </td> <td> <p>4,0</p>
+</td> </tr> <tr h="130320"> <td> <p>Salta</p> </td> <td> <p>EAP</p>
+</td> <td> <p>3.526</p> </td> <td> <p>3.484</p> </td> <td> <p>26</p>
+</td> <td> <p>61</p> </td> <td> <p>7</p> </td> <td> <p>10</p> </td>
+<td> <p>-</p> </td> </tr> <tr h="128520"> <td> </td> <td> <p>ha</p>
+</td> <td> <p>118.898,0</p> </td> <td> <p>91.857,6</p> </td> <td>
+<p>21.216,9</p> </td> <td> <p>5.552,2</p> </td> <td> <p>79,6</p> </td>
+<td> <p>191,7</p> </td> <td> <p>-</p> </td> </tr> <tr h="130320"> <td>
+<p>San Juan</p> </td> <td> <p>EAP</p> </td> <td> <p>5.962</p> </td>
+<td> <p>5.803</p> </td> <td> <p>-</p> </td> <td> <p>219</p> </td> <td>
+<p>45</p> </td> <td> <p>-</p> </td> <td> <p>10</p> </td> </tr> <tr
+h="128520"> <td> </td> <td> <p>ha</p> </td> <td> <p>79.516,4</p> </td>
+<td> <p>57.240,6</p> </td> <td> <p>-</p> </td> <td> <p>16.872,4</p>
+</td> <td> <p>4.392,5</p> </td> <td> <p>-</p> </td> <td>
+<p>1.010,9</p> </td> </tr> <tr h="130320"> <td> <p>San Luis</p> </td>
+<td> <p>EAP</p> </td> <td> <p>113</p> </td> <td> <p>100</p> </td> <td>
+<p>14</p> </td> <td> <p>1</p> </td> <td> <p>-</p> </td> <td> <p>5</p>
+</td> <td> <p>-</p> </td> </tr> <tr h="129960"> <td> </td> <td>
+<p>ha</p> </td> <td> <p>18.575,1</p> </td> <td> <p>3.569,1</p> </td>
+<td> <p>14.940,0</p> </td> <td> <p>3,0</p> </td> <td> <p>-</p> </td>
+<td> <p>63,0</p> </td> <td> <p>-</p> </td> </tr> <tr h="128520"> <td>
+<p>Santa Cruz</p> </td> <td> <p>EAP</p> </td> <td> <p>72</p> </td>
+<td> <p>64</p> </td> <td> <p>5</p> </td> <td> <p>6</p> </td> <td>
+<p>1</p> </td> <td> <p>-</p> </td> <td> <p>-</p> </td> </tr> <tr
+h="130320"> <td> </td> <td> <p>ha</p> </td> <td> <p>3.840,6</p> </td>
+<td> <p>586,1</p> </td> <td> <p>3.214,0</p> </td> <td> <p>36,5</p>
+</td> <td> <p>4,0</p> </td> <td> <p>-</p> </td> <td> <p>-</p> </td>
+</tr> <tr h="130320"> <td> <p>Santa Fe</p> </td> <td> <p>EAP</p> </td>
+<td> <p>676</p> </td> <td> <p>395</p> </td> <td> <p>192</p> </td> <td>
+<p>124</p> </td> <td> <p>4</p> </td> <td> <p>23</p> </td> <td>
+<p>1</p> </td> </tr> <tr h="128520"> <td> </td> <td> <p>ha</p> </td>
+<td> <p>37.421,3</p> </td> <td> <p>10.030,2</p> </td> <td>
+<p>25.476,1</p> </td> <td> <p>461,1</p> </td> <td> <p>1.101,0</p>
+</td> <td> <p>202,9</p> </td> <td> <p>150,0</p> </td> </tr> <tr
+h="129960"> <td> <p>Santiago del Estero</p> </td> <td> <p>EAP</p>
+</td> <td> <p>3.725</p> </td> <td> <p>3.704</p> </td> <td> <p>15</p>
+</td> <td> <p>4</p> </td> <td> <p>1</p> </td> <td> <p>5</p> </td> <td>
+<p>-</p> </td> </tr> <tr h="128880"> <td> </td> <td> <p>ha</p> </td>
+<td> <p>53.954,1</p> </td> <td> <p>52.109,7</p> </td> <td>
+<p>1.623,0</p> </td> <td> <p>32,2</p> </td> <td> <p>0,1</p> </td> <td>
+<p>189,1</p> </td> <td> <p>-</p> </td> </tr> <tr h="129960"> <td>
+<p>Tierra del Fuego</p> </td> <td> <p>EAP</p> </td> <td> <p>3</p>
+</td> <td> <p>-</p> </td> <td> <p>-</p> </td> <td> <p>3</p> </td> <td>
+<p>-</p> </td> <td> <p>1</p> </td> <td> <p>-</p> </td> </tr> <tr
+h="130320"> <td> </td> <td> <p>ha</p> </td> <td> <p>0,4</p> </td> <td>
+<p>-</p> </td> <td> <p>-</p> </td> <td> <p>0,3</p> </td> <td> <p>-</p>
+</td> <td> <p>0,1</p> </td> <td> <p>-</p> </td> </tr> <tr h="128520">
+<td> <p>Tucumán</p> </td> <td> <p>EAP</p> </td> <td> <p>2.162</p>
+</td> <td> <p>1.864</p> </td> <td> <p>240</p> </td> <td> <p>63</p>
+</td> <td> <p>21</p> </td> <td> <p>73</p> </td> <td> <p>-</p> </td>
+</tr> <tr h="130320"> <td> <p> </p> </td> <td> <p>ha</p> </td> <td>
+<p>66.024,9</p> </td> <td> <p>42.360,7</p> </td> <td> <p>15.856,3</p>
+</td> <td> <p>5.082,5</p> </td> <td> <p>1.634,3</p> </td> <td>
+<p>1.091,1</p> </td> <td> <p>-</p> </td> </tr> 
+#+END_EXPORT
+
+#+BEGIN_EXPORT html
+<table> <tr h="165240"> <th colspan="8"> <p>(1) El total de EAP puede
+no corresponder a la suma de los parciales por sistema de riego dado
+que</p> </th> </tr> <tr h="165240"> <td colspan="8"> <p> </p> <p>las
+categorías no son excluyentes, porque una EAP puede tener más de un
+sistema de riego.</p> </td> </tr> <tr h="171360"> <td colspan="5">
+<p>Fuente:</p> <p> INDEC, Censo Nacional Agropecuario 2002.</p> </td>
+<td> </td> <td> </td> <td> </td> </tr> 
+#+END_EXPORT
+
+El principal objetivo del CNA es obtener información sobre las
+características centrales de la actividad agrícola, ganadera y
+forestal. 
+
+#+BEGIN_EXPORT html
+<table> <tr h="619200"> <th> <p>Explotaciones agropecuarias (EAP) que
+riegan; y superficie efectivamente regada por sistema, según
+provincia. </p> </th> </tr> 
+#+END_EXPORT
+
+** El Agua para el riego.
+
+#+CAPTION: Efectos típicos del suelo salinizado
+#+ATTR_HTML: :width 400
+[[./media/image21.jpeg]] 
+
+La calidad del agua constituye una variable
+a controlar en la agricultura de regadío, tanto a nivel fuente como
+sumidero.  La contaminación de las masas de agua por sales,
+fertilizantes y pesticidas provenientes del regadío es un problema
+creciente en muchas áreas del mundo.
+
+Cuando se riega un cultivo, se aplica una cantidad de agua superior a
+la que éste consume, debido a que los sistemas de riego nunca son
+completamente eficientes.  
+
+Es necesario
+que una cierta cantidad de agua circule a través del suelo y arrastre
+sales y otros compuestos, evitando la acumulación excesiva de
+contaminantes, naturales o antrópicos, en el suelo. Por lo tanto, el
+regadío siempre usa más agua que la que consume, y el agua aplicada y
+no consumida vuelve al río o al acuífero (lo que se llama “aguas de
+retorno del riego”), y lo hace con una pérdida de calidad.
+
+#+CAPTION: Suelo Salino. Funete para Consulta: https://www.eweb.unex.es/eweb/edafo/ECAP/ECAL5PQSalinidad.htm
+[[./media/Salino_unex.jpg]]
+
+La salinización natural del suelo es un fenómeno asociado a
+condiciones climáticas de aridez y a la presencia de materiales
+originales ricos en sales. 
+
+No obstante, existe una salinidad
+adquirida por el riego prolongado con aguas de elevado contenido
+salino, en suelos de baja permeabilidad y bajo climas secos subhúmedos
+o más secos.
+
+El contenido salino del suelo suele medirse de forma
+indirecta, dado que la presencia de iones en el agua la hace
+conductora de la electricidad. La capacidad del agua para conducir la
+electricidad aumenta con la concentración de sales. 
+
+La conductividad eléctrica se mide generalmente en unidades de $dS/m$
+(deciSiemens por metro). La conductividad eléctrica del agua depende
+de la temperatura por lo que, para realizar comparaciones válidas la
+conductividad eléctrica debe expresarse en relación a una temperatura
+de referencia. Habitualmente esta temperatura es de 25ºC.
+
+#+CAPTION: Conductímetro
+[[./media/image23.jpeg]] 
+
+Estos aparatos
+deben se calibrados periódicamente con patrones de salinidad conocida
+para asegurar la fiabilidad de las mediciones. A partir de 15 $dS/m$ el
+suelo se considera salino.  No todas las sales se comportan de la
+misma manera, mientras la mayoría de las plantas no son sensibles a la
+elevación del calcio, si todas lo son al incremento de sodio.
+
+La presencia de sodio en la solución del suelo genera una alcalinidad
+más alta que el calcio, por la mayor fuerza de hidróxido de sodio como
+base que la del de calcio. Por esta razón es conveniente medir el pH
+al mismo tiempo que se mide la conductividad eléctrica, pues este
+parámetro nos sirve como índice de la sodicidad, o contenido en sodio,
+del suelo.
+
+Cuando la conductividad
+eléctrica supera los 8 dS/m, la mayor parte de las plantas se ve
+afectada, pero su grado será máximo si abunda el sodio en la solución,
+lo que se traduce por un valor del pH superior a 8.5, que es el máximo
+generado por la presencia de carbonato cálcico. Esto hace que también
+se considere al suelo como salino cuando se dan estas circunstancias.
+
+#+TABLE: Efectos de la salinidad en los cultivos. Fuente: https://www.eweb.unex.es/eweb/edafo/ECAP/ECAL5PQSalinidad.htm
+#+ATTR_HTML: :width 600
+[[./media/table.27-01.png]]
+
+#+BEGIN_EXPORT html
+<table> <tr h="770040"> <th> <p>Conductividad</p> <p>dS/m</p> </th>
+<th> <p>Salinidad</p> </th> <th> <p>Desarrollo de los cultivos</p>
+</th> </tr> <tr h="534960"> <td> <p>0 - 2</p> </td> <td>
+<p>Ninguna</p> </td> <td> <p>Normal para todos.</p> </td> </tr> <tr
+h="534960"> <td> <p>2 - 4</p> </td> <td> <p>Escasa</p> </td> <td>
+<p>Se ven afectados algunos cultivos muy sensibles.</p> </td> </tr>
+<tr h="1006560"> <td> <p>4 - 8</p> </td> <td> <p>Moderada</p> </td>
+<td> <p>Se afectan la mayoría de los cultivos. Solo se desarrollan las
+plantas tolerantes.</p> </td> </tr> <tr h="769680"> <td> <p>8 - 16</p>
+</td> <td> <p>Alta</p> </td> <td> <p>Solo pueden desarrollarse las
+plantas muy tolerantes y con dificultad.</p> </td> </tr> <tr
+h="770040"> <td> <p>&gt; 16</p> </td> <td> <p>Excesiva</p> </td> <td>
+<p>No hay posibilidad de cultivo. Solo se da la vegetación
+halófila.</p> </td> </tr> 
+#+END_EXPORT
+
+La recuperación de los suelos salinos puede efectuarse por un lavado
+de mismo por inundación con aguas libres de sales. No obstante es
+conveniente la instalación de un sistema de drenaje artificial,
+mediante la instalación de tubos porosos bajo el suelo o, al menos,
+bajo la zona de enraizamiento de las plantas.
+
+Por último las aguas deben ser
+descargadas hacia un curso de agua cuyo caudal sea suficiente para
+diluir las sales aportadas y no transferir el problema a las zonas
+vecinas. Muchas de estas zonas salinizadas se encuentran en áreas
+deltaicas por lo que el drenaje suele hacerse directamente al mar, que
+es la mejor manera de no salinizar otras zonas.
+
+#+CAPTION: Ejemplos de el efecto visible de la salinización del suelo.
+[[./media/image24.jpeg]]
+
+En Argentina existen dos procesos mayoritarios de afectación por sales
+y/o sodio, resultantes de la aplicación de agua de riego: 
+
+- el que se verifica en las regiones áridas y semiáridas del país,
+ estrechamente vinculado a láminas importantes de irrigación,
+ elevación del plano freático, traslado de sales disueltas hacia el
+ perfil del suelo y deposición de las mismas en superficie.
+- el proceso relacionado con el riego complementario presurizado con
+ agua bicarbonatada sódica, en la región pampeana, cuyo efecto
+ inmediato es el deterioro del suelo (por dispersión, disminución de
+ la infiltración, intercambio gaseoso en el perfil y generación de
+ toxicidad en los cultivos).
+
+#+CAPTION: El riego y la salinidad es una preocupación frecuente en medios de comunicación con temática ambiental. Fuente: http://www.i-ambiente.es/?q=blogs/el-manejo-del-suelo-en-el-regadio-control-de-la-salinidad-y-el-sistema-de-riego
+[[./media/image25.png]] 
+
+Las cualidades que tendría un sistema de riego ideal en relación con
+la posible salinización serían: 
+
+- Ser altamente uniforme.
+- Ser continuo 
+- Ser capaz de eliminar las sales de la zona radicular.
+
+El riego localizado no permite lavar las sales del conjunto de la zona
+radicular. Por eso, cuando exista un riesgo cierto de salinización,
+debería completarse con algún sistema de cobertura total que permita
+lavar las sales.
+
+Los suelos poco permeables y los que se vuelven impermeables al
+humedecerse, no deben ser puestos en riego sin realizar antes un
+ensayo que asegure su viabilidad y sostenibilidad.
+
+La forma de controlar la salinidad es realizar un monitoreo periódico
+de las zonas regadas, en los mismos lugares y condiciones en que se
+produce y establecer medidas de control mediante lavado.
+
+Utilizar rastrojo o paja para cubrir el suelo salino es otro modo de
+evitar que la humedad del suelo se evapore y por ende el aumento de la
+salinidad.
+
+#+CAPTION: El pastoreo puede agravar los problemas de salinización de los suelos.
+#+ATTR_HTML: :width 300
+[[./media/image27.jpeg]] 
+
+Es bueno mantener alejado de los suelos
+salinos a los ganados y evitar el pastoreo. Eso puede profundizar la
+salinidad del suelo por lo que es siempre mejor mantener los animales
+lejos de donde queremos reducir la salinidad del suelo.
+
+#+CAPTION: Utilizar el rastrojo de un cultivo anterior para mantener cubierto el suelo evita la perdida de humedad y conserva el suelo. Es una de las ventajas de la siembra directa. Ver por ejemplo: https://www.aapresid.org.ar/blog/el-cuidado-de-los-suelos-en-lucha-constante-contra-la-degradacion/
+#+ATTR_HTML: :width 300
+[[./media/image26.jpeg]] 
+
+Hay que destacar que no todas las sales son
+iguales. Algunas son más fácil de lavar como el cloruro sódico
+mientras que otras como el cloruro magnésico y el sulfato magnésico
+son mas difíciles y lleva más tiempo reducir su nivel. En este último
+caso, lo más recomendable es que después del regado se agregue calcio
+al suelo a fin de equilibrar el suelo y ayudar a evitar un suelo
+salino para tener más y mejores cultivos.

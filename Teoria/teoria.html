@@ -1,0 +1,299 @@
+<div>
+    <script>
+        var sheet = document.createElement('style')
+        sheet.innerHTML = `
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@600&family=Oxygen:wght@300;400&display=swap');
+
+    #cronograma tr {
+      }
+
+    #iteoria {
+      line-height: 1.7;
+      font-family: 'Oxygen', sans-serif;
+      font-size: 20px;
+      font-weight: 300;
+			color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    #iteoria {
+      margin: 0 auto;
+      hyphens: auto;
+      word-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      #iteoria {
+        font-size: 0.9em;
+        padding: 1em;
+      }
+    }
+    @media print {
+      #iteoria {
+        background-color: transparent;
+        color: black;
+      }
+      #iteoria p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      #iteoria h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    #iteoria p {
+      margin-top: 1.7em;
+    }
+    #iteoria a {
+      color: #1a1a1a;
+    }
+
+    #iteoria a.recurso {
+      border: dashed 1px gray;
+    }
+
+    #iteoria a.propio {
+      background: #d3a747;
+    }
+
+    #iteoria a.externo {
+      background: #74d347;
+    }
+
+    #iteoria a.video {
+      border: solid 1px #4774d3;
+    }
+
+    #iteoria a {
+      color: #1a1a1a;
+    }
+
+    #iteoria a:visited {
+      color: #1a1a1a;
+    }
+    #iteoria img {
+      max-width: 100%;
+    }
+    #iteoria h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.7em;
+      font-family: 'Montserrat Alternates', sans-serif;
+    }
+    #iteoria ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1.7em;
+    }
+    #iteoria li > ol, li > ul {
+      margin-top: 0;
+    }
+    #iteoria blockquote {
+      margin: 1.7em 0 1.7em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      font-style: italic;
+    }
+    #iteoria hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin-top: 1.7em;
+    }
+    #iteoria table {
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+    }
+    #iteoria th, td {
+      border-bottom: 1px solid lightgray;
+      padding: 0.4em 0.7em 0.4em 0;
+    }
+    #iteoria header {
+      margin-bottom: 6em;
+      text-align: center;
+    }
+    #iteoria nav a:not(:hover) {
+      text-decoration: none;
+    }
+    #iteoria code{white-space: pre-wrap;}
+    #iteoria span.smallcaps{font-variant: small-caps;}
+    #iteoria span.underline{text-decoration: underline;}
+    #iteoria div.column{display: inline-block; vertical-align: top; width: 50%;}
+    #iteoria div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    #iteoria ul.task-list{list-style: none;}
+    #iteoria {
+    font-size: 1rem
+    }
+    #iteoria .tema {
+    font-size: 1.7rem;
+    font-family: 'Montserrat Alternates', sans-serif;
+    border-top: dashed 1px;
+    border-bottom: solid 1px;
+    padding: 1em;
+    padding-bottom: 0.3em;
+    }
+    #iteoria .tema p {
+    font-size: 1.7rem;
+    font-family: 'Montserrat Alternates', sans-serif;
+    padding: 0em;
+    margin: 0em;
+    }
+    div.collapsible > input + * {
+     display: none;
+    }
+     
+    div.collapsible > input:checked + * {
+     display: block;
+    }
+
+    div.collapsible > input {
+     display: none;
+    }
+
+    .tema label {
+     cursor: pointer;
+     font-size: 1rem;
+     background: #dddddd;
+    }
+
+`;
+        document.body.appendChild(sheet);
+    </script>
+<div id="iteoria">
+<div class="tema">
+<p>#1: Ciclo y Propiedades del Agua</p>
+<label for="mylist-node1">Abrir/Colapsar</label>
+</div>
+<div class="collapsible">
+<input type="checkbox" id="mylist-node1">
+<div class="tema-cuerpo">
+<p>En este tema trabajaremos sobre algunos conceptos básicos relativos
+al agua.</p>
+<p>Aunque la mayoría de los modelos que se aplican a la descripción del
+ciclo del agua son muy complejos para el alcance de esta asignatura,
+trabajaremos con algunos ejemplos sencillos que pueden calcularse,
+relativos al tiempo de residencia del agua – interpretando cada parte
+del ciclo como un reservorio –, a la evaporación, y a la forma en que se
+comporta el hielo debido a la particular densidad del agua.</p>
+<p>El material disponible es: - <a
+href="https://campus.fi.uba.ar/mod/resource/view.php?id=141004"
+class="recurso propio">Video Introductorio</a> - <a
+href="https://campus.fi.uba.ar/mod/resource/view.php?id=140999"
+class="recurso propio">Apunte Teórico</a> - <a
+href="https://campus.fi.uba.ar/mod/resource/view.php?id=141000"
+class="recurso propio">Notas extraidas de las filminas de clase</a> - <a
+href="https://campus.fi.uba.ar/mod/resource/view.php?id=266495"
+class="recurso propio">Filminas de clase</a></p>
+</div>
+</div>
+<div class="tema">
+<p>#2: Precipitaciones</p>
+<label for="mylist-node2">Abrir/Colapsar</label>
+</div>
+<div class="collapsible">
+<input type="checkbox" id="mylist-node2">
+<div class="tema-cuerpo">
+<p>En este tema estudiaremos una parte puntual del ciclo del agua: las
+precipitaciones.</p>
+<p>Veremos la importancia de medirlas y cómo pueden utilizarse los datos
+puntuales de precipitación en el cálculo de la precipitación ocurrida en
+un área.</p>
+<p>Para esto aparecerán varios conceptos relativos a la interpolación y
+a la generación de datos continuos –raster o grilla– a partir de los
+datos muestreados.</p>
+<p>El material disponible es: - <a
+href="https://campus.fi.uba.ar/mod/resource/view.php?id=144818"
+class="recurso propio">Video Introductorio</a> - <a
+href="https://campus.fi.uba.ar/mod/resource/view.php?id=144819"
+class="recurso propio">Apunte Teórico</a> - <a
+href="https://campus.fi.uba.ar/mod/resource/view.php?id=144821"
+class="recurso propio">Notas extraidas de las filminas de clase</a> - <a
+href="https://campus.fi.uba.ar/mod/resource/view.php?id=266496"
+class="recurso propio">Filminas de clase</a> - <a
+href="https://drive.google.com/open?id=1YIYUB3twDxpNq_ACXAzOY_772nmKQsim"
+class="recurso propio">Video de Clase Interpolación 2021</a></p>
+</div>
+</div>
+<div class="tema">
+<p>#3: Balance Hídrico - Riego - Uso consuntivo</p>
+<label for="mylist-node3">Abrir/Colapsar</label>
+</div>
+<div class="collapsible">
+<input type="checkbox" id="mylist-node3">
+<div class="tema-cuerpo">
+<p>El riego es uno de los principales usos del agua. En este apartado
+estudiaremos tanto conceptos generales sobre Riego como distintos
+métodos para estimar el uso de agua necesario para una producción
+agrícola que utiliza riego.</p>
+<p>Este tema es introductorio a los temas de Canales y Sistematización
+de predios, más relacionados a las obras de ingeniería necesarias para
+el manejo del riego.</p>
+<p>El material disponible es: - <a href="" class="recurso propio">Video
+Introductorio Riego</a> - <a
+href="https://campus.fi.uba.ar/mod/resource/view.php?id=161396"
+class="recurso propio">Audio Introductorio Uso consuntivo</a> - <a
+href="https://campus.fi.uba.ar/mod/resource/view.php?id=153394"
+class="recurso propio">Apunte Teórico Riego</a> - <a
+href="https://campus.fi.uba.ar/mod/resource/view.php?id=161398"
+class="recurso propio">Apunte Teórico Uso consuntivo</a> - <a
+href="https://campus.fi.uba.ar/mod/resource/view.php?id=153391"
+class="recurso propio">Notas de clase sobre Riego</a> - <a
+href="https://campus.fi.uba.ar/mod/resource/view.php?id=161397"
+class="recurso propio">Notas de clase sobre Uso Consuntivo</a> - <a
+href="https://campus.fi.uba.ar/mod/resource/view.php?id=161400"
+class="recurso propio">Método Blaney y Cridle</a></p>
+<p>Agregamos además algunos links de interés sobre Riego:</p>
+<ul>
+<li>Sobre aptitud de suelo y Riego, aplicado en argentina: <a
+href="http://www.ora.gob.ar/archivos/AreasAptas-Maiz-Soja.pdf">Link
+1</a>, <a
+href="https://redsalinidad.com.ar/wp-content/uploads/2018/12/la-salinizacion-de-suelos-en-la-argentina.pdf">Link
+2</a></li>
+<li>Sobre la antigua agrigultura en la mesopotamia: <a
+href="https://historia116.wordpress.com/2013/09/22/egipto-don-del-nilo/">Link
+1</a></li>
+<li>Sobre los sistemas de canales antiguos en china: <a
+href="https://www.iagua.es/noticias/locken/dujiangyan-sistema-riego-mas-antiguo-mundo">Link
+1</a> <a href="http://whc.unesco.org/en/list/1001/">Link 2</a>
+–Recomendamos que naveguen el mapa de la zona, con un sistema de canales
+que se conseva en uso hasta hoy–.</li>
+<li>Sobre los Acueductos Romanos: <a
+href="https://www.abc.es/viajar/top/20140115/abci-acueductos-romanos-201401071106_1.html">Link
+1</a></li>
+<li>Sobre el sistema de terrazas aplicado en los andes: <a
+href="http://www.fao.org/tempref/GI/Reserved/FTP_FaoRlc/old/docrep/RLC1054s/rlc1054s.012.pdf">Link
+1</a></li>
+</ul>
+<p>Recomendamos que se aborden este tema planteandose desde qué optica
+aporta la ingeniería en esta temática, especialmente en cuanto a la
+información que debe proveer para el correcto diseño y aprovechamiento
+de los sistemas.</p>
+</div>
+</div>
+<div class="tema">
+<p>#4: Aforos</p>
+<label for="mylist-node4">Abrir/Colapsar</label>
+</div>
+<div class="collapsible">
+<input type="checkbox" id="mylist-node4">
+<div class="tema-cuerpo">
+<p>En esta sección veremos cómo se miden los caudales de los ríos y
+canales, cuáles son las técnicas más utilizadas y cómo interpretar los
+datos obtenidos.</p>
+<p>El material disponible es: - <a
+href="https://campus.fi.uba.ar/mod/resource/view.php?id=155372"
+class="recurso propio">Video Introductorio</a> - <a
+href="https://campus.fi.uba.ar/mod/resource/view.php?id=155370"
+class="recurso propio">Apunte Teórico</a> - <a
+href="https://campus.fi.uba.ar/mod/resource/view.php?id=155369"
+class="recurso propio">Notas extraidas de las filminas de clase</a> - <a
+href="https://campus.fi.uba.ar/mod/resource/view.php?id=266497"
+class="recurso propio">Filminas de clase</a></p>
+</div>
+</div>
+</div>
+
+
+
+
+</div>
+

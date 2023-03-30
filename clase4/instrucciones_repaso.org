@@ -1,0 +1,94 @@
+* Semana 4: Retrospectiva.
+
+** ¿Qué pasó hasta hoy?
+
+Hasta el día de hoy hemos incluido un tema nuevo en cada clase, con
+una actividad práctica asociada cada vez.
+
+En la primer semana todos respondieron a tiempo enviando sus trabajos,
+pero en la segunda semana hay varios que ya comenzaron a retrasarse.
+
+En la tercer semana, propusimos como actividad hacer una tarea de
+investigación para colaborar en una Wiki, aunque tuvimos algunos
+problemas con el campus y verán que no pudimos terminar de configurar
+correctamente la actividad.
+
+Sin embargo, en el esquema de curso a distancia esperabamos poder
+tener un intercambio mucho mas fluido.
+
+Por esto proponemos para esta semana dedicarnos a hacer un repaso
+general, a ponernos al dia y a aumentar la participación en las
+actividades que pensamos para que interactuen entre ustedes en el
+campus.
+
+** ¿Que vimos hasta hoy?
+
+Hasta el día de hoy trabajamos en varios temas que están relacionados
+entre sí:
+
+- El Ciclo hidrológico
+- La Precipitación
+- La disponibilidad de agua dulce
+- Los efectos del cambio climatico en todo lo anterior.
+
+** Propuesta para esta semana.
+
+Les proponemos para esta semana que comiencen por repasar el material
+de las fichas anteriores, y se vuelquen a participar en el Glosario y
+en la sección de Preguntas y Respuestas.
+
+Para darles una ayuda en estos temas les proponemos una Lista de
+Terminios relacionados a cada clase. La idea del glosario no es que
+copien y peguen definiciones sino que hagan una elaboración
+propia. Esto no quiere decir que no citen fuentes, sino que traten de
+hacer un resumen de varias de ellas, y sobre todo que escriban
+eligiendo los términos sobre los que se sienten seguros de haber
+entendido.
+
+En la sección de preguntas y respuestas esperamos que hagan una
+lectura atenta del material escrito y se anoten aquellas secciónes que
+mas incertidumbre les generen. Luego elaboren una pregunta consistente
+sobre cada sección que hayan elegido y la publican en el foro, para
+que sus compañoros y docentes puedan participar. Es de vital
+importancia que se den el tiempo para elaborar preguntas, porque es la
+forma en la que mejor van a saber ustedes mismos en qué lugar del
+aprendizaje están.
+
+Pensamos que sería muy positivo si se tomas dos tiempos para esto, uno
+durante el dia de hoy, donde principalemnte cada uno generará material
+nuevo, y otro durante el dia de mañana, donde se dediquen a contestar
+y comentar lo aportado por sus compañeros.
+
+En cuanto a las actividades atrasadas, durante el dia de hoy estaré
+buscando una alternativa para la wiki, para que puedan participar de
+verdad. Supongo que algunos ya habrán hecho parte de la
+investigación. La idea es que entre todos podamos armar un documento
+que trate los temas propuestos desde la óptica de los conceptos vistos
+en la materia.
+
+** Propuesta para lo que sigue.
+
+La semana que viene, junto con el aporte de material nuevo, buscaremos
+forma de hacer un balance de lo hecho hasta ahora, y de hacer una
+devolución personal del avance de cada uno, por eso es importante que
+se pongan al día
+
+** Palabras Clave
+
+- Clase 1 :: Puente Hidrógeno --- Ciclo Hidrológico --- Infiltración 
+  --- Escurrimiento Superficial --- Escorrentía --- Percolación --- 
+  Transpiración --- Condensación --- Tiempo de Residencia --- 
+  Conductividad --- Resistividad.
+
+- Clase 2 :: Isoyeta --- Agricultura de secano --- Salinidad --- 
+  Sodicidad --- Toxicidad --- Pluviómetro --- Precipitación 
+  areal --- Polígonos de Thiessen --- Red Pluviométrica --- Hietograma.
+  
+- Clase 3 Disponibilidad :: Uso consuntivo --- FAO --- recurso hídrico
+  --- consumo agrícola --- uso doméstico --- uso industrial --- 
+  estrés hídrico
+
+- Clase 3 Cambio Climático :: Cambio climático --- IPCC --- 
+  gases de efecto invernadero --- NOAA --- cambios precipitaciones 
+  --- glaciares --- nivel del mar --- dilatación térmica --- tendencia
+  relativa del nivel del mar --- escenarios climáticos

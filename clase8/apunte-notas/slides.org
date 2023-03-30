@@ -1,0 +1,502 @@
+* Setting                                                          :noexport:
+ 
+#+LATEX_ENGINE: xelatex
+#+LATEX_CLASS: extarticle
+#+LATEX_CLASS_OPTIONS: a4paper,12pt
+
+#+LaTeX_HEADER: \usepackage[spanish]{babel}
+#+LaTex_HEADER: \usepackage{placeins}
+#+LaTex_HEADER: \usepackage{graphicx} % Required to insert images
+#+LaTex_HEADER: \usepackage{courier} % Required for the courier font
+#+LaTex_HEADER: \usepackage{fixltx2e}
+#+LaTex_HEADER: \usepackage{amsmath}
+#+LaTex_HEADER: \usepackage{dsfont}
+#+LaTex_HEADER: \usepackage{amssymb}
+#+LaTex_HEADER: \usepackage{hyperref}
+#+LaTex_HEADER: \usepackage{fancyhdr} % Required for custom headers
+#+LaTex_HEADER: \usepackage{lastpage} % Required to determine the last page for the footer
+#+LaTex_HEADER: \usepackage{extramarks} % Required for headers and footers
+#+LaTex_HEADER: % Margins
+#+LaTex_HEADER: \usepackage{geometry}
+#+LaTex_HEADER:  \geometry{
+#+LaTex_HEADER:  a4paper,
+#+LaTex_HEADER:  left=20mm,
+#+LaTex_HEADER:  right=20mm,
+#+LaTex_HEADER:  top=20mm,
+#+LaTex_HEADER:  bottom=20mm,
+#+LaTex_HEADER:  }
+#+LaTex_HEADER: 
+#+LaTex_HEADER: \linespread{1.1} % Line spacing
+#+LaTex_HEADER: 
+#+LaTex_HEADER: % Set up the header and footer
+#+LaTex_HEADER: \pagestyle{fancy}
+#+LaTex_HEADER: \lhead{} % Top left header
+#+LaTex_HEADER: \chead{\hmwkClass\ (\hmwkClassTime): \hmwkTitle} % Top center head
+#+LaTex_HEADER: \rhead{\hmwkInstitucional} % Top right header
+#+LaTex_HEADER: \lfoot{\hmwkClassInstructor} % Bottom left footer
+#+LaTex_HEADER: \cfoot{} % Bottom center footer
+#+LaTex_HEADER: \rfoot{Página\ \thepage\ de\ \protect\pageref{LastPage}} % Bottom right footer
+#+LaTex_HEADER: \renewcommand\headrulewidth{0.4pt} % Size of the header rule
+#+LaTex_HEADER: \renewcommand\footrulewidth{0.4pt} % Size of the footer rule
+#+LaTex_HEADER: 
+#+LaTex_HEADER: \setlength\parindent{0pt} % Removes all indentation from paragraphs
+#+LaTex_HEADER: 
+#+LaTex_HEADER: % Encabezados y pies.
+#+LaTex_HEADER: 
+#+LaTex_HEADER: \newcommand{\hmwkTitle}{Clase 2 - Teoría} % Assignment title
+#+LaTex_HEADER: \newcommand{\hmwkDueDate}{Abril 2020} % Due date
+#+LaTex_HEADER: \newcommand{\hmwkClass}{Hidráulica Agrícola y Saneamiento} % Course/class
+#+LaTex_HEADER: \newcommand{\hmwkClassTime}{1-2020} % Class/lecture time
+#+LaTex_HEADER: \newcommand{\hmwkClassInstructor}{Mónica Fiore - Javier Clavijo} % Teacher/lecturer
+#+LaTex_HEADER: \newcommand{\hmwkInstitucional}{FI-UBA} % Your name
+
+#+LaTex_HEADER:\usepackage{lineno}
+#+LaTex_HEADER:\linenumbers
+
+#+BEGIN_SRC emacs-lisp
+
+(setq org-image-actual-width nil)
+
+#+END_SRC
+
+#+RESULTS:
+
+* Principal
+
+** Teoría de Valores Extremos 
+
+En el análisis clásico de cualquier muestra de datos, en general no
+suelen analizarse los valores extremos, desechando por ejemplo el 5%
+de los valores mayores y menores. Pero en muchos casos, los eventos
+que producen estos valores extremos suelen tener un alto impacto.
+
+El objetivo de la Teoría de Valores Extremos (TVE) es básicamente la
+extrapolación de información.
+
+Tiene aplicaciones en muchas áreas, por ejemplo en ciencias
+ambientales: 
+
+- Nivel del mar 
+- Velocidad del viento 
+- Nivel de un río o presa 
+- Concentración de contaminantes 
+- Lluvias 
+- Olas
+
+*** En la producción agricola
+
+::: minipages 0.49 0.47
+#+CAPTION: 
+[[./media/image1.jpeg]]
+#+CAPTION: 
+[[./media/image2.jpeg]]
+Fuentes http://www.revistaelagro.com/wp-content/uploads/2013/10/foto-d4.jpg http://www.fao.org/uploads/pics/banner\_climate\_change\_02.jpg
+\caption{Tanto la sequía como la inundación son eventos extremos que afectan la producción agrícola en forma perjudicial.}
+::::::
+
+El clima y su variabilidad afectan a toda la economía, pero el sector
+agrícola tiene mayor vulnerabilidad.
+
+La agricultura está adaptada a las condiciones medias climáticas de un
+lugar pero es sensible a la variabilidad climática, a los valores
+extremos y a los cambios en los valores medios.  Este efecto varía,
+según el cultivo y el sistema de producción.
+
+No solo impacta sobre la producción primaria de fibras y alimentos,
+también afecta al resto de la cadena agroalimentaria: a los
+proveedores de insumos, al almacenaje, a la distribución, etc.
+
+Fuentes para consulta: http://www.fao.org/sustainable-forest-management
+
+*** Ejemplo, temperaturas extremas en cultivos
+
+- TRIGO :: Temperaturas de más de 30ºC, por más de 8 horas puede
+  revertir la vernalización (es la necesidad de temperaturas bajas para
+  desencadenar los procesos de desarrollo).
+
+- ARROZ :: Temperaturas por encima de los 35 º C, por más de 1 hora, en el
+ período de floración causan un alto porcentaje de esterilidad en las
+ espiguillas.
+
+- MAÍZ :: El polen comienza a perder movilidad a temperaturas mayores de 36ºC.
+
+- PAPA :: Temperaturas por encima de los 20ºC frenan la iniciación del tubérculo y su crecimiento.
+
+- SOJA :: Gran habilidad para recuperarse del stress térmico; se desconoce el período crítico en su desarrollo.
+
+*** Extremos meteorológicos.
+
+Los fenómenos meteorológicos extremos incluyen fenómenos inusuales,
+severos o impropios de la estación. Una ola de calor es un periodo de
+temperaturas secas y anormalmente altas. Sus rangos varían según la
+ubicación geográfica. El calor excesivo a menudo está acompañado por
+altos niveles de humedad, pero también pueden ser catastróficamente
+secas.
+
+::: minipages 0.49 0.48
+#+CAPTION: 
+[[./media/image3.jpeg]]
+#+CAPTION: 
+[[./media/image4.png]]
+\caption{Ola de calor en Argentina registrada en diciembre de 2013. Comenzó el 11 de Diciembre y finalizó el 2 de Enero de 2014. Fue la ola de calor más prolongada sufrida en Argentina desde que se iniciaron los registros en 1906 afectando unas 52 ciudades en todo el país.}
+::::::
+
+#+BEGIN_COMMENT
+
+%http://img.rtve.es/imagenes/cientos-personas-atendidas-argentina-efectos-ola-calor/1388417086806.jpg
+%https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Noaa-argentina.gif/280px-Noaa-argentina.gif
+
+ #+CAPTION: http://www.confluenciafm.com.ar/galeria/alertaamarilla.jpg
+ [[./media/image5.jpeg]]
+ ** tmp-slides/slide6.txt
+ #+CAPTION: http://cocktailsandmovies.com/wp-content/uploads/2014/05/abominable-snowman.jpg
+ [[./media/image8.jpeg]]
+
+#+END_COMMENT
+
+Debido a que las olas de calor no son visibles como otras formas de
+fenómenos severos, como los huracanes, los tornados y las tormentas,
+son uno de las formas menos conocidas de fenómenos extremos.
+
+
+Olas de calor severas pueden dañar tanto a las poblaciones como a los
+cultivos.
+
+La tierra seca es más susceptible a la erosión, lo que disminuye el
+suelo disponible para la agricultura.
+
+Los brotes de incendios forestales aumentan en frecuencia ya que la
+vegetación seca es más susceptible a la ignición.
+
+La evaporación pueden ser devastadora para las poblaciones marinas,
+pudiendo producir una disminución el tamaño de los hábitats
+disponibles además de la cantidad de alimento presente en las aguas.
+
+::: minipages 0.49 0.45
+#+CAPTION: El efecto combinado de eventos extremos de calor y sequia deja al suelo desprotegido frente a la erosión.
+[[./media/image7.jpeg]]
+#+CAPTION: Eventos extremos de calor pueden favorecer la ocurrencia de incendios forestales
+[[./media/image6.jpeg]]
+::::::
+
+Una ola de frío es un fenómeno meteorológico que se caracteriza por un
+enfriamiento del aire. Es una rápida caída en la temperatura dentro de
+un periodo de 24 horas.  Esta temperatura mínima depende de la región
+geográfica y la época del año. Las olas de frío generalmente son
+capaces de ocurrir en cualquier ubicación geográfica y se forman por
+grandes masas de aire helado que se acumula sobre ciertas regiones,
+creadas por los movimientos de las corrientes aéreas.
+
+El SMN registró el 22/7/2013 temperaturas y sensación térmica bajo
+cero en la mayoría de las provincias, con una marca extrema a las 8 de
+-12,2°C en la localidad mendocina de Malargüe.
+
+::: minipages 0.47 0.46
+#+CAPTION: El efecto de una ola de frio puede abarcar grandes regiones.
+[[./media/image9.jpeg]]
+#+CAPTION: Ciudad de mendoza durante el evento extremo de baja temperatura ocurrido en 2013.
+[[./media/image10.jpeg]]
+Fuente: https://www.lugaresdenieve.com/?q=es/noticia/ola-de-fr-o-polar-en-argentina
+::::::
+
+Una ola de frío puede causar muerte y daño al ganado.  La exposición
+al frío obliga una mayor ingesta calórica a los animales, incluidos
+los humanos, y si una ola de frío va acompañada de una nevada fuerte y
+persistente, los animales de pastoreo pueden ser incapaces de alcanzar
+el alimento y agua necesarias y morir de hipotermia o hambruna.
+
+#+CAPTION: El frio extremo afecta también a la producción ganadera, Ver por ejemplo: http://www.avisa.org.ve/muere-ganado-por-ola-de-frio-que-afecta-a-sudamerica/
+[[./media/image11.jpeg]]
+
+Las olas de frío a menudo requieren la compra de forraje para el
+ganado a un costo considerable para los productores.
+
+Dado que los eventos climáticos extremos muchas veces son los
+causantes de grandes daños en la economía y a nivel social las
+evaluaciones del clima en diferentes regiones geográficas son
+necesarias para entender las incertidumbres de las tendencias de los
+eventos climáticos extremos.
+
+Actualmente se sabe que los eventos
+extremos están cambiando en frecuencia e intensidad como consecuencia
+del cambio climático.
+
+#+CAPTION: Algunos eventos climáticos son mas notorios por su violencia, como las tormentas tropicales.
+#+ATTR_HTML: :width 400
+[[./media/image12.jpeg]]
+
+Una forma de percibir el cambio climatico es a través de la incidencia
+de estos impactos extremos. El análisis de extremos climáticos
+permite definir con cuanta frecuencia se dan, donde se producen y con
+qué magnitud impactan.
+
+*** Ejemplo: extremos en el río de la plata.
+
+En noviembre de 2002 Debido a fuertes vientos del W (40-55km/h) con ráfagas de 80km/h se
+produjo una gran bajante que hizo que 7 barrios de la Ciudad de Buenos
+Aires sufrieran la falta de agua potable y el Puerto de Buenos Aires
+operara con serias dificultades. El valor observado más bajo para este
+evento fue -263cm mientras que la altura predicha para ese instante
+fue 74cm por encima del Cero del Riachuelo.
+
+::: minipages 0.47 0.46
+#+CAPTION: Onda de tormenta negativa extrema registrada en el Río de la Plata 
+[[./media/image13.png]]
+#+CAPTION: Onda de tormenta positiva registrada en el Mar del Plata.
+[[./media/image14.png]]
+\caption{Ejemplos de onda de tormenta positiva y negativa. A la izquierda, extremo negativo en el rio de la plata en 2002}
+::::::
+
+#+CAPTION: El efecto de eventos extremos de marea es notable a simple vista.
+#+ATTR_HTML: :width 400
+[[./media/image15.png]]
+
+*** Escenarios esperados por cambio climático
+   
+Según el IPCC, el número de eventos climáticos extremos seguirá
+aumentando. Esto unido a la creciente vulnerabilidad humana, esta
+transformando los eventos extremos en desastres climáticos, ejemplo de
+ellos son: 
+
+- Aumento en la frecuencia y severidad de las olas de calor.
+
+- Veranos más secos y largos, esto lleva a un mayor estrés calórico en
+ la fauna y la flora, daños a las cosechas, incendios forestales, etc.
+
+- Lluvias más intensas. Estas producen aumento en las inundaciones de
+ algunas regiones, lo que a su vez ocasiona mayores deslizamientos de
+ tierras, avalanchas, y un aumento en la erosión del suelo.
+
+- Aumento en la actividad ciclónica. El calentamiento de los océanos
+ tropicales aumenta la frecuencia y la severidad de los ciclones
+ tropicales.
+
+** Aplicación 1: Aseguradoras de riesgo
+
+Debido a que los eventos extremos pueden poner en peligro la
+estabilidad de una entidad aseguradora, el comportamiento inusual de
+una variable aleatoria puede tener más interés que su ‘normalidad’
+ampliamente tratada por la teoría clásica del riesgo.
+
+En el ámbito del seguro, el estudio de los extremos puede ayudar a
+responder preguntas como por ejemplo:
+
+- ¿Cuál es el tiempo medio de espera hasta la ocurrencia de un
+ siniestro de una determinada cuantía elevada?
+
+- ¿Cuál debe ser el capital necesario para cubrir con una alta
+ probabilidad las pérdidas extremas futuras?
+
+ 
+::: minipages 0.47 0.46
+#+CAPTION: 2.084 familias evacuadas en las provincias de Córdoba, Chaco, Entre Ríos, Corrientes, Santa Fe, Formosa y Buenos Aires. 20 de Abril del 2016
+[[./media/image20.jpeg]]
+#+CAPTION: Inundación en el Barrio de la Boca, noviembre de 1989. El nivel llegó a 4,06m sobre el cero del Riachuelo, la altura de marea astronómica para esos momento fue superada por 3,25m.
+[[./media/image19.jpeg]]
+::::::
+
+::: minipages 0.33 0.2
+#+CAPTION: Emil Gumbel
+[[./media/image21.png]]
+#+CAPTION: Waloddi Weibull
+[[./media/image25.png]]
+#+CAPTION: Maurice Fréchet
+[[./media/image23.png]]
+::::::
+
+Los eventos extremos suelen ocasionar efectos catastróficos en todos
+los campos. La Teoria de Valores extremos es la parte de la
+estadística que estudia su comportamiento.
+
+Si tenemos una muestra de M datos de una misma distribución y creamos
+un nuevo conjunto que solo incluya los valores máximos, este nuevo
+conjunto puede ser descripto por las distribuciones de Gumbel, Frechet
+y Weibull.
+
+::: minipages 0.49 0.4
+#+CAPTION: Distribución de Fréchet 
+[[./media/image24.png]]
+#+CAPTION: Distribución de Gumbel
+[[./media/image22.png]]
+#+CAPTION: Distribución de Weibull
+[[./media/image26.png]]
+Fuente: http://www.mathwave.com/articles/extreme-value-distributions.html
+::::::
+
+En la teoría de valores extremos el interés principal se encuentra en
+los valores más bajos o más altos de la variable a estudiar. Es decir,
+el objetivo está en el análisis de los eventos asociados a las colas
+de la distribución.
+
+#+CAPTION: Cola de una distribución estadística.
+#+ATTR_HTML: :width 400
+[[./media/image27.png]] 
+
+El objetivo de la Teoría de Valores Extremos es la extrapolación de la información. 
+Dada una muestra de valores independientes $X_1,X_2,\dots,X_n$
+ de una distribución desconocida queremos estimar la cola de la misma.
+
+Problemas:
+- Hay pocas observaciones en la cola de la distribución. 
+- Con frecuencia queremos estimar valores que van más allá del máximo valor de la muestra.
+
+Áreas de aplicación: Medio Ambiente, Hidrología, Oceanografía, Finanzas, Seguros, Climatología.
+
+En términos generales, los valores extremos pueden ser modelados siguiendo dos procedimientos básicos:
+ 
+1. Los modelos Block Máxima (BMM - Block Maxima Models), que emplean
+   la distribución Generalizada de Valores Extremos (GEV) para ajustar
+   una distribución a partir de los máximos o mínimos de un conjunto de
+   datos muestrales independientes agrupados en bloques de similar
+   tamaño.
+
+2. Los modelos Peaks Over Thresholds (POT), que utilizan las
+   Distribuciones Generalizadas Pareto (GPD) para ajustar una
+   distribución a los valores muestrales independientes que exceden un
+   umbral especificado.
+
+#+CAPTION: Precipitación mensual para Bahía Blanca.
+#+ATTR_HTML: :width 650
+[[./media/image28.png]]
+
+** Método de Máxima Anual
+
+El estudio de valores extremos puede enfocarse de diversas formas. Una
+de los más clásicas, es el análisis del máximo de un conjunto de
+observaciones independientes (método del bloque máximo) provenientes
+de una misma distribución. Es decir, el objetivo es estudiar el
+comportamiento de
+ 
+$$M_k = max\left(X_{Nk},\dots,X_{N(k+1)}\right)$$
+
+Donde k es un indice de bloque y N es el tamaño (en cantidad de muestras) de cada bloque.
+
+Típicamente $X_i$ representa la observación de un proceso en una
+escala regular de tiempo, por ejemplo, la temperatura máxima anual, el
+caudal anual, etc.
+
+Como la distribución habitualmente es desconocida, el estudio de M_n
+se realiza mediante distribuciones aproximadas. La búsqueda debe
+limitarse a familias de funciones de simetría equivalente.
+
+La distribucion de Valores Extremos Generalizados (GEV) introducida
+por Jenkinson (1955) agrupa la distribuciones de Gumbel, Frechet y
+Weibull y su función de distribución acumulada es:
+                       
+$$F(x) = exp\left(-\left(1+\gamma \frac{x-\mu}{\sigma}\right)^\frac{-1}{\gamma}\right)$$
+
+Donde $\mu$, $\sigma$, $\gamma$, son los parámetros de locación, escala y forma.
+
+Según el signo de $\gamma$ se clasifica en tres tipos:
+                            
+- GEV tipo I (Gumbel) $\gamma = 0$
+- GEV tipo II (Frechet) $\gamma > 0$
+- GEV tipo III (Weibul) $\gamma < 0$
+
+La razón de esta clasificación es que el dominio de cada distribución
+cambia según el signo de $\gamma$, y está relacionado con el
+decaimiento de la cola derecha. Existen distintos métodos para
+calcular los parámetros, uno de los mas utilizados es el de máxima
+verosimilitud.
+
+Usualmente el período de tiempo elegido para el tamaño del bloque es
+de un año, con lo cual $N$ corresponde a la cantidad de observaciones
+independientes anuales registradas y $M_k$ corresponde a la
+observación máxima anual.
+
+Entonces, si se cuenta con un período de M años, se obtiene una serie
+M máximos (o mínimos) anuales cuya distribución se ajustará a alguna
+de las distribuciónes GEV.
+
+Para realizar el ajuste de la serie de máximos anuales mediante la
+distribución GEV se deben cumplir los siguientes supuestos:
+
+- El conjunto de observaciones máximas sigue una misma distribución.
+  
+- Independencia :: ningún dato de la serie está influenciado por valores
+  anteriores, o que él no influye a los posteriores. Por ejemplo. se
+  deben eliminar valores que correspondan a un mismo evento que se
+  extiende abarcando mas de un bloque de datos.
+  
+- Estacionalidad :: las propiedades estadísticas (usualmente media y
+  variancia) de los datos no cambian en el tiempo. Para satisfacer el
+  supuesto de estacionalidad, se extrae la tendencia a la serie de
+  máximos anuales.
+
+** Cálculo de período de retorno
+
+Dado un nivel extremo X, el periodo de retorno T(x) correspondiente a
+dicha magnitud puede definirse como el promedio de tiempo que ha de
+transcurrir entre dos repeticiones extremas del mismo. Existe una
+estrecha relación entre la función F(x) y el período de retorno de un
+determinado evento:
+                              
+$$T(x) = \frac{1}{1 - F(x)}$$
+
+$F(x)$ es la probabilidad de no exceder el valor $x$ en un intervalo
+de largo $N$, entonces $1-F(x)$ es la probabilidad de superar dicho
+valor en ese período
+
+Los períodos de retorno de diseño recomendados para estructuras menores son:
+#+TABLE:
+#+ATTR_HTML: :width 500
+[[./media/table.25-01.png]]
+
+#+BEGIN_EXPORT html
+<table>
+<tr h="640440">
+<th>
+<p>Tipo de Estructura</p>
+</th>
+<th>
+<p>Periodo de Retorno (años)</p>
+</th>
+</tr>
+<tr h="371520">
+<td>
+<p>Drenaje Urbano</p>
+</td>
+<td>
+<p>2 – 5</p>
+</td>
+</tr>
+<tr h="371520">
+<td>
+<p>Drenaje Agrícola</p>
+</td>
+<td>
+<p>5 – 10</p>
+</td>
+</tr>
+<tr h="369720">
+<td>
+<p>Puente sobre carretera</p>
+</td>
+<td>
+<p>50 – 100</p>
+</td>
+</tr>
+<tr h="370800">
+<td>
+<p>Drenaje de Aeropuertos</p>
+</td>
+<td>
+<p>5</p>
+</td>
+</tr>
+#+END_EXPORT
+
+*** Fuentes de Incertidumbre.
+
+**** Incertidumnres en la determinación de la probabilidad de ocurrencia de fenómenos hidrológicos.
+     
+- Variabilidad natural de los eventos extremos.
+- Disponibilidad y deficiencia en la información, longitud de los registros.
+- Métodos y modelos de análisis
+
+**** Incertidumbre por cambios globales y puntuales.
+     
+- Cambio climático
+- Cambios fisiográficos por modificacione progresivas naturales
+- Modificaciones en el uso del suelo
+- Modificaciones por obras

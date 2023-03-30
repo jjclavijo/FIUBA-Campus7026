@@ -1,0 +1,18 @@
+* Ejercicio: sistematización de predio
+
+El ejercicio propuesto es sencillo, pero tiene algunos matices.
+
+[[./enunciado.html][El enunciado lo pueden encontrar aquí]]
+
+Les sujerimos plantearlo segun el método que se describe aquí:
+
+[[./procedimiento.html][Procedimiento para calcular el movimiento de suelo]]
+
+Nóten que el mismo ejercicio puede resolverse utilizando surfer, qgis,
+SAGA, o cualquier software que soporte interpolación y operación de
+diferencia entre datos raster.
+
+Sin embargo, el procedimiento que proponemos puede programarse en
+Excel, y, una vez armada la planilla modificar las pendientes de
+diseño es trivial y permite el recálculo automático. Les sugerimos que
+comparen ambas metodologías.
