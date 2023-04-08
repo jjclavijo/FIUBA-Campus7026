@@ -23,9 +23,7 @@ email: jclavijo@fi.uba.ar
 description: >- # this means to ignore newlines until "baseurl:"
   Documentos extraidos del campus virtual de la materia Hidráulica agrícola y
   saneamiento de la carreara de agrimensura de la universidad de buenos aires.
-baseurl: "/FIUBA-Campus7026" # the subpath of your site, e.g. /blog
 
-source: sitio/
 # Build settings
 remote_theme: pages-themes/tactile@v0.2.0
 plugins:
