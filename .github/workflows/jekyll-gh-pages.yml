@@ -31,10 +31,10 @@ jobs:
       - name: Convert org-files
         uses: maker2413/OrgPublish@v1.0.0
         with:
-          publish-script: publicar.el
+          publish_script: publicar.el
       - name: Add layout to org-files
         run: |
-         find sitio --name '*.html'
+         find sitio -name '*.html'
          grep -L '^---' $(find sitio -name '*.html') | xargs -- sed -i '1i ---\nlayout:\ default\n---'
       - name: Setup Pages
         uses: actions/configure-pages@v3
