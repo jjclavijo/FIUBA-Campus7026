@@ -31,9 +31,11 @@ jobs:
       - name: Convert org-files
         uses: maker2413/OrgPublish@v1.0.0
         with:
-          publish-scirpt: publicar.el
+          publish-script: publicar.el
       - name: Add layout to org-files
-        run: grep -L '^---' $(find sitio -name '*.html') | xargs -- sed -i '1i ---\nlayout:\ default\n---'
+        run: |
+         find sitio --name '*.html'
+         grep -L '^---' $(find sitio -name '*.html') | xargs -- sed -i '1i ---\nlayout:\ default\n---'
       - name: Setup Pages
         uses: actions/configure-pages@v3
       - name: Build with Jekyll
