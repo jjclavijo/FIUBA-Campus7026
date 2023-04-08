@@ -25,6 +25,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   saneamiento de la carreara de agrimensura de la universidad de buenos aires.
 baseurl: "" # the subpath of your site, e.g. /blog
 
+source: sitio/
 # Build settings
 theme: tactile
 plugins:
