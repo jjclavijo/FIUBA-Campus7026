@@ -27,7 +27,7 @@ layout: default
       {% if titulo contains "teori" %}
         {% assign titulo = "Resumen teórico" %}
       {% endif %}
-      <ul><a href="{% link {{estaclase.url}} %}">{{clase[1]}}: {{titulo}}</ul>
+      <ul><a href="{{estaclase.url | relative_url}}">{{clase[1]}}: {{titulo}}</ul>
     {% endunless %}
   {% endfor %}
   {% endfor %}
@@ -38,7 +38,7 @@ layout: default
   {% for clase in group.items %}
     {% assign estaclase = clase[0] %}
     {% if estaclase.url contains "ejercicio" %}
-      <ul><a href="{% link {{estaclase.url}} %}">{{clase[1]}}: {{estaclase.url}}</ul>
+      <ul><a href="{% link {{estaclase.url | relative_url}} %}">{{clase[1]}}: {{estaclase.url}}</ul>
     {% endif %}
   {% endfor %}
   {% endfor %}
