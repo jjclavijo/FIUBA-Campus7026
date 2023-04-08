@@ -33,7 +33,7 @@ jobs:
         with:
           publish-scirpt: publicar.el
       - name: Add layout to org-files
-        run: grep -L '^---' $(find sitio -name '*.html') | xargs -- sed -i '1i ---\nlayout: default\n---'
+        run: grep -L '^---' $(find sitio -name '*.html') | xargs -- sed -i '1i ---\nlayout:\ default\n---'
       - name: Setup Pages
         uses: actions/configure-pages@v3
       - name: Build with Jekyll
