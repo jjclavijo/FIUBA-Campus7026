@@ -70,7 +70,7 @@ y el de "Regression Krigging".
    (SRTM, PALSAR, ASTER, etc). Tenga en cuenta que las coordenadas
    provistas corresponden a valores de Gauss Kruger en Kilómetros. 
    Puede utilizar los datos de altura y cartografía del IGN que están
-   disponibles en el [[visor de mapas][http://mapa.ign.gob.ar/]]
+   disponibles en el [[http://mapa.ign.gob.ar/][visor de mapas]]
    
 3. Aplique uno de los métodos propuestos y analice el resultado
    obtenido, indique los problemas que encuentra. No es necesario que
