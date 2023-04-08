@@ -1,0 +1,48 @@
+---
+layout: default
+---
+
+<div>
+  {% assign mypages = site.html_pages %}
+  {% assign misclases = '' | split: '' %}
+  {% for page in mypages  %}
+    {% assign spliturl = page.url | split: "/" %}
+    {% assign miclase = spliturl[2] | replace: 'clase', '' | plus: 0 %}
+    {% assign miclaseArray = '' | split: '' %}
+    {% assign miclaseArray = miclaseArray | push: page %}
+    {% assign miclaseArray = miclaseArray | push: miclase %}
+    {% assign misclases = misclases | push: miclaseArray %}
+  {% endfor %}
+  {% assign misGclases = misclases | group_by_exp: "item", "item[1]" %}
+  {% assign misGclases = misGclases | sort: "name" %}
+  <li>
+  {% for group in misGclases %}
+  {% for clase in group.items %}
+    {% assign estaclase = clase[0] %}
+    {% unless estaclase.url contains "ejercicio" %}
+      {% assign titulo = estaclase.url %}
+      {% if titulo contains "notas" %}
+        {% assign titulo = "Notas basadas en la presentación" %}
+      {% endif %}
+      {% if titulo contains "teori" %}
+        {% assign titulo = "Resumen teórico" %}
+      {% endif %}
+      <ul><a href="{{estaclase.url}}">{{clase[1]}}: {{titulo}}</ul>
+    {% endunless %}
+  {% endfor %}
+  {% endfor %}
+  </li>
+
+  <li>
+  {% for group in misGclases %}
+  {% for clase in group.items %}
+    {% assign estaclase = clase[0] %}
+    {% if estaclase.url contains "ejercicio" %}
+      <ul><a href="{{estaclase.url}}">{{clase[1]}}: {{estaclase.url}}</ul>
+    {% endif %}
+  {% endfor %}
+  {% endfor %}
+  </li>
+
+</div>
+    
