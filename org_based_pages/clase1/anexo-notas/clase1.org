@@ -81,7 +81,7 @@ Visto desde el espacio los continentes son islas rodeadas de mares
 
 ** Propiedades el agua pura
 
-#+CAPTION: Representación del puente de hidrógeno(1) entre moléculas de agua. https://commons.wikimedia.org/wiki/File:3D_model_hydrogen_bonds_in_water.svg CC-By-SA.   
+#+CAPTION: Representación del puente de hidrógeno(1) entre moléculas de agua. [[https://commons.wikimedia.org/wiki/File:3D_model_hydrogen_bonds_in_water.svg][Funete: Wikimedia]] CC-By-SA.   
 #+ATTR_HTML: :width 400px
 #+ATTR_LaTeX: :width 9cm :center
 [[./img/Puente-hidrogeno.png]]
