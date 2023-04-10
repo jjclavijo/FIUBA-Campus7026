@@ -71,7 +71,7 @@
    Recinto de Mayagüez, P.O. Box 5984, Mayagüez, Puerto Rico 00681 –
    5984
 3. https://www.portalfruticola.com/noticias/2018/01/25/la-capacidad-de-campo-de-un-suelo-tecnicas-para-su-medicion/
-
+4. [[https://www.fao.org/3/x0490s/x0490s00.htm][Apunte de FAO]]
 ** El balance hídrico
 
 El balance del agua o balance hídrico es una parte fundamental de
