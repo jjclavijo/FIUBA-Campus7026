@@ -37,6 +37,9 @@ jobs:
          find sitio -name '*.html'
          find sitio . -type d | xargs -- ls -l
          grep -L '^---' $(find sitio -name '_*' -prune -o -name '*.html' -print) | sudo xargs -- sed -i '1i ---\nlayout:\ default\n---'
+      - name: Agregar paginas de ejercicios.
+        run: |
+         cp -r other_pages/* sitio/
       - name: Setup Pages
         uses: actions/configure-pages@v3
       - name: Build with Jekyll
