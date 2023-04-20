@@ -1,0 +1,269 @@
+* Riego – Uso Consuntivo
+
+Existen muchas definiciones de riego, una de ellas es que es una herramienta para
+producir alimentos.
+La disponibilidad del agua para el ser humano siempre ha sido vital, porque además del
+sustento que obtenía al cultivar la tierra, creaba riqueza y con ella conseguía poder. El
+dominio del agua ha originado en la historia de la humanidad disputas y
+confrontaciones. Con el dominio de esta técnica, se inicia la agricultura de regadío.
+El método principal de entrega de agua al suelo y que se utiliza en aproximadamente el
+90 % de los proyectos en todo el mundo es el riego por gravedad, en Argentina
+representa el 95%.
+Es importante responderse la siguiente pregunta:
+
+** ¿Por qué se riega y dónde se riega?
+
+En cualquier cultivo hay que considerar 3 factores fundamentales:
+
+- Clima
+- Suelo
+- Economía o política
+
+Con respecto al *clima* es poco lo que podemos hacer. Las características climáticas de la
+región como las temperaturas medias, extremas, la fecha en que comienzan las heladas
+etc., van a restringir el tipo de cultivo.
+
+El *suelo* se origina a partir de la materia que tuvo su origen en los procesos químicos y
+mecánicos que transformaron las rocas de la superficie terrestre. A esta materia se
+agregan el agua, los gases, sobre todo el dióxido de carbono, el tiempo transcurrido, los
+animales y las plantas que descomponen y transforman el humus, dando por resultado
+una compleja mezcla de materiales orgánicos e inorgánicos.
+
+*Es decisivo al momento de determinar que se va a plantar y cuanto voy a producir.*
+
+En la naturaleza, cada suelo tiene un conjunto de características dentro de determinados
+límites. El superior es la superficie de la tierra; el inferior, se ubica donde ya no actúan
+los procesos formadores de suelos y, los laterales, son los contactos con otros tipos de
+suelos. En consecuencia, existen en el mundo muchas clases individuales de suelos,
+aunque en el ambiente no se los encuentre como unidades separadas. Por eso es
+necesario establecer los límites dentro de los cuales deben ser estudiados. Las
+características de cada uno pueden conocerse a través de las observaciones e
+investigaciones de campo, gabinete y laboratorio. Su reconocimiento, clasificación y
+representación cartográfica es lo que se llama "Mapa de Suelos".
+
+El suelo pude estudiarse desde 2 puntos de vista:
+
+1. desde la *geotécnica* son los ingenieros geotécnicos y también los geólogos los que
+   investigan el suelo y las rocas por debajo de la superficie para determinar sus
+   propiedades para el diseño de estructuras tales como edificios, puentes, centrales
+   hidroeléctricas, etc.
+
+2. desde la *edafología* son los biólogos y los agrónomos los que estudian la
+   composición y naturaleza del suelo en su relación con las plantas y el entorno que le
+   rodea.
+
+Cuando se estudia un suelo la *calicata* permite la inspección directa del suelo que se
+desea estudiar y, por lo tanto, es el método de exploración que normalmente entrega la
+información más confiable y completa. Se recomienda efectuar una calicata cada 50
+hectáreas aproximadamente.
+
+En cada calicata se deberá realizar una descripción visual o registro del suelo. Es
+necesario registrar la ubicación y elevación de cada pozo, los que son numerados según
+la ubicación. Si un pozo programado no se ejecuta, es preferible mantener el número del
+pozo en el registro como "no realizado" en vez de volver a usar el número en otro lugar,
+para evitar confusiones. La profundidad está determinada por las exigencias de la
+investigación. La sección mínima recomendada es de 0,80 m por 1,00 m, a fin de
+permitir una adecuada inspección de las paredes. El material excavado deberá
+depositarse en la superficie en forma ordenada separado de acuerdo a la profundidad y
+horizonte correspondiente.
+
+[[./img/calicata.png]]
+http://www.madrimasd.org
+
+Una vez que se realizó el estudio del suelo, el edafólogo me indica que cultivos son
+recomendables para ese lugar. Luego el factor climático ayudará a descartar de esa lista
+otros de los cultivos. Finalmente el economista desde su punto de vista elimina otro u
+otros por la facilidad de venta del lugar.
+Una vez que decidí que plantar tengo que ver la forma de riego.
+Las unidades de riego son: litro/seg/hectárea.
+
+* Uso Consuntivo
+
+Es el uso del agua que no se devuelve en forma inmediata al ciclo del agua. Es la
+cantidad de agua que debe aplicarse a un cultivo para que sea rentable desde el punto de
+vista económico.
+
+Engloba lo evapotranspirado y lo que la planta se queda para su crecimiento, que es
+proporcionalmente muy poco. Luego, cuantitativamente se utiliza la evapotranspiración.
+
+¿qué cantidad de agua necesitan las plantas y cómo la calculo?
+
+Se debe estudiar el suelo hasta donde llegan las raíces (profundidad de exploración). En
+general, se estudia hasta unos 2.5 m.
+
+Definiciones útiles
+
+Agua adsorbida: es la que se queda pegada por tensión superficial y es muy difícil de
+extraer.
+
+Porosidad: volumen de huecos / volumen total (es adimensional, puede expresarse
+como porcentaje).
+
+Porosidad efectiva: volumen de agua drenada por gravedad / volumen total.
+
+Saturación: es el contenido de agua del suelo cuando prácticamente todos los espacios
+están llenos de agua. En los suelos bien drenados es un estado temporal ya que el exceso
+de agua drena de los poros grandes por influencia de la gravedad para ser reemplazada
+por aire.
+
+Capacidad de campo: es la cantidad relativamente constante de agua que contiene un
+suelo saturado después de 24 o 48 horas de drenaje. El drenaje ocurre por la transmisión
+del agua a través de los poros mayores de 0,05 mm de diámetro; sin embargo, la
+capacidad de campo puede corresponder a poros que varían entre 0,03 y 1 mm de
+diámetro. El concepto de Capacidad de Campo se aplica únicamente a suelos bien
+estructurados donde el drenaje del exceso de agua es relativamente rápido; si el drenaje
+ocurre en suelos pobremente estructurados, por lo general continuará durante varias
+semanas y este tipo de suelos de estructura tan pobre raramente tiene una Capacidad de
+Campo claramente definida. El suelo a capacidad de campo se siente muy húmedo en
+contacto con las manos.
+
+Punto de marchitez: Cuando sólo queda agua en los pequeños poros, siendo retenida
+con tal fuerza por el suelo que no está disponible por las plantas. El punto de marchitez
+no es un valor constante para un suelo dado, sino que varía con el tipo de cultivo.
+
+Punto permanente de marchitez: se refiere al contenido de agua de un suelo que ha
+perdido toda su agua a causa del cultivo y, por lo tanto, el agua que permanece en el
+suelo no está disponible para el mismo. Se conoce como tal al porcentaje o nivel de
+humedad del suelo al cual las plantas se marchitan en forma permanente. En esas
+condiciones, el cultivo está permanentemente marchito y no puede revivir cuando se le
+coloca en un ambiente saturado de agua. Al contacto manual, el suelo se siente casi seco
+o muy ligeramente húmedo.
+
+La Capacidad de campo y Punto de marchitez son los límites que definen la
+necesidad de agua de un cultivo para su óptimo desarrollo. El agua contenida en el
+suelo entre la capacidad de campo y el punto de marchitez es el agua capaz de absorber
+el cultivo, por lo que para el cálculo de las necesidades de agua es necesario tener en
+cuenta estos límites, que entre otros factores, varían en función del tipo de suelo.
+
+* Balance Hídrico
+
+Las ganancias o ingresos de agua se producen a través de las precipitaciones y las
+pérdidas o egresos ocurren debido a los procesos de evapotranspiración, que involucran
+a la evaporación directa de las superficies de agua y de la humedad del suelo y al agua
+que transpiran los vegetales a través de sus hojas luego de extraerla del suelo.
+
+Cuando la pérdida mensual o anual de humedad excede a la precipitación, resulta un
+balance deficitario, con lo cual el suelo se seca; cuando la precipitación es mayor a las
+pérdidas resulta un excedente que permite recuperar la humedad del suelo. Cada región
+posee valores diferentes, tanto para la precipitación como para la evapotranspiración, ya
+que dependen de sus propias condiciones climáticas.
+
+El conocimiento de la evapotranspiración potencial de un lugar del que se tienen
+registros de precipitación permite establecer un balance hídrico anual. Con estos datos
+es posible conocer la cantidad de agua que realmente evapora el suelo y transpiran las
+plantas en ese lugar, la cantidad de agua almacenada por el suelo y la que se pierde por
+derrame superficial y percolación profunda.
+
+Como la evapotranspiración y la precipitación son dos elementos climáticos
+independientes su variación anual difícilmente coincidan en un mismo punto de la
+tierra, lo cual trae como consecuencia que, en algunos lugares existan periodos en los
+cuales la necesidad de agua está satisfecha por las lluvias y otros donde se carece de la
+cantidad de agua requerida.
+
+De esta manera habrá meses con agua suficiente y meses con agua en exceso o
+deficiente. También pueden ocurrir casos extremos en que durante todo el año las
+precipitaciones sobrepasen las necesidades de agua o viceversa.
+
+Si luego de un periodo de deficiencia de agua se producen precipitaciones que exceden
+ampliamente las pérdidas ocasionadas por la evapotranspiración, el agua sobrante no
+comienza a escurrirse hasta que el suelo ha alcanzado su saturación. Esta cantidad de
+agua que en el balance hídrico se designa como humedad de reposición del suelo, varía
+entre ciertos límites según la profundidad del suelo, su textura y la distribución y
+extensión del sistema radicular de las plantas que viven en el. Pero en términos
+generales puede aceptarse que corresponde aproximadamente a una lámina de 100 mm
+de espesor. Si la precipitación caída es mayor que esta cantidad, y a su vez no se
+elimina por evapotranspiración, se produce derrame superficial e infiltración a las capas
+inferiores del suelo, por lo cual se designa como exceso de agua.
+Si luego de un periodo de lluvia excesiva sobreviene otro en el cual las precipitaciones
+resultan inferiores a la demanda de agua, o en otros términos a la evapotranspiración
+potencial, el suelo comienza a reducir su tenor de humedad por la acción de la
+evapotranspiración y el almacenaje de agua útil va reduciéndose hasta llegar al mínimo
+compatible con la vida de la planta, es decir, al punto de marchitez.
+
+Esta humedad perdida por el suelo hasta este momento en el balance hídrico se llama
+humedad del suelo utilizada y corresponde como en el caso anterior a una lamina de 100
+mm.
+
+Para calcular el balance hídrico medio anual de una localidad de la cual se poseen datos
+mensuales de evapotranspiración y precipitación se procede de la siguiente forma:
+
+Se elige, cuando es posible, un periodo con lluvia superior a la evapotranspiración
+potencial y se le asigna para este mes en almacenaje de agua útil 100. Si hubiera elegido
+un mes de deficiencia de agua bien definida le asignare a almacenaje de agua útil 0 mm.
+
+Para ir calculando los meses siguientes, sumamos la precipitación del mes considerado
+al dato de almacenaje de agua útil del mes anterior y a ese total que constituye el agua
+disponible se le resta la evapotranspiración potencial del mes, con lo que se obtiene el
+valor de almacenaje de agua útil.
+
+Si el valor de agua útil fuera superior a los 100 mm se colocara para ese mes solo el
+valor de 100 ya que como vimos anteriormente ese es el máximo tenor de agua de
+reposición en el suelo. El excedente de los 100 mm será el exceso de agua del mes
+considerado.
+
+Puede ocurrir que la suma del almacenaje de agua útil del mes anterior, con la
+precipitación del mes considerado, resulte inferior a la evapotranspiración potencial de
+ese mes, o sea, que las demandas sean superiores al agua disponible. En este caso habrá
+deficiencia de agua y en el rubro almacenaje de agua útil se deberá consignar 0 y la
+deficiencia de agua será la cantidad de milímetros que faltan para completar la cantidad
+evapotranspiración potencial.
+
+Una vez que, en la forma descripta se hayan calculado todos los meses del año, podrá
+verificarse el cálculo del balance hídrico, si al sumar el valor de almacenaje de agua útil
+del undécimo mes con la precipitación del duodécimo mes nos da el valor de 100 mm o
+0 mm previstos. Si así no fuera se deben continuar los cálculos con los valores que se
+obtengan, de manera que en el segundo ciclo de cálculos se vayan corrigiendo hasta que
+al cerrarse el segundo ciclo de los doce valores, coincida el último dato obtenido con el
+primero.
+
+** Método de Thornthwaite
+
+Este método es muy útil para la primera etapa de un proyecto debido a que utiliza pocos
+datos. El fin fue efectuar una clasificación climática, para la cual tomó datos de 140.000
+parcelas y definió que el suelo es capaz de contener 100 mm, es decir que si se le agrega
+más agua se iría por percolación o por escorrentía.
+
+Definió a la evapotranspiración ($Ev$) como el agua que el sol evapora del suelo y de las
+plantas. Luego la evapotranspiración está asociada a la latitud debido a las horas de sol
+recibidas.
+
+La $Ev$ puede ser real o potencial. La real es la que realmente evapora una planta,
+mientras que la potencial (e) es la que la planta evaporaría si dispusiera de toda el agua
+que necesita.
+
+La fórmula de Thornthwaite se basa en la temperatura y en la latitud determinando que
+esta última constituye un buen índice de la energía en un lugar específico. Estima la
+evapotranspiración potencial a partir de la media mensual de las temperaturas medias
+diarias del aire, con el que calcula un índice de calor anual, a partir de la expresión
+
+\[ i = \left({t \over 5}\right)^{1,514} \]
+
+que le permite obtener un valor para el índice de calor anual ($I$), siendo \[I = \Sum i\],
+la suma de los doce índices mensuales del año considerado. Para meses teóricos de 30
+días, con 12 horas diarias de sol, formula la siguiente expresión:
+
+\[e = 16(10 t/I)^a\]
+
+siendo:
+$e =$ evapotranspiración potencial media en mm/día
+$t =$ temperatura media mensual en ºC
+$I =$ índice calórico anual (I = Σi)
+$a = 675\times10^{-9} I3-771 \times 10^{-7} I2 + 1972 \times 10^{-5} I + 0,49239$
+Esta fórmula se resuelve primero sin corrección y luego se realiza la corrección en base
+a las horas de sol. Luego averiguo en que momento me sobra o me falta agua.
+
+Bibliografia:
+Teóricas Ing. Ruiz.
+
+Molina T., Jose Manuel; Luis A. Gurovich R. y Eduardo Varas C. (2003): Modelación y
+Análisis Probabilístico del Balance Hídrico Superficial de un Sistema de Riego en Chile
+Central. Ingenieria del Agua 10 (2): 135 –147.
+
+Sánchez T., M.I. (1992): Métodos para el Estudio de la Evaporación y
+Evapotranspiración, Cuadernos Técnicos de la Sociedad Española de Geomorfología.
+Geoforma Ediciones. Logroño.
+
+Thornthwaite, CW 1948. Un enfoque hacia una clasificación racional del clima. El
+examen geográfico 38:55-94.
+
+
