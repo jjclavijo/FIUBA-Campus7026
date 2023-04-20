@@ -2,6 +2,8 @@
 layout: default
 ---
 
+{% assign temario = ';Ciclo y Propiedades del Agua;Precipitación;Disponibilidad de Agua;;Riego;Aforos;;Extremos;Balance Hídrico;Sistematización de Predios;Canales;Presas;Hidráulica de Pozos;Aguas Residuales' | split: ';'  %}
+
 <div>
   {% assign mypages = site.html_pages %}
   {% assign misclases = '' | split: '' %}
@@ -27,7 +29,8 @@ layout: default
       {% if titulo contains "teori" %}
         {% assign titulo = "Resumen teórico" %}
       {% endif %}
-      <ul><a href="{{estaclase.url | relative_url}}">{{clase[1]}}: {{titulo}}</ul>
+      {% assign tema = clase[1] | plus: 0 %}
+      <ul><a href="{{estaclase.url | relative_url}}">{{temario[tema]}}: {{titulo}}</ul>
     {% endunless %}
   {% endfor %}
   {% endfor %}
@@ -38,7 +41,8 @@ layout: default
   {% for clase in group.items %}
     {% assign estaclase = clase[0] %}
     {% if estaclase.url contains "ejercicio" %}
-      <ul><a href="{{estaclase.url | relative_url}}">{{clase[1]}}: {{estaclase.url}}</ul>
+      {% assign tema = clase[1] | plus: 0 %}
+      <ul><a href="{{estaclase.url | relative_url}}">{{temario[tema]}}: {{estaclase.url}}</ul>
     {% endif %}
   {% endfor %}
   {% endfor %}
