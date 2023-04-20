@@ -65,7 +65,7 @@
 * Riego
 
 #+BEGIN_EXPORT latex
-\null\hfill\includegraphics{./media/image1.jpeg}\hfill\null
+\null\hfill\includegraphics{./img/image1.jpeg}\hfill\null
 #+END_EXPORT
 
 Existen muchas definiciones de riego, una de
@@ -114,13 +114,13 @@ se llama "Mapa de Suelos“.
 
 #+CAPTION: Mosaico de Imagenes Satelitales de Argentina.
 #+ATTR_HTML: :width 400
-[[./media/image3.png]]
+[[./img/image3.png]]
 
 Riego El suelo pude estudiarse desde 2 puntos de vista:
 
 #+CAPTION: Sección del suelo, esquemático
 #+ATTR_HTML: :width 400
-[[./media/image4.jpeg]]
+[[./img/image4.jpeg]]
 
 1. desde la geotécnica son los ingenieros geotécnicos y también los
  geólogos los que investigan el suelo y las rocas por debajo de la
@@ -134,7 +134,7 @@ Riego El suelo pude estudiarse desde 2 puntos de vista:
 
 #+CAPTION: Perfil de un pozos de Cateo, donde pueden identificarse los horizontes del suelo.
 #+ATTR_HTML: :width 500
-[[./media/image5.jpeg]]
+[[./img/image5.jpeg]]
 
 
 Cuando se estudia un suelo la calicata permiten la inspección
@@ -153,7 +153,7 @@ Se modifica la topografía para maximizar la eficiencia.
 
 #+CAPTION: Distintas profundidas de la capa impermeable y penetración de raices
 #+ATTR_HTML: :width 200
-[[./media/image8.jpeg]] 
+[[./img/image8.jpeg]] 
 
 Debe tenerse en cuenta: 
 
@@ -180,7 +180,7 @@ Debe tenerse en cuenta:
 
 #+CAPTION: Cultivo Regado por Inundación
 #+ATTR_HTML: :width 200
-[[./media/image9.jpeg]] 
+[[./img/image9.jpeg]] 
 
 Una vez realizado el estudio del suelo, el
 edafólogo me indica que cultivos son recomendables para ese
@@ -211,7 +211,7 @@ objeto de mejorar el control y la homogeneidad en la aplicación del
 agua.
 
 #+CAPTION: Permeabilidad del suelo segun el tipo de suelo. Fuente: FAO, http://www.fao.org/fishery/static/FAO_Training/FAO_Training/General/x6706e/F1.htm
-[[./media/image11.png]]
+[[./img/image11.png]]
 
 La elección del método de riego está condicionada por:
  
@@ -246,7 +246,7 @@ El riego puede realizarse de diferentes formas:
                                          
 
 #+CAPTION: Aplicación de un riego por surcos en un campo de lechugas. Fuente: http://estaciones.ivia.es/recomendaciones_sal.html
-[[./media/image12.jpeg]] 
+[[./img/image12.jpeg]] 
 
 En este método la capa radical del suelo
 (zona radicular) se humedece mediante la infiltración del agua a
@@ -268,7 +268,7 @@ implemento empleado para su construcción; puede ser de forma
 parabólica, triangular o rectangular.
 
 #+CAPTION: Representación esquemática y perfil: Surcos de riego
-[[./media/image13.jpeg]] 
+[[./img/image13.jpeg]] 
 
 El tamaño de los surcos depende en general del cultivo y oscilan entre 10 y
 40 cm de ancho superficial y entre 5 y 20 cm de profundidad.  El
@@ -279,7 +279,7 @@ suelo que se intenta mojar. Puede variar entre 0.3 y 1 m.
 *** Inundación o manta 
 
 #+CAPTION: Riego por inundación.
-[[./media/image15.jpeg]]
+[[./img/image15.jpeg]]
 
 Es un sistema de irrigación que cosiste en inundar
 el terreno con una capa de agua. Es sencillo y poco costoso.  Es el
@@ -299,10 +299,10 @@ plantación.
 
 *** Subterráneo
 #+CAPTION: Esquema de Instalación de riego subterráneo, Fuente: https://riegospous.es/riego-por-goteo-subterraneo-ventajas-noticias-riegos-pous/
-[[./media/riego-subterraneo-por-goteo.jpg]]
+[[./img/riego-subterraneo-por-goteo.jpg]]
 
 #+CAPTION: Riego subterráneo, cabecera de la instalación. Fuente: http://www.vitivinicultura.net/ 
-[[./media/image16.jpeg]] 
+[[./img/image16.jpeg]] 
 
 Este sistema es poco usado por su costo,
 generalmente se limita a pequeñas áreas, y en cultivos de larga vida.
@@ -312,7 +312,7 @@ agua de regadío.
 *** Aspersion
 
 #+CAPTION: Sistema de riego por asperción en INTA Catamarca. Fuente: https://inta.gob.ar/sites/default/files/inta_aportes_para_el_mejoramiento_del_manejo_de_los_sistemas_de_riego.pdf
-[[./media/riego_aspersion.jpg]] 
+[[./img/riego_aspersion.jpg]] 
 
 El sistema de riego por aspersión imita al
 agua de lluvia, con lo cual la calidad de la entrega (en pequeñas
@@ -340,7 +340,7 @@ desarrollo rural de vastas regiones de la Argentina, teniendo en
 cuenta que el 70% de su territorio es árido o semiárido.
 
 #+CAPTION: Indice de cobertura vegetal (Verde Mayor, Amarillo Menor) en Argentina. Fuente: Ministerio de Agroidustria.
-[[./media/image18.png]] 
+[[./img/image18.png]] 
 
 En Argentina la superficie total cultivada,
 presenta en los últimos veinte años (1992-2012), un crecimiento
@@ -356,14 +356,14 @@ corresponde a un 5% de la superficie total cultivada en el país. El
 superficiales, y el resto con agua subterránea.  
 
 #+CAPTION: Superficie bajo riego por provincia. Fuente: http://www.fao.org/3/a-i5183s.pdf
-[[./media/image19.png]]
+[[./img/image19.png]]
 
 #+CAPTION: Distribución de cultivos bajo riego en Argentina Fuente: http://www.fao.org/3/a-i5183s.pdf
-[[./media/image20.png]]
+[[./img/image20.png]]
 
 #+TABLE: Explotaciones Agropecuarias (EAP) que riegan y superficie efectivamente regada por sistema, según provincia. Año 2002.
 #+ATTR_HTML: :width 600
-[[./media/table.21-01.png]]
+[[./img/table.21-01.png]]
 
 #+BEGIN_EXPORT html
 <table> <tr h="128520"> <th colspan="2" rowSpan="3"> <p>Provincia</p>
@@ -462,7 +462,7 @@ estadísticos sobre todas las explotaciones agropecuarias.
 ** tmp-slides/slide22.txt
 #+TABLE: Explotaciones agropecuarias (EAP) que riegan; y superficie efectivamente regada por sistema, según provincia.
 #+ATTR_HTML: :width 600
-[[./media/table.22-02.png]]
+[[./img/table.22-02.png]]
 
 (1) El total de EAP puede no corresponder a la suma de los parciales
 por sistema de riego dado que las categorías no son excluyentes,
@@ -582,7 +582,7 @@ provincia. </p> </th> </tr>
 
 #+CAPTION: Efectos típicos del suelo salinizado
 #+ATTR_HTML: :width 400
-[[./media/image21.jpeg]] 
+[[./img/image21.jpeg]] 
 
 La calidad del agua constituye una variable
 a controlar en la agricultura de regadío, tanto a nivel fuente como
@@ -603,7 +603,7 @@ no consumida vuelve al río o al acuífero (lo que se llama “aguas de
 retorno del riego”), y lo hace con una pérdida de calidad.
 
 #+CAPTION: Suelo Salino. Funete para Consulta: https://www.eweb.unex.es/eweb/edafo/ECAP/ECAL5PQSalinidad.htm
-[[./media/Salino_unex.jpg]]
+[[./img/Salino_unex.jpg]]
 
 La salinización natural del suelo es un fenómeno asociado a
 condiciones climáticas de aridez y a la presencia de materiales
@@ -626,7 +626,7 @@ conductividad eléctrica debe expresarse en relación a una temperatura
 de referencia. Habitualmente esta temperatura es de 25ºC.
 
 #+CAPTION: Conductímetro
-[[./media/image23.jpeg]] 
+[[./img/image23.jpeg]] 
 
 Estos aparatos
 deben se calibrados periódicamente con patrones de salinidad conocida
@@ -651,7 +651,7 @@ se considere al suelo como salino cuando se dan estas circunstancias.
 
 #+TABLE: Efectos de la salinidad en los cultivos. Fuente: https://www.eweb.unex.es/eweb/edafo/ECAP/ECAL5PQSalinidad.htm
 #+ATTR_HTML: :width 600
-[[./media/table.27-01.png]]
+[[./img/table.27-01.png]]
 
 #+BEGIN_EXPORT html
 <table> <tr h="770040"> <th> <p>Conductividad</p> <p>dS/m</p> </th>
@@ -684,7 +684,7 @@ deltaicas por lo que el drenaje suele hacerse directamente al mar, que
 es la mejor manera de no salinizar otras zonas.
 
 #+CAPTION: Ejemplos de el efecto visible de la salinización del suelo.
-[[./media/image24.jpeg]]
+[[./img/image24.jpeg]]
 
 En Argentina existen dos procesos mayoritarios de afectación por sales
 y/o sodio, resultantes de la aplicación de agua de riego: 
@@ -700,7 +700,7 @@ y/o sodio, resultantes de la aplicación de agua de riego:
  toxicidad en los cultivos).
 
 #+CAPTION: El riego y la salinidad es una preocupación frecuente en medios de comunicación con temática ambiental. Fuente: http://www.i-ambiente.es/?q=blogs/el-manejo-del-suelo-en-el-regadio-control-de-la-salinidad-y-el-sistema-de-riego
-[[./media/image25.png]] 
+[[./img/image25.png]] 
 
 Las cualidades que tendría un sistema de riego ideal en relación con
 la posible salinización serían: 
@@ -728,7 +728,7 @@ salinidad.
 
 #+CAPTION: El pastoreo puede agravar los problemas de salinización de los suelos.
 #+ATTR_HTML: :width 300
-[[./media/image27.jpeg]] 
+[[./img/image27.jpeg]] 
 
 Es bueno mantener alejado de los suelos
 salinos a los ganados y evitar el pastoreo. Eso puede profundizar la
@@ -737,7 +737,7 @@ lejos de donde queremos reducir la salinidad del suelo.
 
 #+CAPTION: Utilizar el rastrojo de un cultivo anterior para mantener cubierto el suelo evita la perdida de humedad y conserva el suelo. Es una de las ventajas de la siembra directa. Ver por ejemplo: https://www.aapresid.org.ar/blog/el-cuidado-de-los-suelos-en-lucha-constante-contra-la-degradacion/
 #+ATTR_HTML: :width 300
-[[./media/image26.jpeg]] 
+[[./img/image26.jpeg]] 
 
 Hay que destacar que no todas las sales son
 iguales. Algunas son más fácil de lavar como el cloruro sódico
