@@ -35,7 +35,6 @@ layout: default
   {% endfor %}
   {% endfor %}
   </li>
-
 </div>
 
 <div>
@@ -62,6 +61,34 @@ layout: default
     {% assign titulo = estaejercicio.basename %}
     {% assign tema = ejercicio[1] | plus: 0 %}
     <ul><a href="{{estaejercicio.path | relative_url}}">{{temario[tema]}}: {{titulo}}</ul>
+  {% endfor %}
+  {% endfor %}
+  </li>
+
+</div>
+
+<div>
+  {% assign myfiles = site.html_pages %}
+  {% assign misejercicios = '' | split: '' %}
+  {% for file in myfiles  %}
+    {% if file.url contains ".ejercicio" %}
+        {% assign spliturl = file.url | split: "/" %}
+        {% assign miejercicio = spliturl[1] | replace: '.ejercicio', '' | plus: 0 %}
+        {% assign miejercicioArray = '' | split: '' %}
+        {% assign miejercicioArray = miejercicioArray | push: file %}
+        {% assign miejercicioArray = miejercicioArray | push: miejercicio %}
+        {% assign misejercicios = misejercicios | push: miejercicioArray %}
+    {% endif %}
+  {% endfor %}
+  {% assign misGejercicios = misejercicios | group_by_exp: "item", "item[1]" %}
+  {% assign misGejercicios = misGejercicios | sort: "name" %}
+  <li>
+  {% for group in misGejercicios %}
+  {% for ejercicio in group.items %}
+    {% assign estaejercicio = ejercicio[0] %}
+    {% assign titulo = estaejercicio.url %}
+    {% assign tema = ejercicio[1] | plus: 0 %}
+    <ul><a href="{{estaejercicio.url | relative_url}}">{{temario[tema]}}: {{titulo}}</ul>
   {% endfor %}
   {% endfor %}
   </li>
