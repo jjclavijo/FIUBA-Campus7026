@@ -1,11 +1,11 @@
 SHELL=/bin/zsh
 
-ejercicio.html: tmp.html
+ejercicio.html: ciclo.html
 	echo "---" > $@;\
   echo "layout: ejercicios" >> $@;\
 	echo "title: Ejercicio Propiedades del agua" >> $@;\
 	echo "---" >> $@;\
-	cat $< >> $@;\
+	sed -n '/body/,/\/body/{/body>/d;p}' $< >> $@
 
-tmp.html: ciclo.org
-	pandoc -f org -t html --katex -o $@ $< 
+ciclo.html: ciclo.org
+	emacs --batch ciclo.org --eval '(org-html-export-to-html)'
