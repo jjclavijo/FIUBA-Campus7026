@@ -4,14 +4,14 @@ ALL=$(patsubst %.org,%.html,$(wildcard *.org))
 .PHONY: all
 all: ${ALL}
 
-%-tmp.org: %.org
-	echo "#+BEGIN_EXPORT html" > $@;\
-	echo "<div id=\"main-div\">" >> $@;\
-	echo "#+END_EXPORT" >> $@;\
-	cat $< >> $@;\
-	echo "#+BEGIN_EXPORT html" >> $@;\
-	echo '</div>' >> $@
-	echo "#+END_EXPORT" >> $@;\
+%.html: %-tmp.html
+	echo "---" > $@;\
+  echo "layout: ejercicios" >> $@;\
+	echo "title: Ejercicio de Canales" >> $@;\
+	echo "---" >> $@;\
+	sed -n '/body/,/\/body/{/body>/d;p}' $< >> $@
 
-%.html: %-tmp.org
-	pandoc -s -f org -t html -H head.html -o $@ $< --mathjax --metadata title="70.26 Hidráulica Agriola y Saneamiento"
+%-tmp.html: %.org
+	emacs --batch $< --eval '(org-html-export-to-html)';\
+	mv $*.html $@
+	

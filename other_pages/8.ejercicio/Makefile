@@ -1,16 +1,11 @@
 SHELL=/bin/zsh
 
-%-tmp.org: %.org
-	echo "#+BEGIN_EXPORT html" > $@;\
-	echo "<div id=\"main-div\">" >> $@;\
-	echo "#+END_EXPORT" >> $@;\
-	cat $< >> $@;\
-	echo "#+BEGIN_EXPORT html" >> $@;\
-	echo '</div>' >> $@
-	echo "#+END_EXPORT" >> $@;\
+ejercicio.html: extremos.html
+	echo "---" > $@;\
+  echo "layout: ejercicios" >> $@;\
+	echo "title: Ejercicio Valores Extremos" >> $@;\
+	echo "---" >> $@;\
+	sed -n '/body/,/\/body/{/body>/d;p}' $< >> $@
 
-ejercicios8.html: tp-extremos-tmp.org
-	pandoc -s -f org -t html -H head.html -o $@ $< --mathjax --metadata title="70.26 Hidráulica Agriola y Saneamiento"
-
-%.html: %-tmp.org
-	pandoc -s -f org -t html -H head.html -o $@ $< --mathjax --metadata title="70.26 Hidráulica Agriola y Saneamiento"
+%.html: %.org
+	emacs --batch $< --eval '(org-html-export-to-html)'

@@ -1,0 +1,136 @@
+#+OPTIONS: toc:nil
+* Ejercicios Clase 2
+
+* 70.26 - Hidráulica Agrícola y Saneamiento
+** Práctico N°2: Precipitación Media Areal
+
+En esta práctica utilizaremos los
+[[./DatosTp.zip][datos que se pueden descargar aquí]]
+
+Los mismos constan de una planilla de estaciones y otra de mediciones
+para cada proveedor de datos (INTA y SMN).
+
+Para el trabajo deben elegir una zona y un período de tiempo, y calcular
+la lluvia acumulada en ese período para las estaciones dentro de la
+zona. Sobre estos datos resumidos contruirán las planillas de trabajo,
+agregando la información de posición de la estación.
+
+Si eligen un período de datos donde haya datos tanto de INTA como SMN es
+muy interesante que puedan realizar el cálculo por separado y comparar
+el resultado. Caso contrario, pueden evaluar cómo afecta al resultado
+final incluir todas o solo algunas de las estaciones disponibles. Este
+tipo de procedimientos en estadística se conocen como validación cruzada
+y son importantes para verificar la coherencia interna de los datos
+analizados.
+
+Para elegir la zona de trabajo, les recomendamos elegir alguna cuenca
+hidrográfica basándose en los datos que pueden descargarse
+[[https://hydrosheds.org/downloads][en esta pagina]] , en la parte que
+dice "HydroBasins". Una cuenca del dataset de 3er o de 4to nivel puede
+ser una área razonable para el ejercicio propuesto.
+
+*** PROBLEMA 1: Utilizar datos sólo de precipitación.
+
+1. Hallar la precipitación media areal en la zona elegida con los datos
+   pluviométricos que se indican en la Tabla utilizando los siguientes
+   métodos:
+   1. Precipitación Media Aritmética
+   2. Polígonos de Thiessen (vecino más cercano)
+   3. Triangulación
+   4. Isoyetas (Kriging - Mínima Curvatura)
+2. Efectuar un análisis comparativo de los 4 métodos, explicando
+   brevemente las características de cada uno y sus diferencias.
+
+** Ir un paso mas lejos.
+El método de isoyetas normalmente incluye aprovechar la información del
+terreno para interpolar las isoyetas. Tradicionalmente este proceso se
+hacía en forma manual, dibujando las isoyetas sobre un plano de curvas
+de nivel.
+
+La idea detrás de esto es que la información de altura del terreno está
+correlacionada con la información de precipitaciones, y en consecuencia
+es correcto utilizar la variable altura como una ayuda a la regresión de
+los valores de precipitación.
+
+Para hacer este proceso en forma automatizada existen varios métodos.
+Entre los más conocidos se encuentran el llamado "CoKriging" y el de
+"Regression Krigging".
+
+*** PROBLEMA 2: Agregar la variable altura.
+
+1. Investigue sobre los posibles métodos automatizados para la
+   interpolación de los datos pluviométricos teniendo en cuenta la
+   información de altura y descríbalos muy brevemente.
+
+2. Descargue un modelo de terreno adecuado para la zona de estudio
+   (SRTM, PALSAR, ASTER, etc). Tenga en cuenta que las coordenadas
+   provistas corresponden a valores de Gauss Kruger en Kilómetros. Puede
+   utilizar los datos de altura y cartografía del IGN que están
+   disponibles en el [[http://mapa.ign.gob.ar/][sitio del instituto]]
+
+3. Aplique uno de los métodos propuestos y analice el resultado
+   obtenido, indique los problemas que encuentra. No es necesario que el
+   resultado sea perfecto, buscamos que se analice las dificultades y
+   ventajas de los métodos.
+
+** Recursos
+Para realizar el cálculo, en todos los casos se deberá trabajar con
+datos raster, generados a partir de los datos pluviométricos y cortados
+con la máscara del área de estudio.
+
+Para realizar esto pueden utilizar el software de su preferencia.
+Recomendamos considerar el uso de software libre, de modo que su trabajo
+sea accesible y pueda compartirse sin conflictos.
+
+Para realizar el método de Polígonos de Thissen, cada polígono de
+influencia corresponde al área donde el pluviómetro mas cercano es el
+analizado. para lograr esto se puede generar una grilla utilizando el
+método de interpolación de "Vecino más cercano".
+
+El Método de triangulación implica hacer una interpolación lineal por
+red de triángulos irregulares (TIN).
+
+Estos dos métodos están disponibles en la mayoría del software gis. Por
+ejemplo [[https://qgis.org/en/site/][Qgis]],
+[[https://grass.osgeo.org/][Grass]] o
+[[https://live.osgeo.org/es/overview/saga_overview.html][SAGA_{GIS}]]
+(Link para descarga:
+[[https://sourceforge.net/projects/saga-gis/files/SAGA%20-%207/SAGA%20-%207.6.2/][SAGA_{GIS}]]),
+o la herramienta por línea de comandos
+[[https://www.generic-mapping-tools.org/][GMT]].
+
+También pueden utilizar algún lenguaje de programación especializado
+domo R, o incluso Python, que cuentan con módulos para realizar este
+tipo de análisis. Para utilizar R recomendamos usar
+[[https://rstudio.com/products/rstudio/download/#download][RStudio]]. Es
+muy interesante poder trabajar con este lenguaje, por eso no queremos
+dejar de mencionarlo. Hay gran cantidad de material y tutoriales en
+internet que se pueden encontrar a través de cualquier buscador.
+
+En cuanto al método de Isoyetas, proponemos que como primera
+aproximación las generen utilizando el método de interpolación de
+Kriging. Este método está disponible en SAGA_{GIS}, y a través de este,
+en QGIS. Recomendamos utilizar SAGA_{GIS} directamente, porque permite
+el acceso a más información sobre el proceso que se realiza. A
+continuación les acerco un pequeño video tutorial sobre esto:
+
+También utilizando el lenguaje R se puede aplicar el método de krigging,
+les dejamos algunos recursos útiles en caso de que decidan utilizar este
+software. [[https://rpubs.com/nabilabd/118172][Link 1]],
+[[http://rstudio-pubs-static.s3.amazonaws.com/80464_9156596afb2e4dcda53e3650a68df82a.html][Link
+2]], [[https://rspatial.org/raster/analysis/4-interpolation.html][Link
+3]]
+
+En el caso de los metodos de CoKrigging y Regression Krigging,
+propuestos en el segundo ejercicio, SAGA_{GIS} dispone de este último, y
+ambos están disponibles para utilizar en el lenguaje R.
+
+Un recurso muy completo sobre estos métodos, aplicado a variables
+ambientales y con referencia a uso de software, es el siguiente
+[[https://www.lu.lv/materiali/biblioteka/es/pilnieteksti/vide/A%20Practical%20Guide%20to%20Geostatistical%20Mapping%20of%20Environmental%20Variables.pdf][Link]],
+de el extrajimos una pequeña sección sobre krigging, que nos propone
+aprender la metodología a partir de un [[./EZ-kriging.zip][sencillo
+aplicativo que puede descargar aqui junto con el pdf del extracto]]
+
+También les incluimos un breve documento en castellano sobre
+[[./Como_funciona_krigging.pdf][cómo funciona kriging]]
