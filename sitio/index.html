@@ -5,19 +5,31 @@ layout: default
 {% assign temario = ';Ciclo y Propiedades del Agua;Precipitación;Disponibilidad de Agua;;Riego;Aforos;;Extremos;Balance Hídrico;Sistematización de Predios;Canales;Presas;Hidráulica de Pozos;Aguas Residuales' | split: ';'  %}
 
 <div>
-  {% assign mypages = site.html_pages %}
-  {% assign misclases = '' | split: '' %}
+  <!-- Creamos un listado de las páginas que son clases.
+  Todas son páginas html con front_matter adecuado, que 
+  en están separadas por carpeta /claseXX/ donde XX es un nro.
+  -->
+  {% assign mypages = site.html_pages %} <!-- Solo htmls -->
+  {% assign misclases = '' | split: '' %} <!-- un array vacio -->
   {% for page in mypages  %}
-    {% assign spliturl = page.url | split: "/" %}
-    {% assign miclase = spliturl[1] | replace: 'clase', '' | plus: 0 %}
-    {% assign miclaseArray = '' | split: '' %}
-    {% assign miclaseArray = miclaseArray | push: page %}
-    {% assign miclaseArray = miclaseArray | push: miclase %}
-    {% assign misclases = misclases | push: miclaseArray %}
+    {% if page.url contains 'clase' %} <!-- para cada html que tiene clase en la url -->
+      <!-- separar el path para identificar el nro de clase y graba un array
+           con tuplas (pagina, nro de clase) -->
+      {% assign spliturl = page.url | split: "/" %}
+      {% assign miclase = spliturl[1] | replace: 'clase', '' | plus: 0 %}
+      {% assign miclaseArray = '' | split: '' %}
+      {% assign miclaseArray = miclaseArray | push: page %}
+      {% assign miclaseArray = miclaseArray | push: miclase %}
+      {% assign misclases = misclases | push: miclaseArray %}
+    {%endif%}
   {% endfor %}
+
+  <!-- Agrupar y ordenar las páginas por nro de clase -->
   {% assign misGclases = misclases | group_by_exp: "item", "item[1]" %}
   {% assign misGclases = misGclases | sort: "name" %}
+
   <li>
+  <!-- Crear los links iterando por pagina dentro de cada grupo. -->
   {% for group in misGclases %}
   {% for clase in group.items %}
     {% assign estaclase = clase[0] %}
@@ -30,46 +42,20 @@ layout: default
         {% assign titulo = "Resumen teórico" %}
       {% endif %}
       {% assign tema = clase[1] | plus: 0 %}
-      <ul><a href="{{estaclase.url | relative_url}}">{{temario[tema]}}: {{titulo}}</ul>
+      <ul><a href="{{estaclase.url | relative_url}}">{{temario[tema]}}: {{titulo}}</a></ul>
     {% endunless %}
   {% endfor %}
   {% endfor %}
   </li>
 </div>
 
-<!-- Listado Genérico de HTMLS... No va
 <div>
-  {% assign myfiles = site.static_files %}
-  {% assign misejercicios = '' | split: '' %}
-  {% for file in myfiles  %}
-    {% if file.path contains ".ejercicio" %}
-      {% if file.extname == ".html" %}
-        {% assign spliturl = file.path | split: "/" %}
-        {% assign miejercicio = spliturl[1] | replace: '.ejercicio', '' | plus: 0 %}
-        {% assign miejercicioArray = '' | split: '' %}
-        {% assign miejercicioArray = miejercicioArray | push: file %}
-        {% assign miejercicioArray = miejercicioArray | push: miejercicio %}
-        {% assign misejercicios = misejercicios | push: miejercicioArray %}
-      {% endif %}
-    {% endif %}
-  {% endfor %}
-  {% assign misGejercicios = misejercicios | group_by_exp: "item", "item[1]" %}
-  {% assign misGejercicios = misGejercicios | sort: "name" %}
-  <li>
-  {% for group in misGejercicios %}
-  {% for ejercicio in group.items %}
-    {% assign estaejercicio = ejercicio[0] %}
-    {% assign titulo = estaejercicio.basename %}
-    {% assign tema = ejercicio[1] | plus: 0 %}
-    <ul><a href="{{estaejercicio.path | relative_url}}">{{temario[tema]}}: {{titulo}}</ul>
-  {% endfor %}
-  {% endfor %}
-  </li>
+  <!-- Creamos un listado de las páginas que son ejercicio.
+  Todas son páginas html con front_matter adecuado, que 
+  en están separadas por carpeta /XX.ejercicio/ donde XX es un nro.
 
-</div>
--->
-
-<div>
+  El loop es identico a la parte anterior.
+  -->
   {% assign myfiles = site.html_pages %}
   {% assign misejercicios = '' | split: '' %}
   {% for file in myfiles  %}
@@ -90,11 +76,14 @@ layout: default
     {% assign estaejercicio = ejercicio[0] %}
     {% assign titulo = estaejercicio.url %}
     {% assign tema = ejercicio[1] | plus: 0 %}
-    <ul><a href="{{estaejercicio.url | relative_url}}">{{temario[tema]}}: {{titulo}}</ul>
+    <ul><a href="{{estaejercicio.url | relative_url}}">{{temario[tema]}}: {{titulo}}</a></ul>
   {% endfor %}
   {% endfor %}
   </li>
 
 </div>
 
+<div>
+  <h3><a href='{{site.baseurl}}/recursos.html'>Recursos extra (PDFs, etc.)</a></h3>
+</div>
     

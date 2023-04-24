@@ -8,7 +8,7 @@ title: Recursos
 {% for index in indexes %}
   {% assign intindex = index | plus: 0 %}
   <h3>{{temario[intindex]}}</h3>
-  {% assign pathmatch = index | append: '.recursos' %}
+  {% assign pathmatch = '/' | append: index | append: '.recursos' %}
   {% for file in site.static_files %}
   {% if file.path contains pathmatch %}
       <p><a href="{{site.baseurl}}{{file.path}}"> {{file.path}}</a> - {{file.modified_time}}</p>
