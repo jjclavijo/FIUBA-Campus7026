@@ -1,0 +1,18 @@
+---
+layout: default
+title: Recursos
+---
+
+{% assign temario = ';Ciclo y Propiedades del Agua;Precipitación;Disponibilidad de Agua;;Riego;Aforos;;Extremos;Balance Hídrico;Sistematización de Predios;Canales;Presas;Hidráulica de Pozos;Aguas Residuales' | split: ';'  %}
+{% assign indexes = "1,2,6,8,9,10,11,12,13,14" | split: ',' %}
+{% for index in indexes %}
+  {% assign intindex = index | plus: 0 %}
+  <h3>{{temario[intindex]}}</h3>
+  {% assign pathmatch = index | append: '.recursos' %}
+  {% for file in site.static_files %}
+  {% if file.path contains pathmatch %}
+      <p><a href="{{site.baseurl}}{{file.path}}"> {{file.path}}</a> - {{file.modified_time}}</p>
+  {% endif %}
+  {% endfor %}
+{% endfor %}
+
